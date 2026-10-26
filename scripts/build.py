@@ -106,7 +106,7 @@ def study(d):
         if not d.get(k):
             fail(f"study is missing '{k}'")
     rows = "".join(f"<tr><td>{e(a)}</td><td>{e(b)}</td></tr>" for a, b in d.get("numbers") or [])
-    out = (f'<article class="lead"><h2>{e(d["title"])}</h2>'
+    out = (f'<article class="lead study"><h2>{e(d["title"])}</h2>'
            f'<p class="stand">{e(d["track"])}</p><dl>'
            f'<dt>What it is</dt><dd>{e(d["what"])}</dd>'
            f'<dt>How it works</dt><dd>{e(d["how"])}</dd>'
