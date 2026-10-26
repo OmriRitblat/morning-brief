@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "politics": {
+      "lead": {
+        "headline": "Israel heads into election day amid reports of a Netanyahu push for an Iran strike, which he denies",
+        "standfirst": "Voters go to the polls on Tuesday, and the final day of campaigning was dominated by disputed reports about Iran.",
+        "paragraphs": [
+          "Israel holds its Knesset election on Tuesday, October 27. The Times of Israel reports that Benjamin Netanyahu's Likud faces a tight race with Gadi Eisenkot's Yashar party, with polls pointing to a likely stalemate. At his final rally in Tel Aviv, Eisenkot said Netanyahu would \"stop at nothing\" to stay in power. Netanyahu's side has used a digital campaign in the last stretch; the prime minister posted an AI-generated image of a nuclear blast over Tel Aviv and warned of a \"second Holocaust\" if he is not elected, which Eisenkot called hysterical.",
+          "On Iran, CNN reported that Netanyahu pressed for a joint US-Israeli strike before the vote and that President Trump declined while signaling joint action could come later. The Prime Minister's Office called the report \"fake news\". Channel 12 reported a confrontation between Netanyahu and IDF chief Eyal Zamir over an order for military action; Netanyahu called that report \"nonsense\", and Defense Minister Israel Katz called it baseless and said Israel has no plans to strike Iran before the election. Avigdor Liberman asked the attorney general to open a criminal probe of Netanyahu, offering no specific evidence in the reports we saw. President Herzog said Trump's renewed endorsement of Netanyahu will not affect his choice of who to task with forming a coalition."
+        ],
+        "sources": [
+          {"name": "Times of Israel liveblog", "url": "https://www.timesofisrael.com/liveblog-october-26-2026/"},
+          {"name": "Haaretz", "url": "https://www.haaretz.com/israel-news"},
+          {"name": "Ynet News", "url": "https://www.ynetnews.com/"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Opposition accuses PM over video with small Haredi party", "text": "The Times of Israel reports that a video appears to show Netanyahu persuading a small Haredi party to drop out of the race. Opposition figures called it corruption; the report did not include a response from the Prime Minister's Office.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/opposition-rages-at-corruption-as-pm-filmed-convincing-small-haredi-party-to-drop-out-of-race/"},
+        {"headline": "Report: Netanyahu warned police chief about 'left-wing anarchists'", "text": "Haaretz reports that Netanyahu told Police Commissioner Daniel Levy that \"left-wing anarchists\" could taint the vote, despite a condition set by Central Elections Committee chair Noam Sohlberg. The report is based on Haaretz's sources.", "source": "Times of Israel (citing Haaretz)", "url": "https://www.timesofisrael.com/liveblog_entry/report-defying-election-czar-netanyahu-warned-in-meeting-with-police-chief-that-left-wing-anarchists-may-taint-vote/"},
+        {"headline": "Trump renews endorsement of Netanyahu", "text": "Haaretz and the Times of Israel report that Trump again backed Netanyahu and urged Israelis to re-elect him, saying \"we have to finish the job\". Eisenkot's camp and other opposition figures have not been quoted in these reports on that point.", "source": "Haaretz", "url": "https://www.haaretz.com/israel-news/elections/2026-10-26/ty-article/.premium/trump-renews-netanyahu-endorsement-urges-israelis-to-reelect-him/000001a1-755d-de0d-a7fd-ffdf19c90000"}
+      ]
+    },
+    "israel": {
+      "lead": {
+        "headline": "IDF operation in Hebron after two soldiers killed; West Bank closure planned for election day",
+        "standfirst": "Security forces are bracing for election day after a deadly shooting attack in the West Bank.",
+        "paragraphs": [
+          "The Times of Israel reports that the IDF launched a widespread operation in Hebron after two soldiers were killed in a shooting attack. Defense Minister Katz said about 2,000 people were displaced; the Palestinian Authority puts the number at 2,670. Netanyahu vowed a \"big surprise\" for the PA.",
+          "The IDF also announced a general closure of the West Bank for Palestinians on election day, restricting Palestinian workers' access to settlements. Ynet reports that authorities fear copycat attacks during the election period. Separately, the IDF said it downed a heavy drone flown from Israel's side toward Gaza near Kibbutz Nahal Oz; its payload is under investigation."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/idf-op-in-hebron-after-soldiers-killing-said-to-displace-1500-pm-vows-big-surprise-for-pa/"},
+          {"name": "Haaretz", "url": "https://www.haaretz.com/west-bank/2026-10-25/ty-article/.premium/idf-announces-general-west-bank-closure-on-israels-election-day/000001a1-6fe4-d9e6-a5b1-6feda7180000"},
+          {"name": "Ynet News", "url": "https://www.ynetnews.com/article/s1t5ejn3gg"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Bank of Israel governor criticizes crypto-sanctions proposal", "text": "The Times of Israel reports that Bank of Israel Governor Amir Yaron and opposition leaders criticized Netanyahu's proposal to use cryptocurrency to get around sanctions. A Times of Israel analysis argues it could unsettle investors and the tech sector.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/bank-of-israel-opposition-heads-pan-pms-proposal-to-use-crypto-to-evade-sanctions/"},
+        {"headline": "Brazil and Serbia election results could affect Israeli ties", "text": "Ynet reports that Lula's win in Brazil's runoff and a defeat in Serbia could hurt Israeli defense and diplomatic ties, including arms shipments and a drone partnership. Ynet also notes Lula's win ends hopes of moving Brazil's embassy to Jerusalem.", "source": "Ynet News", "url": "https://www.ynetnews.com/article/r1x111ih2fx"},
+        {"headline": "Violent crime: 223 killed so far in 2026", "text": "Haaretz reports that two brothers were shot dead in south Tel Aviv in what police call a criminal dispute, not a nationalist attack. Haaretz says 223 people have been killed in Israel so far this year.", "source": "Haaretz", "url": "https://www.haaretz.com/israel-news"}
+      ]
+    },
+    "ai": {
+      "lead": {
+        "headline": "NVIDIA's ReplaySSM speeds up decoding in hybrid state-space and attention models",
+        "standfirst": "A new way to store SSM state cuts memory traffic and makes speculative decoding work at serving batch sizes.",
+        "paragraphs": [
+          "NVIDIA's technical blog describes ReplaySSM, a technique for hybrid models that mix state-space (SSM) layers with a few attention layers, such as Nemotron 3. At serving batch sizes, SSM layers can bottleneck decoding because each step loads and stores the whole state while doing little arithmetic, so HBM bandwidth is the limit. Speculative decoding also helps little, since an SSM state has no cheap rollback, so engines like vLLM store a snapshot per draft token.",
+          "ReplaySSM keeps a checkpoint plus a small buffer of recent inputs (window of 16 in the tests). Most steps just append to the buffer and compute outputs from checkpoint plus buffer; the checkpoint is rewritten only when the buffer fills. Rolling back rejected draft tokens becomes a pointer move. On four hybrid models on H100 or B300 GPUs, NVIDIA reports 1.20x to 1.47x end-to-end decode-step speedups at batch 256, and 1.85x to 2.10x the throughput of vLLM's speculative decoding at batch 512 on 120B-class models. The post says it is integrated into TensorRT-LLM, vLLM, SGLang and FlashInfer."
+        ],
+        "sources": [
+          {"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"}
+        ]
+      },
+      "briefs": [
+        {"headline": "TensorRT 11.1 adds the Global Performance Tuner", "text": "NVIDIA says the tuner searches over build routes (combinations of compiler knobs, of which there are more than 200) and picks the fastest engine that meets an accuracy tolerance. On ten workloads it reports 1.14x to 1.63x gains over the default route.", "source": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"},
+        {"headline": "Tata Communications to spend $450 million on AI connectivity", "text": "Reuters headlines that India's Tata Communications will spend $450 million on AI connectivity infrastructure. We could only read the headline, so no further details are given here.", "source": "Reuters (headline)", "url": "https://www.reuters.com/technology/artificial-intelligence/"},
+        {"headline": "SoftBank reportedly plans $50 billion Malaysia investment", "text": "CNBC reports, citing unnamed sources, that SoftBank plans a $50 billion tech investment in Malaysia, which wants to become an \"AI nation\". We could only read the headline.", "source": "CNBC (headline)", "url": "https://www.cnbc.com/"}
+      ]
+    },
+    "nature": {
+      "headline": "A single antimatter particle in a cage opens door to 'revolutionary' physics",
+      "standfirst": "Physicists trapped and cooled one positron for months to measure its magnetic moment very precisely.",
+      "paragraphs": [
+        "The positron is the antimatter twin of the electron. Nature's news team reports that physicists have held a single positron in a trap for months and cooled it, so they can measure its magnetic moment, a number describing how it behaves like a tiny magnet, with very high precision.",
+        "This summary is based on the article's feed description and headline only; the full text was behind a login. Precision measurements like this are one way to test whether matter and antimatter behave identically, which is why the article's headline speaks of 'revolutionary' physics."
+      ],
+      "key_points": [
+        "What they found: a single positron can be kept caged for months.",
+        "How: the particle was trapped and cooled so it could be measured very precisely.",
+        "Why it matters: a precise magnetic moment gives a sharp test of matter-antimatter symmetry."
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03342-2",
+      "source": "nature.com"
+    },
+    "spacex": {"quiet": true, "note": "Nothing worth your time since yesterday."},
+    "study": {
+      "track": "Monday track: RDMA and NICs",
+      "title": "Queue pairs and work requests: how an RDMA send is posted",
+      "what": "A queue pair (QP) is a pair of work queues, a send queue and a receive queue, that live in memory shared between your process and the NIC. You describe each operation as a work queue entry (WQE) and the NIC executes it without the kernel.",
+      "how": "The app fills a WQE (control segment with opcode, data segments with address, length and lkey), writes it into the next slot of the send queue ring, updates the doorbell record, and rings the doorbell by writing to a NIC register. The NIC DMA-reads the WQE, fetches the data using the memory region's keys, transmits, and later writes a completion entry (CQE) into the completion queue.",
+      "why_xlio": "XLIO builds its user-space TCP/UDP stack on these queues: it posts send WQEs and polls receive and completion queues from user space, so the data path has no system calls or interrupts.",
+      "example": "Think of a restaurant ticket rail: the cook (NIC) watches a rail of order slips (the ring). You clip a slip on the rail, then ring the bell (doorbell) so the cook knows to look.",
+      "numbers": [["mlx5 send WQE building block (WQEBB)", "64 bytes"], ["Queue depth", "a power of two, so index wrapping is a bitmask"], ["Doorbell", "one MMIO write per batch of WQEs, not per WQE"]],
+      "pitfall": "Posting a WQE does not mean it was sent. The send is only done when its CQE arrives, and the buffer must stay untouched until then.",
+      "question": "Why does posting ten WQEs and ringing the doorbell once usually beat ringing it ten times?",
+      "answer": "The doorbell is an uncached write across PCIe, which is expensive compared with filling memory. Batching amortizes that cost over many WQEs, at the price of a little added latency for the first one.",
+      "reading": [{"name": "RDMA Aware Networks Programming User Manual", "url": "https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17"}]
+    }
+  }
+}
