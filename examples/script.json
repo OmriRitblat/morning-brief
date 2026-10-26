@@ -1,0 +1,7 @@
+{
+  "segments": [
+    {"host": "A", "text": "Good morning, it's Tuesday the twenty-seventh. I'm Alex."},
+    {"host": "B", "text": "And I'm Sam. Busy day in the Knesset, so let's start there."},
+    {"host": "A", "text": "Right. Here's what happened..."}
+  ]
+}

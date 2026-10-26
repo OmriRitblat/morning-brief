@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "politics": {
+      "lead": {
+        "headline": "Example: lead political story headline",
+        "standfirst": "One sentence on why it matters.",
+        "paragraphs": ["What happened, who is involved, what changes.", "Context, and what comes next and when."],
+        "sources": [{"name": "Times of Israel", "url": "https://www.timesofisrael.com/"}]
+      },
+      "briefs": [
+        {"headline": "Example brief", "text": "Two or three sentences.", "source": "Haaretz", "url": "https://www.haaretz.com/"}
+      ]
+    },
+    "israel": {
+      "lead": {"headline": "Example: main non-political story", "standfirst": "Why it matters.", "paragraphs": ["Facts.", "Context."], "sources": [{"name": "Ynet", "url": "https://www.ynetnews.com/"}]},
+      "briefs": []
+    },
+    "ai": {
+      "lead": {"headline": "Example: the day's key AI release", "standfirst": "What it changes.", "paragraphs": ["The claim and the numbers.", "How it compares."], "sources": [{"name": "Primary source", "url": "https://example.com/"}]},
+      "briefs": []
+    },
+    "nature": {
+      "headline": "Example: readable Nature news story",
+      "standfirst": "The finding in one line.",
+      "paragraphs": ["Plain-language summary."],
+      "key_points": ["What they found.", "How they found it.", "Why it matters."],
+      "url": "https://www.nature.com/news",
+      "source": "nature.com"
+    },
+    "spacex": {"quiet": true, "note": "Nothing worth your time since yesterday."},
+    "study": {
+      "track": "Monday track: RDMA and NICs",
+      "title": "Completion queues: how the NIC tells you work is done",
+      "what": "A ring buffer where the NIC writes a completion entry (CQE) when a work request finishes.",
+      "how": "App posts a WQE and rings the doorbell; the NIC DMA-writes a CQE and flips an ownership bit; the app polls or arms the CQ for an event.",
+      "why_xlio": "XLIO polls CQs from user space instead of waiting on interrupts and the kernel.",
+      "example": "Optional analogy or concrete scenario.",
+      "numbers": [["Typical CQE size", "64 bytes"], ["Busy-poll check", "tens of ns"]],
+      "pitfall": "Pure polling burns a core even when idle.",
+      "question": "Why can several QPs share one CQ?",
+      "answer": "Each CQE carries its QP number, so one poll loop can serve many connections.",
+      "reading": [{"name": "RDMA Aware Networks Programming User Manual", "url": "https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17"}]
+    }
+  }
+}
