@@ -24,13 +24,24 @@ can't be confirmed, leave it out. Link primary or reputable sources.
   Prefer the lab's own announcement, paper or release notes. Lead plus 2–3 briefs.
   Prioritize inference, infrastructure, agents and anything NVIDIA-relevant.
 - **nature**: one interesting, easy-to-read article from Nature's news or news-feature
-  section (nature.com), published in the last few days, that is free to read. Fetch it to
-  confirm the link works and isn't paywalled. Give a plain-language summary and 3 key
-  points: what they found, how, and why it matters.
+  section (nature.com), published in the last few days. Find candidates in the feed at
+  https://www.nature.com/nature.rss (news items have DOIs starting `d41586`). Prefer one
+  whose full text you can read. Many are behind a login, and that's fine: then pick the
+  most interesting one and write the summary only from what you could read (the feed
+  description, the standfirst and opening paragraphs, and the underlying paper if it's
+  open access). Give a plain-language summary and 3 key points: what they found, how, and
+  why it matters.
 - **spacex**: only if something is genuinely interesting (Starship flights, major launches,
   milestones). Otherwise set `"quiet": true`. Give launch times in Israel time.
 
 Lead stories: 150–200 words in 2 paragraphs. Briefs: 2–3 sentences.
+
+Read pages with the web fetch tool only. Don't use curl, cookie jars or other ways around
+logins, paywalls or bot checks. If a page won't load, use another source.
+
+No single section may stop the issue. If a section's preferred source isn't available,
+use another reputable source, or write a shorter section from what you could confirm.
+The issue must always be published and sent.
 
 ## Step 2: daily study section
 
