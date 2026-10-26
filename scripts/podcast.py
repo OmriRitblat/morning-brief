@@ -30,7 +30,7 @@ async def speak(text, voices):
         for attempt in range(3):
             try:
                 audio = bytearray()
-                async for chunk in edge_tts.Communicate(text, voice, rate=RATE).stream():
+                async for chunk in edge_tts.Communicate(text, voice, rate=RATE, proxy=os.environ.get("HTTPS_PROXY")).stream():
                     if chunk["type"] == "audio":
                         audio += chunk["data"]
                 if audio:
