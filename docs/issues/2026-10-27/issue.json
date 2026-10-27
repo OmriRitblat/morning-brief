@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "politics": {
+      "lead": {
+        "headline": "Israel votes in a tight election with neither bloc assured a majority",
+        "standfirst": "Final polls show a close race, and the path to a government may run through weeks of coalition talks.",
+        "paragraphs": [
+          "Israelis vote today for the 26th Knesset, with about 7.3 million eligible voters, according to a Times of Israel explainer. Parties need at least 3.25 percent of valid votes, roughly four seats, to enter the 120-seat chamber. The final polls the paper cites put Prime Minister Benjamin Netanyahu's bloc of right-wing and ultra-Orthodox parties at 50 to 51 seats and the four Jewish-led opposition parties at 52 to 56. The Arab-led Ra'am and Joint List are projected at 14 to 16 seats combined. The pro-Netanyahu Channel 14 is the exception, projecting a majority for the incumbent government.",
+          "The main opposition figure is Gadi Eisenkot of Yashar, alongside Naftali Bennett's B'Yachad, Avigdor Liberman's Yisrael Beytenu and Yair Golan's Democrats. The Times of Israel notes that Liberman has ruled out relying on Arab parties while Eisenkot would need them for a majority, and that Eisenkot has ruled out serving under Netanyahu. Official results are scheduled for November 4. President Isaac Herzog then consults party leaders and tasks one with forming a government, who has 28 days plus a possible 14-day extension. If no majority emerges, Netanyahu would stay on as caretaker prime minister."
+        ],
+        "sources": [{"name": "Times of Israel", "url": "https://www.timesofisrael.com/israel-goes-to-the-polls-a-guide-to-the-election-and-the-battle-to-form-a-government/"}]
+      },
+      "briefs": [
+        {"headline": "CNN: Netanyahu sought pre-election Iran strike; his office calls it fake news", "text": "CNN, citing two US officials and an Israeli security source, reported that Netanyahu pressed for a joint US-Israel strike on Iran before the vote and that President Trump did not agree. The Prime Minister's Office called the report fake news. Defense Minister Israel Katz said Israel had no intention of attacking Iran before the election but would respond with great force if attacked. Liberman asked the Attorney General to open a criminal investigation into Netanyahu over the reported pressure.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/netanyahu-pushed-for-iran-strike-before-election-but-trump-refused-cnn-says/"},
+        {"headline": "Opposition accuses Netanyahu over filmed meeting with small Haredi party", "text": "The Times of Israel reports that video shows Netanyahu persuading a small ultra-Orthodox party to drop out of the race, and that opposition figures called it corruption. Separately, Eisenkot told a Tel Aviv rally that Netanyahu will stop at nothing to stay in power.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/opposition-rages-at-corruption-as-pm-filmed-convincing-small-haredi-party-to-drop-out-of-race/"},
+        {"headline": "Shin Bet to protect three opposition leaders amid rising threats", "text": "The Times of Israel reports the Shin Bet will provide security for three opposition party leaders because of rising threats during the campaign.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/shin-bet-to-provide-security-for-three-opposition-party-leaders-amid-rising-threats/"}
+      ]
+    },
+    "israel": {
+      "lead": {
+        "headline": "Hezbollah is rearming with Iranian cash, Reuters reports",
+        "standfirst": "Lebanese security sources describe three months of preparation for possible renewed fighting with Israel.",
+        "paragraphs": [
+          "Reuters, citing Lebanese security personnel, reports that Hezbollah has spent three months preparing for possible renewed war after receiving a cash infusion from Iran. Two Lebanese security sources said the group has rearmed since a lull in hostilities began in June, and one of them and another person close to Hezbollah said it received tens of millions of dollars from Iran. Several officials said it is also restoring command-and-control structures. Hezbollah acknowledged this month that explosives seized by Lebanese authorities were its own and intended for use against Israel.",
+          "Hezbollah's media office said Israel's presence on Lebanese territory gives it a legitimate right to resistance, and rejected the idea that its command structure had broken down. Reuters's sources said the group has not fully rebuilt its stockpiles or fighting force after heavy losses. The IDF declined to comment. A US State Department spokesman said Washington will keep squeezing Hezbollah's finances through sanctions. Full-scale fighting has not resumed in Lebanon, though Israel has continued strikes on Hezbollah targets in the south."
+        ],
+        "sources": [{"name": "Reuters via Times of Israel", "url": "https://www.timesofisrael.com/hezbollah-rearming-for-possible-renewed-conflict-with-israel-lebanese-sources-say/"}]
+      },
+      "briefs": [
+        {"headline": "Jordan strikes southern Syria after church attack", "text": "Jordan's air force struck what it called militant hideouts in southern Syria, saying suspects behind last week's deadly church attack in Jordan were linked to terrorist groups there. Syrian health officials said the toll rose to eight, and Syria closed the Nassib crossing, Jordan's only passenger and commercial crossing with Syria.", "source": "Times of Israel (Reuters, AFP)", "url": "https://www.timesofisrael.com/liveblog-october-27-2026/"},
+        {"headline": "Saudi-led coalition intercepts Houthi missiles", "text": "The Saudi-led coalition said it intercepted three Houthi ballistic missiles aimed at Saudi Arabia's Eastern Region. Delegations from Saudi Arabia, Pakistan and Turkey, signatories of the Mecca Defense Pact, met Iranian officials in Tehran to try to avert renewed fighting.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/saudi-defense-pact-states-hold-talks-in-iran-as-yemens-houthis-launch-more-attacks/"},
+        {"headline": "Israel rejects UN-sponsored probe's genocide finding", "text": "A UN-sponsored probe accused Israel of ongoing genocide in Gaza and crimes against humanity in the West Bank. Israel rejected the report as a misinformation campaign.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/un-sponsored-probe-accuses-israel-of-ongoing-gaza-genocide-west-bank-crimes-against-humanity/"}
+      ]
+    },
+    "ai": {
+      "lead": {
+        "headline": "Cloudflare details how a KV cache bug leaked other customers' data on Workers AI",
+        "standfirst": "A misconfigured cache pool and an inference-engine bug let 155 responses attend to stale pages from other users.",
+        "paragraphs": [
+          "Cloudflare published a post-mortem on cross-request KV cache exposure in its GLM-5.3 model on Workers AI. From August 27 to September 9, 2026, some responses contained data from other customers' earlier requests. A researcher at Knostic reported it through HackerOne on September 8, and Cloudflare took the model offline, fixed it and restored it on September 9. It says 155 responses were affected, all for prompts longer than 681,280 tokens, that no other Workers AI model was affected, and that it found no evidence of deliberate exploitation.",
+          "There were two causes. The model's context window was 1,048,576 tokens, but the prefill KV cache pool held only 681,280. And in SGLang's disaggregated prefill and decode mode, prompts too large for the pool were marked rejected but not aborted. They were replaced with a one-token placeholder and continued, so the decode node attended to stale KV pages holding other users' data. Cloudflare grew the pool to about 2.04 million tokens, patched SGLang (merged upstream, released in v0.5.20 through v0.5.22) and added deploy checks comparing pool size to context length."
+        ],
+        "sources": [{"name": "Cloudflare blog", "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"}]
+      },
+      "briefs": [
+        {"headline": "Ubicloud: constrained decoding lifts vLLM tool-call accuracy from 92 to 100 percent", "text": "Ubicloud reports that Kimi K2.6 on vLLM 0.28 produced schema-valid tool calls only 92 percent of the time, because upstream vLLM no longer enables constrained decoding by default. Turning it on explicitly with XGrammar structural tags, supported as a server flag in vLLM 0.31, brought accuracy to 100 percent on its benchmark with negligible overhead, per the post.", "source": "Ubicloud", "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm"},
+        {"headline": "OpenAI posts math preprint and science announcement", "text": "OpenAI published a post on scientific work with academic communities and hosted a preprint titled The Exponential Time Hypothesis Is False, dated October 25. Both drew heavy discussion on Hacker News. I could not independently review the claims, so treat them as the lab's own.", "source": "OpenAI", "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"},
+        {"headline": "Anthropic files an S-1 with the SEC", "text": "Anthropic's S-1 registration statement appeared on the SEC's EDGAR system and topped Hacker News. The filing is the primary source for the company's financials and risk disclosures.", "source": "SEC EDGAR", "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"}
+      ]
+    },
+    "nature": {
+      "headline": "A single antimatter particle in a cage opens door to 'revolutionary' physics",
+      "standfirst": "Physicists trapped one positron, the electron's antimatter twin, and measured its magnetic moment with very high precision.",
+      "paragraphs": [
+        "Nature's news team reports a new measurement on the positron, the antimatter counterpart of the electron. According to the feed summary, researchers held a single positron in a trap and measured its magnetic moment, a property describing how it responds to a magnetic field, to very high precision. The full article is behind a login, so this summary rests on the feed description and headline only.",
+        "The reason this matters is that physics predicts matter and antimatter should behave as mirror images. Any tiny difference between an electron and a positron would point to physics beyond the Standard Model, and it might help explain why the universe is made of matter."
+      ],
+      "key_points": [
+        "What they found: a very precise value for the magnetic moment of a trapped positron.",
+        "How: by confining a single particle in a trap and measuring its behavior in a magnetic field.",
+        "Why it matters: comparing it with the electron is a sharp test of matter-antimatter symmetry."
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03342-2",
+      "source": "nature.com"
+    },
+    "spacex": {"quiet": true, "note": "No confirmed Starship or major launch news found today."},
+    "study": {
+      "track": "Tuesday track: TCP in depth",
+      "title": "The congestion window and slow start: how TCP decides how fast to send",
+      "what": "The congestion window, cwnd, is the sender's own limit on bytes in flight. It starts small, doubles every round trip in slow start, then grows linearly in congestion avoidance.",
+      "how": "The sender may have at most min(cwnd, rwnd) unacknowledged bytes outstanding. Each ACK of new data grows cwnd during slow start by up to one MSS, so cwnd roughly doubles per RTT until it reaches ssthresh or a loss. After that it grows about one MSS per RTT. On loss, the sender cuts cwnd, classically to half in Reno, or to 0.7 of its value in CUBIC.",
+      "why_xlio": "XLIO runs its own user-space TCP stack, so cwnd, ssthresh and ACK clocking are computed in your process, not the kernel. Short-lived connections spend much of their life in slow start, which is why initial window size matters for latency.",
+      "example": "A courier who is not sure how busy the road is starts with a few parcels per trip, doubles the load each trip while trips succeed, and backs off sharply when a parcel goes missing.",
+      "numbers": [["Initial window (RFC 6928)", "10 segments, about 14,600 bytes at MSS 1460"], ["Bandwidth-delay product at 10 Gbps and 1 ms RTT", "1.25 MB"], ["Slow start growth", "doubles each RTT"], ["Reno loss response", "cwnd halved"], ["CUBIC loss response", "cwnd times 0.7"]],
+      "pitfall": "Slow start is not slow in growth rate; it is exponential. It is slow only relative to a pipe that is already known to be empty. Also, rwnd and cwnd are different: rwnd is the receiver's advertised buffer, cwnd is the sender's estimate of network capacity.",
+      "question": "At 10 Gbps and a 1 ms RTT, the pipe holds 1.25 MB. Starting from 10 segments of 1460 bytes, roughly how many round trips of slow start to fill it?",
+      "answer": "1.25 MB is about 856 segments. Doubling from 10 gives 20, 40, 80, 160, 320, 640 and 1280, so seven round trips, about 7 ms, assuming no loss and a large enough receive window.",
+      "reading": [{"name": "RFC 5681: TCP Congestion Control", "url": "https://www.rfc-editor.org/rfc/rfc5681"}, {"name": "RFC 6928: Increasing TCP's Initial Window", "url": "https://www.rfc-editor.org/rfc/rfc6928"}]
+    }
+  }
+}
