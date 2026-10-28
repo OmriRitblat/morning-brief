@@ -1,0 +1,157 @@
+{
+ "sections": {
+  "politics": {
+   "lead": {
+    "headline": "Israel votes: exit polls show neither bloc near 61 seats as both camps claim momentum",
+    "standfirst": "Record-level turnout produced an almost even split, so the Arab parties and the final count may decide who forms the next government.",
+    "paragraphs": [
+     "Israelis voted on Tuesday, and Ynet reports that turnout at the 10 p.m. close was 77.7 percent, or 5,695,682 voters, according to the Central Elections Committee. Ynet describes it as the highest at poll-closing time since 2001. The three TV exit polls (Kan 11, Channel 12 and Channel 13) first put the change bloc at 52 seats, Prime Minister Benjamin Netanyahu's allies at 50 and the Arab parties at 18. Channel 13's first projection gave Likud 25 seats, Gadi Eisenkot's Yashar! 23, Naftali Bennett and Yair Lapid's Beyachad 13 and the Joint List 11. Revised projections later gave Likud 27 on all three channels, with Channel 12 showing Netanyahu's bloc at 52 and the other bloc at 49, and Kan 11 and Channel 13 showing 51 each.",
+     "None of the polls gives either side the 61 seats needed for a majority in the 120-seat Knesset, and exit polls are projections, not results. Ynet reports that more than 650,000 double-envelope ballots still need verification and that counting could run until Friday morning. Speaking early Wednesday, Netanyahu said Likud was the largest party and called for a strong national right-wing government, rejecting any coalition that relies on Arab parties. Bennett declared that Netanyahu had lost, while saying official results must still be awaited. Eisenkot said it was his duty to try to form a government and told security chiefs he backed them. Ynet notes some small parties, including the Reservists-Economic Party and Haredi Public, were projected to fall below the 3.25 percent threshold."
+    ],
+    "sources": [
+     {
+      "name": "Ynet",
+      "url": "https://www.ynetnews.com/article/bknat9r3ge"
+     },
+     {
+      "name": "Ynet",
+      "url": "https://www.ynetnews.com/article/skd97fc2gl"
+     }
+    ]
+   },
+   "briefs": [
+    {
+     "headline": "Netanyahu: 'once-in-a-lifetime opportunity' on Iran with Trump",
+     "text": "In his early-Wednesday remarks, Netanyahu said Israel is stronger and Iran weaker than ever, and described a chance to remove the Iranian threat alongside President Trump. He also named the Joint List and the Islamic Movement's southern branch as parties he would not work with, according to Ynet.",
+     "source": "Ynet",
+     "url": "https://www.ynetnews.com/article/skro3prhfl"
+    },
+    {
+     "headline": "Bennett: 'The alliance of those who serve has defeated the alliance of draft dodgers'",
+     "text": "Bennett said at party headquarters that Netanyahu's bloc fell from 68 seats to 50, a claim Ynet reports as his own. Lapid said the bloc suffered a crushing defeat. Both stressed that official results are still pending.",
+     "source": "Ynet",
+     "url": "https://www.ynetnews.com/article/bjnx6sr3fx"
+    },
+    {
+     "headline": "Smotrich vows settlements as Religious Zionism is projected at six seats",
+     "text": "Finance Minister Bezalel Smotrich pledged to expand settlements in Gaza and the West Bank, per Ynet. His Religious Zionist Party is projected at six seats, after earlier polls suggested it might miss the threshold.",
+     "source": "Ynet",
+     "url": "https://www.ynetnews.com/article/s1xb8xkpgx"
+    }
+   ]
+  },
+  "israel": {
+   "lead": {
+    "headline": "Hezbollah is rebuilding with Iranian cash, Lebanese sources tell Reuters",
+    "standfirst": "Three months into a fragile ceasefire, the group is reportedly preparing for possible renewed fighting.",
+    "paragraphs": [
+     "According to a Reuters report carried by The Times of Israel on October 26, Hezbollah has spent about three months preparing for possible renewed fighting with Israel, using money from Iran. Lebanese security sources say it is rebuilding its arsenal, focusing on explosives and explosive drones, and restoring command structures damaged in recent battles. One source said Iran has provided tens of millions of dollars for military purposes, on top of about 200 million dollars earlier for displaced families.",
+     "The report says Hezbollah has not fully rebuilt its stockpiles or fighting force after heavy losses in two wars with Israel since 2024, and that Israeli forces control much of its southern Lebanese heartland. Hezbollah says Israel's presence gives it a right to resistance but has not said whether it will join new fighting, and its media office says it wants to avoid giving Israel a pretext for escalation. Israel declined to comment, and US officials said they will keep squeezing Hezbollah's finances."
+    ],
+    "sources": [
+     {
+      "name": "The Times of Israel (Reuters)",
+      "url": "https://www.timesofisrael.com/hezbollah-rearming-for-possible-renewed-conflict-with-israel-lebanese-sources-say/"
+     }
+    ]
+   },
+   "briefs": [
+    {
+     "headline": "IAEA: no sign Iran has tried to repair bombed nuclear sites",
+     "text": "IAEA chief Rafael Grossi told the UN Security Council the agency has not identified any activity to repair or reconstruct the sites since June 2025. He added that the agency cannot verify the status of Iran's near-weapons-grade uranium stockpile because it has had no access since the 2025 strikes.",
+     "source": "The Times of Israel (AP)",
+     "url": "https://www.timesofisrael.com/liveblog_entry/iran-hasnt-attempted-to-repair-nuclear-facilities-damaged-in-us-and-israeli-strikes-iaea-chief/"
+    },
+    {
+     "headline": "Report: Zamir was the only security chief to oppose pre-election action on Iran",
+     "text": "The Times of Israel carries a report that IDF Chief Eyal Zamir was the only security chief to oppose military action against Iran before the election. The Prime Minister's Office called related claims fake news.",
+     "source": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/report-zamir-the-only-security-chief-to-oppose-pre-election-military-action-against-iran/"
+    }
+   ]
+  },
+  "ai": {
+   "lead": {
+    "headline": "NVIDIA expands its open Nemotron family with a 120B multimodal agent model and edge 'Bolt' models",
+    "standfirst": "Open weights, open datasets and training recipes, aimed at agents that read images, web pages and PDFs, from data center to laptop.",
+    "paragraphs": [
+     "NVIDIA announced Nemotron 3.5 Super VL, an open 120-billion-parameter multimodal model for agents that work with images, web pages and PDFs. NVIDIA says it was trained on about 26 trillion tokens during pretraining and continued pretraining, then post-trained on roughly 3.8 million samples plus reinforcement learning. The company reports accuracy comparable to its largest reasoning model at roughly one-fifth the parameter count, and says it is 5x faster than the next-best model in its class. These are vendor-reported claims.",
+     "Two edge models joined it. Nemotron 3.5 Bolt 74B-A9B uses native 2-bit quantization to fit in 24 GB of memory, and NVIDIA reports it ranks first among open models in its class on PinchBench and second on BrowseComp. Bolt E4B is sized for 4 GB. For serving, NVIDIA claims up to 8x more users and 85 percent lower latency with Dynamo. Super VL and Bolt 74B-A9B are available now on Hugging Face, with Super VL also on OpenRouter and NVIDIA NIM. The post does not name the license, so check the model cards."
+    ],
+    "sources": [
+     {
+      "name": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+     }
+    ]
+   },
+   "briefs": [
+    {
+     "headline": "NVIDIA opens the Vera Rubin architecture at OCP Global Summit",
+     "text": "NVIDIA says it is opening the Vera Rubin architecture to help scale AI factories worldwide, citing ecosystem adoption. The post is from October 12; details are in the link.",
+     "source": "NVIDIA Blog",
+     "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+    },
+    {
+     "headline": "NVIDIA and Microsoft announce RTX Spark Windows PCs with AI agents",
+     "text": "NVIDIA and Microsoft announced a new class of Windows PCs built on RTX Spark with AI agents, and NVIDIA says software is ready for RTX Spark laptops, which it lists as arriving October 16.",
+     "source": "NVIDIA Blog",
+     "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+    }
+   ]
+  },
+  "nature": {
+   "headline": "Mysterious flickering brain signals could help to unlock secrets of consciousness",
+   "standfirst": "Monkey brain activity alternates about 15 times per second between patterns of aware and unaware object processing.",
+   "paragraphs": [
+    "Nature's news team reports on a study of monkey brains in which activity alternates roughly 15 times per second between patterns linked to being aware of an object and not being aware of it. The full text is behind a login, so this summary rests on the feed description only. The finding suggests that conscious perception may not be a steady state but a rapid flicker, which gives researchers a measurable signal to study."
+   ],
+   "key_points": [
+    "What they found: neural activity in monkeys alternates about 15 times per second between aware and unaware patterns for an object.",
+    "How: the feed description does not say; it refers to recordings of monkey brain activity.",
+    "Why it matters: a measurable rhythm could give consciousness research a concrete signal to test."
+   ],
+   "url": "https://www.nature.com/articles/d41586-026-03384-6",
+   "source": "nature.com"
+  },
+  "spacex": {
+   "quiet": true,
+   "note": "Nothing worth your time since yesterday. Next up is a routine Starlink Falcon 9 from Vandenberg, window opening October 30 at 06:02 Israel time."
+  },
+  "study": {
+   "track": "Wednesday track: architecture and performance",
+   "title": "NUMA: why the NIC's socket decides your latency",
+   "what": "On a multi-socket server, each CPU socket has its own memory controller and its own PCIe lanes. Memory and devices are 'local' to one socket and reached over a socket interconnect from the other. NUMA awareness means keeping a packet's thread, buffers and NIC on the same node.",
+   "how": "The ConnectX card sits on PCIe lanes owned by one socket. When it DMAs a packet into a buffer, the write goes to that buffer's home node. Linux places a page on the node of the thread that first touches it. If the polling thread runs on the other socket, every completion and payload read crosses the interconnect. Check with /sys/class/net/<if>/device/numa_node, then pin with numactl --cpunodebind and --membind.",
+   "why_xlio": "XLIO busy-polls completion queues and touches packet buffers constantly from user space. Threads and buffers on the NIC's node avoid interconnect hops on the hot path, and a local DMA write can land in that socket's last-level cache.",
+   "example": "Think of two offices in one company, each with its own mailroom. A parcel arriving at office one is fast to collect if you sit in office one. If you sit in office two, every parcel needs a courier between buildings.",
+   "numbers": [
+    [
+     "PCIe Gen5 x16 raw rate",
+     "32 GT/s per lane x 16 lanes, about 63 GB/s per direction after 128b/130b encoding"
+    ],
+    [
+     "400 Gb/s line rate",
+     "50 GB/s, so one NIC uses most of a Gen5 x16 link"
+    ],
+    [
+     "Remote vs local DRAM latency",
+     "typically around 1.5x to 2x, depends on the CPU"
+    ]
+   ],
+   "pitfall": "Spreading threads across all sockets does not automatically add speed; a thread far from its NIC and buffers can lose more to interconnect hops than it gains in cores.",
+   "question": "The NIC is on node 1, but the polling thread and its buffers are on node 0. What costs appear, and what is the fix?",
+   "answer": "Every DMA write from the NIC crosses the interconnect to node 0 memory, and every poll or payload read by the thread pays remote-access latency, while interconnect bandwidth is shared with other traffic. The fix is to read numa_node for the device and pin the thread and allocate its memory on that node.",
+   "reading": [
+    {
+     "name": "Linux kernel documentation: NUMA memory policy",
+     "url": "https://docs.kernel.org/admin-guide/mm/numa_memory_policy.html"
+    },
+    {
+     "name": "What Every Programmer Should Know About Memory (Drepper)",
+     "url": "https://akkadia.org/drepper/cpumemory.pdf"
+    }
+   ]
+  }
+ }
+}

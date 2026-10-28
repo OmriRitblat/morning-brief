@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Wednesday, 28 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl { margin: 0; }
+  .study dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd { margin: 4px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Wednesday, 28 October 2026</span><span>No. 3</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israeli politics</span><span class="pg">p. 2</span><span class="hl">Israel votes: exit polls show neither bloc near 61 seats as both camps claim momentum</span></button></li><li><button data-goto="2"><span class="sec">Israel today</span><span class="pg">p. 3</span><span class="hl">Hezbollah is rebuilding with Iranian cash, Lebanese sources tell Reuters</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA expands its open Nemotron family with a 120B multimodal agent model and edge &#x27;Bolt&#x27; models</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">Mysterious flickering brain signals could help to unlock secrets of consciousness</span></button></li><li><button data-goto="5"><span class="sec">SpaceX</span><span class="pg">p. 6</span><span class="hl">Quiet day</span></button></li><li><button data-goto="6"><span class="sec">Daily study</span><span class="pg">p. 7</span><span class="hl">NUMA: why the NIC&#x27;s socket decides your latency</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israeli politics" aria-label="Israeli politics"><div class="inner"><div class="folio"><strong>Israeli politics</strong><span>Page 2</span></div><article class="lead"><h2>Israel votes: exit polls show neither bloc near 61 seats as both camps claim momentum</h2><p class="stand">Record-level turnout produced an almost even split, so the Arab parties and the final count may decide who forms the next government.</p><div class="body"><p>Israelis voted on Tuesday, and Ynet reports that turnout at the 10 p.m. close was 77.7 percent, or 5,695,682 voters, according to the Central Elections Committee. Ynet describes it as the highest at poll-closing time since 2001. The three TV exit polls (Kan 11, Channel 12 and Channel 13) first put the change bloc at 52 seats, Prime Minister Benjamin Netanyahu&#x27;s allies at 50 and the Arab parties at 18. Channel 13&#x27;s first projection gave Likud 25 seats, Gadi Eisenkot&#x27;s Yashar! 23, Naftali Bennett and Yair Lapid&#x27;s Beyachad 13 and the Joint List 11. Revised projections later gave Likud 27 on all three channels, with Channel 12 showing Netanyahu&#x27;s bloc at 52 and the other bloc at 49, and Kan 11 and Channel 13 showing 51 each.</p><p>None of the polls gives either side the 61 seats needed for a majority in the 120-seat Knesset, and exit polls are projections, not results. Ynet reports that more than 650,000 double-envelope ballots still need verification and that counting could run until Friday morning. Speaking early Wednesday, Netanyahu said Likud was the largest party and called for a strong national right-wing government, rejecting any coalition that relies on Arab parties. Bennett declared that Netanyahu had lost, while saying official results must still be awaited. Eisenkot said it was his duty to try to form a government and told security chiefs he backed them. Ynet notes some small parties, including the Reservists-Economic Party and Haredi Public, were projected to fall below the 3.25 percent threshold.</p></div><p class="source">Sources: <a href="https://www.ynetnews.com/article/bknat9r3ge">Ynet</a>, <a href="https://www.ynetnews.com/article/skd97fc2gl">Ynet</a></p></article><div class="briefs"><div class="brief"><h3>Netanyahu: &#x27;once-in-a-lifetime opportunity&#x27; on Iran with Trump</h3><p>In his early-Wednesday remarks, Netanyahu said Israel is stronger and Iran weaker than ever, and described a chance to remove the Iranian threat alongside President Trump. He also named the Joint List and the Islamic Movement&#x27;s southern branch as parties he would not work with, according to Ynet. <a href="https://www.ynetnews.com/article/skro3prhfl">Ynet</a></p></div><div class="brief"><h3>Bennett: &#x27;The alliance of those who serve has defeated the alliance of draft dodgers&#x27;</h3><p>Bennett said at party headquarters that Netanyahu&#x27;s bloc fell from 68 seats to 50, a claim Ynet reports as his own. Lapid said the bloc suffered a crushing defeat. Both stressed that official results are still pending. <a href="https://www.ynetnews.com/article/bjnx6sr3fx">Ynet</a></p></div><div class="brief"><h3>Smotrich vows settlements as Religious Zionism is projected at six seats</h3><p>Finance Minister Bezalel Smotrich pledged to expand settlements in Gaza and the West Bank, per Ynet. His Religious Zionist Party is projected at six seats, after earlier polls suggested it might miss the threshold. <a href="https://www.ynetnews.com/article/s1xb8xkpgx">Ynet</a></p></div></div></div></section>
+<section class="page" data-name="Israel today" aria-label="Israel today"><div class="inner"><div class="folio"><strong>Israel today</strong><span>Page 3</span></div><article class="lead"><h2>Hezbollah is rebuilding with Iranian cash, Lebanese sources tell Reuters</h2><p class="stand">Three months into a fragile ceasefire, the group is reportedly preparing for possible renewed fighting.</p><div class="body"><p>According to a Reuters report carried by The Times of Israel on October 26, Hezbollah has spent about three months preparing for possible renewed fighting with Israel, using money from Iran. Lebanese security sources say it is rebuilding its arsenal, focusing on explosives and explosive drones, and restoring command structures damaged in recent battles. One source said Iran has provided tens of millions of dollars for military purposes, on top of about 200 million dollars earlier for displaced families.</p><p>The report says Hezbollah has not fully rebuilt its stockpiles or fighting force after heavy losses in two wars with Israel since 2024, and that Israeli forces control much of its southern Lebanese heartland. Hezbollah says Israel&#x27;s presence gives it a right to resistance but has not said whether it will join new fighting, and its media office says it wants to avoid giving Israel a pretext for escalation. Israel declined to comment, and US officials said they will keep squeezing Hezbollah&#x27;s finances.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/hezbollah-rearming-for-possible-renewed-conflict-with-israel-lebanese-sources-say/">The Times of Israel (Reuters)</a></p></article><div class="briefs"><div class="brief"><h3>IAEA: no sign Iran has tried to repair bombed nuclear sites</h3><p>IAEA chief Rafael Grossi told the UN Security Council the agency has not identified any activity to repair or reconstruct the sites since June 2025. He added that the agency cannot verify the status of Iran&#x27;s near-weapons-grade uranium stockpile because it has had no access since the 2025 strikes. <a href="https://www.timesofisrael.com/liveblog_entry/iran-hasnt-attempted-to-repair-nuclear-facilities-damaged-in-us-and-israeli-strikes-iaea-chief/">The Times of Israel (AP)</a></p></div><div class="brief"><h3>Report: Zamir was the only security chief to oppose pre-election action on Iran</h3><p>The Times of Israel carries a report that IDF Chief Eyal Zamir was the only security chief to oppose military action against Iran before the election. The Prime Minister&#x27;s Office called related claims fake news. <a href="https://www.timesofisrael.com/report-zamir-the-only-security-chief-to-oppose-pre-election-military-action-against-iran/">The Times of Israel</a></p></div></div></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead"><h2>NVIDIA expands its open Nemotron family with a 120B multimodal agent model and edge &#x27;Bolt&#x27; models</h2><p class="stand">Open weights, open datasets and training recipes, aimed at agents that read images, web pages and PDFs, from data center to laptop.</p><div class="body"><p>NVIDIA announced Nemotron 3.5 Super VL, an open 120-billion-parameter multimodal model for agents that work with images, web pages and PDFs. NVIDIA says it was trained on about 26 trillion tokens during pretraining and continued pretraining, then post-trained on roughly 3.8 million samples plus reinforcement learning. The company reports accuracy comparable to its largest reasoning model at roughly one-fifth the parameter count, and says it is 5x faster than the next-best model in its class. These are vendor-reported claims.</p><p>Two edge models joined it. Nemotron 3.5 Bolt 74B-A9B uses native 2-bit quantization to fit in 24 GB of memory, and NVIDIA reports it ranks first among open models in its class on PinchBench and second on BrowseComp. Bolt E4B is sized for 4 GB. For serving, NVIDIA claims up to 8x more users and 85 percent lower latency with Dynamo. Super VL and Bolt 74B-A9B are available now on Hugging Face, with Super VL also on OpenRouter and NVIDIA NIM. The post does not name the license, so check the model cards.</p></div><p class="source">Sources: <a href="https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/">NVIDIA Blog</a></p></article><div class="briefs"><div class="brief"><h3>NVIDIA opens the Vera Rubin architecture at OCP Global Summit</h3><p>NVIDIA says it is opening the Vera Rubin architecture to help scale AI factories worldwide, citing ecosystem adoption. The post is from October 12; details are in the link. <a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/">NVIDIA Blog</a></p></div><div class="brief"><h3>NVIDIA and Microsoft announce RTX Spark Windows PCs with AI agents</h3><p>NVIDIA and Microsoft announced a new class of Windows PCs built on RTX Spark with AI agents, and NVIDIA says software is ready for RTX Spark laptops, which it lists as arriving October 16. <a href="https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/">NVIDIA Blog</a></p></div></div></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>Mysterious flickering brain signals could help to unlock secrets of consciousness</h2><p class="stand">Monkey brain activity alternates about 15 times per second between patterns of aware and unaware object processing.</p><div class="body"><p>Nature&#x27;s news team reports on a study of monkey brains in which activity alternates roughly 15 times per second between patterns linked to being aware of an object and not being aware of it. The full text is behind a login, so this summary rests on the feed description only. The finding suggests that conscious perception may not be a steady state but a rapid flicker, which gives researchers a measurable signal to study.</p></div><ol class="points"><li>What they found: neural activity in monkeys alternates about 15 times per second between aware and unaware patterns for an object.</li><li>How: the feed description does not say; it refers to recordings of monkey brain activity.</li><li>Why it matters: a measurable rhythm could give consciousness research a concrete signal to test.</li></ol><a class="readlink" href="https://www.nature.com/articles/d41586-026-03384-6">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="SpaceX" aria-label="SpaceX"><div class="inner"><div class="folio"><strong>SpaceX</strong><span>Page 6</span></div><article class="lead"><h2>No major SpaceX news today</h2><p class="stand">Nothing worth your time since yesterday. Next up is a routine Starlink Falcon 9 from Vandenberg, window opening October 30 at 06:02 Israel time.</p></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 7</span></div><article class="lead study"><h2>NUMA: why the NIC&#x27;s socket decides your latency</h2><p class="stand">Wednesday track: architecture and performance</p><dl><dt>What it is</dt><dd>On a multi-socket server, each CPU socket has its own memory controller and its own PCIe lanes. Memory and devices are &#x27;local&#x27; to one socket and reached over a socket interconnect from the other. NUMA awareness means keeping a packet&#x27;s thread, buffers and NIC on the same node.</dd><dt>How it works</dt><dd>The ConnectX card sits on PCIe lanes owned by one socket. When it DMAs a packet into a buffer, the write goes to that buffer&#x27;s home node. Linux places a page on the node of the thread that first touches it. If the polling thread runs on the other socket, every completion and payload read crosses the interconnect. Check with /sys/class/net/&lt;if&gt;/device/numa_node, then pin with numactl --cpunodebind and --membind.</dd><dt>Why it matters for XLIO</dt><dd>XLIO busy-polls completion queues and touches packet buffers constantly from user space. Threads and buffers on the NIC&#x27;s node avoid interconnect hops on the hot path, and a local DMA write can land in that socket&#x27;s last-level cache.</dd><dt>Example</dt><dd>Think of two offices in one company, each with its own mailroom. A parcel arriving at office one is fast to collect if you sit in office one. If you sit in office two, every parcel needs a courier between buildings.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>PCIe Gen5 x16 raw rate</td><td>32 GT/s per lane x 16 lanes, about 63 GB/s per direction after 128b/130b encoding</td></tr><tr><td>400 Gb/s line rate</td><td>50 GB/s, so one NIC uses most of a Gen5 x16 link</td></tr><tr><td>Remote vs local DRAM latency</td><td>typically around 1.5x to 2x, depends on the CPU</td></tr></table></dd><dt>Common pitfall</dt><dd>Spreading threads across all sockets does not automatically add speed; a thread far from its NIC and buffers can lose more to interconnect hops than it gains in cores.</dd></dl><details><summary>Self-test: The NIC is on node 1, but the polling thread and its buffers are on node 0. What costs appear, and what is the fix?</summary><p>Every DMA write from the NIC crosses the interconnect to node 0 memory, and every poll or payload read by the thread pays remote-access latency, while interconnect bandwidth is shared with other traffic. The fix is to read numa_node for the device and pin the thread and allocate its memory on that node.</p></details><p class="source">Further reading: <a href="https://docs.kernel.org/admin-guide/mm/numa_memory_policy.html">Linux kernel documentation: NUMA memory policy</a>, <a href="https://akkadia.org/drepper/cpumemory.pdf">What Every Programmer Should Know About Memory (Drepper)</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
