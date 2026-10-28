@@ -29,20 +29,21 @@ def call(method, **kwargs):
 
 
 def main(date):
-    data = json.loads((ROOT / "docs" / "issues" / date / "issue.json").read_text())["sections"]
+    data = json.loads((ROOT / "docs" / "issues" / date / "issue.json").read_text(encoding="utf-8"))["sections"]
     d = datetime.date.fromisoformat(date)
     esc = lambda s: html.escape(s, quote=False)
 
     lines = [
         f"<b>The Seven O'Clock</b> · {d:%A}, {d.day} {d:%B}",
         "",
-        f"🏛 {esc(data['politics']['lead']['headline'])}",
         f"🇮🇱 {esc(data['israel']['lead']['headline'])}",
-        f"🤖 {esc(data['ai']['lead']['headline'])}",
-        f"🌿 {esc(data['nature']['headline'])}",
     ]
-    if not data["spacex"].get("quiet"):
-        lines.append(f"🚀 {esc(data['spacex']['lead']['headline'])}")
+    lines += [f"🇺🇸 {esc(it['headline'])}" for it in data["us"]["items"]]
+    lines += [f"🤖 {esc(s['headline'])}" for s in data["ai"]["stories"]]
+    lines.append(f"🌿 {esc(data['nature']['headline'])}")
+    spacex = data.get("spacex")
+    if spacex and not spacex.get("quiet"):
+        lines.append(f"🚀 {esc(spacex['lead']['headline'])}")
     lines += [f"📘 {esc(data['study']['title'])}", "", f'<a href="{PAGES}/issues/{date}/">Read today\'s issue</a>']
 
     call("sendMessage", data={"chat_id": CHAT, "text": "\n".join(lines), "parse_mode": "HTML"})

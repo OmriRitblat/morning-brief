@@ -43,7 +43,7 @@ async def speak(text, voices):
 
 async def main(date):
     src = OUT / f"{date}.script.json"
-    segments = json.loads(src.read_text())["segments"]
+    segments = json.loads(src.read_text(encoding="utf-8"))["segments"]
     words = sum(len(s["text"].split()) for s in segments)
     print(f"{len(segments)} segments, {words} words, about {words / 150:.1f} min")
 

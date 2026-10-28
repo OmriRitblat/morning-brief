@@ -5,5 +5,5 @@ from pathlib import Path
 
 docs = Path(__file__).resolve().parent.parent / "docs" / "issues"
 for f in sorted(docs.glob("*/issue.json"))[-90:]:
-    s = json.loads(f.read_text())["sections"]["study"]
+    s = json.loads(f.read_text(encoding="utf-8"))["sections"]["study"]
     print(f"{f.parent.name} | {s['track']} | {s['title']}")

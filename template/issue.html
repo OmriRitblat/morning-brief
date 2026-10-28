@@ -80,9 +80,22 @@
   .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
     border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
 
-  .study dl { margin: 0; }
-  .study dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
-  .study dd { margin: 4px 0 0; }
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
   .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
   .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
   .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }

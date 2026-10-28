@@ -11,7 +11,7 @@ The routine runs at 06:30. Claude researches the news, writes `docs/issues/<date
 3. commits and pushes to `main`, so GitHub Pages publishes it
 4. sends the headlines, the link and the MP3 to Telegram (`scripts/send_telegram.py`)
 
-The routine's instructions live in `ROUTINE_PROMPT.md`, so you change the newsletter by editing that file. The MP3s are not committed, to keep the repo small. The podcast lives in Telegram.
+The routine's instructions live in `ROUTINE_PROMPT.md`, so you change the newsletter by editing that file. The daily study lessons follow `STUDY_PLAN.md`, one track per weekday, from the basics up. The MP3s are not committed, to keep the repo small. The podcast lives in Telegram.
 
 ## Setup
 

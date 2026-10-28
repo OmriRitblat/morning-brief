@@ -1,44 +1,75 @@
 {
   "sections": {
-    "politics": {
+    "israel": {
       "lead": {
-        "headline": "Example: lead political story headline",
+        "headline": "Example: the most important Israel story of the day",
         "standfirst": "One sentence on why it matters.",
         "paragraphs": ["What happened, who is involved, what changes.", "Context, and what comes next and when."],
         "sources": [{"name": "Times of Israel", "url": "https://www.timesofisrael.com/"}]
       },
       "briefs": [
-        {"headline": "Example brief", "text": "Two or three sentences.", "source": "Haaretz", "url": "https://www.haaretz.com/"}
+        {"headline": "Example politics brief", "text": "Two or three sentences.", "source": "Haaretz", "url": "https://www.haaretz.com/"},
+        {"headline": "Example economy or society brief", "text": "Two or three sentences.", "source": "Ynet", "url": "https://www.ynetnews.com/"}
       ]
     },
-    "israel": {
-      "lead": {"headline": "Example: main non-political story", "standfirst": "Why it matters.", "paragraphs": ["Facts.", "Context."], "sources": [{"name": "Ynet", "url": "https://www.ynetnews.com/"}]},
-      "briefs": []
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Example: one major US political or national development",
+          "paragraphs": ["What happened, in plain words.", "What happens next."],
+          "why_it_matters": "One or two sentences on who it affects and how.",
+          "sources": [{"name": "AP News", "url": "https://apnews.com/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Example: one important market or big-company development",
+          "paragraphs": ["What happened and the key number.", "Why investors reacted that way."],
+          "why_it_matters": "One or two sentences on the bigger picture.",
+          "sources": [{"name": "Reuters", "url": "https://www.reuters.com/markets/"}]
+        }
+      ]
     },
     "ai": {
-      "lead": {"headline": "Example: the day's key AI release", "standfirst": "What it changes.", "paragraphs": ["The claim and the numbers.", "How it compares."], "sources": [{"name": "Primary source", "url": "https://example.com/"}]},
-      "briefs": []
+      "stories": [
+        {
+          "headline": "Example: the day's most important AI development",
+          "standfirst": "The one-line takeaway.",
+          "what_happened": "Who released or announced what, with the key facts and numbers.",
+          "what_it_means": "The same thing explained simply, for someone who doesn't know the field.",
+          "why_it_matters": "Why it's a big deal and a concrete way someone could use it.",
+          "terms": [["Open weights", "The model's trained numbers are published, so anyone can download and run it on their own computers."]],
+          "sources": [{"name": "Primary source", "url": "https://example.com/"}]
+        }
+      ]
     },
     "nature": {
       "headline": "Example: readable Nature news story",
-      "standfirst": "The finding in one line.",
-      "paragraphs": ["Plain-language summary."],
+      "standfirst": "The finding in one simple line.",
+      "paragraphs": ["Plain-language summary: the main idea and what was discovered."],
       "key_points": ["What they found.", "How they found it.", "Why it matters."],
+      "terms": [["Example term", "What it means in everyday words."]],
       "url": "https://www.nature.com/news",
       "source": "nature.com"
     },
-    "spacex": {"quiet": true, "note": "Nothing worth your time since yesterday."},
     "study": {
       "track": "Monday track: RDMA and NICs",
       "title": "Completion queues: how the NIC tells you work is done",
-      "what": "A ring buffer where the NIC writes a completion entry (CQE) when a work request finishes.",
-      "how": "App posts a WQE and rings the doorbell; the NIC DMA-writes a CQE and flips an ownership bit; the app polls or arms the CQ for an event.",
-      "why_xlio": "XLIO polls CQs from user space instead of waiting on interrupts and the kernel.",
-      "example": "Optional analogy or concrete scenario.",
-      "numbers": [["Typical CQE size", "64 bytes"], ["Busy-poll check", "tens of ns"]],
-      "pitfall": "Pure polling burns a core even when idle.",
-      "question": "Why can several QPs share one CQ?",
-      "answer": "Each CQE carries its QP number, so one poll loop can serve many connections.",
+      "big_idea": "When the network card finishes a job, it leaves a short note in a shared list in memory, and your program checks that list instead of waiting for the operating system to tell it.",
+      "background": ["What you need to know first, explained from scratch.", "A second paragraph that builds on the first."],
+      "steps": [
+        "The app writes a work request describing what to send.",
+        "The app rings the doorbell: one write that tells the NIC there's new work.",
+        "The NIC does the work and writes a completion entry into the completion queue.",
+        "The app polls the queue, sees the entry and knows the job is done."
+      ],
+      "example": "A concrete, practical scenario that shows the idea working.",
+      "why_xlio": "XLIO polls completion queues from user space instead of waiting on interrupts and the kernel.",
+      "numbers": [["Typical completion entry size", "64 bytes"], ["One poll check", "tens of nanoseconds"]],
+      "pitfall": "A common misconception, and why it's wrong.",
+      "terms": [["NIC", "Network interface card: the hardware that sends and receives network packets."]],
+      "question": "Why can several connections share one completion queue?",
+      "answer": "Each completion entry says which connection it belongs to, so one polling loop can serve many connections.",
       "reading": [{"name": "RDMA Aware Networks Programming User Manual", "url": "https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17"}]
     }
   }
