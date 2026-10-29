@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Israel's election leaves neither main bloc with a majority",
+        "standfirst": "With about 90% of ballots counted, Netanyahu's bloc has 53 seats and Gadi Eisenkot's has 48, and 61 are needed to govern.",
+        "paragraphs": [
+          "Israelis voted on Tuesday, and the Times of Israel reports that with 89.8% of votes counted on Wednesday night, the bloc led by Prime Minister Benjamin Netanyahu has 53 of the Knesset's 120 seats. The bloc led by Gadi Eisenkot has 48, and Arab-led parties have 19, nearly double their 10 seats today and above their previous high of 15. By party, Likud has 26 seats, Eisenkot's Yashar 21, Naftali Bennett's B'Yachad 12 and the Joint List 12. A bloc needs 61 seats to form a government, so Netanyahu is eight short and Eisenkot is 13 short. The Netanyahu bloc held 68 seats in the outgoing Knesset. Exit polls on Tuesday night had put Eisenkot's bloc two or three seats ahead; the count moved in Netanyahu's favor as it went on.",
+          "Both men say they will form the next government. Per the Times of Israel, the Zionist opposition parties, except the Democrats, have ruled out cooperating with the two Arab-led parties, Ra'am and the Joint List, whose seats would otherwise give an anti-Netanyahu bloc a majority. Ynet reports that the Arab parties offered to help remove Netanyahu without joining a coalition, and that Eisenkot had not responded. Likud has claimed the election was 'stolen' by the Arab parties, while President Isaac Herzog urged parties to avoid another election and to keep an 'open mind' in coalition talks. The count is not final: roughly 430,000 to 480,000 ballots cast by soldiers, prisoners and diplomats abroad were due to be counted starting early Thursday, and each seat is worth about 40,000 votes. Official final results are expected on November 4."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/with-85-of-votes-counted-netanyahu-bloc-has-53-seats-eisenkots-48-arab-parties-surge-to-19/"},
+          {"name": "Ynet", "url": "https://www.ynetnews.com/article/hkiugzltzg"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Likud accuses Arab parties of 'stealing' the election", "text": "Likud said the election was 'stolen' by the Arab parties following their record performance, and Ynet reports the party accused them of election fraud. The reports we found do not describe evidence offered for the claim.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/likud-claims-election-stolen-by-arab-parties-following-their-record-performance/"},
+        {"headline": "Tel Aviv stocks fall and the shekel weakens", "text": "Tel Aviv stocks dropped and the shekel slid on Wednesday after the election results, as the inconclusive outcome raised concern about political deadlock, according to the Times of Israel.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/tel-aviv-stocks-drop-and-shekel-slides-as-election-results-dent-hopes-for-change/"},
+        {"headline": "Vance reportedly reached out to a top Iranian security official", "text": "Ynet, citing the Wall Street Journal, reports that US Vice President JD Vance sent a letter to Iran's security chief at Trump's direction to revive talks, while the US weighs new strikes. The Times of Israel notes that Trump denied it.", "source": "Ynet", "url": "https://www.ynetnews.com/article/r1yu3zlafe"},
+        {"headline": "Teenage attacker shot dead at Israel's embassy in Belgrade", "text": "A knife-wielding minor attacked a guard at the Israeli embassy in Belgrade and was shot dead, the Times of Israel reports. Serbian authorities describe it as a terror attack.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/knife-wielding-minor-attacks-guard-at-israeli-embassy-in-belgrade-is-shot-dead/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Hegseth removes the Joint Chiefs' top war planner",
+          "paragraphs": [
+            "Defense Secretary Pete Hegseth removed Army Lt. Gen. Brett Sylvia, who led strategy, plans and policy on the Joint Chiefs of Staff, the group of the country's top military officers. The Atlantic reported it first. A defense official, speaking anonymously, said no reason was given and no replacement has been named. A Joint Staff spokesperson thanked Sylvia for 32 years of service.",
+            "He is the second general to leave that post under Hegseth; his predecessor was forced to retire last October. The firing comes as President Trump is reported to be weighing renewed strikes on Iran in what the Times of Israel calls an eight-month-long war. The reports we found do not say whether the two are connected."
+          ],
+          "why_it_matters": "The officer who leads war planning shapes the options the president sees, so a sudden change at that post during an active conflict is closely watched, even though no reason has been given.",
+          "sources": [{"name": "Times of Israel (AP)", "url": "https://www.timesofisrael.com/liveblog_entry/hegseth-fires-pentagons-top-military-planner-as-trump-weighs-new-iran-strikes/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "The Fed holds rates steady, with two officials wanting a hike",
+          "paragraphs": [
+            "The Federal Reserve left its main interest rate at 3.75% to 4% on Wednesday, in a 10 to 2 vote. Lisa Cook and Beth Hammack voted against the decision because they preferred raising the rate by a quarter of a percentage point.",
+            "The Fed's statement says the economy is expanding at a strong pace and that inflation remains elevated. CNBC reported that markets had priced less than a 10% chance of a hike, so the hold was widely expected, and the statement upgraded its description of activity from 'solid' in September."
+          ],
+          "why_it_matters": "Two votes for a hike, plus 'elevated' inflation, signal the Fed is leaning toward raising rates, not cutting them. That affects mortgage and loan costs and what investors expect from stocks."
+          ,
+          "sources": [{"name": "Federal Reserve", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"}, {"name": "CNBC", "url": "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html"}]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "Google unveils Gemini 4 Carbon, aimed at long, multi-step coding and security work",
+          "standfirst": "Google calls it its strongest model, but for now only security defenders and trusted partners can use it.",
+          "what_happened": "Google announced Gemini 4 Carbon on October 28. Google says it is built for long agentic engineering tasks, such as finding the root cause of a bug and patching it across a large codebase. Google reports it ranks first on the Artificial Analysis Intelligence Index v5.0 with a score of 59, scores 88.2% on SEC-bench Pro (finding vulnerabilities), 54.8% on ExploitGym (exploiting them) and 71.0% on CWE-bench (patching). Google says cheating on Terminal-Bench 4.0 fell to 0.0%. Introductory pricing is $2 per million input tokens and $10 per million output tokens, rising to $4 and $20 later. Access starts with a subset of cyber defenders and expands to trusted partners; Google gives no date for general availability and did not disclose the model's size or architecture.",
+          "what_it_means": "Think of an AI that can be handed a messy software project and work on it for hours, not minutes: read the code, find a flaw, write a fix and check it. Google is saying this model is better at that than earlier ones, and that it is also less likely to take shortcuts such as gaming a test. Because the same skill can be used to attack software, Google is releasing it to defenders first, and says it is taking part in the US government's voluntary pre-release testing.",
+          "why_it_matters": "If the numbers hold up, a security team could point it at its own code and get back a list of real vulnerabilities with proposed patches. All scores here are Google's own claims and have not been independently checked.",
+          "terms": [["Agentic", "An AI that doesn't just answer a question but takes a series of actions, like running code or editing files, to finish a bigger job."], ["Token", "A small chunk of text, roughly three quarters of a word, which is how AI services measure what you read and write."], ["Benchmark", "A standard test used to compare models, like an exam every model takes."]],
+          "sources": [{"name": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"}]
+        },
+        {
+          "headline": "NVIDIA shows how to make big AI models answer faster on a small desktop machine",
+          "standfirst": "The slow part of generating text on the DGX Spark is reading the model from memory, not doing math.",
+          "what_happened": "In an October blog post, NVIDIA profiled a model called Ling-3.0-flash running one request at a time on its DGX Spark desktop AI computer and found that generating each word was limited by memory: the time went into reading the model's weights. It then tried three fixes. A faster kernel library (Humming) cut time per output token from 27.71 ms to 25.35 ms. Shrinking the final scoring layer to 8-bit numbers (FP8) raised decode speed 21.7% combined with the first fix. Speculative decoding, where the model guesses several words ahead and checks them, averaged 3.90 accepted tokens per round and raised throughput 185.1% on a synthetic test. NVIDIA says all three together raised throughput 42.5% on a math test set with no detectable accuracy change.",
+          "what_it_means": "Imagine a chef who cooks instantly but has to walk to a far pantry for every ingredient. Making the chef faster doesn't help; carrying more ingredients per trip or needing fewer ingredients does. That is what these fixes do: read less data per word, or produce several words per read.",
+          "why_it_matters": "It shows that for running AI models on one machine, memory speed matters more than raw compute, and the same ideas apply in data centers. These are NVIDIA's own measurements on one model and one machine.",
+          "terms": [["Memory-bound", "Limited by how fast data can be fetched from memory, not by how fast the chip can calculate."], ["Speculative decoding", "A trick where a model guesses several next words at once and then checks the guesses in a single pass, keeping the correct ones."], ["Quantization", "Storing the model's numbers with fewer bits so they take less space and are faster to read."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"}]
+        },
+        {
+          "headline": "Cursor releases an SDK for building your own coding agents",
+          "standfirst": "The tools Cursor uses internally to build its review bots are now generally available.",
+          "what_happened": "Cursor released its Agent SDK on October 20, the framework it says it uses for its own managed agents such as Bugbot and Security Reviewer. Agents are defined as code: prompts are Markdown files, tools are TypeScript functions, and tests of agent quality live alongside them. Agents can react to pull requests on GitHub, GitLab or Bitbucket, and can hand work to parallel sub-agents. Cursor says one team built a pull-request reviewer in about a day.",
+          "what_it_means": "A company can now write a small program that wakes up whenever someone proposes a code change, reads it, checks it against the team's own rules and comments or approves, the way a tireless junior reviewer would.",
+          "why_it_matters": "It treats AI agents as ordinary software that is versioned, tested and deployed, which is what makes them practical inside a company. That is Cursor's description of its own product.",
+          "terms": [["Pull request", "A proposed code change that teammates review before it is merged into the main project."], ["Subagent", "A helper agent that a main agent hands part of a job to, so several parts can be done at once."]],
+          "sources": [{"name": "Cursor", "url": "https://cursor.com/blog/agent-sdk"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "Could a giant sunshade in space 'solve global warming'? Scientists are taking the idea seriously",
+      "standfirst": "A detailed analysis suggests falling rocket launch costs could make a space sunshade feasible within a few decades.",
+      "paragraphs": [
+        "The idea is simple: park something huge between the Sun and Earth so that a small share of sunlight never arrives, cooling the planet a little. Nature's news team reports that a detailed new analysis suggests that, as rocket launches get cheaper, building such a sunshade could become feasible within a few decades.",
+        "This summary is based only on Nature's published description of the article, because the full text is behind a login. It does not cover the costs, sizes or designs in the analysis, or what critics say."
+      ],
+      "key_points": ["What they found: a detailed analysis suggests a space sunshade could become feasible within a few decades.", "How they got there: the analysis points to falling rocket launch costs as the key change.", "Why it matters: it is a proposal for cooling the planet that scientists are now taking seriously, though the full article is needed for the details."],
+      "terms": [["Sunshade", "A structure or swarm of small spacecraft placed in space to block part of the sunlight heading to Earth."]],
+      "url": "https://www.nature.com/articles/d41586-026-03415-2",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Thursday track: AI compute and interconnect",
+      "title": "Why AI runs on GPUs: matrix math and massive parallelism",
+      "big_idea": "Training and running an AI model is mostly one simple operation, multiplying big grids of numbers, repeated billions of times. A GPU has thousands of small workers that do many of those multiplications at the same moment, which is exactly what the job needs.",
+      "background": [
+        "A CPU, the main processor in a computer, has a small number of powerful cores, typically a few dozen in a server. Each is built to run one complicated sequence of instructions as fast as possible, with lots of hardware for guessing which branch a program takes next. It is like a few expert chefs who can cook any dish.",
+        "A GPU (graphics processing unit) was originally built to color millions of screen pixels at once. Each pixel's calculation is simple and independent of the others, so a GPU packs thousands of simpler cores and gives up speed on any single task to finish a huge number of identical tasks at once. It is like a kitchen of thousands of line cooks each chopping one onion.",
+        "A neural network is mostly layers of numbers called weights. To process an input, you arrange the input as a grid of numbers (a matrix) and multiply it by the layer's weight matrix, then repeat for the next layer. Every output number in a matrix multiplication can be computed independently of the others, so the work splits perfectly across thousands of workers."
+      ],
+      "steps": [
+        "A prompt is converted into numbers and arranged as a matrix.",
+        "The GPU loads a layer's weights from its memory.",
+        "The matrix is split into small tiles, and each group of cores multiplies its tile and adds up the results at the same time.",
+        "Special units called tensor cores do a small matrix multiply-and-add as a single operation, which is much faster than doing it one number at a time.",
+        "The result goes to the next layer, and this repeats through dozens of layers.",
+        "The final numbers are turned back into a word or a prediction."
+      ],
+      "example": "Multiplying a matrix of size M by K with one of size K by N takes about 2 x M x N x K arithmetic operations. For a 4,096 by 4,096 matrix times another of the same size, that is roughly 137 billion operations. A CPU core doing them one after another would take many seconds; a modern data center GPU does it in a few milliseconds because thousands of cores work on separate tiles together.",
+      "why_xlio": "A GPU server only works fast if data reaches it fast. Many GPUs train one model together and constantly exchange results over the network, so the network cards and software NVIDIA's networking team builds, like the ConnectX cards XLIO runs on, decide whether those expensive GPUs are busy or waiting.",
+      "numbers": [["NVIDIA H100 (SXM) CUDA cores", "16,896"], ["H100 (SXM) 16-bit matrix math, dense", "about 989 trillion operations per second"], ["H100 (SXM) memory bandwidth", "about 3.35 terabytes per second"], ["H100 (SXM) memory size", "80 GB"]],
+      "pitfall": "A common misconception is that a GPU is simply a faster CPU. It isn't: for one long, branching task a CPU core is faster. A GPU wins only when there is a huge amount of similar, independent work, which is why AI math suits it so well.",
+      "terms": [["Matrix", "A rectangular grid of numbers."], ["Weights", "The numbers inside a model that were learned during training and determine its behavior."], ["Tensor core", "A special unit inside NVIDIA GPUs that multiplies small blocks of numbers in one step."], ["Parallelism", "Doing many things at the same time instead of one after another."]],
+      "question": "Why does splitting a matrix multiplication across thousands of GPU cores work so well?",
+      "answer": "Each output number depends only on one row and one column of the inputs, not on the other outputs, so thousands of workers can compute different pieces at the same time without waiting for each other.",
+      "reading": [{"name": "NVIDIA Deep Learning Performance: GPU Background", "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html"}, {"name": "NVIDIA H100 Tensor Core GPU", "url": "https://www.nvidia.com/en-us/data-center/h100/"}]
+    }
+  }
+}

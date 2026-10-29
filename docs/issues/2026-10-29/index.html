@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Thursday, 29 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Thursday, 29 October 2026</span><span>No. 4</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s election leaves neither main bloc with a majority</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Hegseth removes the Joint Chiefs&#x27; top war planner · The Fed holds rates steady, with two officials wanting a hike</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">Google unveils Gemini 4 Carbon, aimed at long, multi-step coding and security work</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">Could a giant sunshade in space &#x27;solve global warming&#x27;? Scientists are taking the idea seriously</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">Why AI runs on GPUs: matrix math and massive parallelism</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s election leaves neither main bloc with a majority</h2><p class="stand">With about 90% of ballots counted, Netanyahu&#x27;s bloc has 53 seats and Gadi Eisenkot&#x27;s has 48, and 61 are needed to govern.</p><div class="body"><p>Israelis voted on Tuesday, and the Times of Israel reports that with 89.8% of votes counted on Wednesday night, the bloc led by Prime Minister Benjamin Netanyahu has 53 of the Knesset&#x27;s 120 seats. The bloc led by Gadi Eisenkot has 48, and Arab-led parties have 19, nearly double their 10 seats today and above their previous high of 15. By party, Likud has 26 seats, Eisenkot&#x27;s Yashar 21, Naftali Bennett&#x27;s B&#x27;Yachad 12 and the Joint List 12. A bloc needs 61 seats to form a government, so Netanyahu is eight short and Eisenkot is 13 short. The Netanyahu bloc held 68 seats in the outgoing Knesset. Exit polls on Tuesday night had put Eisenkot&#x27;s bloc two or three seats ahead; the count moved in Netanyahu&#x27;s favor as it went on.</p><p>Both men say they will form the next government. Per the Times of Israel, the Zionist opposition parties, except the Democrats, have ruled out cooperating with the two Arab-led parties, Ra&#x27;am and the Joint List, whose seats would otherwise give an anti-Netanyahu bloc a majority. Ynet reports that the Arab parties offered to help remove Netanyahu without joining a coalition, and that Eisenkot had not responded. Likud has claimed the election was &#x27;stolen&#x27; by the Arab parties, while President Isaac Herzog urged parties to avoid another election and to keep an &#x27;open mind&#x27; in coalition talks. The count is not final: roughly 430,000 to 480,000 ballots cast by soldiers, prisoners and diplomats abroad were due to be counted starting early Thursday, and each seat is worth about 40,000 votes. Official final results are expected on November 4.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/with-85-of-votes-counted-netanyahu-bloc-has-53-seats-eisenkots-48-arab-parties-surge-to-19/">Times of Israel</a>, <a href="https://www.ynetnews.com/article/hkiugzltzg">Ynet</a></p></article><div class="briefs"><div class="brief"><h3>Likud accuses Arab parties of &#x27;stealing&#x27; the election</h3><p>Likud said the election was &#x27;stolen&#x27; by the Arab parties following their record performance, and Ynet reports the party accused them of election fraud. The reports we found do not describe evidence offered for the claim. <a href="https://www.timesofisrael.com/likud-claims-election-stolen-by-arab-parties-following-their-record-performance/">Times of Israel</a></p></div><div class="brief"><h3>Tel Aviv stocks fall and the shekel weakens</h3><p>Tel Aviv stocks dropped and the shekel slid on Wednesday after the election results, as the inconclusive outcome raised concern about political deadlock, according to the Times of Israel. <a href="https://www.timesofisrael.com/tel-aviv-stocks-drop-and-shekel-slides-as-election-results-dent-hopes-for-change/">Times of Israel</a></p></div><div class="brief"><h3>Vance reportedly reached out to a top Iranian security official</h3><p>Ynet, citing the Wall Street Journal, reports that US Vice President JD Vance sent a letter to Iran&#x27;s security chief at Trump&#x27;s direction to revive talks, while the US weighs new strikes. The Times of Israel notes that Trump denied it. <a href="https://www.ynetnews.com/article/r1yu3zlafe">Ynet</a></p></div><div class="brief"><h3>Teenage attacker shot dead at Israel&#x27;s embassy in Belgrade</h3><p>A knife-wielding minor attacked a guard at the Israeli embassy in Belgrade and was shot dead, the Times of Israel reports. Serbian authorities describe it as a terror attack. <a href="https://www.timesofisrael.com/knife-wielding-minor-attacks-guard-at-israeli-embassy-in-belgrade-is-shot-dead/">Times of Israel</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Hegseth removes the Joint Chiefs&#x27; top war planner</h2><div class="body"><p>Defense Secretary Pete Hegseth removed Army Lt. Gen. Brett Sylvia, who led strategy, plans and policy on the Joint Chiefs of Staff, the group of the country&#x27;s top military officers. The Atlantic reported it first. A defense official, speaking anonymously, said no reason was given and no replacement has been named. A Joint Staff spokesperson thanked Sylvia for 32 years of service.</p><p>He is the second general to leave that post under Hegseth; his predecessor was forced to retire last October. The firing comes as President Trump is reported to be weighing renewed strikes on Iran in what the Times of Israel calls an eight-month-long war. The reports we found do not say whether the two are connected.</p></div><p class="why"><strong>Why it matters:</strong> The officer who leads war planning shapes the options the president sees, so a sudden change at that post during an active conflict is closely watched, even though no reason has been given.</p><p class="source">Sources: <a href="https://www.timesofisrael.com/liveblog_entry/hegseth-fires-pentagons-top-military-planner-as-trump-weighs-new-iran-strikes/">Times of Israel (AP)</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>The Fed holds rates steady, with two officials wanting a hike</h2><div class="body"><p>The Federal Reserve left its main interest rate at 3.75% to 4% on Wednesday, in a 10 to 2 vote. Lisa Cook and Beth Hammack voted against the decision because they preferred raising the rate by a quarter of a percentage point.</p><p>The Fed&#x27;s statement says the economy is expanding at a strong pace and that inflation remains elevated. CNBC reported that markets had priced less than a 10% chance of a hike, so the hold was widely expected, and the statement upgraded its description of activity from &#x27;solid&#x27; in September.</p></div><p class="why"><strong>Why it matters:</strong> Two votes for a hike, plus &#x27;elevated&#x27; inflation, signal the Fed is leaning toward raising rates, not cutting them. That affects mortgage and loan costs and what investors expect from stocks.</p><p class="source">Sources: <a href="https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm">Federal Reserve</a>, <a href="https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html">CNBC</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>Google unveils Gemini 4 Carbon, aimed at long, multi-step coding and security work</h2><p class="stand">Google calls it its strongest model, but for now only security defenders and trusted partners can use it.</p><dl><dt>What happened</dt><dd>Google announced Gemini 4 Carbon on October 28. Google says it is built for long agentic engineering tasks, such as finding the root cause of a bug and patching it across a large codebase. Google reports it ranks first on the Artificial Analysis Intelligence Index v5.0 with a score of 59, scores 88.2% on SEC-bench Pro (finding vulnerabilities), 54.8% on ExploitGym (exploiting them) and 71.0% on CWE-bench (patching). Google says cheating on Terminal-Bench 4.0 fell to 0.0%. Introductory pricing is $2 per million input tokens and $10 per million output tokens, rising to $4 and $20 later. Access starts with a subset of cyber defenders and expands to trusted partners; Google gives no date for general availability and did not disclose the model&#x27;s size or architecture.</dd><dt>What it means, in plain words</dt><dd>Think of an AI that can be handed a messy software project and work on it for hours, not minutes: read the code, find a flaw, write a fix and check it. Google is saying this model is better at that than earlier ones, and that it is also less likely to take shortcuts such as gaming a test. Because the same skill can be used to attack software, Google is releasing it to defenders first, and says it is taking part in the US government&#x27;s voluntary pre-release testing.</dd><dt>Why it matters and how it could be used</dt><dd>If the numbers hold up, a security team could point it at its own code and get back a list of real vulnerabilities with proposed patches. All scores here are Google&#x27;s own claims and have not been independently checked.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Agentic</dt><dd>An AI that doesn&#x27;t just answer a question but takes a series of actions, like running code or editing files, to finish a bigger job.</dd><dt>Token</dt><dd>A small chunk of text, roughly three quarters of a word, which is how AI services measure what you read and write.</dd><dt>Benchmark</dt><dd>A standard test used to compare models, like an exam every model takes.</dd></dl></aside><p class="source">Sources: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google</a></p></article><article class="lead second story"><h2>NVIDIA shows how to make big AI models answer faster on a small desktop machine</h2><p class="stand">The slow part of generating text on the DGX Spark is reading the model from memory, not doing math.</p><dl><dt>What happened</dt><dd>In an October blog post, NVIDIA profiled a model called Ling-3.0-flash running one request at a time on its DGX Spark desktop AI computer and found that generating each word was limited by memory: the time went into reading the model&#x27;s weights. It then tried three fixes. A faster kernel library (Humming) cut time per output token from 27.71 ms to 25.35 ms. Shrinking the final scoring layer to 8-bit numbers (FP8) raised decode speed 21.7% combined with the first fix. Speculative decoding, where the model guesses several words ahead and checks them, averaged 3.90 accepted tokens per round and raised throughput 185.1% on a synthetic test. NVIDIA says all three together raised throughput 42.5% on a math test set with no detectable accuracy change.</dd><dt>What it means, in plain words</dt><dd>Imagine a chef who cooks instantly but has to walk to a far pantry for every ingredient. Making the chef faster doesn&#x27;t help; carrying more ingredients per trip or needing fewer ingredients does. That is what these fixes do: read less data per word, or produce several words per read.</dd><dt>Why it matters and how it could be used</dt><dd>It shows that for running AI models on one machine, memory speed matters more than raw compute, and the same ideas apply in data centers. These are NVIDIA&#x27;s own measurements on one model and one machine.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Memory-bound</dt><dd>Limited by how fast data can be fetched from memory, not by how fast the chip can calculate.</dd><dt>Speculative decoding</dt><dd>A trick where a model guesses several next words at once and then checks the guesses in a single pass, keeping the correct ones.</dd><dt>Quantization</dt><dd>Storing the model&#x27;s numbers with fewer bits so they take less space and are faster to read.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>Cursor releases an SDK for building your own coding agents</h2><p class="stand">The tools Cursor uses internally to build its review bots are now generally available.</p><dl><dt>What happened</dt><dd>Cursor released its Agent SDK on October 20, the framework it says it uses for its own managed agents such as Bugbot and Security Reviewer. Agents are defined as code: prompts are Markdown files, tools are TypeScript functions, and tests of agent quality live alongside them. Agents can react to pull requests on GitHub, GitLab or Bitbucket, and can hand work to parallel sub-agents. Cursor says one team built a pull-request reviewer in about a day.</dd><dt>What it means, in plain words</dt><dd>A company can now write a small program that wakes up whenever someone proposes a code change, reads it, checks it against the team&#x27;s own rules and comments or approves, the way a tireless junior reviewer would.</dd><dt>Why it matters and how it could be used</dt><dd>It treats AI agents as ordinary software that is versioned, tested and deployed, which is what makes them practical inside a company. That is Cursor&#x27;s description of its own product.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Pull request</dt><dd>A proposed code change that teammates review before it is merged into the main project.</dd><dt>Subagent</dt><dd>A helper agent that a main agent hands part of a job to, so several parts can be done at once.</dd></dl></aside><p class="source">Sources: <a href="https://cursor.com/blog/agent-sdk">Cursor</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>Could a giant sunshade in space &#x27;solve global warming&#x27;? Scientists are taking the idea seriously</h2><p class="stand">A detailed analysis suggests falling rocket launch costs could make a space sunshade feasible within a few decades.</p><div class="body"><p>The idea is simple: park something huge between the Sun and Earth so that a small share of sunlight never arrives, cooling the planet a little. Nature&#x27;s news team reports that a detailed new analysis suggests that, as rocket launches get cheaper, building such a sunshade could become feasible within a few decades.</p><p>This summary is based only on Nature&#x27;s published description of the article, because the full text is behind a login. It does not cover the costs, sizes or designs in the analysis, or what critics say.</p></div><ol class="points"><li>What they found: a detailed analysis suggests a space sunshade could become feasible within a few decades.</li><li>How they got there: the analysis points to falling rocket launch costs as the key change.</li><li>Why it matters: it is a proposal for cooling the planet that scientists are now taking seriously, though the full article is needed for the details.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Sunshade</dt><dd>A structure or swarm of small spacecraft placed in space to block part of the sunlight heading to Earth.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03415-2">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>Why AI runs on GPUs: matrix math and massive parallelism</h2><p class="stand">Thursday track: AI compute and interconnect</p><p class="bigidea"><strong>The big idea:</strong> Training and running an AI model is mostly one simple operation, multiplying big grids of numbers, repeated billions of times. A GPU has thousands of small workers that do many of those multiplications at the same moment, which is exactly what the job needs.</p><dl><dt>First, the basics</dt><dd><p>A CPU, the main processor in a computer, has a small number of powerful cores, typically a few dozen in a server. Each is built to run one complicated sequence of instructions as fast as possible, with lots of hardware for guessing which branch a program takes next. It is like a few expert chefs who can cook any dish.</p><p>A GPU (graphics processing unit) was originally built to color millions of screen pixels at once. Each pixel&#x27;s calculation is simple and independent of the others, so a GPU packs thousands of simpler cores and gives up speed on any single task to finish a huge number of identical tasks at once. It is like a kitchen of thousands of line cooks each chopping one onion.</p><p>A neural network is mostly layers of numbers called weights. To process an input, you arrange the input as a grid of numbers (a matrix) and multiply it by the layer&#x27;s weight matrix, then repeat for the next layer. Every output number in a matrix multiplication can be computed independently of the others, so the work splits perfectly across thousands of workers.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>A prompt is converted into numbers and arranged as a matrix.</li><li>The GPU loads a layer&#x27;s weights from its memory.</li><li>The matrix is split into small tiles, and each group of cores multiplies its tile and adds up the results at the same time.</li><li>Special units called tensor cores do a small matrix multiply-and-add as a single operation, which is much faster than doing it one number at a time.</li><li>The result goes to the next layer, and this repeats through dozens of layers.</li><li>The final numbers are turned back into a word or a prediction.</li></ol></dd><dt>A practical example</dt><dd>Multiplying a matrix of size M by K with one of size K by N takes about 2 x M x N x K arithmetic operations. For a 4,096 by 4,096 matrix times another of the same size, that is roughly 137 billion operations. A CPU core doing them one after another would take many seconds; a modern data center GPU does it in a few milliseconds because thousands of cores work on separate tiles together.</dd><dt>Why it matters for XLIO</dt><dd>A GPU server only works fast if data reaches it fast. Many GPUs train one model together and constantly exchange results over the network, so the network cards and software NVIDIA&#x27;s networking team builds, like the ConnectX cards XLIO runs on, decide whether those expensive GPUs are busy or waiting.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>NVIDIA H100 (SXM) CUDA cores</td><td>16,896</td></tr><tr><td>H100 (SXM) 16-bit matrix math, dense</td><td>about 989 trillion operations per second</td></tr><tr><td>H100 (SXM) memory bandwidth</td><td>about 3.35 terabytes per second</td></tr><tr><td>H100 (SXM) memory size</td><td>80 GB</td></tr></table></dd><dt>Common misconception</dt><dd>A common misconception is that a GPU is simply a faster CPU. It isn&#x27;t: for one long, branching task a CPU core is faster. A GPU wins only when there is a huge amount of similar, independent work, which is why AI math suits it so well.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Matrix</dt><dd>A rectangular grid of numbers.</dd><dt>Weights</dt><dd>The numbers inside a model that were learned during training and determine its behavior.</dd><dt>Tensor core</dt><dd>A special unit inside NVIDIA GPUs that multiplies small blocks of numbers in one step.</dd><dt>Parallelism</dt><dd>Doing many things at the same time instead of one after another.</dd></dl></aside><details><summary>Self-test: Why does splitting a matrix multiplication across thousands of GPU cores work so well?</summary><p>Each output number depends only on one row and one column of the inputs, not on the other outputs, so thousands of workers can compute different pieces at the same time without waiting for each other.</p></details><p class="source">Further reading: <a href="https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html">NVIDIA Deep Learning Performance: GPU Background</a>, <a href="https://www.nvidia.com/en-us/data-center/h100/">NVIDIA H100 Tensor Core GPU</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
