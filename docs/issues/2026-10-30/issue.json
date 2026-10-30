@@ -9,14 +9,35 @@
           "A government needs 61 seats. Adding the Arab parties would give Eisenkot's side a majority on paper, but every Zionist party except The Democrats has ruled out working with them, so neither side is close. The official results go to President Isaac Herzog, who will ask each party leader whom they recommend as prime minister. The new Knesset is due to be sworn in on November 10, and coalition talks are expected to be difficult and could last more than two months. Herzog urged leaders to avoid another election, saying, \"We must do everything we can, certainly after yesterday, to avoid another round of elections.\" Both Netanyahu and Eisenkot say they will form the next government."
         ],
         "sources": [
-          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"},
-          {"name": "Ynet", "url": "https://www.ynetnews.com/article/skq7ewwtmx"}
+          {
+            "name": "Times of Israel",
+            "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"
+          },
+          {
+            "name": "Ynet",
+            "url": "https://www.ynetnews.com/article/skq7ewwtmx"
+          }
         ]
       },
       "briefs": [
-        {"headline": "UTJ reportedly weighs backing an Eisenkot-led minority government", "text": "Channel 12 reported that figures in United Torah Judaism are considering supporting an Eisenkot government from outside, by abstaining rather than voting against it. The party is reportedly frustrated that Netanyahu has not passed the yeshiva-student draft exemption law. The main obstacle is that Eisenkot opposes blanket exemptions, and Eisenkot's party declined to comment.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/in-big-shift-utj-considers-supporting-an-eisenkot-led-minority-government-report/"},
-        {"headline": "Election officials reject fraud claims, Shin Bet probes foreign influence", "text": "Netanyahu and his allies have claimed the election was stolen. Acting Elections Committee director Dean Livne called the allegations unfounded and said the election was conducted lawfully. The Shin Bet says its investigation into possible foreign-funded influence, reportedly about Qatari money for Arab turnout, which Qatar denies, is limited and will not delay the results. Arab party leaders call the fraud claims racist, and Likud says it has submitted hundreds of testimonies.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/election-committee-director-rejects-claims-of-widespread-fraud-as-baseless/"},
-        {"headline": "Ultra-Orthodox protesters clash with police over draft evader's arrest", "text": "Hundreds of Haredi men blocked roads near Bnei Brak on Thursday after a man detained for not reporting for military service was arrested. Police say three people were arrested and three officers wounded, and that journalists were attacked. Police say they respect the right to protest but will not allow disturbances. The High Court has been pressing the government to enforce Haredi enlistment.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/ultra-orthodox-protesters-clash-with-police-block-roads-over-arrest-of-draft-evader/"}
+        {
+          "headline": "UTJ reportedly weighs backing an Eisenkot-led minority government",
+          "text": "Channel 12 reported that figures in United Torah Judaism are considering supporting an Eisenkot government from outside, by abstaining rather than voting against it. The party is reportedly frustrated that Netanyahu has not passed the yeshiva-student draft exemption law. The main obstacle is that Eisenkot opposes blanket exemptions, and Eisenkot's party declined to comment.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/in-big-shift-utj-considers-supporting-an-eisenkot-led-minority-government-report/"
+        },
+        {
+          "headline": "Election officials reject fraud claims, Shin Bet probes foreign influence",
+          "text": "Netanyahu and his allies have claimed the election was stolen. Acting Elections Committee director Dean Livne called the allegations unfounded and said the election was conducted lawfully. The Shin Bet says its investigation into possible foreign-funded influence, reportedly about Qatari money for Arab turnout, which Qatar denies, is limited and will not delay the results. Arab party leaders call the fraud claims racist, and Likud says it has submitted hundreds of testimonies.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/election-committee-director-rejects-claims-of-widespread-fraud-as-baseless/"
+        },
+        {
+          "headline": "Ultra-Orthodox protesters clash with police over draft evader's arrest",
+          "text": "Hundreds of Haredi men blocked roads near Bnei Brak on Thursday after a man detained for not reporting for military service was arrested. Police say three people were arrested and three officers wounded, and that journalists were attacked. Police say they respect the right to protest but will not allow disturbances. The High Court has been pressing the government to enforce Haredi enlistment.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/ultra-orthodox-protesters-clash-with-police-block-roads-over-arrest-of-draft-evader/"
+        }
       ]
     },
     "us": {
@@ -29,7 +50,12 @@
             "Flight-tracking analysts say more than ten US military transport planes have landed at Israeli bases in the past week, and the WSJ reports a Patriot air-defense battery is being sent to the region. Separately, Iran confirmed it received a letter from Vice President JD Vance but has not replied, according to the Tasnim news agency. Trump said the outreach was about helping Iran obtain medical supplies and, asked whether he had told Vance to restart peace talks, said \"No.\""
           ],
           "why_it_matters": "A renewed US-Iran conflict would affect oil prices, shipping through the Strait of Hormuz and Israel's security, and the timing around the midterms makes the decision politically sensitive.",
-          "sources": [{"name": "Times of Israel (citing WSJ, Reuters, Tasnim)", "url": "https://www.timesofisrael.com/top-us-commander-briefs-trump-on-iran-military-options-as-regional-buildup-grows/"}]
+          "sources": [
+            {
+              "name": "Times of Israel (citing WSJ, Reuters, Tasnim)",
+              "url": "https://www.timesofisrael.com/top-us-commander-briefs-trump-on-iran-military-options-as-regional-buildup-grows/"
+            }
+          ]
         },
         {
           "label": "Stock market",
@@ -40,8 +66,14 @@
           ],
           "why_it_matters": "Alphabet is one of the biggest companies in the major stock indexes, so its drop weighs on many retirement funds. It also shows investors are now asking whether huge AI spending will pay off.",
           "sources": [
-            {"name": "CNBC", "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"},
-            {"name": "CNN", "url": "https://www.cnn.com/2026/10/29/investing/alphabet-google-stock-ai"}
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"
+            },
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/29/investing/alphabet-google-stock-ai"
+            }
           ]
         }
       ]
@@ -55,13 +87,28 @@
           "what_it_means": "Serving a chatbot at scale is like running a restaurant with many kitchens. Each kitchen (a GPU server) remembers the earlier conversation of the customers it has served. If a returning customer is sent to a kitchen that remembers them, the answer comes faster and cheaper. llm-d is the host at the door that decides which kitchen each request goes to, based on who remembers what and how busy each one is.",
           "why_it_matters": "A company running its own model can use it to cut GPU cost, since reusing remembered work means the GPUs do less repeated computing. Reported figures include prefix routing capturing 96 to 97 percent of the available cache reuse and one team lifting its cache hit rate from about 30 to 75 percent. These come from the project and its users, not independent tests.",
           "terms": [
-            ["Kubernetes", "A widely used system that starts, stops and manages programs running across many computers."],
-            ["KV cache", "The model's short-term memory of the text it has already read, which saves it from re-reading everything for each new word."],
-            ["Prefill and decode", "Prefill is the model reading your prompt; decode is it writing the answer one piece at a time."]
+            [
+              "Kubernetes",
+              "A widely used system that starts, stops and manages programs running across many computers."
+            ],
+            [
+              "KV cache",
+              "The model's short-term memory of the text it has already read, which saves it from re-reading everything for each new word."
+            ],
+            [
+              "Prefill and decode",
+              "Prefill is the model reading your prompt; decode is it writing the answer one piece at a time."
+            ]
           ],
           "sources": [
-            {"name": "Techzine", "url": "https://www.techzine.eu/news/infrastructure/145141/llm-d-1-0-makes-distributed-ai-inference-production-ready/"},
-            {"name": "Let's Data Science", "url": "https://letsdatascience.com/news/llm-d-releases-open-distributed-inference-stack-efb1de62"}
+            {
+              "name": "Techzine",
+              "url": "https://www.techzine.eu/news/infrastructure/145141/llm-d-1-0-makes-distributed-ai-inference-production-ready/"
+            },
+            {
+              "name": "Let's Data Science",
+              "url": "https://letsdatascience.com/news/llm-d-releases-open-distributed-inference-stack-efb1de62"
+            }
           ]
         },
         {
@@ -69,29 +116,61 @@
           "standfirst": "NVIDIA is becoming a Meta shareholder while Meta buys more of NVIDIA's next hardware.",
           "what_happened": "NVIDIA said it will invest $3 billion in Meta's planned equity offering, according to the announcement as reported by Techzine and StockAnalysis. Meta will expand its use of NVIDIA's Vera Rubin systems, Vera CPUs, Spectrum-X Ethernet and BlueField-4 networking chips, and the two will work together on Meta's Muse models. The investment depends on closing conditions. Reports say it is about 3 percent of a much larger Meta raise, whose size is reported as about $95 to $97.5 billion. The release did not give the number of systems or a timeline.",
           "what_it_means": "A supplier is putting money into one of its biggest customers, who then spends money on the supplier's products. It is like a car-parts maker buying a stake in a taxi company that will order its parts.",
-          "why_it_matters": "It shows how much AI data-center building depends on financing, and that NVIDIA is selling whole racks including networking, not just GPUs. That networking is the same area XLIO works in. Investors worry about such circular deals, a concern that also featured in this week's coverage of NVIDIA's other financing commitments.",
+          "why_it_matters": "It shows how much AI data-center building depends on financing, and that NVIDIA is selling whole racks including networking, not just GPUs. That networking is the same area XLIO works in. Some investors worry about circular deals like this, where a supplier funds a customer that then buys its products.",
           "terms": [
-            ["Equity offering", "A company selling new shares of itself to raise money."],
-            ["Spectrum-X", "NVIDIA's Ethernet networking designed for AI clusters."]
+            [
+              "Equity offering",
+              "A company selling new shares of itself to raise money."
+            ],
+            [
+              "Spectrum-X",
+              "NVIDIA's Ethernet networking designed for AI clusters."
+            ]
           ],
           "sources": [
-            {"name": "Techzine", "url": "https://www.techzine.eu/news/applications/145303/nvidia-invests-3-billion-in-meta-deepens-muse-partnership/"},
-            {"name": "StockAnalysis", "url": "https://stockanalysis.com/news/nvidia-3-billion-meta-offering/"}
+            {
+              "name": "Techzine",
+              "url": "https://www.techzine.eu/news/applications/145303/nvidia-invests-3-billion-in-meta-deepens-muse-partnership/"
+            },
+            {
+              "name": "StockAnalysis",
+              "url": "https://stockanalysis.com/news/nvidia-3-billion-meta-offering/"
+            }
           ]
         },
         {
-          "headline": "Reports say a suspected Chinese spy approached Jensen Huang; NVIDIA calls diversion claims debunked",
-          "standfirst": "A US media report ties NVIDIA's CEO to a suspected Chinese intelligence asset, and NVIDIA's stock fell.",
-          "what_happened": "On Thursday the New York Times and others reported that US officials investigated a suspected Chinese spy plot aimed at CEO Jensen Huang. Bloomberg reported that Huang said Nvidia's dealings with Megaspeed, a Singapore company under US investigation over possible chip diversion to China, were normal. CNBC reports that Nvidia says diversion allegations were investigated and debunked. Senator Elizabeth Warren wants Huang to answer to Congress. A Justice Department probe of NVIDIA's roughly $13 billion Hugging Face acquisition was also reported by Tom's Hardware. These are media reports; no wrongdoing has been established in what we could read.",
-          "what_it_means": "The US restricts the sale of its most advanced AI chips to China. The reports raise the question of whether chips reached China indirectly through intermediaries. NVIDIA denies any such diversion, and these stories are about allegations and investigations rather than findings.",
-          "why_it_matters": "NVIDIA chips power most of the world's AI, so export rules and any scrutiny of its leadership can move the whole industry. Shares of NVIDIA, AMD and Marvell fell as the news spread.",
+          "headline": "NVIDIA releases Nemotron 3.5 Transcribe, an open speech model that does more than write down words",
+          "standfirst": "One downloadable model can transcribe 40 languages, label who said what, and follow plain-English instructions about how to write it out.",
+          "what_happened": "On October 28 NVIDIA released Nemotron 3.5 Transcribe with open weights under the OpenMDW-1.1 license. NVIDIA says it transcribes 40 languages, can also translate speech and identify the spoken language, labels speakers even when they talk over each other, and handles recordings up to one hour. It combines a speech encoder, NVIDIA's speaker-separation model and its Nemotron 3.5 Lightning language model, with about 4.3 billion parameters active per step. NVIDIA reports an average word error rate of 4.71 percent on the English Open ASR Leaderboard test sets and 4.62 percent on the multilingual one. Versions in BF16, FP8 and NVFP4 number formats are available.",
+          "what_it_means": "Older speech-to-text systems only turn sound into words. This one bolts an ear onto a language model, so you can give it instructions like 'write it as clean prose' or 'keep every um and uh' or 'mark who is speaking', and it does that in one pass. A 4.7 percent word error rate means roughly one word in twenty is wrong, on NVIDIA's own tests.",
+          "why_it_matters": "Because the weights are open, a company can run it on its own GPUs and keep recordings private, for example to transcribe and label speakers in an hour-long team meeting without sending audio to an outside service. It is also a good example of today's study topic: the audio is turned into tokens the language model reads, so prefill and decode apply here too. The accuracy figures are NVIDIA's own and not independently checked.",
           "terms": [
-            ["Export controls", "US government rules limiting which advanced chips can be sold to certain countries."],
-            ["Diversion", "Chips sold to one buyer being passed on to someone who isn't allowed to have them."]
+            [
+              "Open weights",
+              "The model's trained numbers are published, so anyone can download and run it on their own computers."
+            ],
+            [
+              "Word error rate",
+              "The share of words a transcription gets wrong. Lower is better."
+            ],
+            [
+              "Active parameters",
+              "Some models only use part of their numbers for each step. Active parameters are the part actually used, which sets how much computing each step costs."
+            ],
+            [
+              "FP8 and NVFP4",
+              "Smaller number formats that make a model faster and cheaper to run, at a small cost in precision."
+            ]
           ],
           "sources": [
-            {"name": "CNBC (via Google News)", "url": "https://news.google.com/search?q=Nvidia%20responds%20Huang%20Chinese%20asset"},
-            {"name": "Reuters (via Google News)", "url": "https://news.google.com/search?q=Huang%20dealings%20firm%20US%20spy%20probe%20normal"}
+            {
+              "name": "NVIDIA Research",
+              "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/"
+            },
+            {
+              "name": "The Next Web",
+              "url": "https://thenextweb.com/news/nvidia-nemotron-3-5-transcribe-granary-v2-open-speech"
+            }
           ]
         }
       ]
@@ -109,7 +188,10 @@
         "Why it matters: it suggests early people chose where to live by more than water, including access to stone for tools."
       ],
       "terms": [
-        ["Rub' al Khali", "The Empty Quarter, a vast sand desert in the south of the Arabian Peninsula."]
+        [
+          "Rub' al Khali",
+          "The Empty Quarter, a vast sand desert in the south of the Arabian Peninsula."
+        ]
       ],
       "url": "https://www.nature.com/articles/d41586-026-03484-3",
       "source": "nature.com"
@@ -132,26 +214,60 @@
         "Decode: the new token is fed back in, but now only one token is processed per step, while the full set of weights still has to be read from memory. This phase is limited by memory bandwidth, not math.",
         "The loop repeats, adding one token per step to the KV cache, until the model produces an end-of-answer token or hits a length limit."
       ],
-      "example": "You paste a 3,000-token document and ask for a summary. Prefill reads all 3,000 tokens in one burst, which takes a moment, and then the answer starts to stream. If the summary is 300 tokens, decode runs 300 separate steps. Prefill was one big batch of work, while decode was 300 small steps, each reading the model's weights again.",
+      "example": "You paste a 3,000-token document into a chatbot running an 8-billion-parameter model on one H100 GPU and ask for a summary. Prefill reads all 3,000 tokens in one burst, then the answer starts to stream. If the summary is 300 tokens, decode runs 300 separate steps, and each one has to read the model's roughly 16 GB of weights from memory. At about 3.35 TB per second that is about 5 ms per step at best, so the 300-token answer takes at least about a second and a half however fast the math units are.",
       "why_xlio": "Serving systems split these two phases across different machines and move the KV cache between them over the network. That transfer is a latency-sensitive job for fast networking, which is the kind of problem NVIDIA's networking stack and XLIO-style user-space I/O are meant to speed up.",
       "numbers": [
-        ["Rule of thumb for English", "about 0.75 words per token"],
-        ["Prefill is limited by", "compute (math)"],
-        ["Decode is limited by", "memory bandwidth"]
+        [
+          "Rule of thumb for English",
+          "about 0.75 words per token"
+        ],
+        [
+          "Weights of an 8-billion-parameter model at 16 bits (2 bytes each)",
+          "about 16 GB"
+        ],
+        [
+          "H100 SXM GPU memory bandwidth",
+          "about 3.35 TB per second"
+        ],
+        [
+          "Best case per decode step for one request on that GPU (16 GB / 3.35 TB/s)",
+          "about 5 ms, so at most about 200 tokens per second"
+        ]
       ],
       "pitfall": "A common misconception is that the model 'thinks' about the whole answer first and then types it out. In fact it only ever decides one token at a time, and a streaming answer is generated live, token by token.",
       "terms": [
-        ["Token", "A small chunk of text, often part of a word, that the model treats as one unit."],
-        ["Prefill", "The first phase, where the model reads the whole prompt at once."],
-        ["Decode", "The second phase, where the model produces the answer one token at a time."],
-        ["KV cache", "Saved intermediate results for the tokens so far, so they aren't recomputed at every step."],
-        ["Time to first token", "How long you wait before the first piece of the answer appears."]
+        [
+          "Token",
+          "A small chunk of text, often part of a word, that the model treats as one unit."
+        ],
+        [
+          "Prefill",
+          "The first phase, where the model reads the whole prompt at once."
+        ],
+        [
+          "Decode",
+          "The second phase, where the model produces the answer one token at a time."
+        ],
+        [
+          "KV cache",
+          "Saved intermediate results for the tokens so far, so they aren't recomputed at every step."
+        ],
+        [
+          "Time to first token",
+          "How long you wait before the first piece of the answer appears."
+        ]
       ],
       "question": "Why is decode usually limited by memory speed rather than by how fast the GPU can do math?",
       "answer": "Each decode step handles only one new token, so there's very little math per step, but the GPU still has to read all the model's weights from memory to do it. The math units spend most of the time waiting for data.",
       "reading": [
-        {"name": "Attention Is All You Need (the Transformer paper)", "url": "https://arxiv.org/abs/1706.03762"},
-        {"name": "vLLM documentation", "url": "https://docs.vllm.ai/"}
+        {
+          "name": "Attention Is All You Need (the Transformer paper)",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "name": "vLLM documentation",
+          "url": "https://docs.vllm.ai/"
+        }
       ]
     }
   }

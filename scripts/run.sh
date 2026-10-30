@@ -4,7 +4,8 @@ set -euo pipefail
 DATE="${1:?usage: run.sh YYYY-MM-DD}"
 cd "$(dirname "$0")/.."
 
-pip install -q -r requirements.txt 2>/dev/null || pip install -q --break-system-packages -r requirements.txt
+# Install into the same interpreter that runs the scripts; a bare `pip` can belong to another Python.
+python3 -m pip install -q -r requirements.txt 2>/dev/null || python3 -m pip install -q --break-system-packages -r requirements.txt
 
 python3 scripts/build.py "$DATE"
 python3 scripts/podcast.py "$DATE" || echo "Podcast failed; sending the written issue only."

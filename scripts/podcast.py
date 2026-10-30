@@ -22,6 +22,15 @@ VOICES = {
     "B": [os.environ.get("HOST_B_VOICE", "en-US-AvaNeural"), "en-US-AriaNeural"],
 }
 RATE = os.environ.get("PODCAST_RATE", "+4%")
+TIMEOUT = float(os.environ.get("PODCAST_SEGMENT_TIMEOUT", "60"))  # seconds per segment attempt
+
+
+async def synth(text, voice):
+    audio = bytearray()
+    async for chunk in edge_tts.Communicate(text, voice, rate=RATE, proxy=os.environ.get("HTTPS_PROXY")).stream():
+        if chunk["type"] == "audio":
+            audio += chunk["data"]
+    return bytes(audio)
 
 
 async def speak(text, voices):
@@ -29,13 +38,11 @@ async def speak(text, voices):
     for voice in voices:
         for attempt in range(3):
             try:
-                audio = bytearray()
-                async for chunk in edge_tts.Communicate(text, voice, rate=RATE, proxy=os.environ.get("HTTPS_PROXY")).stream():
-                    if chunk["type"] == "audio":
-                        audio += chunk["data"]
+                # A stalled stream would otherwise hang the whole run, so give up and retry.
+                audio = await asyncio.wait_for(synth(text, voice), TIMEOUT)
                 if audio:
-                    return bytes(audio)
-            except Exception as err:  # network hiccup or unknown voice
+                    return audio
+            except Exception as err:  # network hiccup, timeout or unknown voice
                 last = err
                 await asyncio.sleep(2 * (attempt + 1))
     raise RuntimeError(f"TTS failed for all voices {voices}: {last}")
@@ -50,7 +57,7 @@ async def main(date):
     parts = []
     for i, seg in enumerate(segments, 1):
         parts.append(await speak(seg["text"], VOICES[seg["host"].upper()]))
-        print(f"  segment {i}/{len(segments)} done")
+        print(f"  segment {i}/{len(segments)} done", flush=True)
 
     # edge-tts returns MP3 with identical settings per call, so frames can be joined directly.
     dest = OUT / f"{date}.mp3"
