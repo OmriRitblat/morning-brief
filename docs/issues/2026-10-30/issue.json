@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Final election results: neither Netanyahu's bloc nor Eisenkot's reaches 61 seats",
+        "standfirst": "With every vote counted, Israel's election has produced a deadlock, and coalition talks may take months.",
+        "paragraphs": [
+          "The Central Elections Committee published the final results early Friday. Turnout was 77.9 percent, which the Times of Israel describes as the highest in decades. Prime Minister Benjamin Netanyahu's bloc won 53 of the Knesset's 120 seats, down from 68 in the outgoing Knesset. Gadi Eisenkot's anti-Netanyahu bloc won 48. The Arab parties, the Joint List and Ra'am, won a record 19 between them. By party, Likud has 27 seats and Eisenkot's Yashar has 21.",
+          "A government needs 61 seats. Adding the Arab parties would give Eisenkot's side a majority on paper, but every Zionist party except The Democrats has ruled out working with them, so neither side is close. The official results go to President Isaac Herzog, who will ask each party leader whom they recommend as prime minister. The new Knesset is due to be sworn in on November 10, and coalition talks are expected to be difficult and could last more than two months. Herzog urged leaders to avoid another election, saying, \"We must do everything we can, certainly after yesterday, to avoid another round of elections.\" Both Netanyahu and Eisenkot say they will form the next government."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"},
+          {"name": "Ynet", "url": "https://www.ynetnews.com/article/skq7ewwtmx"}
+        ]
+      },
+      "briefs": [
+        {"headline": "UTJ reportedly weighs backing an Eisenkot-led minority government", "text": "Channel 12 reported that figures in United Torah Judaism are considering supporting an Eisenkot government from outside, by abstaining rather than voting against it. The party is reportedly frustrated that Netanyahu has not passed the yeshiva-student draft exemption law. The main obstacle is that Eisenkot opposes blanket exemptions, and Eisenkot's party declined to comment.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/in-big-shift-utj-considers-supporting-an-eisenkot-led-minority-government-report/"},
+        {"headline": "Election officials reject fraud claims, Shin Bet probes foreign influence", "text": "Netanyahu and his allies have claimed the election was stolen. Acting Elections Committee director Dean Livne called the allegations unfounded and said the election was conducted lawfully. The Shin Bet says its investigation into possible foreign-funded influence, reportedly about Qatari money for Arab turnout, which Qatar denies, is limited and will not delay the results. Arab party leaders call the fraud claims racist, and Likud says it has submitted hundreds of testimonies.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/election-committee-director-rejects-claims-of-widespread-fraud-as-baseless/"},
+        {"headline": "Ultra-Orthodox protesters clash with police over draft evader's arrest", "text": "Hundreds of Haredi men blocked roads near Bnei Brak on Thursday after a man detained for not reporting for military service was arrested. Police say three people were arrested and three officers wounded, and that journalists were attacked. Police say they respect the right to protest but will not allow disturbances. The High Court has been pressing the government to enforce Haredi enlistment.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/ultra-orthodox-protesters-clash-with-police-block-roads-over-arrest-of-draft-evader/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "CENTCOM chief reportedly briefs Trump on options for striking Iran",
+          "paragraphs": [
+            "According to the Wall Street Journal, citing US officials, Adm. Brad Cooper, head of US Central Command, presented military options on Iran to President Trump at the White House on Thursday. Defense Secretary Pete Hegseth and Joint Chiefs Chairman Dan Caine attended. Reuters said it could not immediately verify the report. The WSJ also reported that Trump could still decide against military action, and that Washington and Jerusalem have weighed a short but intensive round of strikes after the November 3 midterm elections.",
+            "Flight-tracking analysts say more than ten US military transport planes have landed at Israeli bases in the past week, and the WSJ reports a Patriot air-defense battery is being sent to the region. Separately, Iran confirmed it received a letter from Vice President JD Vance but has not replied, according to the Tasnim news agency. Trump said the outreach was about helping Iran obtain medical supplies and, asked whether he had told Vance to restart peace talks, said \"No.\""
+          ],
+          "why_it_matters": "A renewed US-Iran conflict would affect oil prices, shipping through the Strait of Hormuz and Israel's security, and the timing around the midterms makes the decision politically sensitive.",
+          "sources": [{"name": "Times of Israel (citing WSJ, Reuters, Tasnim)", "url": "https://www.timesofisrael.com/top-us-commander-briefs-trump-on-iran-military-options-as-regional-buildup-grows/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Alphabet suffers its worst day ever, losing about $500 billion in value",
+          "paragraphs": [
+            "Shares of Google's parent company fell roughly 12 to 13 percent on Thursday after its third-quarter results missed analyst expectations, according to CNBC and CNN. Reports put the lost market value at about $482 to $500 billion, the biggest one-day drop for the company. CNN reports the loss was the second largest single-day wipeout in history after Nvidia's slide in early 2025.",
+            "Investors were reportedly worried about slowing growth in Google's search advertising at the same time as heavy spending on AI. Reported free cash flow was negative $9.07 billion for the quarter, against the $2.7 billion positive that analysts expected. Reuters said the miss revived worries about AI capital spending, and the broader Wall Street market ended lower."
+          ],
+          "why_it_matters": "Alphabet is one of the biggest companies in the major stock indexes, so its drop weighs on many retirement funds. It also shows investors are now asking whether huge AI spending will pay off.",
+          "sources": [
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html"},
+            {"name": "CNN", "url": "https://www.cnn.com/2026/10/29/investing/alphabet-google-stock-ai"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "llm-d 1.0: an open-source traffic controller for AI model serving",
+          "standfirst": "A group including Google Cloud, Red Hat, IBM, CoreWeave and NVIDIA released version 1.0 of a free system for running AI models across many servers.",
+          "what_happened": "llm-d 1.0 was announced on October 20 at the PyTorch Conference and is a CNCF sandbox project. It runs on Kubernetes and works with the vLLM and SGLang serving programs. Its features include routing requests by shared prompt prefix and server load, splitting the prefill and decode phases across machines, and offloading the KV cache to cheaper memory tiers. The 1.0 release adds multi-tenant traffic controls, high-availability routing and a stable configuration API. Google Cloud says it is integrating it into Google Kubernetes Engine and showed 1,000 sandboxed agents using one endpoint.",
+          "what_it_means": "Serving a chatbot at scale is like running a restaurant with many kitchens. Each kitchen (a GPU server) remembers the earlier conversation of the customers it has served. If a returning customer is sent to a kitchen that remembers them, the answer comes faster and cheaper. llm-d is the host at the door that decides which kitchen each request goes to, based on who remembers what and how busy each one is.",
+          "why_it_matters": "A company running its own model can use it to cut GPU cost, since reusing remembered work means the GPUs do less repeated computing. Reported figures include prefix routing capturing 96 to 97 percent of the available cache reuse and one team lifting its cache hit rate from about 30 to 75 percent. These come from the project and its users, not independent tests.",
+          "terms": [
+            ["Kubernetes", "A widely used system that starts, stops and manages programs running across many computers."],
+            ["KV cache", "The model's short-term memory of the text it has already read, which saves it from re-reading everything for each new word."],
+            ["Prefill and decode", "Prefill is the model reading your prompt; decode is it writing the answer one piece at a time."]
+          ],
+          "sources": [
+            {"name": "Techzine", "url": "https://www.techzine.eu/news/infrastructure/145141/llm-d-1-0-makes-distributed-ai-inference-production-ready/"},
+            {"name": "Let's Data Science", "url": "https://letsdatascience.com/news/llm-d-releases-open-distributed-inference-stack-efb1de62"}
+          ]
+        },
+        {
+          "headline": "NVIDIA to invest $3 billion in Meta as it expands Vera Rubin deployments",
+          "standfirst": "NVIDIA is becoming a Meta shareholder while Meta buys more of NVIDIA's next hardware.",
+          "what_happened": "NVIDIA said it will invest $3 billion in Meta's planned equity offering, according to the announcement as reported by Techzine and StockAnalysis. Meta will expand its use of NVIDIA's Vera Rubin systems, Vera CPUs, Spectrum-X Ethernet and BlueField-4 networking chips, and the two will work together on Meta's Muse models. The investment depends on closing conditions. Reports say it is about 3 percent of a much larger Meta raise, whose size is reported as about $95 to $97.5 billion. The release did not give the number of systems or a timeline.",
+          "what_it_means": "A supplier is putting money into one of its biggest customers, who then spends money on the supplier's products. It is like a car-parts maker buying a stake in a taxi company that will order its parts.",
+          "why_it_matters": "It shows how much AI data-center building depends on financing, and that NVIDIA is selling whole racks including networking, not just GPUs. That networking is the same area XLIO works in. Investors worry about such circular deals, a concern that also featured in this week's coverage of NVIDIA's other financing commitments.",
+          "terms": [
+            ["Equity offering", "A company selling new shares of itself to raise money."],
+            ["Spectrum-X", "NVIDIA's Ethernet networking designed for AI clusters."]
+          ],
+          "sources": [
+            {"name": "Techzine", "url": "https://www.techzine.eu/news/applications/145303/nvidia-invests-3-billion-in-meta-deepens-muse-partnership/"},
+            {"name": "StockAnalysis", "url": "https://stockanalysis.com/news/nvidia-3-billion-meta-offering/"}
+          ]
+        },
+        {
+          "headline": "Reports say a suspected Chinese spy approached Jensen Huang; NVIDIA calls diversion claims debunked",
+          "standfirst": "A US media report ties NVIDIA's CEO to a suspected Chinese intelligence asset, and NVIDIA's stock fell.",
+          "what_happened": "On Thursday the New York Times and others reported that US officials investigated a suspected Chinese spy plot aimed at CEO Jensen Huang. Bloomberg reported that Huang said Nvidia's dealings with Megaspeed, a Singapore company under US investigation over possible chip diversion to China, were normal. CNBC reports that Nvidia says diversion allegations were investigated and debunked. Senator Elizabeth Warren wants Huang to answer to Congress. A Justice Department probe of NVIDIA's roughly $13 billion Hugging Face acquisition was also reported by Tom's Hardware. These are media reports; no wrongdoing has been established in what we could read.",
+          "what_it_means": "The US restricts the sale of its most advanced AI chips to China. The reports raise the question of whether chips reached China indirectly through intermediaries. NVIDIA denies any such diversion, and these stories are about allegations and investigations rather than findings.",
+          "why_it_matters": "NVIDIA chips power most of the world's AI, so export rules and any scrutiny of its leadership can move the whole industry. Shares of NVIDIA, AMD and Marvell fell as the news spread.",
+          "terms": [
+            ["Export controls", "US government rules limiting which advanced chips can be sold to certain countries."],
+            ["Diversion", "Chips sold to one buyer being passed on to someone who isn't allowed to have them."]
+          ],
+          "sources": [
+            {"name": "CNBC (via Google News)", "url": "https://news.google.com/search?q=Nvidia%20responds%20Huang%20Chinese%20asset"},
+            {"name": "Reuters (via Google News)", "url": "https://news.google.com/search?q=Huang%20dealings%20firm%20US%20spy%20probe%20normal"}
+          ]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "Why did ancient humans avoid this lush Arabian paradise?",
+      "standfirst": "Thousands of years ago the Arabian desert was green and full of lakes, yet an expedition found no sign that early people settled there.",
+      "paragraphs": [
+        "The Rub' al Khali, or Empty Quarter, is among the driest places on Earth, but in past wetter periods it held lakes and rivers. You would expect early humans to move in wherever there was water. Nature reports on an expedition that looked for traces of ancient settlement and found none.",
+        "A companion research paper, titled \"Tethered to stone: how rock and water availability shaped early desert occupation\", concludes that water alone does not predict where early people lived. The idea is that people also needed workable stone to make tools, so a place with water but no good rock may have been unattractive. We could only read the summaries of these items, not the full text."
+      ],
+      "key_points": [
+        "What they found: no sign of ancient settlement in the Rub' al Khali, even when the region had water.",
+        "How: an expedition surveyed the desert, and a companion paper looked at rock and water availability across early desert sites.",
+        "Why it matters: it suggests early people chose where to live by more than water, including access to stone for tools."
+      ],
+      "terms": [
+        ["Rub' al Khali", "The Empty Quarter, a vast sand desert in the south of the Arabian Peninsula."]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03484-3",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Friday track: AI inference",
+      "title": "What happens when you send a prompt: tokens, prefill and decode",
+      "big_idea": "A language model doesn't read words; it reads numbered chunks called tokens. It first reads your whole prompt in one fast, parallel pass (prefill), then writes its answer one token at a time (decode), and those two phases stress the hardware in opposite ways.",
+      "background": [
+        "A model is a huge pile of numbers (its weights) that turns a list of numbers into a prediction. Text has to be converted first. A tokenizer splits text into tokens, which are pieces of words such as 'net', 'work' or ' the', and each token has an ID in a fixed vocabulary, usually tens of thousands to a couple of hundred thousand entries. A rough rule of thumb is that one token is about three quarters of an English word.",
+        "The model's one job is this: given all the tokens so far, produce a probability for every possible next token, then pick one. That's all. A whole answer is produced by repeating this step, feeding each new token back in as input. This repeated loop is called autoregressive generation.",
+        "The hardware bottleneck matters here. A GPU can do an enormous amount of math per second, but every calculation needs weights fetched from memory. Whether the GPU is limited by math or by fetching from memory decides how fast each phase runs."
+      ],
+      "steps": [
+        "Your text is split by the tokenizer into token IDs, so 'Explain RDMA' might become a short list of numbers.",
+        "Each ID is turned into a vector (a list of numbers) by an embedding table, which is the form the model can calculate with.",
+        "Prefill: the model processes all prompt tokens at once, through every layer. Because the tokens are processed together, the GPU's math units stay busy, so this phase is limited by compute.",
+        "During prefill, each layer saves intermediate results for every prompt token (the keys and values, the KV cache) so they never need to be recomputed.",
+        "The model outputs probabilities for the next token, and a sampling rule picks one. This first token is what the user waits for, so the delay before it appears is called time to first token.",
+        "Decode: the new token is fed back in, but now only one token is processed per step, while the full set of weights still has to be read from memory. This phase is limited by memory bandwidth, not math.",
+        "The loop repeats, adding one token per step to the KV cache, until the model produces an end-of-answer token or hits a length limit."
+      ],
+      "example": "You paste a 3,000-token document and ask for a summary. Prefill reads all 3,000 tokens in one burst, which takes a moment, and then the answer starts to stream. If the summary is 300 tokens, decode runs 300 separate steps. Prefill was one big batch of work, while decode was 300 small steps, each reading the model's weights again.",
+      "why_xlio": "Serving systems split these two phases across different machines and move the KV cache between them over the network. That transfer is a latency-sensitive job for fast networking, which is the kind of problem NVIDIA's networking stack and XLIO-style user-space I/O are meant to speed up.",
+      "numbers": [
+        ["Rule of thumb for English", "about 0.75 words per token"],
+        ["Prefill is limited by", "compute (math)"],
+        ["Decode is limited by", "memory bandwidth"]
+      ],
+      "pitfall": "A common misconception is that the model 'thinks' about the whole answer first and then types it out. In fact it only ever decides one token at a time, and a streaming answer is generated live, token by token.",
+      "terms": [
+        ["Token", "A small chunk of text, often part of a word, that the model treats as one unit."],
+        ["Prefill", "The first phase, where the model reads the whole prompt at once."],
+        ["Decode", "The second phase, where the model produces the answer one token at a time."],
+        ["KV cache", "Saved intermediate results for the tokens so far, so they aren't recomputed at every step."],
+        ["Time to first token", "How long you wait before the first piece of the answer appears."]
+      ],
+      "question": "Why is decode usually limited by memory speed rather than by how fast the GPU can do math?",
+      "answer": "Each decode step handles only one new token, so there's very little math per step, but the GPU still has to read all the model's weights from memory to do it. The math units spend most of the time waiting for data.",
+      "reading": [
+        {"name": "Attention Is All You Need (the Transformer paper)", "url": "https://arxiv.org/abs/1706.03762"},
+        {"name": "vLLM documentation", "url": "https://docs.vllm.ai/"}
+      ]
+    }
+  }
+}
