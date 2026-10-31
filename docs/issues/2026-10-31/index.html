@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Saturday, 31 October 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Saturday, 31 October 2026</span><span>No. 6</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s election ends in deadlock, and the fight now moves to coalition talks</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Courts block Justice Department push over disputed California ballots · Tech sell-off drags the Nasdaq to its worst day since June</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA&#x27;s ReplaySSM speeds up a new kind of language model</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">This Arabian desert was once a lush paradise. Why did ancient humans avoid it?</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">What an AI agent is: the loop of think, act, observe</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s election ends in deadlock, and the fight now moves to coalition talks</h2><p class="stand">Neither side has the 61 seats needed to govern, and Arab parties hold a record 19 seats.</p><div class="body"><p>With all votes counted, Prime Minister Benjamin Netanyahu&#x27;s bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit and Religious Zionism) won 53 of the Knesset&#x27;s 120 seats, according to the Times of Israel. The opposition bloc led by former army chief Gadi Eisenkot (Yashar, B&#x27;Yachad, Yisrael Beytenu and The Democrats) won 48. The Joint List and Ra&#x27;am, two Arab-led parties, won a record 19 seats between them. A government needs 61, and turnout was 77.9%, the highest in decades.</p><p>The arithmetic is awkward. The opposition and the Arab parties together would have a majority, but Yisrael Beytenu leader Avigdor Liberman wrote that his party will not sit in any coalition with the two Arab-led parties. President Isaac Herzog urged party leaders to avoid another election. He will meet each leader after receiving the official results, and the new Knesset is due to be sworn in on November 10. The Times of Israel says coalition talks could last more than two months.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/">Times of Israel</a></p></article><div class="briefs"><div class="brief"><h3>Opposition reportedly plans to replace the Knesset Speaker</h3><p>Channel 12 reported that anti-Netanyahu parties have agreed to try to remove Likud&#x27;s Speaker Amir Ohana once the new Knesset is sworn in, possibly on November 10. Democrats chair Yair Golan said the next steps would be committee appointments and a state commission of inquiry into October 7. Kan reported that Liberman is not necessarily on board. <a href="https://www.timesofisrael.com/opposition-parties-said-planning-to-quickly-replace-knesset-speaker-ohana/">Times of Israel</a></p></div><div class="brief"><h3>Dispute over claims of foreign influence in the vote</h3><p>Netanyahu and Likud said the election was &#x27;stolen&#x27; and alleged Qatari funding of Arab turnout. Acting Central Elections Committee director Dean Livne called reports of widespread problems &#x27;entirely unfounded&#x27; and said the Shin Bet inquiry does not affect the results. Qatar called the allegations &#x27;ridiculous and dangerous&#x27;, Ra&#x27;am chair Mansour Abbas denied any link, and Hebrew media reported the Mossad has joined the probe. <a href="https://www.timesofisrael.com/as-netanyahu-cries-foul-election-officials-dismiss-claim-that-vote-was-stolen/">Times of Israel</a></p></div><div class="brief"><h3>Army demolishes homes of the Hebron attackers</h3><p>On Friday the IDF demolished the homes of the two Hebron gunmen who killed Staff Sgt. Ron Yonatan Roytman and Sgt. Yuval Shai Svilem at a checkpoint on October 23. Separately, troops arrested four suspects in Jenin whom the IDF said traded in weapons. <a href="https://www.timesofisrael.com/israel-razes-homes-of-gunmen-who-carried-out-deadly-hebron-shooting-attack/">Times of Israel</a></p></div><div class="brief"><h3>Tel Aviv stocks slide after the inconclusive vote</h3><p>According to Ynet, the TA-35 index fell 1.81% on Wednesday, rose 0.34% on Thursday and fell about 1.6% at Friday&#x27;s open, leaving it roughly 3% below its pre-election level. Ynet notes the figures alone don&#x27;t show how much of the fall is due to politics. <a href="https://www.ynetnews.com/business/article/bjr49kf6gl">Ynet</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Courts block Justice Department push over disputed California ballots</h2><div class="body"><p>The Justice Department asked California to set aside ballots sent to about 20,000 people it says may not be citizens. On Friday a 2-1 panel of the 9th Circuit rejected the request, agreeing there is &#x27;no feasible way to identify and segregate the ballots of specific individuals&#x27;. California officials say the list is highly unreliable and likely includes many citizens.</p><p>Also on Friday, US District Judge Trina Thompson issued a temporary order, in a case brought by labor unions, barring the government from demanding that officials separate out ballots or from threatening them with prosecution. She wrote that the government likely violated the Voting Rights Act&#x27;s ban on intimidation. The order expires November 16. CBS News said the Justice Department did not immediately comment.</p></div><p class="why"><strong>Why it matters:</strong> Midterm elections are on November 3. The rulings decide whether millions of already-cast California ballots are counted as normal while the legal fight continues.</p><p class="source">Sources: <a href="https://www.cbsnews.com/news/judge-orders-doj-stop-threaten-intimidate-california-election-officials/">CBS News</a>, <a href="https://www.cbsnews.com/news/california-justice-department-ballots-appeals-court/">CBS News</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>Tech sell-off drags the Nasdaq to its worst day since June</h2><div class="body"><p>On Friday the Nasdaq fell 2.86% to 25,437 and the S&amp;P 500 fell 1.82% to 7,580, according to CNBC. The Nasdaq lost 5.3% in October, its steepest monthly drop since March 2025. Intel fell almost 29% on weak guidance tied to a PC slowdown, and AMD fell close to 11%.</p><p>CNBC points to earnings misses (Amazon and Alphabet) and growing worry about how much is being spent on AI data centers, especially by debt-funded cloud firms. Defensive stocks such as Walmart and Coca-Cola rose. Analyst Keith Buchanan of Globalt said the market is &#x27;picking up on&#x27; real economy risks.</p></div><p class="why"><strong>Why it matters:</strong> Much of this year&#x27;s market gains came from AI stocks. If investors start doubting that the huge AI spending will pay off, that affects stock prices and the companies&#x27; ability to keep building.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html">CNBC</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>NVIDIA&#x27;s ReplaySSM speeds up a new kind of language model</h2><p class="stand">A smarter way to store a model&#x27;s running &#x27;memory&#x27; makes some models decode faster.</p><dl><dt>What happened</dt><dd>On October 12 NVIDIA published ReplaySSM, a technique for hybrid models that mix attention layers with state-space model (SSM) layers, such as Nemotron 3. NVIDIA reports 1.46x to 1.80x faster SSM kernels at batch size 256 on one B300 GPU, and 1.85x and 2.10x more throughput than vLLM&#x27;s speculative decoding on two 120B-class models. It is integrated into TensorRT-LLM, vLLM and FlashInfer.</dd><dt>What it means, in plain words</dt><dd>An SSM layer keeps a compact summary of everything read so far and rewrites it after every token, which means moving a lot of data in and out of GPU memory for very little math. ReplaySSM saves a high-precision snapshot only now and then, plus a short list of recent inputs, and rebuilds the current summary from those. Rewriting less means less memory traffic. It also makes &#x27;undo&#x27; cheap, which matters when the model guesses several tokens ahead and some guesses are wrong.</dd><dt>Why it matters and how it could be used</dt><dd>Memory traffic is usually what limits how fast a model produces words, so cutting it means more users per GPU or faster replies. NVIDIA says the approach already runs in production in GLM-5.3-Flash and Kimi-K3. Accuracy is a caveat: on one test one small model lost 5.6 to 6.7 points.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>State-space model (SSM)</dt><dd>A type of neural network layer that carries a fixed-size summary of the past instead of looking back at every earlier word.</dd><dt>Speculative decoding</dt><dd>A speed trick where a fast guesser proposes several next words and the main model checks them all at once.</dd><dt>Batch size</dt><dd>How many requests the GPU handles together.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>A 124-billion-parameter model nearly triples its speed on NVIDIA&#x27;s small desktop AI box</h2><p class="stand">Three software changes took one model from about 36 to about 103 tokens per second.</p><dl><dt>What happened</dt><dd>On October 27 NVIDIA described three optimizations for running Ling-3.0-flash (124B total parameters, 5.1B active per token) on DGX Spark with one request at a time. A faster expert-math backend gave +9.3%, shrinking the output layer to 8-bit numbers brought +21.7% combined, and adding speculative decoding reached 102.88 tokens per second, +185.1% over the baseline. On a real benchmark of 1,319 math questions, throughput rose 42.5% and accuracy moved from 96.89% to 96.82%.</dd><dt>What it means, in plain words</dt><dd>This is a mixture-of-experts model: it is huge, but for each word only a small slice of it (5.1B parameters) does the work, like a hospital where each patient sees only a few specialists. Each of NVIDIA&#x27;s three changes reduces how much data must be read per word or how many full passes are needed. Numbers like the 185% come from a synthetic test with long inputs, so the 42.5% on the real benchmark is the more realistic figure.</dd><dt>Why it matters and how it could be used</dt><dd>It shows a very large model can run responsively on a single small machine, which is useful for private, local AI work without a data center. These are NVIDIA&#x27;s own measurements.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Mixture of experts (MoE)</dt><dd>A model made of many specialist sub-networks where only a few are used for each word.</dd><dt>Quantization</dt><dd>Storing numbers with fewer bits so they take less memory and read faster.</dd><dt>Token</dt><dd>A chunk of text, roughly a word or part of a word.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>NVIDIA Sentry: a security guard for AI agents that lives on the network card</h2><p class="stand">The watcher runs outside the computer the agent runs on, so the agent can&#x27;t switch it off.</p><dl><dt>What happened</dt><dd>In an October 21 post, NVIDIA introduced Sentry, part of its OpenShell reference architecture. It runs on BlueField-4, a data processing unit (a small computer on a network card), and inspects an agent&#x27;s traffic, checks it against policy rules and can quarantine an agent. NVIDIA says it can do this within milliseconds and that policy decisions can take under a millisecond. It is planned for early next year.</dd><dt>What it means, in plain words</dt><dd>An AI agent is a program that takes actions for you, such as calling tools and reading files. If the security software runs on the same machine as the agent, a compromised agent could tamper with it. Sentry sits on separate hardware, like a security guard in a booth the visitor can&#x27;t reach. It can see the agent&#x27;s network requests and, NVIDIA says, inspect memory to check what software is running.</dd><dt>Why it matters and how it could be used</dt><dd>Companies are cautious about letting agents touch real systems. A watcher that the agent cannot disable is one possible answer, and it ties into NVIDIA&#x27;s networking hardware, which is the family XLIO works with. This is NVIDIA&#x27;s claim; the product isn&#x27;t shipping yet.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>DPU</dt><dd>Data processing unit: a card with its own processors that handles networking and security work apart from the main CPU.</dd><dt>Policy</dt><dd>A set of rules saying what an agent is allowed to access.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>Anthropic files to go public</h2><p class="stand">The maker of Claude has filed paperwork for a stock market listing.</p><dl><dt>What happened</dt><dd>On October 26 Anthropic announced it filed a Form S-1 with the US Securities and Exchange Commission for an initial public offering of its Class A common stock. It intends to list on Nasdaq under the symbol &#x27;ANT&#x27;. The number of shares and the price are not yet set, and Goldman Sachs and Morgan Stanley are named as underwriters.</dd><dt>What it means, in plain words</dt><dd>An IPO is when a private company sells shares to the public for the first time. The S-1 is the detailed document the company must file first. Shares can&#x27;t be sold until the filing becomes effective.</dd><dt>Why it matters and how it could be used</dt><dd>Training and serving frontier AI costs enormous sums, and public markets are one way to raise it. It also means Anthropic&#x27;s finances will become public, and AI-company valuations are under scrutiny this week as tech stocks fell.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>IPO</dt><dd>Initial public offering: the first time a company sells its shares to the public.</dd><dt>S-1</dt><dd>The registration document a US company files with regulators before an IPO.</dd></dl></aside><p class="source">Sources: <a href="https://www.anthropic.com/news/s1-sec">Anthropic</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>This Arabian desert was once a lush paradise. Why did ancient humans avoid it?</h2><p class="stand">Even when the Empty Quarter had water, early people did not settle there.</p><div class="body"><p>The Rub&#x27; al Khali, or Empty Quarter, is one of the driest places on Earth. Thousands of years ago it was much wetter and greener. You might expect early humans to have flocked to it. According to Nature&#x27;s news report, an expedition found no sign that ancient people settled there.</p><p>A linked research paper, titled &#x27;Tethered to stone: how rock and water availability shaped early desert occupation&#x27;, concludes that water alone does not predict where early people lived. Only the standfirst and summary were readable without a login, so this summary rests on those and the paper&#x27;s title: the lesson seems to be that people needed more than a lake, with access to stone, probably for tools, shaping where they went.</p></div><ol class="points"><li>What they found: an expedition to the Rub&#x27; al Khali found no sign of ancient settlement in a time when the area had water.</li><li>How they found it: researchers studied the desert&#x27;s past landscape and how water and rock were spread across it, as described in the paper&#x27;s title.</li><li>Why it matters: it shows that where early humans lived depended on a mix of resources, not on water alone.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Rub&#x27; al Khali</dt><dd>Arabic for &#x27;Empty Quarter&#x27;, a huge sand desert covering much of the southern Arabian Peninsula.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03484-3">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>What an AI agent is: the loop of think, act, observe</h2><p class="stand">Saturday track: AI agents and sandboxes</p><p class="bigidea"><strong>The big idea:</strong> An AI agent is a language model placed in a loop: it decides what to do next, does it using a tool, looks at the result, and repeats until the job is done.</p><dl><dt>First, the basics</dt><dd><p>A language model on its own does one thing: it reads text and predicts the text that should come next. Ask a chatbot a question and you get one answer back. It cannot open your files, check a website or run a program. All it can do is produce words.</p><p>Two ideas turn that into an agent. First, tools: ordinary programs the model is allowed to request, such as &#x27;search the web&#x27; or &#x27;read this file&#x27;. The model writes a request, a separate program runs it and the result is pasted back into the conversation. Second, a loop: the surrounding program keeps feeding the model its own earlier steps and the tool results, so it can decide what to do next based on what just happened.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>You give the agent a goal, for example &#x27;find out why the build is failing&#x27;.</li><li>Think: the model reads the goal and everything so far, and decides on the next step, such as &#x27;look at the error log&#x27;.</li><li>Act: the model writes a request to use a tool. The surrounding program, not the model, actually runs it.</li><li>Observe: the tool&#x27;s output, such as the log text, is added to the conversation.</li><li>Repeat: the model thinks again with the new information. It may fix a file, run the tests, and read the new result.</li><li>Stop: when the model decides the goal is met, or a limit such as a step budget or a human check is reached, the loop ends and it reports back.</li></ol></dd><dt>A practical example</dt><dd>Imagine asking an agent to find why a network benchmark got slower. It runs the benchmark and reads the numbers, notices latency doubled, opens the configuration and sees busy-polling turned off, turns it on, reruns the benchmark and confirms latency recovered. Each step depended on what the previous one revealed, which a single chatbot answer could not do.</dd><dt>Why it matters for XLIO</dt><dd>Agents make many small calls in a row, so the speed of each model call and each network round trip adds up. Fast inference and low-latency networking, which NVIDIA and XLIO work on, directly shorten how long an agent takes. Agents also run real actions, which is why sandboxes, later in this track, matter.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>Steps in the basic loop</td><td>3: think, act, observe</td></tr></table></dd><dt>Common misconception</dt><dd>People often think the model itself runs the tools. It doesn&#x27;t: it only writes a request as text. A separate program decides whether to run it, which is exactly where safety checks and permissions are placed.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Language model</dt><dd>A program trained to predict the next piece of text, which lets it answer questions and write.</dd><dt>Tool</dt><dd>A program the model can ask to run, such as a search, a file reader or a calculator.</dd><dt>Agent loop</dt><dd>The repeated cycle of thinking, acting and observing until the task is done.</dd></dl></aside><details><summary>Self-test: Why does an agent need the &#x27;observe&#x27; step instead of just planning everything up front?</summary><p>Because the world rarely matches the plan. A tool may fail or reveal something unexpected, like a different error than assumed. Observing lets the agent adjust its next step based on what actually happened.</p></details><p class="source">Further reading: <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents (Anthropic)</a>, <a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>

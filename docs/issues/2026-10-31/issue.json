@@ -1,0 +1,261 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Israel's election ends in deadlock, and the fight now moves to coalition talks",
+        "standfirst": "Neither side has the 61 seats needed to govern, and Arab parties hold a record 19 seats.",
+        "paragraphs": [
+          "With all votes counted, Prime Minister Benjamin Netanyahu's bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit and Religious Zionism) won 53 of the Knesset's 120 seats, according to the Times of Israel. The opposition bloc led by former army chief Gadi Eisenkot (Yashar, B'Yachad, Yisrael Beytenu and The Democrats) won 48. The Joint List and Ra'am, two Arab-led parties, won a record 19 seats between them. A government needs 61, and turnout was 77.9%, the highest in decades.",
+          "The arithmetic is awkward. The opposition and the Arab parties together would have a majority, but Yisrael Beytenu leader Avigdor Liberman wrote that his party will not sit in any coalition with the two Arab-led parties. President Isaac Herzog urged party leaders to avoid another election. He will meet each leader after receiving the official results, and the new Knesset is due to be sworn in on November 10. The Times of Israel says coalition talks could last more than two months."
+        ],
+        "sources": [
+          {
+            "name": "Times of Israel",
+            "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"
+          }
+        ]
+      },
+      "briefs": [
+        {
+          "headline": "Opposition reportedly plans to replace the Knesset Speaker",
+          "text": "Channel 12 reported that anti-Netanyahu parties have agreed to try to remove Likud's Speaker Amir Ohana once the new Knesset is sworn in, possibly on November 10. Democrats chair Yair Golan said the next steps would be committee appointments and a state commission of inquiry into October 7. Kan reported that Liberman is not necessarily on board.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/opposition-parties-said-planning-to-quickly-replace-knesset-speaker-ohana/"
+        },
+        {
+          "headline": "Dispute over claims of foreign influence in the vote",
+          "text": "Netanyahu and Likud said the election was 'stolen' and alleged Qatari funding of Arab turnout. Acting Central Elections Committee director Dean Livne called reports of widespread problems 'entirely unfounded' and said the Shin Bet inquiry does not affect the results. Qatar called the allegations 'ridiculous and dangerous', Ra'am chair Mansour Abbas denied any link, and Hebrew media reported the Mossad has joined the probe.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/as-netanyahu-cries-foul-election-officials-dismiss-claim-that-vote-was-stolen/"
+        },
+        {
+          "headline": "Army demolishes homes of the Hebron attackers",
+          "text": "On Friday the IDF demolished the homes of the two Hebron gunmen who killed Staff Sgt. Ron Yonatan Roytman and Sgt. Yuval Shai Svilem at a checkpoint on October 23. Separately, troops arrested four suspects in Jenin whom the IDF said traded in weapons.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/israel-razes-homes-of-gunmen-who-carried-out-deadly-hebron-shooting-attack/"
+        },
+        {
+          "headline": "Tel Aviv stocks slide after the inconclusive vote",
+          "text": "According to Ynet, the TA-35 index fell 1.81% on Wednesday, rose 0.34% on Thursday and fell about 1.6% at Friday's open, leaving it roughly 3% below its pre-election level. Ynet notes the figures alone don't show how much of the fall is due to politics.",
+          "source": "Ynet",
+          "url": "https://www.ynetnews.com/business/article/bjr49kf6gl"
+        }
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Courts block Justice Department push over disputed California ballots",
+          "paragraphs": [
+            "The Justice Department asked California to set aside ballots sent to about 20,000 people it says may not be citizens. On Friday a 2-1 panel of the 9th Circuit rejected the request, agreeing there is 'no feasible way to identify and segregate the ballots of specific individuals'. California officials say the list is highly unreliable and likely includes many citizens.",
+            "Also on Friday, US District Judge Trina Thompson issued a temporary order, in a case brought by labor unions, barring the government from demanding that officials separate out ballots or from threatening them with prosecution. She wrote that the government likely violated the Voting Rights Act's ban on intimidation. The order expires November 16. CBS News said the Justice Department did not immediately comment."
+          ],
+          "why_it_matters": "Midterm elections are on November 3. The rulings decide whether millions of already-cast California ballots are counted as normal while the legal fight continues.",
+          "sources": [
+            {
+              "name": "CBS News",
+              "url": "https://www.cbsnews.com/news/judge-orders-doj-stop-threaten-intimidate-california-election-officials/"
+            },
+            {
+              "name": "CBS News",
+              "url": "https://www.cbsnews.com/news/california-justice-department-ballots-appeals-court/"
+            }
+          ]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Tech sell-off drags the Nasdaq to its worst day since June",
+          "paragraphs": [
+            "On Friday the Nasdaq fell 2.86% to 25,437 and the S&P 500 fell 1.82% to 7,580, according to CNBC. The Nasdaq lost 5.3% in October, its steepest monthly drop since March 2025. Intel fell almost 29% on weak guidance tied to a PC slowdown, and AMD fell close to 11%.",
+            "CNBC points to earnings misses (Amazon and Alphabet) and growing worry about how much is being spent on AI data centers, especially by debt-funded cloud firms. Defensive stocks such as Walmart and Coca-Cola rose. Analyst Keith Buchanan of Globalt said the market is 'picking up on' real economy risks."
+          ],
+          "why_it_matters": "Much of this year's market gains came from AI stocks. If investors start doubting that the huge AI spending will pay off, that affects stock prices and the companies' ability to keep building.",
+          "sources": [
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html"
+            }
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA's ReplaySSM speeds up a new kind of language model",
+          "standfirst": "A smarter way to store a model's running 'memory' makes some models decode faster.",
+          "what_happened": "On October 12 NVIDIA published ReplaySSM, a technique for hybrid models that mix attention layers with state-space model (SSM) layers, such as Nemotron 3. NVIDIA reports 1.46x to 1.80x faster SSM kernels at batch size 256 on one B300 GPU, and 1.85x and 2.10x more throughput than vLLM's speculative decoding on two 120B-class models. It is integrated into TensorRT-LLM, vLLM and FlashInfer.",
+          "what_it_means": "An SSM layer keeps a compact summary of everything read so far and rewrites it after every token, which means moving a lot of data in and out of GPU memory for very little math. ReplaySSM saves a high-precision snapshot only now and then, plus a short list of recent inputs, and rebuilds the current summary from those. Rewriting less means less memory traffic. It also makes 'undo' cheap, which matters when the model guesses several tokens ahead and some guesses are wrong.",
+          "why_it_matters": "Memory traffic is usually what limits how fast a model produces words, so cutting it means more users per GPU or faster replies. NVIDIA says the approach already runs in production in GLM-5.3-Flash and Kimi-K3. Accuracy is a caveat: on one test one small model lost 5.6 to 6.7 points.",
+          "terms": [
+            [
+              "State-space model (SSM)",
+              "A type of neural network layer that carries a fixed-size summary of the past instead of looking back at every earlier word."
+            ],
+            [
+              "Speculative decoding",
+              "A speed trick where a fast guesser proposes several next words and the main model checks them all at once."
+            ],
+            [
+              "Batch size",
+              "How many requests the GPU handles together."
+            ]
+          ],
+          "sources": [
+            {
+              "name": "NVIDIA Technical Blog",
+              "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"
+            }
+          ]
+        },
+        {
+          "headline": "A 124-billion-parameter model nearly triples its speed on NVIDIA's small desktop AI box",
+          "standfirst": "Three software changes took one model from about 36 to about 103 tokens per second.",
+          "what_happened": "On October 27 NVIDIA described three optimizations for running Ling-3.0-flash (124B total parameters, 5.1B active per token) on DGX Spark with one request at a time. A faster expert-math backend gave +9.3%, shrinking the output layer to 8-bit numbers brought +21.7% combined, and adding speculative decoding reached 102.88 tokens per second, +185.1% over the baseline. On a real benchmark of 1,319 math questions, throughput rose 42.5% and accuracy moved from 96.89% to 96.82%.",
+          "what_it_means": "This is a mixture-of-experts model: it is huge, but for each word only a small slice of it (5.1B parameters) does the work, like a hospital where each patient sees only a few specialists. Each of NVIDIA's three changes reduces how much data must be read per word or how many full passes are needed. Numbers like the 185% come from a synthetic test with long inputs, so the 42.5% on the real benchmark is the more realistic figure.",
+          "why_it_matters": "It shows a very large model can run responsively on a single small machine, which is useful for private, local AI work without a data center. These are NVIDIA's own measurements.",
+          "terms": [
+            [
+              "Mixture of experts (MoE)",
+              "A model made of many specialist sub-networks where only a few are used for each word."
+            ],
+            [
+              "Quantization",
+              "Storing numbers with fewer bits so they take less memory and read faster."
+            ],
+            [
+              "Token",
+              "A chunk of text, roughly a word or part of a word."
+            ]
+          ],
+          "sources": [
+            {
+              "name": "NVIDIA Technical Blog",
+              "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
+            }
+          ]
+        },
+        {
+          "headline": "NVIDIA Sentry: a security guard for AI agents that lives on the network card",
+          "standfirst": "The watcher runs outside the computer the agent runs on, so the agent can't switch it off.",
+          "what_happened": "In an October 21 post, NVIDIA introduced Sentry, part of its OpenShell reference architecture. It runs on BlueField-4, a data processing unit (a small computer on a network card), and inspects an agent's traffic, checks it against policy rules and can quarantine an agent. NVIDIA says it can do this within milliseconds and that policy decisions can take under a millisecond. It is planned for early next year.",
+          "what_it_means": "An AI agent is a program that takes actions for you, such as calling tools and reading files. If the security software runs on the same machine as the agent, a compromised agent could tamper with it. Sentry sits on separate hardware, like a security guard in a booth the visitor can't reach. It can see the agent's network requests and, NVIDIA says, inspect memory to check what software is running.",
+          "why_it_matters": "Companies are cautious about letting agents touch real systems. A watcher that the agent cannot disable is one possible answer, and it ties into NVIDIA's networking hardware, which is the family XLIO works with. This is NVIDIA's claim; the product isn't shipping yet.",
+          "terms": [
+            [
+              "DPU",
+              "Data processing unit: a card with its own processors that handles networking and security work apart from the main CPU."
+            ],
+            [
+              "Policy",
+              "A set of rules saying what an agent is allowed to access."
+            ]
+          ],
+          "sources": [
+            {
+              "name": "NVIDIA Technical Blog",
+              "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/"
+            }
+          ]
+        },
+        {
+          "headline": "Anthropic files to go public",
+          "standfirst": "The maker of Claude has filed paperwork for a stock market listing.",
+          "what_happened": "On October 26 Anthropic announced it filed a Form S-1 with the US Securities and Exchange Commission for an initial public offering of its Class A common stock. It intends to list on Nasdaq under the symbol 'ANT'. The number of shares and the price are not yet set, and Goldman Sachs and Morgan Stanley are named as underwriters.",
+          "what_it_means": "An IPO is when a private company sells shares to the public for the first time. The S-1 is the detailed document the company must file first. Shares can't be sold until the filing becomes effective.",
+          "why_it_matters": "Training and serving frontier AI costs enormous sums, and public markets are one way to raise it. It also means Anthropic's finances will become public, and AI-company valuations are under scrutiny this week as tech stocks fell.",
+          "terms": [
+            [
+              "IPO",
+              "Initial public offering: the first time a company sells its shares to the public."
+            ],
+            [
+              "S-1",
+              "The registration document a US company files with regulators before an IPO."
+            ]
+          ],
+          "sources": [
+            {
+              "name": "Anthropic",
+              "url": "https://www.anthropic.com/news/s1-sec"
+            }
+          ]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "This Arabian desert was once a lush paradise. Why did ancient humans avoid it?",
+      "standfirst": "Even when the Empty Quarter had water, early people did not settle there.",
+      "paragraphs": [
+        "The Rub' al Khali, or Empty Quarter, is one of the driest places on Earth. Thousands of years ago it was much wetter and greener. You might expect early humans to have flocked to it. According to Nature's news report, an expedition found no sign that ancient people settled there.",
+        "A linked research paper, titled 'Tethered to stone: how rock and water availability shaped early desert occupation', concludes that water alone does not predict where early people lived. Only the standfirst and summary were readable without a login, so this summary rests on those and the paper's title: the lesson seems to be that people needed more than a lake, with access to stone, probably for tools, shaping where they went."
+      ],
+      "key_points": [
+        "What they found: an expedition to the Rub' al Khali found no sign of ancient settlement in a time when the area had water.",
+        "How they found it: researchers studied the desert's past landscape and how water and rock were spread across it, as described in the paper's title.",
+        "Why it matters: it shows that where early humans lived depended on a mix of resources, not on water alone."
+      ],
+      "terms": [
+        [
+          "Rub' al Khali",
+          "Arabic for 'Empty Quarter', a huge sand desert covering much of the southern Arabian Peninsula."
+        ]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03484-3",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Saturday track: AI agents and sandboxes",
+      "title": "What an AI agent is: the loop of think, act, observe",
+      "big_idea": "An AI agent is a language model placed in a loop: it decides what to do next, does it using a tool, looks at the result, and repeats until the job is done.",
+      "background": [
+        "A language model on its own does one thing: it reads text and predicts the text that should come next. Ask a chatbot a question and you get one answer back. It cannot open your files, check a website or run a program. All it can do is produce words.",
+        "Two ideas turn that into an agent. First, tools: ordinary programs the model is allowed to request, such as 'search the web' or 'read this file'. The model writes a request, a separate program runs it and the result is pasted back into the conversation. Second, a loop: the surrounding program keeps feeding the model its own earlier steps and the tool results, so it can decide what to do next based on what just happened."
+      ],
+      "steps": [
+        "You give the agent a goal, for example 'find out why the build is failing'.",
+        "Think: the model reads the goal and everything so far, and decides on the next step, such as 'look at the error log'.",
+        "Act: the model writes a request to use a tool. The surrounding program, not the model, actually runs it.",
+        "Observe: the tool's output, such as the log text, is added to the conversation.",
+        "Repeat: the model thinks again with the new information. It may fix a file, run the tests, and read the new result.",
+        "Stop: when the model decides the goal is met, or a limit such as a step budget or a human check is reached, the loop ends and it reports back."
+      ],
+      "example": "Imagine asking an agent to find why a network benchmark got slower. It runs the benchmark and reads the numbers, notices latency doubled, opens the configuration and sees busy-polling turned off, turns it on, reruns the benchmark and confirms latency recovered. Each step depended on what the previous one revealed, which a single chatbot answer could not do.",
+      "why_xlio": "Agents make many small calls in a row, so the speed of each model call and each network round trip adds up. Fast inference and low-latency networking, which NVIDIA and XLIO work on, directly shorten how long an agent takes. Agents also run real actions, which is why sandboxes, later in this track, matter.",
+      "numbers": [
+        [
+          "Steps in the basic loop",
+          "3: think, act, observe"
+        ]
+      ],
+      "pitfall": "People often think the model itself runs the tools. It doesn't: it only writes a request as text. A separate program decides whether to run it, which is exactly where safety checks and permissions are placed.",
+      "terms": [
+        [
+          "Language model",
+          "A program trained to predict the next piece of text, which lets it answer questions and write."
+        ],
+        [
+          "Tool",
+          "A program the model can ask to run, such as a search, a file reader or a calculator."
+        ],
+        [
+          "Agent loop",
+          "The repeated cycle of thinking, acting and observing until the task is done."
+        ]
+      ],
+      "question": "Why does an agent need the 'observe' step instead of just planning everything up front?",
+      "answer": "Because the world rarely matches the plan. A tool may fail or reveal something unexpected, like a different error than assumed. Observing lets the agent adjust its next step based on what actually happened.",
+      "reading": [
+        {
+          "name": "Building effective agents (Anthropic)",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents"
+        },
+        {
+          "name": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "url": "https://arxiv.org/abs/2210.03629"
+        }
+      ]
+    }
+  }
+}
