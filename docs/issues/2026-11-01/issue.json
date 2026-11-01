@@ -1,0 +1,285 @@
+{
+ "sections": {
+  "israel": {
+   "lead": {
+    "headline": "Israel's election leaves neither side close to a majority",
+    "standfirst": "With every vote counted, Netanyahu's bloc has 53 of 120 seats and the opposition bloc led by Gadi Eisenkot has 48, so the Arab parties' 19 seats hold the key.",
+    "paragraphs": [
+     "The final count, as reported by the Times of Israel, gives Likud 27 seats, Eisenkot's Yashar party 21, and the Arab parties (the Joint List and Ra'am) a record 19 between them. Netanyahu's bloc totals 53 seats, down from the 68 the current coalition held, and the anti-Netanyahu bloc has 48. A government needs 61. Turnout was 77.9 percent, the highest in decades.",
+     "The arithmetic is awkward. The Arab parties' seats would give the opposition a majority on paper, but every Zionist party except The Democrats has ruled out working with Ra'am or the Joint List. President Isaac Herzog will meet party leaders from Wednesday, once the Central Elections Committee hands him the official results, and has urged them to avoid another election. The new Knesset is sworn in on November 10, and the Times of Israel says coalition talks could run more than two months. Netanyahu and Eisenkot have each said they intend to form the next government."
+    ],
+    "sources": [
+     {
+      "name": "Times of Israel",
+      "url": "https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/"
+     },
+     {
+      "name": "Ynet",
+      "url": "https://www.ynetnews.com/"
+     }
+    ]
+   },
+   "briefs": [
+    {
+     "headline": "Reports of Trump-Netanyahu call as US weighs new Iran strikes",
+     "text": "The Wall Street Journal reported, citing people familiar, that Trump and Netanyahu spoke on Saturday as the US prepared to resume strikes on Iran. MSNOW, citing Gulf officials, reported Washington warned allies of possible strikes as early as November 4. Trump said talks are going fine but that Iran is not very reliable.",
+     "source": "Times of Israel",
+     "url": "https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/"
+    },
+    {
+     "headline": "Iran says no nuclear talks or Hormuz reopening until US accepts its demands",
+     "text": "Mohsen Rezaei, head of Iran's Supreme National Security Council, said the Strait of Hormuz stays closed until Iran's conditions are met, and that the US tone has changed since a letter from Vice President Vance. Iranian officials said Supreme Leader Mojtaba Khamenei ordered forces to be ready to respond to any attack. Reuters reported indirect talks via Qatar continue.",
+     "source": "Times of Israel",
+     "url": "https://www.timesofisrael.com/liveblog-october-31-2026/"
+    },
+    {
+     "headline": "Eisenkot and Likud court the ultra-Orthodox parties",
+     "text": "Ynet reports Eisenkot has set conditions for a coalition and is approaching ultra-Orthodox parties, while Likud is looking for defectors from the opposition. Likud is quoted as doubting the opposition can stay united.",
+     "source": "Ynet",
+     "url": "https://www.ynetnews.com/article/byfom0x6me"
+    },
+    {
+     "headline": "About 2,000 rally in Tel Aviv on both sides of the election dispute",
+     "text": "Demonstrators demanded a Jewish-Arab government, while a counterprotest claimed the election was stolen. Election officials have called reports of widespread fraud unfounded, and the Times of Israel reports Mossad joined a probe into alleged foreign influence at the Shin Bet's request.",
+     "source": "Times of Israel",
+     "url": "https://www.timesofisrael.com/some-2000-rally-in-tel-aviv-to-demand-jewish-arab-government-counterprotest-held-against-stolen-election/"
+    }
+   ]
+  },
+  "us": {
+   "items": [
+    {
+     "label": "US news",
+     "headline": "US midterms are Tuesday, with Iran strikes reportedly planned for right after",
+     "paragraphs": [
+      "Americans vote in the midterm elections on Tuesday, which decide control of Congress. Separately, Times of Israel reports, citing MSNOW and Gulf officials, that the US has warned Gulf allies it may strike Iran as early as November 4, the day after the vote.",
+      "The US has not struck Iran since September 1, and Trump has pledged to hold off until after the midterms, the report says. Trump told reporters the US still has to deal with one or two sites, including Pickaxe Mountain. Talks through Qatar continue."
+     ],
+     "why_it_matters": "The election decides how much Congress can check the White House, and a renewed war with Iran would hit oil prices, shipping through Hormuz and the Gulf states. These are reports, not official announcements.",
+     "sources": [
+      {
+       "name": "Times of Israel",
+       "url": "https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/"
+      }
+     ]
+    },
+    {
+     "label": "Stock market",
+     "headline": "Nasdaq has its worst day since June as investors doubt the AI spending boom",
+     "paragraphs": [
+      "On Friday the Nasdaq fell 2.86 percent and the S&P 500 fell 1.82 percent, per CNBC. For October, the Nasdaq lost 5.3 percent, its worst month since March 2025. Money moved out of chip and AI stocks into defensive ones like healthcare and consumer staples.",
+      "The triggers were earnings. Intel dropped nearly 29 percent on a weak outlook, Amazon reported negative free cash flow of 42.4 billion dollars over the past year, and Alphabet had its worst day on record on Thursday after missing estimates. Nvidia fell 4 percent."
+     ],
+     "why_it_matters": "Big tech is spending hundreds of billions on AI data centers, and investors are now asking when that spending pays back.",
+     "sources": [
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html"
+      },
+      {
+       "name": "TechCrunch",
+       "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+      }
+     ]
+    }
+   ]
+  },
+  "ai": {
+   "stories": [
+    {
+     "headline": "Investors start asking whether the AI spending boom will pay off",
+     "standfirst": "Four tech giants plan over 740 billion dollars of spending this year, and several now burn more cash than they make.",
+     "what_happened": "TechCrunch reports that Alphabet, Amazon, Meta and Microsoft plan more than 740 billion dollars of capital spending this year. Alphabet had negative free cash flow of 9.1 billion dollars in its third quarter and Amazon negative 42.4 billion over twelve months. Microsoft was the exception, with 18.6 billion positive. The five biggest spenders raised a combined 326 billion dollars in debt in 2026, about triple last year, per S&P Global Market Intelligence. Separately, the Financial Times reported that Blackstone told investors Anthropic's debt could get a high-yield, or junk, rating after its planned IPO.",
+     "what_it_means": "Building AI means buying huge numbers of chips and building data centers before the money comes in, like building a factory before you have customers. Free cash flow is the cash left after paying for that. When it goes negative, companies borrow, and lenders start to care whether the customers will show up.",
+     "why_it_matters": "Nvidia and the whole networking and inference world depend on this spending. If it slows, demand for the hardware XLIO's customers buy could change. If it continues, efficiency work like faster networking becomes more valuable because every wasted cycle costs real money.",
+     "terms": [
+      [
+       "Capex",
+       "Capital expenditure: money spent on long-lived things like data centers and chips."
+      ],
+      [
+       "Free cash flow",
+       "Cash a company has left after running the business and paying for investments."
+      ],
+      [
+       "Junk rating",
+       "A credit rating saying a borrower is riskier, so lenders charge more interest."
+      ]
+     ],
+     "sources": [
+      {
+       "name": "TechCrunch",
+       "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html"
+      }
+     ]
+    },
+    {
+     "headline": "Mistral publishes the weights of a trillion-parameter model",
+     "standfirst": "Mistral Large 4 is free to download and aimed at cybersecurity work that companies want to run on their own machines.",
+     "what_happened": "Mistral released the weights of Mistral Large 4, a model with about one trillion parameters, on Hugging Face and through its API, according to TechCrunch. Mistral claims it performs comparably to the Chinese open model GLM-5.3, especially on cyber tasks, while using 47 percent fewer tokens per task, and that it tops open models on Artificial Analysis' Coding Agent Index. TechCrunch gives no independent benchmarks, license terms or architecture details.",
+     "what_it_means": "Parameters are the numbers a model learned in training, roughly its memory of everything it was taught. Publishing the weights means anyone can download those numbers and run the model themselves, instead of sending data to someone else's servers. Using fewer tokens per task means it needs less text to reach an answer, which makes it cheaper to run.",
+     "why_it_matters": "A bank or government that cannot send sensitive security data to an outside service could run this model inside its own building. A model this size needs many GPUs, so it is also a serving and networking challenge. All performance numbers here are Mistral's own claims.",
+     "terms": [
+      [
+       "Open weights",
+       "The trained numbers are published so anyone can run the model themselves."
+      ],
+      [
+       "Token",
+       "A small chunk of text, often a word or part of one, that a model reads and writes."
+      ],
+      [
+       "On-premises",
+       "Run on the customer's own computers rather than in someone else's cloud."
+      ]
+     ],
+     "sources": [
+      {
+       "name": "TechCrunch",
+       "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+      }
+     ]
+    },
+    {
+     "headline": "NVIDIA publishes a tested recipe for running Dynamo on Kubernetes",
+     "standfirst": "A pinned, validated set of software versions for serving AI models at data center scale.",
+     "what_happened": "NVIDIA's technical blog describes a validated Kubernetes runtime for Dynamo, its inference serving software, packaged as recipes in the NVIDIA AI Cluster Runtime. Each recipe pins versions, for example Dynamo Platform 1.4.2 on Amazon EKS with GB200 and GB300 NVL72 racks, and includes validation checks. The post says routing uses KV-cache state reported by the workers, and that Dynamo 1.5 is expected to swap a Go bridge for a native Rust one to reduce per-request overhead. NVIDIA gives no performance numbers in the post.",
+     "what_it_means": "Dynamo decides which GPU should handle each chat request. Kubernetes is the system that starts and watches programs across many servers. The hard part is getting a dozen pieces of software to work together, so NVIDIA is shipping a known-good combination. The KV cache is the model's short-term memory of the conversation so far. Sending a follow-up to the GPU that already holds it saves recomputing it.",
+     "why_it_matters": "A team setting up an inference cluster can start from a tested recipe instead of a weeks-long integration. It also shows where the effort in AI serving is going: scheduling, routing and moving cache data between machines, which is network-heavy.",
+     "terms": [
+      [
+       "Kubernetes",
+       "Software that starts, stops and monitors programs across many servers."
+      ],
+      [
+       "KV cache",
+       "The model's saved working memory of the text so far, reused so it isn't recomputed."
+      ],
+      [
+       "Inference",
+       "Running a trained model to answer requests, as opposed to training it."
+      ]
+     ],
+     "sources": [
+      {
+       "name": "NVIDIA Technical Blog",
+       "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/"
+      }
+     ]
+    },
+    {
+     "headline": "Google's first AI data center satellite is working in orbit",
+     "standfirst": "A small prototype with Google chips is running an AI model in space.",
+     "what_happened": "TechCrunch reports Google's Suncatcher prototype launched earlier this month on a SpaceX Falcon 9 and, after about three weeks of commissioning, is operating nominally, a Google spokesperson said. It carries four TPUs but can run only one at a time, each for about 20 minutes, on up to one kilowatt of solar power. Gemma 4 is preloaded and wrote a haiku in its first test. Two more satellites are planned for 2027, and Google targets the 2030s for the economics to work.",
+     "what_it_means": "The idea is to put computers where sunlight is constant and cooling is by radiating heat to space. This one is a tiny test. A real data center uses megawatts, so this is roughly a lightbulb compared to a power plant.",
+     "why_it_matters": "The test studies heat and radiation, which can flip bits and corrupt data. Google's ground tests suggested radiation is a minor issue for inference but more of a problem for training. It is far from practical use today.",
+     "terms": [
+      [
+       "TPU",
+       "Tensor Processing Unit: Google's own AI chip."
+      ],
+      [
+       "Bit flip",
+       "A stored 0 turning into a 1, or the reverse, often caused by radiation."
+      ]
+     ],
+     "sources": [
+      {
+       "name": "TechCrunch",
+       "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/"
+      }
+     ]
+    }
+   ]
+  },
+  "nature": {
+   "headline": "The brain clears out billions of faulty neurons around birth",
+   "standfirst": "Researchers report a system that removes mutant neurons around the time we are born.",
+   "paragraphs": [
+    "Nature's news report, summarized here from its feed description only because the full text needs a login, says researchers found that the brain removes billions of neurons carrying mutations around the time of birth.",
+    "The idea is a quality-control step. As a brain is built, some cells pick up errors in their DNA. This work describes a system that finds and clears many of them, and Nature says it is relevant to neurological conditions. I could not read the details, so numbers and methods are not given here."
+   ],
+   "key_points": [
+    "What they found: a clean-up system that removes billions of neurons with mutations around birth.",
+    "How: the full methods were behind a login, so they are not summarized here.",
+    "Why it matters: faults in this system could be linked to some brain conditions, per Nature."
+   ],
+   "terms": [
+    [
+     "Mutation",
+     "A change in a cell's DNA, which can sometimes harm how the cell works."
+    ],
+    [
+     "Neuron",
+     "A nerve cell, the basic building block of the brain."
+    ]
+   ],
+   "url": "https://www.nature.com/articles/d41586-026-03444-x",
+   "source": "nature.com"
+  },
+  "study": {
+   "track": "Sunday track: XLIO and kernel bypass",
+   "title": "What a socket is, and what really happens when an app calls send() and recv()",
+   "big_idea": "A socket is a handle the operating system gives your program for a network conversation. Calling send() hands your bytes to the kernel, which does the real work of delivering them, and recv() collects what the kernel has already received for you.",
+   "background": [
+    "Your program cannot touch the network card directly. The operating system kernel owns the hardware and sits between your program and the card. Your program asks the kernel for services through system calls, which are controlled doors into the kernel. Crossing a door costs a little time.",
+    "A socket is what you get back when you ask the kernel for a network endpoint with socket(). It is a small integer, a file descriptor, that you pass back to later calls. Behind that number the kernel keeps buffers: a send buffer holding bytes waiting to go out, and a receive buffer holding bytes that arrived but your program has not read yet. TCP, the protocol most sockets use, also needs to be set up first: connect() on the client and listen() and accept() on the server."
+   ],
+   "steps": [
+    "The app calls send(fd, data, len). The CPU switches from user mode to kernel mode.",
+    "The kernel copies the bytes from the app's memory into a socket buffer in kernel memory.",
+    "The TCP and IP code in the kernel splits the data into packets, adds headers and picks a route.",
+    "The kernel gives the packets to the network card driver, which tells the card to fetch them from memory and transmit them. send() usually returns as soon as the copy is done, not when the data arrives.",
+    "On the receiving machine, the card writes arriving packets to memory and signals the kernel, which runs TCP, checks order, and places the bytes in that socket's receive buffer.",
+    "The app calls recv(). If data is waiting, the kernel copies it into the app's buffer and returns. If not, the app sleeps until data arrives, or recv() returns immediately in non-blocking mode."
+   ],
+   "example": "A trading app sends a 100-byte order with send(). Those 100 bytes cross into the kernel, are copied once, wrapped in TCP and IP headers, and passed to the card. On the exchange's server the kernel receives, reassembles and queues them until the matching app calls recv(). Each stage adds time, and for a tiny message that overhead is far larger than the time to move 100 bytes.",
+   "why_xlio": "XLIO keeps the socket API your app already uses, but does the buffering, TCP work and card communication in user space, skipping the system call door and the kernel copies.",
+   "numbers": [
+    [
+     "Typical Ethernet MTU (largest normal packet)",
+     "1500 bytes"
+    ],
+    [
+     "TCP plus IPv4 headers without options",
+     "40 bytes"
+    ]
+   ],
+   "pitfall": "A common misconception: send() returning means the data reached the other side. It only means the kernel accepted the bytes into its send buffer. Delivery and acknowledgement happen later, and a send() can even accept fewer bytes than you asked for.",
+   "terms": [
+    [
+     "System call",
+     "A controlled request from a program to the operating system kernel."
+    ],
+    [
+     "File descriptor",
+     "A small number that stands for an open resource, such as a socket."
+    ],
+    [
+     "Kernel",
+     "The core of the operating system, which owns the hardware."
+    ],
+    [
+     "Socket buffer",
+     "Kernel memory holding bytes waiting to be sent or read."
+    ]
+   ],
+   "question": "If send() returns 100, has the other machine received the 100 bytes?",
+   "answer": "Not necessarily. It means the kernel copied 100 bytes into the send buffer. They may still be waiting to be sent, in flight, or lost and needing retransmission. Only the TCP acknowledgement from the other side tells the kernel they arrived, and even that does not mean the other app has read them.",
+   "reading": [
+    {
+     "name": "Linux man page: socket(7)",
+     "url": "https://man7.org/linux/man-pages/man7/socket.7.html"
+    },
+    {
+     "name": "Linux man page: send(2)",
+     "url": "https://man7.org/linux/man-pages/man2/send.2.html"
+    }
+   ]
+  }
+ }
+}

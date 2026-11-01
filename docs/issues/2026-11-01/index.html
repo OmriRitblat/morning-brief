@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Sunday, 1 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Sunday, 1 November 2026</span><span>No. 7</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s election leaves neither side close to a majority</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">US midterms are Tuesday, with Iran strikes reportedly planned for right after · Nasdaq has its worst day since June as investors doubt the AI spending boom</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">Investors start asking whether the AI spending boom will pay off</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">The brain clears out billions of faulty neurons around birth</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">What a socket is, and what really happens when an app calls send() and recv()</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s election leaves neither side close to a majority</h2><p class="stand">With every vote counted, Netanyahu&#x27;s bloc has 53 of 120 seats and the opposition bloc led by Gadi Eisenkot has 48, so the Arab parties&#x27; 19 seats hold the key.</p><div class="body"><p>The final count, as reported by the Times of Israel, gives Likud 27 seats, Eisenkot&#x27;s Yashar party 21, and the Arab parties (the Joint List and Ra&#x27;am) a record 19 between them. Netanyahu&#x27;s bloc totals 53 seats, down from the 68 the current coalition held, and the anti-Netanyahu bloc has 48. A government needs 61. Turnout was 77.9 percent, the highest in decades.</p><p>The arithmetic is awkward. The Arab parties&#x27; seats would give the opposition a majority on paper, but every Zionist party except The Democrats has ruled out working with Ra&#x27;am or the Joint List. President Isaac Herzog will meet party leaders from Wednesday, once the Central Elections Committee hands him the official results, and has urged them to avoid another election. The new Knesset is sworn in on November 10, and the Times of Israel says coalition talks could run more than two months. Netanyahu and Eisenkot have each said they intend to form the next government.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/with-all-votes-counted-netanyahus-bloc-at-53-seats-eisenkots-48-arab-parties-19/">Times of Israel</a>, <a href="https://www.ynetnews.com/">Ynet</a></p></article><div class="briefs"><div class="brief"><h3>Reports of Trump-Netanyahu call as US weighs new Iran strikes</h3><p>The Wall Street Journal reported, citing people familiar, that Trump and Netanyahu spoke on Saturday as the US prepared to resume strikes on Iran. MSNOW, citing Gulf officials, reported Washington warned allies of possible strikes as early as November 4. Trump said talks are going fine but that Iran is not very reliable. <a href="https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/">Times of Israel</a></p></div><div class="brief"><h3>Iran says no nuclear talks or Hormuz reopening until US accepts its demands</h3><p>Mohsen Rezaei, head of Iran&#x27;s Supreme National Security Council, said the Strait of Hormuz stays closed until Iran&#x27;s conditions are met, and that the US tone has changed since a letter from Vice President Vance. Iranian officials said Supreme Leader Mojtaba Khamenei ordered forces to be ready to respond to any attack. Reuters reported indirect talks via Qatar continue. <a href="https://www.timesofisrael.com/liveblog-october-31-2026/">Times of Israel</a></p></div><div class="brief"><h3>Eisenkot and Likud court the ultra-Orthodox parties</h3><p>Ynet reports Eisenkot has set conditions for a coalition and is approaching ultra-Orthodox parties, while Likud is looking for defectors from the opposition. Likud is quoted as doubting the opposition can stay united. <a href="https://www.ynetnews.com/article/byfom0x6me">Ynet</a></p></div><div class="brief"><h3>About 2,000 rally in Tel Aviv on both sides of the election dispute</h3><p>Demonstrators demanded a Jewish-Arab government, while a counterprotest claimed the election was stolen. Election officials have called reports of widespread fraud unfounded, and the Times of Israel reports Mossad joined a probe into alleged foreign influence at the Shin Bet&#x27;s request. <a href="https://www.timesofisrael.com/some-2000-rally-in-tel-aviv-to-demand-jewish-arab-government-counterprotest-held-against-stolen-election/">Times of Israel</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>US midterms are Tuesday, with Iran strikes reportedly planned for right after</h2><div class="body"><p>Americans vote in the midterm elections on Tuesday, which decide control of Congress. Separately, Times of Israel reports, citing MSNOW and Gulf officials, that the US has warned Gulf allies it may strike Iran as early as November 4, the day after the vote.</p><p>The US has not struck Iran since September 1, and Trump has pledged to hold off until after the midterms, the report says. Trump told reporters the US still has to deal with one or two sites, including Pickaxe Mountain. Talks through Qatar continue.</p></div><p class="why"><strong>Why it matters:</strong> The election decides how much Congress can check the White House, and a renewed war with Iran would hit oil prices, shipping through Hormuz and the Gulf states. These are reports, not official announcements.</p><p class="source">Sources: <a href="https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/">Times of Israel</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>Nasdaq has its worst day since June as investors doubt the AI spending boom</h2><div class="body"><p>On Friday the Nasdaq fell 2.86 percent and the S&amp;P 500 fell 1.82 percent, per CNBC. For October, the Nasdaq lost 5.3 percent, its worst month since March 2025. Money moved out of chip and AI stocks into defensive ones like healthcare and consumer staples.</p><p>The triggers were earnings. Intel dropped nearly 29 percent on a weak outlook, Amazon reported negative free cash flow of 42.4 billion dollars over the past year, and Alphabet had its worst day on record on Thursday after missing estimates. Nvidia fell 4 percent.</p></div><p class="why"><strong>Why it matters:</strong> Big tech is spending hundreds of billions on AI data centers, and investors are now asking when that spending pays back.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html">CNBC</a>, <a href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/">TechCrunch</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>Investors start asking whether the AI spending boom will pay off</h2><p class="stand">Four tech giants plan over 740 billion dollars of spending this year, and several now burn more cash than they make.</p><dl><dt>What happened</dt><dd>TechCrunch reports that Alphabet, Amazon, Meta and Microsoft plan more than 740 billion dollars of capital spending this year. Alphabet had negative free cash flow of 9.1 billion dollars in its third quarter and Amazon negative 42.4 billion over twelve months. Microsoft was the exception, with 18.6 billion positive. The five biggest spenders raised a combined 326 billion dollars in debt in 2026, about triple last year, per S&amp;P Global Market Intelligence. Separately, the Financial Times reported that Blackstone told investors Anthropic&#x27;s debt could get a high-yield, or junk, rating after its planned IPO.</dd><dt>What it means, in plain words</dt><dd>Building AI means buying huge numbers of chips and building data centers before the money comes in, like building a factory before you have customers. Free cash flow is the cash left after paying for that. When it goes negative, companies borrow, and lenders start to care whether the customers will show up.</dd><dt>Why it matters and how it could be used</dt><dd>Nvidia and the whole networking and inference world depend on this spending. If it slows, demand for the hardware XLIO&#x27;s customers buy could change. If it continues, efficiency work like faster networking becomes more valuable because every wasted cycle costs real money.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Capex</dt><dd>Capital expenditure: money spent on long-lived things like data centers and chips.</dd><dt>Free cash flow</dt><dd>Cash a company has left after running the business and paying for investments.</dd><dt>Junk rating</dt><dd>A credit rating saying a borrower is riskier, so lenders charge more interest.</dd></dl></aside><p class="source">Sources: <a href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/">TechCrunch</a>, <a href="https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html">CNBC</a></p></article><article class="lead second story"><h2>Mistral publishes the weights of a trillion-parameter model</h2><p class="stand">Mistral Large 4 is free to download and aimed at cybersecurity work that companies want to run on their own machines.</p><dl><dt>What happened</dt><dd>Mistral released the weights of Mistral Large 4, a model with about one trillion parameters, on Hugging Face and through its API, according to TechCrunch. Mistral claims it performs comparably to the Chinese open model GLM-5.3, especially on cyber tasks, while using 47 percent fewer tokens per task, and that it tops open models on Artificial Analysis&#x27; Coding Agent Index. TechCrunch gives no independent benchmarks, license terms or architecture details.</dd><dt>What it means, in plain words</dt><dd>Parameters are the numbers a model learned in training, roughly its memory of everything it was taught. Publishing the weights means anyone can download those numbers and run the model themselves, instead of sending data to someone else&#x27;s servers. Using fewer tokens per task means it needs less text to reach an answer, which makes it cheaper to run.</dd><dt>Why it matters and how it could be used</dt><dd>A bank or government that cannot send sensitive security data to an outside service could run this model inside its own building. A model this size needs many GPUs, so it is also a serving and networking challenge. All performance numbers here are Mistral&#x27;s own claims.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Open weights</dt><dd>The trained numbers are published so anyone can run the model themselves.</dd><dt>Token</dt><dd>A small chunk of text, often a word or part of one, that a model reads and writes.</dd><dt>On-premises</dt><dd>Run on the customer&#x27;s own computers rather than in someone else&#x27;s cloud.</dd></dl></aside><p class="source">Sources: <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/">TechCrunch</a></p></article><article class="lead second story"><h2>NVIDIA publishes a tested recipe for running Dynamo on Kubernetes</h2><p class="stand">A pinned, validated set of software versions for serving AI models at data center scale.</p><dl><dt>What happened</dt><dd>NVIDIA&#x27;s technical blog describes a validated Kubernetes runtime for Dynamo, its inference serving software, packaged as recipes in the NVIDIA AI Cluster Runtime. Each recipe pins versions, for example Dynamo Platform 1.4.2 on Amazon EKS with GB200 and GB300 NVL72 racks, and includes validation checks. The post says routing uses KV-cache state reported by the workers, and that Dynamo 1.5 is expected to swap a Go bridge for a native Rust one to reduce per-request overhead. NVIDIA gives no performance numbers in the post.</dd><dt>What it means, in plain words</dt><dd>Dynamo decides which GPU should handle each chat request. Kubernetes is the system that starts and watches programs across many servers. The hard part is getting a dozen pieces of software to work together, so NVIDIA is shipping a known-good combination. The KV cache is the model&#x27;s short-term memory of the conversation so far. Sending a follow-up to the GPU that already holds it saves recomputing it.</dd><dt>Why it matters and how it could be used</dt><dd>A team setting up an inference cluster can start from a tested recipe instead of a weeks-long integration. It also shows where the effort in AI serving is going: scheduling, routing and moving cache data between machines, which is network-heavy.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Kubernetes</dt><dd>Software that starts, stops and monitors programs across many servers.</dd><dt>KV cache</dt><dd>The model&#x27;s saved working memory of the text so far, reused so it isn&#x27;t recomputed.</dd><dt>Inference</dt><dd>Running a trained model to answer requests, as opposed to training it.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>Google&#x27;s first AI data center satellite is working in orbit</h2><p class="stand">A small prototype with Google chips is running an AI model in space.</p><dl><dt>What happened</dt><dd>TechCrunch reports Google&#x27;s Suncatcher prototype launched earlier this month on a SpaceX Falcon 9 and, after about three weeks of commissioning, is operating nominally, a Google spokesperson said. It carries four TPUs but can run only one at a time, each for about 20 minutes, on up to one kilowatt of solar power. Gemma 4 is preloaded and wrote a haiku in its first test. Two more satellites are planned for 2027, and Google targets the 2030s for the economics to work.</dd><dt>What it means, in plain words</dt><dd>The idea is to put computers where sunlight is constant and cooling is by radiating heat to space. This one is a tiny test. A real data center uses megawatts, so this is roughly a lightbulb compared to a power plant.</dd><dt>Why it matters and how it could be used</dt><dd>The test studies heat and radiation, which can flip bits and corrupt data. Google&#x27;s ground tests suggested radiation is a minor issue for inference but more of a problem for training. It is far from practical use today.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>TPU</dt><dd>Tensor Processing Unit: Google&#x27;s own AI chip.</dd><dt>Bit flip</dt><dd>A stored 0 turning into a 1, or the reverse, often caused by radiation.</dd></dl></aside><p class="source">Sources: <a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/">TechCrunch</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>The brain clears out billions of faulty neurons around birth</h2><p class="stand">Researchers report a system that removes mutant neurons around the time we are born.</p><div class="body"><p>Nature&#x27;s news report, summarized here from its feed description only because the full text needs a login, says researchers found that the brain removes billions of neurons carrying mutations around the time of birth.</p><p>The idea is a quality-control step. As a brain is built, some cells pick up errors in their DNA. This work describes a system that finds and clears many of them, and Nature says it is relevant to neurological conditions. I could not read the details, so numbers and methods are not given here.</p></div><ol class="points"><li>What they found: a clean-up system that removes billions of neurons with mutations around birth.</li><li>How: the full methods were behind a login, so they are not summarized here.</li><li>Why it matters: faults in this system could be linked to some brain conditions, per Nature.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Mutation</dt><dd>A change in a cell&#x27;s DNA, which can sometimes harm how the cell works.</dd><dt>Neuron</dt><dd>A nerve cell, the basic building block of the brain.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03444-x">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>What a socket is, and what really happens when an app calls send() and recv()</h2><p class="stand">Sunday track: XLIO and kernel bypass</p><p class="bigidea"><strong>The big idea:</strong> A socket is a handle the operating system gives your program for a network conversation. Calling send() hands your bytes to the kernel, which does the real work of delivering them, and recv() collects what the kernel has already received for you.</p><dl><dt>First, the basics</dt><dd><p>Your program cannot touch the network card directly. The operating system kernel owns the hardware and sits between your program and the card. Your program asks the kernel for services through system calls, which are controlled doors into the kernel. Crossing a door costs a little time.</p><p>A socket is what you get back when you ask the kernel for a network endpoint with socket(). It is a small integer, a file descriptor, that you pass back to later calls. Behind that number the kernel keeps buffers: a send buffer holding bytes waiting to go out, and a receive buffer holding bytes that arrived but your program has not read yet. TCP, the protocol most sockets use, also needs to be set up first: connect() on the client and listen() and accept() on the server.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>The app calls send(fd, data, len). The CPU switches from user mode to kernel mode.</li><li>The kernel copies the bytes from the app&#x27;s memory into a socket buffer in kernel memory.</li><li>The TCP and IP code in the kernel splits the data into packets, adds headers and picks a route.</li><li>The kernel gives the packets to the network card driver, which tells the card to fetch them from memory and transmit them. send() usually returns as soon as the copy is done, not when the data arrives.</li><li>On the receiving machine, the card writes arriving packets to memory and signals the kernel, which runs TCP, checks order, and places the bytes in that socket&#x27;s receive buffer.</li><li>The app calls recv(). If data is waiting, the kernel copies it into the app&#x27;s buffer and returns. If not, the app sleeps until data arrives, or recv() returns immediately in non-blocking mode.</li></ol></dd><dt>A practical example</dt><dd>A trading app sends a 100-byte order with send(). Those 100 bytes cross into the kernel, are copied once, wrapped in TCP and IP headers, and passed to the card. On the exchange&#x27;s server the kernel receives, reassembles and queues them until the matching app calls recv(). Each stage adds time, and for a tiny message that overhead is far larger than the time to move 100 bytes.</dd><dt>Why it matters for XLIO</dt><dd>XLIO keeps the socket API your app already uses, but does the buffering, TCP work and card communication in user space, skipping the system call door and the kernel copies.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>Typical Ethernet MTU (largest normal packet)</td><td>1500 bytes</td></tr><tr><td>TCP plus IPv4 headers without options</td><td>40 bytes</td></tr></table></dd><dt>Common misconception</dt><dd>A common misconception: send() returning means the data reached the other side. It only means the kernel accepted the bytes into its send buffer. Delivery and acknowledgement happen later, and a send() can even accept fewer bytes than you asked for.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>System call</dt><dd>A controlled request from a program to the operating system kernel.</dd><dt>File descriptor</dt><dd>A small number that stands for an open resource, such as a socket.</dd><dt>Kernel</dt><dd>The core of the operating system, which owns the hardware.</dd><dt>Socket buffer</dt><dd>Kernel memory holding bytes waiting to be sent or read.</dd></dl></aside><details><summary>Self-test: If send() returns 100, has the other machine received the 100 bytes?</summary><p>Not necessarily. It means the kernel copied 100 bytes into the send buffer. They may still be waiting to be sent, in flight, or lost and needing retransmission. Only the TCP acknowledgement from the other side tells the kernel they arrived, and even that does not mean the other app has read them.</p></details><p class="source">Further reading: <a href="https://man7.org/linux/man-pages/man7/socket.7.html">Linux man page: socket(7)</a>, <a href="https://man7.org/linux/man-pages/man2/send.2.html">Linux man page: send(2)</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
