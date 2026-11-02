@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Netanyahu's bloc fell short of a majority. Now Israel's president begins talks on who forms the next government",
+        "standfirst": "Neither camp has 61 of 120 seats, so the next government depends on deals between parties that have ruled each other out.",
+        "paragraphs": [
+          "In the October 27 election, parties opposed to Benjamin Netanyahu won 67 of the Knesset's 120 seats, and his right-wing and ultra-Orthodox bloc won 53, according to the Times of Israel. Likud is the largest single party with 27 seats, and Gadi Eisenkot's Yashar party has 21. The 67 opposition seats include 48 held by Jewish-led parties and 19 held by the Arab-majority Joint List and Ra'am. A government needs 61 votes, so the opposition has the numbers on paper but not the agreement. Yashar, B'Yachad and Yisrael Beytenu have said they will not sit in a coalition with the Arab, non-Zionist parties. The Joint List's Ahmad Tibi has said his party would back an anti-Netanyahu government from outside, without joining it.",
+          "President Isaac Herzog said on Sunday he will receive the official results on Wednesday, November 4, from Central Elections Committee chairman Justice Noam Sohlberg, and then hold consultations in which each faction names the person it recommends as prime minister. He urged party leaders to \"stop climbing trees, and face the reality\" and signaled he wants a unity government to avoid another election. Likud's Ofir Katz told Army Radio the party opposes rotating the premiership, while Likud's Benny Biton said Netanyahu wants a unity government. The new Knesset is sworn in on November 10. Netanyahu's allies dispute the result and allege fraud, while the elections committee chairman says the election was conducted properly and the results will not change."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/netanyahu-lost-his-majority-but-can-the-opposition-form-a-government-a-look-at-possible-paths-ahead/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/stop-climbing-trees-and-face-reality-in-appeal-to-leaders-herzog-signals-push-for-unity-government/"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Reports: US preparing to resume strikes on Iran", "text": "The Wall Street Journal reported that President Trump and Prime Minister Netanyahu spoke by phone on Saturday as the US prepared to resume strikes on Iran. Trump said the US wanted to destroy one or two more sites, and that negotiations were going fine but Tehran was not very reliable. MSNOW, citing Gulf officials, reported the strikes could come as early as November 4.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/"},
+        {"headline": "Iran says it is debating its nuclear ban if fighting resumes", "text": "Mohsen Rezaei, head of Iran's Supreme National Security Council, said Tehran is debating whether to lift its ban on nuclear weapons if hostilities resume, but that no decision has been made. Iran has consistently denied seeking nuclear weapons. Rezaei also said the Strait of Hormuz will stay closed until Iran's conditions are met.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/trump-holds-call-with-netanyahu-amid-preparations-to-renew-strikes-on-iran-report/"},
+        {"headline": "Election chief: results stand, no foreign interference found", "text": "The Central Elections Committee chairman, speaking alongside officials including the attorney general, said the election was conducted properly and the results will not change. Likud disputes the results, and the prime minister's allies have alleged fraud.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/alongside-zini-and-ag-election-chief-stresses-election-conducted-properly-results-wont-change/"},
+        {"headline": "Rival rallies in Tel Aviv over the election result", "text": "About 2,000 people rallied in Tel Aviv on Saturday night demanding a Jewish-Arab government, while counterprotesters said the election was stolen.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/some-2000-rally-in-tel-aviv-to-demand-jewish-arab-government-counterprotest-held-against-stolen-election/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Midterm elections on Tuesday will decide control of Congress",
+          "paragraphs": [
+            "On November 3, Americans vote for all 435 House seats, about one-third of the Senate and governors in 39 states. The big question is whether Democrats win a majority in Congress. Early October polls showed Democrats leading nationally, according to reporting summarized by Khaleej Times, and CNBC says Democrats are expected to take the House while Senate control is uncertain.",
+            "Reported campaign themes are the cost of living, the war in Iran and immigration. Spending on political ads reached a record $3.8 billion as of October 12, according to one report. Control of Congress decides which party can pass, block or investigate."
+          ],
+          "why_it_matters": "A Congress controlled by a different party than the president can block his agenda, and it also changes oversight and funding fights for the next two years.",
+          "sources": [{"name": "Khaleej Times", "url": "https://www.khaleejtimes.com/world/americas/us-midterm-elections-2026-voting-explainer"}, {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Tech stocks stumble on doubts about AI spending, as a big week begins",
+          "paragraphs": [
+            "Last week the Nasdaq fell 2%, and October was its worst month since March 2025, CNBC reports. Investors reacted to Alphabet and Microsoft giving lower-than-expected forecasts for capital spending (money spent on things like data centers), which raised worries that the AI building boom may be slowing. Amazon kept its spending guidance unchanged.",
+            "The week ahead includes Apple earnings on Monday, the midterms on Tuesday and the October jobs report on Friday, where economists polled by Dow Jones expect payrolls to rise by 55,000. Futures were up modestly Sunday evening."
+          ],
+          "why_it_matters": "A lot of the market's recent gains rested on companies spending heavily on AI chips and data centers, so any sign of slower spending hits the companies that sell them.",
+          "sources": [{"name": "CNBC", "url": "https://www.cnbc.com/2026/11/01/stock-market-today-live-updates.html"}]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA's ReplaySSM speeds up a newer kind of language model",
+          "standfirst": "A trick that stores a checkpoint plus a short list of recent inputs, instead of rewriting a huge memory every step.",
+          "what_happened": "NVIDIA and Princeton's Dao AI Lab published ReplaySSM, a technique for hybrid language models that mix state-space (SSM) layers with a few attention layers. NVIDIA reports that at batch size 256 on a B300 GPU, end-to-end decoding is 1.20x to 1.47x faster across four models, and with speculative decoding on 120B-class models at batch size 512, throughput is 1.85x to 2.10x that of vLLM's speculative decoding. At batch size 1 there is no speedup. NVIDIA says it is integrated into TensorRT-LLM, vLLM and FlashInfer. These are the authors' own benchmarks.",
+          "what_it_means": "A normal chatbot remembers the conversation in a KV cache that grows with every word. An SSM layer instead keeps a fixed-size summary, called its state, that gets updated at every step. The catch is that each step reads and rewrites the whole state, which is slow because memory is the bottleneck. ReplaySSM keeps an old copy of the state plus a short list of recent inputs, and only folds the list into the copy every 16 tokens. It also makes undoing wrong guesses in speculative decoding cheap: rejected inputs are simply overwritten.",
+          "why_it_matters": "Serving costs are mostly about how many users one GPU can handle. Faster decoding of hybrid models, such as NVIDIA's Nemotron family, means more users per GPU and lower cost per answer, and it makes speculative decoding (guessing several words ahead and checking them together) work on these models.",
+          "terms": [["State-space model (SSM)", "A kind of neural network layer that carries a fixed-size summary of everything so far, instead of storing every past word."], ["Speculative decoding", "A small fast guesser proposes several next words, and the big model checks them all at once, keeping the correct ones."], ["Memory-bound", "Limited by how fast data can be read from memory, not by how fast the chip can calculate."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"}]
+        },
+        {
+          "headline": "Three tweaks make a big mixture-of-experts model 42% faster on a desktop NVIDIA box",
+          "standfirst": "Smarter kernels, a smaller output layer and built-in guessing add up on NVIDIA's DGX Spark.",
+          "what_happened": "NVIDIA engineers tested a 124-billion-parameter mixture-of-experts model (5.1 billion active per token) at batch size 1 on DGX Spark. Three changes, a runtime-compiled kernel library called Humming, FP8 quantization of the output layer, and speculative decoding using the model's built-in NEXTN draft layer, raised decode throughput on the GSM8K math benchmark from 37.81 to 53.89 tokens per second (+42.5%), with accuracy essentially unchanged (96.89% to 96.82%). The post says the much larger +185% figure comes from a synthetic, repetitive workload and should not be expected elsewhere.",
+          "what_it_means": "A mixture-of-experts model is like a hospital with many specialist doctors: for each word, only a few are consulted, so it is cheaper than using the whole model. But a single user still waits on memory reads for each word. The three tweaks cut how much has to be read (smaller numbers for the output layer) and how many separate steps are needed (guess several words, verify together).",
+          "why_it_matters": "It shows where the time goes when one person runs a big model locally: reading weights from memory. A concrete lesson from the post is that combining the tricks needs care: the guessing model must share the exact same quantized output layer, or acceptance falls to 1.00 and the result is slower than baseline.",
+          "terms": [["Mixture of experts (MoE)", "A model made of many specialist sub-networks where only a few are used for each word."], ["Quantization", "Storing a model's numbers with fewer bits so they take less memory and read faster."], ["Tokens per second", "How many word pieces the model produces each second."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"}]
+        },
+        {
+          "headline": "NVIDIA Sentry puts the security guard for AI agents on the network card",
+          "standfirst": "The idea: watch agents from a separate chip they cannot tamper with.",
+          "what_happened": "NVIDIA described Sentry, part of its OpenShell reference architecture, which monitors AI agents and enforces rules on what models, tools and data they can reach. NVIDIA says it runs on BlueField-4 DPUs, which are processors on the network card, in a separate hardware trust domain from the host. It combines a per-agent firewall, an inspecting proxy, policy checks written in Open Policy Agent and memory inspection, and NVIDIA says it can quarantine an agent in milliseconds. NVIDIA says Sentry itself is planned for early next year, while some of the underlying DOCA libraries are available now.",
+          "what_it_means": "Agents are programs that take actions on their own, like browsing, running code and calling tools. If the guard runs on the same computer as the agent, a compromised agent could switch the guard off. Sentry's claim is that the guard sits on a different chip, the network card, so the agent cannot reach it, like a security camera wired to a separate building.",
+          "why_it_matters": "Companies want agents that act without a person approving every step, and the main fear is an agent being tricked into leaking data. A guard that works even when the host is compromised, if it performs as NVIDIA claims, is one way to allow that. Note this is a vendor claim for a product not yet released.",
+          "terms": [["DPU", "Data processing unit: a small computer on a network card that handles networking and security work so the main CPU does not have to."], ["Trust domain", "A part of a system protected so that what happens in another part cannot change it."], ["Open Policy Agent", "A tool that checks each request against written rules and answers allow or deny."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "Measles made a stealthy return as another virus took the spotlight",
+      "standfirst": "Falling vaccination rates after the COVID-19 pandemic let measles creep back.",
+      "paragraphs": [
+        "This Nature news item, published today, reports that measles has returned quietly while attention was elsewhere. Nature's summary says vaccination rates fell after the COVID-19 pandemic disrupted public-health programs and their funding.",
+        "The full article is behind a login, so this summary is based only on Nature's published description. The underlying idea is simple: measles spreads extremely easily, so it needs a very high share of people to be vaccinated to keep it in check. When vaccination slips, even a little, the virus finds the gaps."
+      ],
+      "key_points": ["Measles has made a comeback.", "Vaccination rates fell after the pandemic disrupted health programs and funding.", "It matters because measles spreads easily and vaccination is the main defense."],
+      "terms": [["Vaccination rate", "The share of people who have had a vaccine."]],
+      "url": "https://www.nature.com/articles/d41586-026-03387-3",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Monday track: RDMA and NICs",
+      "title": "What RDMA is, and how one machine writes into another's memory without its CPU",
+      "big_idea": "RDMA lets a network card move data straight between your program's memory and a remote machine's memory, so neither operating system nor the remote CPU has to touch each message.",
+      "background": [
+        "Start with the normal path. When a program sends data over an ordinary TCP socket, it calls the operating system. The kernel copies the data from the program's memory into its own buffers, builds packets, and hands them to the network card. On the other side, the card interrupts a CPU, the kernel copies the data into its buffers, and then copies it again into the receiving program's memory. Every message means system calls, copies and CPU time on both machines.",
+        "Memory also matters. A program uses virtual addresses, which the operating system maps to physical memory in pages, usually 4096 bytes each. A network card cannot guess these mappings, and the OS can move pages around. So for the card to read or write a program's memory directly, that memory must be set aside and described to the card in advance. This is called memory registration, and it is a later lesson. For today, just remember that the card is given permission to touch specific memory."
+      ],
+      "steps": [
+        "Both sides first set up a connection and agree on which memory regions the card may access. The remote side shares an address and a key for its region.",
+        "The sending program describes the job in a small request: what to do, which local memory, and for a write, which remote address and key.",
+        "The program tells its own network card there is new work, without a system call into the kernel for each message.",
+        "The sending card reads the data from local memory itself using DMA (direct memory access), builds the packets and sends them.",
+        "The receiving card checks the key and address and writes the data straight into the target memory with DMA, with no remote CPU involvement for a one-sided write.",
+        "The sending card records that the job is done in a place the program can check, so the program learns the result without being interrupted."
+      ],
+      "example": "Imagine a storage server holding a block of data in memory and a client that wants to read it. With plain TCP, the server's CPU receives the request, finds the data, copies it and sends it. With an RDMA read, the client's card fetches the bytes from the server's memory directly, and the server's CPU is not involved in that transfer at all. The server's CPU stays free for other work.",
+      "why_xlio": "XLIO is built on NVIDIA ConnectX cards, which are RDMA-capable hardware. XLIO does not give you RDMA between machines, since it speaks ordinary TCP and UDP, but it uses the same ideas on the local side: queues shared with the card, registered memory and polling instead of kernel calls. Understanding RDMA is the clearest way to understand what the card can do for you.",
+      "numbers": [["Standard page size", "4096 bytes"], ["ConnectX-7 maximum speed", "400 Gb/s"]],
+      "pitfall": "A common misconception is that RDMA makes the network itself faster. It does not change the wire speed. It removes the work around the wire: kernel calls, copies and interrupts. That is where most of the delay and CPU cost for small messages comes from.",
+      "terms": [["DMA", "Direct memory access: a device reads or writes main memory itself, without the CPU copying each piece."], ["Kernel", "The core of the operating system, which controls hardware and runs the networking code."], ["Memory registration", "Telling the network card, and locking down in place, the memory it is allowed to read and write."], ["One-sided operation", "An operation, like an RDMA write, completed by the cards alone without the remote program taking part."]],
+      "question": "Why does the memory have to be registered with the card before RDMA can use it?",
+      "answer": "Because the card moves data by itself using physical addresses, and the operating system could otherwise move or swap out the pages underneath it. Registration pins the memory in place and gives the card a safe, permitted description of it, plus a key the remote side must present.",
+      "reading": [{"name": "RDMA Aware Networks Programming User Manual", "url": "https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17"}]
+    }
+  }
+}
