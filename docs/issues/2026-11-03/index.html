@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Tuesday, 3 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Tuesday, 3 November 2026</span><span>No. 9</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Netanyahu&#x27;s bloc fell short of a majority. Now the fight is over who can build a government</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Americans vote in the midterm elections, with the Iran war in the background · Apple beats expectations but warns that costs will squeeze its profit margin</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">Anthropic tells investors its AI may soon help build its own successors</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">This Arabian desert was once a lush paradise. Why did ancient humans avoid it?</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">What TCP promises: a reliable, ordered byte stream, and the three-way handshake</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Netanyahu&#x27;s bloc fell short of a majority. Now the fight is over who can build a government</h2><p class="stand">A week after the October 27 election, no side has the 61 seats needed, and the coming days will show whether Israel gets a new government or another vote.</p><div class="body"><p>In the October 27 election, the parties opposed to Prime Minister Benjamin Netanyahu won 67 of the Knesset&#x27;s 120 seats, according to the Times of Israel&#x27;s tally. Netanyahu&#x27;s bloc of right-wing and ultra-Orthodox parties won 53, eight short of the 61 needed for a majority. Likud is the largest single party with 27 seats; Gadi Eisenkot&#x27;s Yashar is second with 21. The catch for the opposition is that 19 of its 67 seats belong to the Arab-majority Joint List (11) and Ra&#x27;am (8). The four Jewish-led opposition parties together hold 48, and several of their leaders have pledged not to depend on Arab parties.</p><p>On Monday Likud asked to delay the official certification of results, which is scheduled for Wednesday, repeating its claim that the vote was &quot;stolen&quot; through foreign-funded Arab turnout. Justice Noam Sohlberg, who oversees the election committee, refused, writing that it &quot;has no authority to withhold the certification of the results.&quot; The committee had already said that even if the interference allegations were proven, they would not change the outcome; a Shin Bet and Mossad probe is expected to finish soon. Netanyahu said he is open to a &quot;broad national government&quot; under his leadership. All four Zionist opposition parties have ruled out serving under him, and President Isaac Herzog urged leaders to keep &quot;open minds&quot; to avoid a repeat election. Results are due to be presented to Herzog on Wednesday.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/likud-seeks-delay-in-certification-of-election-results-citing-interference-probe/">Times of Israel: Likud seeks delay in certification</a>, <a href="https://www.timesofisrael.com/netanyahu-lost-his-majority-but-can-the-opposition-form-a-government-a-look-at-possible-paths-ahead/">Times of Israel: possible paths ahead</a></p></article><div class="briefs"><div class="brief"><h3>Liberman backs Eisenkot for PM but rules out Arab-party support</h3><p>Yisrael Beytenu leader Avigdor Liberman said he will back Eisenkot for prime minister, but will not support a minority government that relies on Arab parties. That position makes the arithmetic harder for the opposition. <a href="https://www.timesofisrael.com/liberman-to-back-eisenkot-for-pm-but-rules-out-minority-government-with-arab-support/">Times of Israel</a></p></div><div class="brief"><h3>Vance: US feels &quot;pretty good&quot; about an Iran deal; US reportedly struck Qeshm island</h3><p>Vice President JD Vance said he and President Trump feel good about the prospects of a negotiated settlement. A diplomat told the Times of Israel the outline is Iran reopening the Strait of Hormuz in exchange for sanctions relief, followed by nuclear talks. Separately, a US official said a US strike hit Iranian forces on Qeshm island that were using surface-to-air missiles against US assets. <a href="https://www.timesofisrael.com/vance-says-us-feeling-pretty-good-about-prospects-of-a-deal-with-iran-trump-it-could-happen/">Times of Israel</a></p></div><div class="brief"><h3>Netanyahu reportedly pressed Trump for renewed strikes on Iran</h3><p>According to AP sources, Netanyahu asked Trump on a call over the weekend for renewed strikes after the US elections. A person briefed on the call said Trump did not commit. Trump has said no strikes are planned right after the midterms. The Israeli government and White House did not comment directly. <a href="https://www.timesofisrael.com/vance-says-us-feeling-pretty-good-about-prospects-of-a-deal-with-iran-trump-it-could-happen/">Times of Israel</a></p></div><div class="brief"><h3>Eisenkot-led bloc plans to replace the Knesset speaker</h3><p>Ynet reports that opposition leaders plan to oust Speaker Amir Ohana, though disagreements over Yair Lapid&#x27;s role and Arab-party backing complicate talks on forming a government. <a href="https://www.ynetnews.com/article/sy4mp6upfg">Ynet</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Americans vote in the midterm elections, with the Iran war in the background</h2><div class="body"><p>Today, November 3, is Election Day for the US midterms, when voters choose all of the House and part of the Senate. Israeli outlet Ynet describes Democrats hoping for a strong showing while Trump braces for losses.</p><p>The Iran conflict is part of the backdrop. CNBC cites polling that only 31 percent of Americans back military action, and Trump said in October the US would not attack Iran before the election. Vance said he and Trump feel good about a negotiated settlement, while the Wall Street Journal reports the US has carried out limited strikes in recent weeks, including one on Iran&#x27;s Qeshm island.</p></div><p class="why"><strong>Why it matters:</strong> The result decides whether Trump faces a Congress that can investigate and block parts of his agenda, including war and spending decisions.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html">CNBC</a>, <a href="https://www.ynetnews.com/article/hjozq5u6zg">Ynet</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>Apple beats expectations but warns that costs will squeeze its profit margin</h2><div class="body"><p>Apple reported quarterly revenue of $114.48 billion, up 12 percent from a year ago and above the $113.39 billion analysts expected, with earnings of $2.10 a share against $1.99 expected. iPhone sales were $57.58 billion and Mac sales rose nearly 24 percent.</p><p>The worry is the next quarter. Apple forecast a gross margin (the share of each sales dollar left after making the product) of 45 to 46 percent, below the 46.3 percent analysts expected. CEO John Ternus, in his first earnings report, pointed to higher memory costs. Shares fell about 3 percent after hours, per CNBC.</p></div><p class="why"><strong>Why it matters:</strong> Memory chips are in every phone and computer, so rising memory prices, which AI demand helps drive, can squeeze many hardware makers, not only Apple.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html">CNBC</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>Anthropic tells investors its AI may soon help build its own successors</h2><p class="stand">In a stock-market filing, Anthropic says its models may be close to speeding up AI development themselves.</p><dl><dt>What happened</dt><dd>In a revised S-1/A filing with the US Securities and Exchange Commission (the paperwork for a planned stock offering), Anthropic wrote that internal estimates suggest future models may soon meet its own definition of &quot;dramatically accelerated progress attributable to AI.&quot; It said it has not labeled any current model as crossing that line and is still assessing the data. It also admitted it has &quot;in the past not identified&quot; big speed-ups until after they happened, and that it does not expect to safely let Claude design successive frontier models without meaningful human supervision. It is considering updates to its Responsible Scaling Policy to keep humans in control. TechCrunch notes that a filing is also marketing, so the claims may be partly promotional.</dd><dt>What it means, in plain words</dt><dd>Recursive self-improvement means AI that helps make the next, better AI, which then helps make the one after that. Think of a factory whose machines start designing better machines. Anthropic is saying it already uses AI heavily in its own research and that the effect is becoming large enough that it may not notice the moment things speed up.</dd><dt>Why it matters and how it could be used</dt><dd>If AI progress accelerates because AI does part of the research, the gap between what labs plan for and what happens could widen. A practical effect: companies and regulators may demand clearer thresholds and human sign-off before a lab keeps scaling.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Recursive self-improvement (RSI)</dt><dd>AI systems helping to build better AI systems, which then help build still better ones.</dd><dt>S-1</dt><dd>The document a company files with US regulators before selling shares to the public for the first time.</dd><dt>Responsible Scaling Policy</dt><dd>Anthropic&#x27;s published rules about what safety checks are needed as its models get more capable.</dd></dl></aside><p class="source">Sources: <a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch</a>, <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm">Anthropic S-1/A (SEC)</a></p></article><article class="lead second story"><h2>NVIDIA packages its Dynamo inference software into ready-made, tested setups</h2><p class="stand">A new NVIDIA tool aims to cut the weeks spent getting a cluster of GPUs ready to serve AI models.</p><dl><dt>What happened</dt><dd>In an October 30 developer blog post, NVIDIA described AI Cluster Runtime (AICR), which bundles Dynamo, its distributed inference framework, with the Kubernetes pieces it needs (GPU drivers, scheduler, monitoring, networking entry point) into pinned-version &quot;recipes&quot; with validation checks. The example recipe targets Amazon EKS with GB200 and GB300 NVL72 racks and ships Dynamo platform version 1.4.2. The post says Dynamo can route a request to the GPU worker that already holds the most matching cached data (the KV cache), and that it uses live cache reports from workers, since predicted cache state can drift when memory fills up.</dd><dt>What it means, in plain words</dt><dd>Running a chatbot at scale means many GPU servers, each remembering the conversation so far in a memory called the KV cache. If a new request lands on a server that already holds its earlier text, it answers faster. Dynamo&#x27;s router tries to send requests to the best-matching server. The hard part is installing and matching dozens of software parts so it all works; AICR is a tested shopping list that does this for you, like a meal kit instead of buying every ingredient separately.</dd><dt>Why it matters and how it could be used</dt><dd>NVIDIA says this reduces setup time spent on driver, scheduling and networking dependencies. For anyone running inference, faster setup and smarter routing means less wasted GPU time, and GPU time is the main cost.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>KV cache</dt><dd>A model&#x27;s short-term memory of the text it has already processed, kept so it doesn&#x27;t redo that work for every new word.</dd><dt>Kubernetes</dt><dd>Software that starts, stops and manages many programs across many servers.</dd><dt>Inference</dt><dd>Using an already trained AI model to answer requests, as opposed to training it.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/">NVIDIA Developer Blog</a></p></article><article class="lead second story"><h2>OpenAI&#x27;s new funding round reportedly falls short of its goals</h2><p class="stand">Reports say OpenAI cut its fundraising target to $20 billion as some big investors were lukewarm.</p><dl><dt>What happened</dt><dd>TechCrunch, citing the Financial Times, reports OpenAI lowered its target to $20 billion, down from earlier reports of $30 billion at a valuation near $1.25 to $1.4 trillion, with a group of United Arab Emirates investors leading. The Wall Street Journal reportedly says $11 billion has been secured so far and that some large investors responded in a &quot;tepid&quot; way. TechCrunch says OpenAI was asked for comment.</dd><dt>What it means, in plain words</dt><dd>Training and running frontier models costs enormous amounts of money for chips and data centers, so labs raise cash in huge rounds. If investors hesitate, it suggests some are asking whether returns will match the spending.</dd><dt>Why it matters and how it could be used</dt><dd>The AI boom depends on continued investment in chips and data centers, including NVIDIA&#x27;s customers. TechCrunch ties the cooling mood to a tech stock sell-off and wariness about heavy AI infrastructure spending. These are press reports; OpenAI has not confirmed the figures.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Valuation</dt><dd>The price investors put on the whole company; a $1.25 trillion valuation means the company as a whole is treated as worth that much.</dd></dl></aside><p class="source">Sources: <a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/">TechCrunch</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>This Arabian desert was once a lush paradise. Why did ancient humans avoid it?</h2><p class="stand">Water alone did not draw early people to a now-dry corner of Arabia; they also needed the right stone.</p><div class="body"><p>Parts of the Arabian peninsula were once green, with lakes and rivers. You would expect early humans to have settled there. Nature reports on an expedition that found no sign of ancient settlement in one such area.</p><p>A companion research paper, summarized by Nature, suggests why: in this region, access to stone suitable for making tools mattered as much as access to water for early desert settlement. A place with plenty of water but poor stone may simply not have been worth living in. Only the summary text was available to read, so details such as dates and methods are not covered here.</p></div><ol class="points"><li>Found: no sign of ancient settlement in a once-lush Arabian area.</li><li>How: an expedition surveyed the region, and a companion study looked at how rock and water availability shaped early desert occupation.</li><li>Why it matters: it shows that where early humans lived depended on more than water, which changes how scientists predict where to look for traces of them.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Settlement</dt><dd>A place where people lived for some time, often shown by leftover tools or fires.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03484-3">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>What TCP promises: a reliable, ordered byte stream, and the three-way handshake</h2><p class="stand">Tuesday track: TCP in depth</p><p class="bigidea"><strong>The big idea:</strong> TCP turns the network, which loses, duplicates and reorders packets, into a simple pipe where bytes arrive complete and in order, and it sets that pipe up by having both sides exchange three messages first.</p><dl><dt>First, the basics</dt><dd><p>The internet underneath is best-effort. Data travels in small chunks called packets, and each can be lost, delayed, duplicated or arrive out of order, like postcards sent one by one through a busy postal system. The network itself makes no promises.</p><p>Most applications, such as web pages, file transfers and databases, need the opposite: every byte, once, in the right order. TCP is the layer on the end computers that provides this. It numbers the bytes, checks that they arrived, and resends what was lost. Applications see just a stream: write bytes in at one end, read the same bytes out at the other. TCP keeps no message boundaries, so two writes of 100 bytes may be read as one read of 200.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>The client&#x27;s TCP picks a random starting sequence number and sends a SYN packet (SYN means synchronize) carrying it, plus options such as the largest segment size it accepts.</li><li>The server, which was listening on a port, replies with SYN-ACK: its own random starting number, and an acknowledgment that it received the client&#x27;s.</li><li>The client sends a final ACK acknowledging the server&#x27;s number. Both sides now know the other can send and receive and agree on starting numbers; the connection is established.</li><li>Data flows. Each byte has a sequence number, and the receiver acknowledges how far it has received in order.</li><li>If an acknowledgment doesn&#x27;t arrive in time, the sender retransmits. If SYN is lost, the client resends it after a timer, starting at 1 second.</li><li>The application sees only a clean stream, with loss and reordering hidden by TCP.</li></ol></dd><dt>A practical example</dt><dd>A client program calls connect() to a server. The kernel sends the SYN and the program waits. One round trip later, when the SYN-ACK arrives, connect() returns and the kernel has already sent the third packet. A server application calls accept() and gets a connection that has already finished the handshake. For a client 50 ms away, connect() therefore takes at least 50 ms before a single byte of data is sent.</dd><dt>Why it matters for XLIO</dt><dd>Every new connection costs a round trip and CPU work for the stack, so a user-space stack like XLIO must implement the handshake and its state itself when it takes TCP over from the kernel. Applications that open many short connections feel this cost most.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>Packets in the handshake</td><td>3</td></tr><tr><td>Minimum TCP header size</td><td>20 bytes</td></tr><tr><td>Typical Ethernet MTU and resulting MSS</td><td>1500 bytes and 1460 bytes (with IPv4 and no TCP options)</td></tr><tr><td>Initial SYN retransmission timer</td><td>1 second (RFC 6298)</td></tr></table></dd><dt>Common misconception</dt><dd>People often think TCP guarantees delivery. It doesn&#x27;t: if the network is cut, the data is lost. What it guarantees is that you either receive the bytes correctly and in order, or you find out (by an error or timeout) that the connection failed. Another misconception is that TCP preserves message boundaries; it doesn&#x27;t.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Packet</dt><dd>A small chunk of data sent across a network.</dd><dt>Sequence number</dt><dd>A counter that numbers the bytes in a TCP stream so the receiver can order them and spot gaps.</dd><dt>ACK</dt><dd>Acknowledgment: a message saying &#x27;I received everything up to this number.&#x27;</dd><dt>MSS</dt><dd>Maximum segment size: the largest amount of data TCP puts in one packet.</dd><dt>Round trip</dt><dd>The time for a message to go to the other side and the reply to come back.</dd></dl></aside><details><summary>Self-test: Why does TCP use random starting sequence numbers instead of starting at zero?</summary><p>Starting at a predictable number would let old, delayed packets from a previous connection between the same two addresses be mistaken for valid data in a new one, and would make it easier for an attacker to forge packets. Random starting numbers make such mix-ups very unlikely.</p></details><p class="source">Further reading: <a href="https://www.rfc-editor.org/rfc/rfc9293">RFC 9293: Transmission Control Protocol</a>, <a href="https://www.rfc-editor.org/rfc/rfc6298">RFC 6298: Computing TCP&#x27;s Retransmission Timer</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
