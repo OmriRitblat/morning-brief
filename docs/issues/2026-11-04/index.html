@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Wednesday, 4 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Wednesday, 4 November 2026</span><span>No. 10</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s October 27 election result is set to be certified, with Likud&#x27;s delay request rejected</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Democrats projected to win the House in the midterms, with Senate gains · AI-linked stocks are under pressure, and Texas politics adds to the worry</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA publishes a tested &#x27;recipe&#x27; for running Dynamo inference on Kubernetes</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">This cholesterol drug promised to be a game-changer. Why did it flop?</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">Latency vs throughput, and how to measure each one</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s October 27 election result is set to be certified, with Likud&#x27;s delay request rejected</h2><p class="stand">Neither bloc has the 61 seats needed to govern, so the next step is President Herzog&#x27;s coalition consultations.</p><div class="body"><p>Israel&#x27;s Central Elections Committee meets Wednesday morning to certify the results of the October 27 election. According to the Times of Israel, Likud and other outgoing coalition factions asked to delay certification because of two investigations: a Shin Bet and Mossad inquiry into alleged foreign money reaching the Joint List through disguised donations, and a police investigation into alleged vote-buying in the Negev. Committee chairman Noam Sohlberg rejected the request. He wrote that the committee cannot delay certification over investigations, that the Basic Law requires publication within eight days of the election, and that the probes would not materially change the results.</p><p>On the numbers, Likud won 27 seats, but Netanyahu&#x27;s bloc of ultra-Orthodox and far-right parties fell to 53 of the 120 seats. Jewish-led opposition parties won 48 and Arab-led parties 19, so neither side has a clear path to 61. Once the results are published, President Isaac Herzog has seven days, until November 11, to task someone with forming a government. He is due to meet smaller parties first and Likud last, on Thursday evening. The opposition leaders have agreed to begin coalition talks, though the path is unclear, and Netanyahu responded by accusing them of forming a &#x27;dangerous government&#x27;.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/could-likud-claims-of-fraud-upend-plans-to-certify-election-results-on-wednesday/">Times of Israel</a>, <a href="https://www.timesofisrael.com/opposition-chiefs-meet-agree-to-launch-coalition-talks-but-path-remains-unclear/">Times of Israel</a></p></article><div class="briefs"><div class="brief"><h3>Trump says US will end military aid to Israel; Israeli officials surprised</h3><p>Trump told Fox News the US will stop its roughly $4 billion in yearly military aid by the end of 2026, saying he and Netanyahu agreed on this months ago. The Times of Israel reports that Israeli finance and defense officials were surprised and that the existing ten-year aid agreement does not appear to expire that soon. Netanyahu has previously said he wants aid phased out gradually over about a decade, and his office had no immediate comment. <a href="https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/">Times of Israel</a></p></div><div class="brief"><h3>Report: Israel warns US and Gulf states Iran may use chemical weapons</h3><p>Citing a New York Times report, the Times of Israel says Israel shared intelligence that Iran is considering chemical attacks. Some US officials reportedly doubt it and Gulf officials reportedly called the assessments &#x27;unserious&#x27;. Iran denies having chemical weapons, and the Prime Minister&#x27;s Office said only that it is monitoring Iranian threats. <a href="https://www.timesofisrael.com/israel-said-to-tell-skeptical-us-gulf-countries-that-iran-may-use-chemical-weapons/">Times of Israel</a></p></div><div class="brief"><h3>Draft EU research rules could put Israel&#x27;s access to Horizon Europe at risk</h3><p>Ynet reports that a draft for the EU&#x27;s 2028 to 2034 research program ties non-EU participation to values such as human rights and international law. Israeli officials fear the wording targets Israel, though as drafted it applies to countries seeking to join. The European Parliament is expected to vote by the end of November, and Israel&#x27;s Foreign Ministry is working with MEPs to change the clause. <a href="https://www.ynetnews.com/article/hjgvy9d6mx">Ynet</a></p></div><div class="brief"><h3>Attorney general accuses Shin Bet chief over probe of Arab politicians</h3><p>The Times of Israel reports that Shin Bet chief David Zini reportedly sought to question four Arab politicians without providing evidence in the foreign-interference probe. The attorney general publicly accused him of trying to subvert the rule of law. The report does not include a response from the Shin Bet in the part we read. <a href="https://www.timesofisrael.com/shin-bet-chief-said-to-seek-questioning-of-4-arab-politicians-without-providing-evidence/">Times of Israel</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Democrats projected to win the House in the midterms, with Senate gains</h2><div class="body"><p>CNN and NBC projected that Democrats will take control of the US House of Representatives, with NBC projecting at least 244 of 435 seats. Democrats were also projected to win Senate races in Texas (James Talarico over Ken Paxton) and South Carolina (Annie Andrews), according to the Times of Israel&#x27;s live coverage, and Sen. Jon Ossoff was projected to win re-election in Georgia.</p><p>President Trump told the New York Times he is willing to &#x27;work with the Democrats&#x27; and will &#x27;probably work something out&#x27;. On Truth Social he said Republicans would have won &#x27;in a landslide&#x27; had he been on the ballot. Final Senate control had not been fully confirmed in the sources we read.</p></div><p class="why"><strong>Why it matters:</strong> Control of the House lets Democrats lead committees, investigations and spending bills, so the President will need their votes for much of his agenda.</p><p class="source">Sources: <a href="https://www.timesofisrael.com/liveblog-november-4-2026/">Times of Israel live blog</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>AI-linked stocks are under pressure, and Texas politics adds to the worry</h2><div class="body"><p>CNBC reports that US stock futures fell on speculation that Democrats would win big and that the data center buildout could slow. The Nasdaq 100 has entered a correction, down 10% from last month&#x27;s record, and the semiconductor index is down about 19% over the past month.</p><p>Texas holds about 27% of data center power capacity by Wells Fargo&#x27;s estimate, and Gov. Greg Abbott halted data center permitting in September. Analysts quoted by CNBC say the outcome of the Texas governor and Senate races could change how easily new data centers get built. Others argue a Democratic Congress might protect the industry against Chinese competition, and that one election is unlikely to change the AI trade in the long run.</p></div><p class="why"><strong>Why it matters:</strong> Much of the market&#x27;s recent growth has rested on companies spending heavily on AI data centers, so anything that might slow that spending moves share prices.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/11/03/texas-election-could-pressure-ai-data-center-trade.html">CNBC</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>NVIDIA publishes a tested &#x27;recipe&#x27; for running Dynamo inference on Kubernetes</h2><p class="stand">Setting up an AI serving cluster involves dozens of software pieces; NVIDIA now ships a pinned, validated bundle.</p><dl><dt>What happened</dt><dd>NVIDIA&#x27;s technical blog describes NVIDIA AI Cluster Runtime (AICR) v1.0.0, which installs NVIDIA Dynamo, its distributed inference framework, along with the GPU operator, schedulers, health monitoring and metrics, using pinned versions. The first recipe targets Amazon EKS with GB200 and GB300 NVL72 rack systems. It follows five steps: snapshot, recipe, bundle, deploy and validate. NVIDIA says Dynamo 1.4 uses Kubernetes for service discovery, so NATS is no longer installed by default.</dd><dt>What it means, in plain words</dt><dd>Serving a large model is like running a restaurant kitchen: the recipe for the dish is the easy part, and the hard part is making every appliance work together. This post gives a checked list of which versions of which tools work together, plus a test at the end. One key idea inside is routing by cache: Dynamo sends a request to the machine that already holds the stored attention data (the KV cache) for the beginning of that conversation, so it does not redo that work.</dd><dt>Why it matters and how it could be used</dt><dd>A team standing up a chat or agent service can start from a known-good setup instead of debugging version mismatches for days. NVIDIA says routing to workers that already hold the relevant cache avoids reprocessing long repeated prompts, which matters for agents. The post gives no benchmark numbers, so this is NVIDIA&#x27;s claim and not a measured result.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Kubernetes</dt><dd>Software that starts, stops and monitors many programs across many machines.</dd><dt>KV cache</dt><dd>Notes the model keeps about the text so far so it does not recompute them for each new word.</dd><dt>Disaggregated serving</dt><dd>Running the &#x27;read the prompt&#x27; phase and the &#x27;write the answer&#x27; phase on separate machines so each can be scaled independently.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>NVIDIA open-sources &#x27;Attribution&#x27; to find the real cause of failed AI training jobs</h2><p class="stand">When one GPU fails, hundreds of others log errors; this tool works out which error is the cause.</p><dl><dt>What happened</dt><dd>NVIDIA released NVIDIA Attribution, an open-source system that gathers logs, metrics and scheduler records for one distributed AI job and returns a structured diagnosis: outcome, root cause, affected nodes and evidence. NVIDIA says it is used in production across its own AI infrastructure, analyzing millions of workloads per week across hundreds of thousands of GPUs. In the post&#x27;s synthetic example, one node reports an NVLink error, three nodes report NCCL communication errors, and the tool names the NVLink fault as the cause and treats the rest as symptoms.</dd><dt>What it means, in plain words</dt><dd>In a big training job, many GPUs must talk to each other constantly. If one breaks, everyone waiting on it also complains, like a traffic jam where hundreds of drivers honk but only one car broke down. Attribution uses fixed rules, not guesses, so the same evidence always gives the same answer. If several causes fit, it says the result is ambiguous instead of claiming certainty.</dd><dt>Why it matters and how it could be used</dt><dd>Training runs cost a lot per hour, so finding a bad cable or GPU fast means less wasted time. A team could point it at its Slurm or Kubernetes cluster logs. The accuracy claims come from NVIDIA; the post gives no independent accuracy figures.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Root cause</dt><dd>The first thing that went wrong, as opposed to the errors it triggered afterward.</dd><dt>NVLink</dt><dd>NVIDIA&#x27;s very fast direct link between GPUs.</dd><dt>NCCL</dt><dd>NVIDIA&#x27;s library that lets GPUs exchange data during training.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/">NVIDIA Technical Blog</a></p></article><article class="lead second story"><h2>NVIDIA&#x27;s NemoClaw: open blueprints for building agents with built-in guardrails</h2><p class="stand">A kit that combines an agent framework, open models and a permission system.</p><dl><dt>What happened</dt><dd>NVIDIA describes NemoClaw as a set of open blueprints, not a new agent framework. Each blueprint sits on a harness you choose (OpenClaw, Hermes Agent or LangChain Deep Agents) and adds Nemotron open models, NeMo tools for tracing and optimization, and OpenShell, a runtime that controls what files, networks, credentials and tools the agent can use. NVIDIA says LangChain&#x27;s tuned Deep Agents setup with Nemotron 3 Ultra reaches near-frontier performance at roughly 10 times lower cost per run than leading closed models. That is a vendor claim, with no methodology given in the post.</dd><dt>What it means, in plain words</dt><dd>An AI agent is a model that can take actions, such as reading files or calling tools. The risk is that it might do something it should not. OpenShell works like a building&#x27;s keycard system: the agent can only open the doors its policy allows, and passwords are kept outside the room it works in.</dd><dt>Why it matters and how it could be used</dt><dd>A company could run a domain-specific agent on its own hardware, using open models, and still have an audit trail of what the agent did. The example in the post is a policy that stops an agent from sending data to GitHub. The cost claim should be checked independently before relying on it.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Harness</dt><dd>The software wrapper around a model that gives it tools, memory and a work loop.</dd><dt>Open models</dt><dd>Models whose trained numbers are published so anyone can run them.</dd><dt>Sandbox</dt><dd>A fenced-off environment where a program can only do what it has been allowed to do.</dd></dl></aside><p class="source">Sources: <a href="https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/">NVIDIA Technical Blog</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>This cholesterol drug promised to be a game-changer. Why did it flop?</h2><p class="stand">A drug that sharply lowers a risky blood fat did not reduce heart attacks and strokes in a large trial.</p><div class="body"><p>Nature&#x27;s news story, which is behind a login so we could read only its summary, covers a major trial of a therapy that lowers lipoprotein(a), often written Lp(a). Lp(a) is a cholesterol-carrying particle in the blood, and people with high levels have more heart disease. Because it is mostly set by genes, diet and exercise barely change it, so doctors have long wanted a drug that does.</p><p>The trial in question appears to be Novartis&#x27;s Lp(a)HORIZON study of the drug pelacarsen, which announced topline results on September 4, 2026. It enrolled 8,323 patients with high Lp(a) and existing heart disease. Pelacarsen lowered Lp(a) substantially, but there was no reduction in the combined risk of cardiovascular death, heart attack, stroke or urgent procedures compared with placebo. Full results have not been published yet. One commentator noted the patients&#x27; other risk factors were already well controlled, with an average LDL cholesterol around 66 mg/dL, which may leave less room for Lp(a) to matter.</p></div><ol class="points"><li>What they found: the drug cut Lp(a) levels but did not cut heart attacks, strokes or related events.</li><li>How: a placebo-controlled trial of 8,323 patients with high Lp(a) and existing heart disease.</li><li>Why it matters: it tests the idea that lowering Lp(a) protects hearts, and several similar drugs are still in trials, so the question is not settled.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Lipoprotein(a)</dt><dd>A particle in the blood that carries cholesterol and is linked to heart disease; levels are mostly inherited.</dd><dt>Placebo</dt><dd>A dummy treatment given to a comparison group so the real effect can be measured.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03504-2">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>Latency vs throughput, and how to measure each one</h2><p class="stand">Wednesday track: computer architecture and performance</p><p class="bigidea"><strong>The big idea:</strong> Latency is how long one thing takes, and throughput is how many things get done per second. They are different questions, and improving one does not automatically improve the other.</p><dl><dt>First, the basics</dt><dd><p>Picture a highway. Latency is how long one car takes to drive from A to B. Throughput is how many cars pass a point per hour. Adding lanes raises throughput, but a single car does not arrive any sooner. A faster speed limit lowers latency, and also raises throughput.</p><p>In networking, latency is usually measured in microseconds (millionths of a second) and throughput in gigabits per second. A message of one byte has the same throughput problem as latency: sending a small message is limited by delay, not by the width of the pipe. Light in optical fiber travels about 200,000 kilometers per second, which is roughly 5 microseconds per kilometer, and no software can beat that.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>Pick the question. Are you asking how quickly one request is answered (latency) or how much total work gets done (throughput)?</li><li>To measure latency, send one small message and time how long until the reply returns, called a ping-pong. Half of the round trip is the one-way estimate.</li><li>Repeat that thousands or millions of times and record every sample, not just the average, then look at the median and high percentiles.</li><li>To measure throughput, send as much data as you can for several seconds and divide bytes moved by time elapsed.</li><li>Keep many requests in flight at once for throughput tests. With only one request outstanding, the pipe sits empty while you wait for each reply.</li><li>Relate the two with Little&#x27;s Law: items in flight equals throughput times latency. Use it to check your numbers make sense.</li></ol></dd><dt>A practical example</dt><dd>Take a 100 Gbit/s link with a 10 microsecond round trip. Little&#x27;s Law says you need 100 billion bits per second times 10 microseconds, or about 1 million bits, which is 125,000 bytes in flight to keep the link full. If your app sends one 1 KB message and waits for the reply, you use less than one percent of the link even though latency is excellent. For XLIO, this is why a latency test (sockperf ping-pong) and a throughput test (iperf with many connections) tell you very different things about the same card.</dd><dt>Why it matters for XLIO</dt><dd>XLIO exists mostly to cut latency per message by skipping the kernel, and also raises throughput per CPU core. You cannot tell if it helped without knowing which of the two you are measuring.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>Light in fiber</td><td>about 200,000 km/s, roughly 5 microseconds per kilometer</td></tr><tr><td>Bytes in flight to fill 100 Gbit/s at 10 microseconds round trip</td><td>125,000 bytes</td></tr></table></dd><dt>Common misconception</dt><dd>A common misconception is that a faster network means lower latency. A 400 Gbit/s link moves large files faster, but a small request across the same distance takes about the same time, because the delay is set by distance and processing, not link width.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Latency</dt><dd>The time one operation takes from start to finish.</dd><dt>Throughput</dt><dd>The amount of work finished per unit of time.</dd><dt>Round-trip time (RTT)</dt><dd>The time for a message to go to the other side and the reply to come back.</dd><dt>Little&#x27;s Law</dt><dd>The number of items in a system equals the arrival rate times the time each spends there.</dd></dl></aside><details><summary>Self-test: A link carries 10 Gbit/s and the round trip is 1 millisecond. How much data must be in flight to keep it full?</summary><p>10 billion bits per second times 0.001 seconds is 10 million bits, or 1.25 million bytes. If your app keeps less than that outstanding, the link will sit partly idle.</p></details><p class="source">Further reading: <a href="https://github.com/Mellanox/sockperf">sockperf: network latency and throughput tool</a>, <a href="https://iperf.fr/iperf-doc.php">iperf3 documentation</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>

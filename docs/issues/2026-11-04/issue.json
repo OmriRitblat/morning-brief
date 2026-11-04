@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Israel's October 27 election result is set to be certified, with Likud's delay request rejected",
+        "standfirst": "Neither bloc has the 61 seats needed to govern, so the next step is President Herzog's coalition consultations.",
+        "paragraphs": [
+          "Israel's Central Elections Committee meets Wednesday morning to certify the results of the October 27 election. According to the Times of Israel, Likud and other outgoing coalition factions asked to delay certification because of two investigations: a Shin Bet and Mossad inquiry into alleged foreign money reaching the Joint List through disguised donations, and a police investigation into alleged vote-buying in the Negev. Committee chairman Noam Sohlberg rejected the request. He wrote that the committee cannot delay certification over investigations, that the Basic Law requires publication within eight days of the election, and that the probes would not materially change the results.",
+          "On the numbers, Likud won 27 seats, but Netanyahu's bloc of ultra-Orthodox and far-right parties fell to 53 of the 120 seats. Jewish-led opposition parties won 48 and Arab-led parties 19, so neither side has a clear path to 61. Once the results are published, President Isaac Herzog has seven days, until November 11, to task someone with forming a government. He is due to meet smaller parties first and Likud last, on Thursday evening. The opposition leaders have agreed to begin coalition talks, though the path is unclear, and Netanyahu responded by accusing them of forming a 'dangerous government'."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/could-likud-claims-of-fraud-upend-plans-to-certify-election-results-on-wednesday/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/opposition-chiefs-meet-agree-to-launch-coalition-talks-but-path-remains-unclear/"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Trump says US will end military aid to Israel; Israeli officials surprised", "text": "Trump told Fox News the US will stop its roughly $4 billion in yearly military aid by the end of 2026, saying he and Netanyahu agreed on this months ago. The Times of Israel reports that Israeli finance and defense officials were surprised and that the existing ten-year aid agreement does not appear to expire that soon. Netanyahu has previously said he wants aid phased out gradually over about a decade, and his office had no immediate comment.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/"},
+        {"headline": "Report: Israel warns US and Gulf states Iran may use chemical weapons", "text": "Citing a New York Times report, the Times of Israel says Israel shared intelligence that Iran is considering chemical attacks. Some US officials reportedly doubt it and Gulf officials reportedly called the assessments 'unserious'. Iran denies having chemical weapons, and the Prime Minister's Office said only that it is monitoring Iranian threats.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/israel-said-to-tell-skeptical-us-gulf-countries-that-iran-may-use-chemical-weapons/"},
+        {"headline": "Draft EU research rules could put Israel's access to Horizon Europe at risk", "text": "Ynet reports that a draft for the EU's 2028 to 2034 research program ties non-EU participation to values such as human rights and international law. Israeli officials fear the wording targets Israel, though as drafted it applies to countries seeking to join. The European Parliament is expected to vote by the end of November, and Israel's Foreign Ministry is working with MEPs to change the clause.", "source": "Ynet", "url": "https://www.ynetnews.com/article/hjgvy9d6mx"},
+        {"headline": "Attorney general accuses Shin Bet chief over probe of Arab politicians", "text": "The Times of Israel reports that Shin Bet chief David Zini reportedly sought to question four Arab politicians without providing evidence in the foreign-interference probe. The attorney general publicly accused him of trying to subvert the rule of law. The report does not include a response from the Shin Bet in the part we read.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/shin-bet-chief-said-to-seek-questioning-of-4-arab-politicians-without-providing-evidence/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Democrats projected to win the House in the midterms, with Senate gains",
+          "paragraphs": [
+            "CNN and NBC projected that Democrats will take control of the US House of Representatives, with NBC projecting at least 244 of 435 seats. Democrats were also projected to win Senate races in Texas (James Talarico over Ken Paxton) and South Carolina (Annie Andrews), according to the Times of Israel's live coverage, and Sen. Jon Ossoff was projected to win re-election in Georgia.",
+            "President Trump told the New York Times he is willing to 'work with the Democrats' and will 'probably work something out'. On Truth Social he said Republicans would have won 'in a landslide' had he been on the ballot. Final Senate control had not been fully confirmed in the sources we read."
+          ],
+          "why_it_matters": "Control of the House lets Democrats lead committees, investigations and spending bills, so the President will need their votes for much of his agenda.",
+          "sources": [{"name": "Times of Israel live blog", "url": "https://www.timesofisrael.com/liveblog-november-4-2026/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "AI-linked stocks are under pressure, and Texas politics adds to the worry",
+          "paragraphs": [
+            "CNBC reports that US stock futures fell on speculation that Democrats would win big and that the data center buildout could slow. The Nasdaq 100 has entered a correction, down 10% from last month's record, and the semiconductor index is down about 19% over the past month.",
+            "Texas holds about 27% of data center power capacity by Wells Fargo's estimate, and Gov. Greg Abbott halted data center permitting in September. Analysts quoted by CNBC say the outcome of the Texas governor and Senate races could change how easily new data centers get built. Others argue a Democratic Congress might protect the industry against Chinese competition, and that one election is unlikely to change the AI trade in the long run."
+          ],
+          "why_it_matters": "Much of the market's recent growth has rested on companies spending heavily on AI data centers, so anything that might slow that spending moves share prices.",
+          "sources": [{"name": "CNBC", "url": "https://www.cnbc.com/2026/11/03/texas-election-could-pressure-ai-data-center-trade.html"}]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA publishes a tested 'recipe' for running Dynamo inference on Kubernetes",
+          "standfirst": "Setting up an AI serving cluster involves dozens of software pieces; NVIDIA now ships a pinned, validated bundle.",
+          "what_happened": "NVIDIA's technical blog describes NVIDIA AI Cluster Runtime (AICR) v1.0.0, which installs NVIDIA Dynamo, its distributed inference framework, along with the GPU operator, schedulers, health monitoring and metrics, using pinned versions. The first recipe targets Amazon EKS with GB200 and GB300 NVL72 rack systems. It follows five steps: snapshot, recipe, bundle, deploy and validate. NVIDIA says Dynamo 1.4 uses Kubernetes for service discovery, so NATS is no longer installed by default.",
+          "what_it_means": "Serving a large model is like running a restaurant kitchen: the recipe for the dish is the easy part, and the hard part is making every appliance work together. This post gives a checked list of which versions of which tools work together, plus a test at the end. One key idea inside is routing by cache: Dynamo sends a request to the machine that already holds the stored attention data (the KV cache) for the beginning of that conversation, so it does not redo that work.",
+          "why_it_matters": "A team standing up a chat or agent service can start from a known-good setup instead of debugging version mismatches for days. NVIDIA says routing to workers that already hold the relevant cache avoids reprocessing long repeated prompts, which matters for agents. The post gives no benchmark numbers, so this is NVIDIA's claim and not a measured result.",
+          "terms": [["Kubernetes", "Software that starts, stops and monitors many programs across many machines."], ["KV cache", "Notes the model keeps about the text so far so it does not recompute them for each new word."], ["Disaggregated serving", "Running the 'read the prompt' phase and the 'write the answer' phase on separate machines so each can be scaled independently."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/"}]
+        },
+        {
+          "headline": "NVIDIA open-sources 'Attribution' to find the real cause of failed AI training jobs",
+          "standfirst": "When one GPU fails, hundreds of others log errors; this tool works out which error is the cause.",
+          "what_happened": "NVIDIA released NVIDIA Attribution, an open-source system that gathers logs, metrics and scheduler records for one distributed AI job and returns a structured diagnosis: outcome, root cause, affected nodes and evidence. NVIDIA says it is used in production across its own AI infrastructure, analyzing millions of workloads per week across hundreds of thousands of GPUs. In the post's synthetic example, one node reports an NVLink error, three nodes report NCCL communication errors, and the tool names the NVLink fault as the cause and treats the rest as symptoms.",
+          "what_it_means": "In a big training job, many GPUs must talk to each other constantly. If one breaks, everyone waiting on it also complains, like a traffic jam where hundreds of drivers honk but only one car broke down. Attribution uses fixed rules, not guesses, so the same evidence always gives the same answer. If several causes fit, it says the result is ambiguous instead of claiming certainty.",
+          "why_it_matters": "Training runs cost a lot per hour, so finding a bad cable or GPU fast means less wasted time. A team could point it at its Slurm or Kubernetes cluster logs. The accuracy claims come from NVIDIA; the post gives no independent accuracy figures.",
+          "terms": [["Root cause", "The first thing that went wrong, as opposed to the errors it triggered afterward."], ["NVLink", "NVIDIA's very fast direct link between GPUs."], ["NCCL", "NVIDIA's library that lets GPUs exchange data during training."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/"}]
+        },
+        {
+          "headline": "NVIDIA's NemoClaw: open blueprints for building agents with built-in guardrails",
+          "standfirst": "A kit that combines an agent framework, open models and a permission system.",
+          "what_happened": "NVIDIA describes NemoClaw as a set of open blueprints, not a new agent framework. Each blueprint sits on a harness you choose (OpenClaw, Hermes Agent or LangChain Deep Agents) and adds Nemotron open models, NeMo tools for tracing and optimization, and OpenShell, a runtime that controls what files, networks, credentials and tools the agent can use. NVIDIA says LangChain's tuned Deep Agents setup with Nemotron 3 Ultra reaches near-frontier performance at roughly 10 times lower cost per run than leading closed models. That is a vendor claim, with no methodology given in the post.",
+          "what_it_means": "An AI agent is a model that can take actions, such as reading files or calling tools. The risk is that it might do something it should not. OpenShell works like a building's keycard system: the agent can only open the doors its policy allows, and passwords are kept outside the room it works in.",
+          "why_it_matters": "A company could run a domain-specific agent on its own hardware, using open models, and still have an audit trail of what the agent did. The example in the post is a policy that stops an agent from sending data to GitHub. The cost claim should be checked independently before relying on it.",
+          "terms": [["Harness", "The software wrapper around a model that gives it tools, memory and a work loop."], ["Open models", "Models whose trained numbers are published so anyone can run them."], ["Sandbox", "A fenced-off environment where a program can only do what it has been allowed to do."]],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "This cholesterol drug promised to be a game-changer. Why did it flop?",
+      "standfirst": "A drug that sharply lowers a risky blood fat did not reduce heart attacks and strokes in a large trial.",
+      "paragraphs": [
+        "Nature's news story, which is behind a login so we could read only its summary, covers a major trial of a therapy that lowers lipoprotein(a), often written Lp(a). Lp(a) is a cholesterol-carrying particle in the blood, and people with high levels have more heart disease. Because it is mostly set by genes, diet and exercise barely change it, so doctors have long wanted a drug that does.",
+        "The trial in question appears to be Novartis's Lp(a)HORIZON study of the drug pelacarsen, which announced topline results on September 4, 2026. It enrolled 8,323 patients with high Lp(a) and existing heart disease. Pelacarsen lowered Lp(a) substantially, but there was no reduction in the combined risk of cardiovascular death, heart attack, stroke or urgent procedures compared with placebo. Full results have not been published yet. One commentator noted the patients' other risk factors were already well controlled, with an average LDL cholesterol around 66 mg/dL, which may leave less room for Lp(a) to matter."
+      ],
+      "key_points": [
+        "What they found: the drug cut Lp(a) levels but did not cut heart attacks, strokes or related events.",
+        "How: a placebo-controlled trial of 8,323 patients with high Lp(a) and existing heart disease.",
+        "Why it matters: it tests the idea that lowering Lp(a) protects hearts, and several similar drugs are still in trials, so the question is not settled."
+      ],
+      "terms": [["Lipoprotein(a)", "A particle in the blood that carries cholesterol and is linked to heart disease; levels are mostly inherited."], ["Placebo", "A dummy treatment given to a comparison group so the real effect can be measured."]],
+      "url": "https://www.nature.com/articles/d41586-026-03504-2",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Wednesday track: computer architecture and performance",
+      "title": "Latency vs throughput, and how to measure each one",
+      "big_idea": "Latency is how long one thing takes, and throughput is how many things get done per second. They are different questions, and improving one does not automatically improve the other.",
+      "background": [
+        "Picture a highway. Latency is how long one car takes to drive from A to B. Throughput is how many cars pass a point per hour. Adding lanes raises throughput, but a single car does not arrive any sooner. A faster speed limit lowers latency, and also raises throughput.",
+        "In networking, latency is usually measured in microseconds (millionths of a second) and throughput in gigabits per second. A message of one byte has the same throughput problem as latency: sending a small message is limited by delay, not by the width of the pipe. Light in optical fiber travels about 200,000 kilometers per second, which is roughly 5 microseconds per kilometer, and no software can beat that."
+      ],
+      "steps": [
+        "Pick the question. Are you asking how quickly one request is answered (latency) or how much total work gets done (throughput)?",
+        "To measure latency, send one small message and time how long until the reply returns, called a ping-pong. Half of the round trip is the one-way estimate.",
+        "Repeat that thousands or millions of times and record every sample, not just the average, then look at the median and high percentiles.",
+        "To measure throughput, send as much data as you can for several seconds and divide bytes moved by time elapsed.",
+        "Keep many requests in flight at once for throughput tests. With only one request outstanding, the pipe sits empty while you wait for each reply.",
+        "Relate the two with Little's Law: items in flight equals throughput times latency. Use it to check your numbers make sense."
+      ],
+      "example": "Take a 100 Gbit/s link with a 10 microsecond round trip. Little's Law says you need 100 billion bits per second times 10 microseconds, or about 1 million bits, which is 125,000 bytes in flight to keep the link full. If your app sends one 1 KB message and waits for the reply, you use less than one percent of the link even though latency is excellent. For XLIO, this is why a latency test (sockperf ping-pong) and a throughput test (iperf with many connections) tell you very different things about the same card.",
+      "why_xlio": "XLIO exists mostly to cut latency per message by skipping the kernel, and also raises throughput per CPU core. You cannot tell if it helped without knowing which of the two you are measuring.",
+      "numbers": [["Light in fiber", "about 200,000 km/s, roughly 5 microseconds per kilometer"], ["Bytes in flight to fill 100 Gbit/s at 10 microseconds round trip", "125,000 bytes"]],
+      "pitfall": "A common misconception is that a faster network means lower latency. A 400 Gbit/s link moves large files faster, but a small request across the same distance takes about the same time, because the delay is set by distance and processing, not link width.",
+      "terms": [["Latency", "The time one operation takes from start to finish."], ["Throughput", "The amount of work finished per unit of time."], ["Round-trip time (RTT)", "The time for a message to go to the other side and the reply to come back."], ["Little's Law", "The number of items in a system equals the arrival rate times the time each spends there."]],
+      "question": "A link carries 10 Gbit/s and the round trip is 1 millisecond. How much data must be in flight to keep it full?",
+      "answer": "10 billion bits per second times 0.001 seconds is 10 million bits, or 1.25 million bytes. If your app keeps less than that outstanding, the link will sit partly idle.",
+      "reading": [{"name": "sockperf: network latency and throughput tool", "url": "https://github.com/Mellanox/sockperf"}, {"name": "iperf3 documentation", "url": "https://iperf.fr/iperf-doc.php"}]
+    }
+  }
+}
