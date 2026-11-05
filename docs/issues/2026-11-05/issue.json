@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Israel's election leaves Netanyahu's bloc short of a majority; Herzog starts consultations",
+        "standfirst": "The final results give the opposition parties more seats than Netanyahu's allies, but turning that into a government is not simple.",
+        "paragraphs": [
+          "Israel's Central Elections Committee chairman, Supreme Court Justice Noam Sohlberg, presented the certified election results to President Isaac Herzog on Wednesday and said that casting doubt on them is a real danger to democracy. According to the Times of Israel, parties opposed to Prime Minister Benjamin Netanyahu hold 67 of the 120 Knesset seats, while his Likud-led right-wing and ultra-Orthodox bloc holds 53, eight short of a majority. The largest opposition party is Gadi Eisenkot's Yashar with 21 seats; Likud has 27.",
+          "That 67 includes the Arab parties, the Joint List (11 seats) and Ra'am (8), so the four Jewish-majority opposition parties alone have 48. As Herzog consults party leaders, the ultra-Orthodox Degel HaTorah faction said it will not recommend Netanyahu for prime minister, and Eisenkot is expected to get the first chance to form a government if enough opposition parties back him. They have not yet agreed on a candidate: Naftali Bennett and Avigdor Liberman also have leadership ambitions. The Times of Israel notes that a government needs only a simple majority of votes cast in a Knesset confidence vote, not 61, so a minority coalition with outside support is possible. Netanyahu's own options include a national unity deal or waiting for the opposition to fail."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/netanyahu-lost-his-majority-but-can-the-opposition-form-a-government-a-look-at-possible-paths-ahead/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/election-chief-presents-results-to-president-says-casting-doubt-on-them-a-real-danger-to-democracy/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/as-herzog-consults-party-heads-haredi-faction-says-it-wont-recommend-netanyahu-as-pm/"}
+        ]
+      },
+      "briefs": [
+        {
+          "headline": "Trump says US military aid to Israel will end this year; the details are disputed",
+          "text": "In a Fox News interview on Tuesday, President Trump said the roughly $4 billion in annual US military aid will stop by the end of 2026, saying he and Netanyahu agreed months ago. Israeli Finance and Defense Ministry officials were reportedly surprised by the timing, and the Prime Minister's Office had not commented. The Times of Israel notes the current 10-year agreement runs to September 2028 and that Netanyahu has spoken about phasing aid out gradually over about a decade.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/"
+        },
+        {
+          "headline": "Tel Aviv stocks fall as oil drops and the shekel weakens",
+          "text": "Ynet reports the TA-35 index fell 1.96% after the US midterm results and remarks by Vice President JD Vance, with defense and insurance shares down the most. The dollar briefly reached about 3.177 shekels, its highest since January 20, which analysts linked to Israel's inconclusive election, security concerns and global stock losses.",
+          "source": "Ynet",
+          "url": "https://www.ynetnews.com/business/article/r10ydkk6ze"
+        },
+        {
+          "headline": "Israeli officials say the Lebanese army handover is not working as hoped",
+          "text": "More than 100 days after the IDF handed three southern Lebanese villages to the Lebanese army, Ynet reports that Hezbollah-linked aid groups are returning and that talks on a monitoring mechanism have stalled for months. Israeli officials told Ynet they believe Hezbollah is rebuilding, while the article also notes Hezbollah is weaker than it has been in years.",
+          "source": "Ynet",
+          "url": "https://www.ynetnews.com/article/by96jytpze"
+        },
+        {
+          "headline": "Tax Authority head says Israel should phase out cash",
+          "text": "Shay Aharonovich, head of the Tax Authority, told Globes that abolishing cash would raise annual tax collection by NIS 20 to 30 billion, because payments leaving a digital trail are harder to hide from tax authorities.",
+          "source": "Globes",
+          "url": "https://en.globes.co.il/en/article-tax-chief-well-phase-out-cash-altogether-1001560042"
+        }
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Democrats win control of both the House and the Senate",
+          "paragraphs": [
+            "In Tuesday's midterm elections Democrats won both chambers of Congress, according to the Times of Israel's report. Senate seats changed hands in states including Iowa, Kansas, Texas, Ohio, Maine and South Carolina; Mississippi and Alaska had not been called early Wednesday. Final seat totals were not yet available in the sources I read.",
+            "President Trump said he was not on the ballot and would accept the results, and vowed to veto Democratic legislation. House Democratic leader Hakeem Jeffries outlined a 100-day agenda on living costs and oversight of the administration, and Democrats are expected to open investigations. Senate Majority Leader John Thune said Republicans would work with Trump. Vice President JD Vance said the Iran war cost Republicans the election."
+          ],
+          "why_it_matters": "For the next two years Trump cannot pass laws without Democratic votes, and Congress can now investigate his administration and block parts of its budget.",
+          "sources": [{"name": "Times of Israel", "url": "https://www.timesofisrael.com/democrats-take-control-of-us-house-and-senate-in-sharp-rebuke-of-trump-republicans/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Dow jumps about 1,500 points as oil falls 9% after the election",
+          "paragraphs": [
+            "Wall Street had its best day since April 2025. Per Ynet's figures the Dow rose 2.4% to 53,025 and the S&P 500 rose 1.7% to 7,697, while Brent crude fell about 9% to roughly $94 a barrel. Reuters-sourced reports say investors were relieved that a clear result removed political uncertainty, and that traders read Vance's comments blaming the Iran war as a sign the administration may come under pressure to end it.",
+            "Not everything rose: defense stocks such as Northrop Grumman, RTX and Lockheed Martin fell, as did AI infrastructure and data-center names on fears of tighter AI regulation. Some strategists cautioned that company profits and interest rates matter more to stock prices than who controls Congress."
+          ],
+          "why_it_matters": "Cheaper oil lowers fuel and shipping costs, which can ease inflation, but the rally rests on a political reading that may not last.",
+          "sources": [
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"},
+            {"name": "Ynet", "url": "https://www.ynetnews.com/business/article/r10ydkk6ze"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "OpenAI to replace 'unlimited' ChatGPT with a shared usage budget",
+          "standfirst": "From December, paid ChatGPT plans will count usage in tokens instead of promising unlimited prompts.",
+          "what_happened": "According to The Decoder, citing an updated OpenAI support page, ChatGPT's Chat and Work modes will merge starting in December. Plus, Pro and Business subscribers will share one token budget across ChatGPT and Codex. Chats with Instant models will not count toward it.",
+          "what_it_means": "A token is a small chunk of text, roughly a short word or part of one. Instead of 'send as many messages as you like', you get a monthly allowance, like mobile data. Bigger, smarter models and long agent tasks use the allowance faster than quick chats do. At the limit you wait for a reset, upgrade or buy extra credits.",
+          "why_it_matters": "It shows how expensive heavy AI use is to serve. Agents that work for minutes on a task consume far more compute than a chat reply, so flat pricing stops working. Someone who uses an agent all day should expect to hit the limit sooner.",
+          "terms": [["Token", "A small piece of text, around three-quarters of an average English word, which is how AI models measure what they read and write."]],
+          "sources": [{"name": "The Decoder", "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/"}]
+        },
+        {
+          "headline": "Anthropic is adding an invisible watermark to Claude's text, with a loophole",
+          "standfirst": "Claude's older models will carry a hidden statistical pattern that can reveal text was machine-written.",
+          "what_happened": "The Decoder reports that Anthropic is retrofitting a text watermark, a variant of Google DeepMind's SynthID, onto older Claude models, citing the EU AI Act's December deadline. A second wave covers Claude Opus 4.5, Sonnet 4.5, Haiku 4.5 and Opus 4.6 on November 16. Models released after August 2, 2026 already ship with it. On Opus 4.6 and Sonnet 4.6, the mark applies only if the temperature, top_p and top_k settings are left at their defaults.",
+          "what_it_means": "When a model writes, it picks each next word from a list of likely candidates. A watermark nudges those picks in a secret, repeatable way. No single word looks odd, but a detector that knows the secret can check a long passage and find that the pattern is far too regular to be chance. Changing the sampling settings changes how words are picked, which is why it can switch the mark off on those two models.",
+          "why_it_matters": "Governments increasingly want AI-written text to be identifiable. Companies that must prove content is AI-generated have to leave those settings alone. Anthropic says a detection API exists in private preview.",
+          "terms": [["Watermark", "A hidden pattern added to content that you cannot see but a detector can find."], ["Sampling settings", "Controls such as temperature that decide how adventurous the model is when picking its next word."]],
+          "sources": [{"name": "The Decoder", "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"}]
+        },
+        {
+          "headline": "DeepSeek releases an open coding-agent prototype that runs tasks in parallel",
+          "standfirst": "A research prototype splits incoming coding requests across several worker sessions so they finish faster.",
+          "what_happened": "MarkTechPost reports that DeepSeek released dsh-superagent under the MIT license as a research prototype. It routes requests from GitHub and Feishu to parallel worker sessions. In a simulation, reported 95th-percentile task completion time dropped from 29.5 to 15.7 minutes, about 47%. I could not open the page itself, so this comes from the search summary; the figure is from a simulation, not real-world use.",
+          "what_it_means": "Instead of one coding agent handling requests one after another, a router acts like a receptionist and hands each job to a free worker agent. Jobs no longer wait in a single line. The 95th percentile means the slowest typical cases: 19 out of 20 tasks finished within that time.",
+          "why_it_matters": "Agents are becoming a scheduling problem, not just a model problem. A team could have many tickets worked on at once. Because the license is permissive, anyone can try or adapt it, but a prototype is not a finished product.",
+          "terms": [["MIT license", "A very permissive open-source license that lets anyone use, change and sell the software."], ["p95 latency", "The time within which 95 percent of tasks finish, which shows the slow cases rather than the average."]],
+          "sources": [{"name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "AI agents run an automated biology lab that reads and writes DNA",
+      "standfirst": "A self-driving lab in China took a plain-language prompt and carried out the experiment to store and read a message in DNA.",
+      "paragraphs": [
+        "Nature's news team reports on a lab in China where AI agents coordinate the instruments and the steps of a multi-step molecular biology experiment. From a simple prompt, the system encoded a message in DNA and then read it back by sequencing. The full article is behind Nature's login, so this summary is based only on the feed description and headline.",
+        "The idea is like a kitchen run by a head chef who takes an order and directs every appliance, rather than a cook following a recipe step by step. DNA data storage turns letters into the four DNA chemical building blocks, writes a physical strand, then reads it again. Today these steps need a person to move samples and run machines."
+      ],
+      "key_points": [
+        "What they did: AI agents ran a lab that wrote a message into DNA and read it back, starting from a simple prompt.",
+        "How: the agents coordinate multi-step experiments across lab instruments.",
+        "Why it matters: it hints that routine lab work could be automated, though the article's details were not available to me."
+      ],
+      "terms": [["DNA sequencing", "Reading the order of the four chemical letters in a DNA strand."], ["Self-driving lab", "A laboratory where software plans experiments and robots carry them out with little human help."]],
+      "url": "https://www.nature.com/articles/d41586-026-03552-8",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Thursday track: AI compute and interconnect",
+      "title": "GPU memory: HBM, and why memory bandwidth is often the limit",
+      "big_idea": "A GPU can do math far faster than it can fetch the numbers to do math on, so for many AI jobs the speed limit is how fast memory can feed the chip, not how fast the chip can calculate.",
+      "background": [
+        "A processor computes on numbers, but numbers live in memory. Two things describe memory: capacity (how much fits) and bandwidth (how many bytes per second can flow to the chip). Think of a kitchen: capacity is the size of the pantry, bandwidth is how wide the door between pantry and stove is. A chef who can chop 1,000 onions a minute is useless if the door lets through 100.",
+        "Ordinary computer memory (DDR) sits on separate sticks, connected by a modest number of wires. A GPU needs much more flow, so it uses HBM, High Bandwidth Memory. HBM stacks several memory chips on top of each other like floors in a building, and puts the stacks right next to the GPU on the same package, joined by a very wide connection of about 1,024 wires per stack. Short and wide beats long and narrow."
+      ],
+      "steps": [
+        "A model's weights, the billions of numbers that make it up, sit in HBM next to the GPU chip.",
+        "To compute, the GPU's math units need those weights, so the memory controller reads them from HBM.",
+        "Data travels across the very wide link between each HBM stack and the GPU chip.",
+        "Weights land in the GPU's small, fast on-chip caches and registers.",
+        "The math units multiply and add, then write results back toward HBM if they are needed later.",
+        "If compute finishes before the next data arrives, the math units sit idle; the job is memory-bound."
+      ],
+      "example": "When a language model writes text one token at a time, each token requires reading essentially all the model's weights once, but does only a little math per weight. A 70-billion-parameter model stored in 16-bit numbers is about 140 GB, so just moving the weights once per token at 3.35 TB/s takes about 40 milliseconds, no matter how fast the math units are. That is why memory bandwidth, not compute, often sets the tokens-per-second ceiling.",
+      "why_xlio": "The same idea of distance and bandwidth drives networking. Moving data costs more than computing on it, which is why XLIO avoids copies and why technologies like GPUDirect send network data straight into GPU memory.",
+      "numbers": [["NVIDIA H100 SXM memory", "80 GB of HBM3"], ["H100 SXM memory bandwidth", "about 3.35 TB/s"], ["NVIDIA A100 80GB bandwidth", "about 2 TB/s"], ["Interface width per HBM stack", "1,024 bits"]],
+      "pitfall": "A common belief is that a GPU with more compute is always faster for AI. For jobs that read lots of data per calculation, such as generating text token by token, extra compute sits idle; bandwidth decides.",
+      "terms": [["HBM", "High Bandwidth Memory: stacked memory chips placed beside the GPU, connected by a very wide link."], ["Bandwidth", "How many bytes per second can move between memory and the chip."], ["Memory-bound", "A job whose speed is limited by how fast data arrives rather than how fast the chip can calculate."]],
+      "question": "A GPU's compute speed doubles but its memory bandwidth stays the same. Will token generation for a large model get about twice as fast?",
+      "answer": "No. Generating each token mostly reads the model's weights from memory, so the speed is set by bandwidth. Faster math units would just wait longer for data, so speed would barely change.",
+      "reading": [{"name": "NVIDIA H100 Tensor Core GPU", "url": "https://www.nvidia.com/en-us/data-center/h100/"}]
+    }
+  }
+}
