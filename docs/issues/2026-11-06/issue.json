@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Eisenkot wins 67 recommendations for prime minister, but a government is far from certain",
+        "standfirst": "Israel's president will decide on Sunday who gets the first chance to build a coalition.",
+        "paragraphs": [
+          "After the October 27 election, President Isaac Herzog met party delegations on Thursday to hear whom each party wants as prime minister. Gadi Eisenkot, leader of the Yashar party, was recommended by 67 of the 120 members of Knesset: Yashar's 48-seat four-party bloc plus 19 seats from the two Arab-led parties, the Joint List and Ra'am. According to the Times of Israel, that is the largest number of recommendations for any candidate since 2015. Benjamin Netanyahu was recommended by 46 members, which Herzog said is his outgoing coalition's 53 seats minus the 7 seats of United Torah Judaism, which declined to recommend him.",
+          "A recommendation is not a government. Yashar says it will not sit with Netanyahu and wants to negotiate first with allied opposition parties. Joint List MK Ahmad Tibi said his party would back a minority government from outside but would not give it a safety net. Eisenkot has said coalition partners must call Hamas a terrorist organization, and Ra'am chairman Mansour Abbas stopped short of saying that explicitly. Likud called for a broad national government of Jewish-led Zionist parties and called Eisenkot's bloc the disaster bloc, language Herzog criticized. Herzog said the result was clear but that he would hold more talks before assigning the mandate on Sunday. The new Knesset is sworn in on November 10."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/"},
+          {"name": "Ynet", "url": "https://www.ynetnews.com/article/ryuqebc6zg"}
+        ]
+      },
+      "briefs": [
+        {
+          "headline": "Trump says US military aid to Israel will end by the end of 2026",
+          "text": "President Trump told Fox News on Tuesday that the US will stop giving Israel about $4 billion a year, saying he and Netanyahu had agreed on it. Israeli Finance Ministry and defense officials said they were surprised, and Eisenkot demanded answers from Netanyahu. The Times of Israel notes that the current 10-year aid agreement runs to September 2028; the Prime Minister's Office had not commented.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/"
+        },
+        {
+          "headline": "Election results certified while Likud-led factions question them",
+          "text": "Election committee chairman, Supreme Court Justice Noam Sohlberg, gave Herzog the certified results and called casting doubt on them a real danger to democracy. Netanyahu's Likud and other outgoing coalition factions have questioned the vote without presenting evidence, and Itamar Ben Gvir said the election was stolen. The committee's review of 9,069 polling stations found no irregularities; a Shin Bet and Mossad probe into possible foreign funding of the Joint List and a police vote-buying probe continue.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/election-chief-presents-results-to-president-says-casting-doubt-on-them-a-real-danger-to-democracy/"
+        },
+        {
+          "headline": "UN peacekeepers confirm they will leave south Lebanon after December 31",
+          "text": "UNIFIL says its mandate ends on December 31, 2026, and it will then begin leaving, even though Beirut asked for an extension. Lebanese officials warn of a security vacuum, while Israel says the force failed to stop Hezbollah building up near the border. The UN Security Council is weighing options for monitoring the border afterwards.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/unifil-confirms-it-will-start-leaving-south-lebanon-when-mandate-ends-on-dec-31/"
+        },
+        {
+          "headline": "Opposition moves to replace the Knesset speaker on opening day",
+          "text": "Opposition parties are calling for an early vote to replace Likud's Amir Ohana as speaker when the new Knesset convenes on November 10. Ynet reports that Eisenkot also intends to advance a state inquiry into October 7 through the Knesset without government approval.",
+          "source": "Ynet",
+          "url": "https://www.ynetnews.com/article/bjunej5agg"
+        }
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Democrats win Congress in the midterms",
+          "paragraphs": [
+            "Media outlets project that Democrats won the 2026 midterm elections and will hold majorities in both the House and the Senate. The size of the House majority was still unclear while votes were being counted. The new House is sworn in in the first week of January, ending four years of Republican control.",
+            "Later in November House Democrats will privately choose their speaker candidate; aides say no one is a serious threat to Hakeem Jeffries, who would be the first Black speaker. Jeffries has stressed the cost of living, with possible early bills on the child tax credit, housing and health-insurance subsidies, though President Trump could veto some of them."
+          ],
+          "why_it_matters": "For the first time in this term the president will face a Congress he doesn't control, which can block his priorities, investigate his administration and force negotiations on government funding.",
+          "sources": [{"name": "Times of Israel (citing AP)", "url": "https://www.timesofisrael.com/hakeem-jeffries-poised-to-become-first-black-speaker-of-us-house-of-representatives/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "AI and chip stocks crash: Nasdaq falls 5.5% into a correction",
+          "paragraphs": [
+            "On Thursday, November 5, the Nasdaq fell 5.52% to 24,315, more than 10% below last month's record, which is the usual definition of a correction. The S&P 500 fell 4.36% and the Dow lost 1,833 points (3.44%). A major semiconductor fund fell more than 12%, its worst day since March 2020. CNBC reports Nvidia fell about 9%, Broadcom about 10% and AMD and Micron about 15% each.",
+            "CNBC says investors worried that Democratic control of Congress could slow the building of AI data centers; Senator Bernie Sanders has called for a national data center moratorium. Qualcomm also dropped about 9% after a weak outlook. Analyst Tim Holland of Orion said investors are stepping away until they understand what the midterms mean for AI spending. The October jobs report is due Friday at 8:30 a.m. ET, with economists expecting 59,000 new jobs."
+          ],
+          "why_it_matters": "A lot of recent market gains rested on the bet that AI spending would keep growing, so any political threat to that spending hits tech, and the wider market with it.",
+          "sources": [
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html"},
+            {"name": "CNBC: Treasury yields", "url": "https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA says its new Vera CPU runs AI agents faster and with less power",
+          "standfirst": "NVIDIA is now selling its own processor for the 'helper' work around AI models.",
+          "what_happened": "On November 5 NVIDIA published results for Vera, its own CPU (the general-purpose processor, as opposed to the GPU). NVIDIA says that in a 100-megawatt data center, Vera runs 1.6 times more agents per watt than the fastest x86 chip, and runs agents 2 times faster than the most energy-efficient x86 chip. Partners reported: Perplexity ran agentic coding tasks 1.5 times faster; DeepInfra saw up to 2.2 times the speed on agent orchestration; and Daytona started 1,000 agent sandboxes in 10.8 seconds versus 88.4 seconds on x86.",
+          "what_it_means": "An AI agent is a program where a model repeatedly decides what to do, then runs tools such as code, searches or databases. The model runs on GPUs, but all the tool work runs on ordinary CPUs. As agents multiply, those CPUs become a bottleneck. NVIDIA is saying its CPU is built for exactly this job.",
+          "why_it_matters": "If agents become the main way people use AI, the CPU side of a data center matters as much as the GPU side. A company running thousands of coding agents could start each agent's isolated workspace almost instantly and pay less for electricity. These are NVIDIA's and its partners' own numbers.",
+          "terms": [
+            ["CPU vs GPU", "A CPU is a flexible processor good at many different jobs one after another; a GPU does huge amounts of simple math at the same time."],
+            ["Sandbox", "A sealed, disposable workspace where an agent can run code without being able to harm anything outside it."],
+            ["x86", "The processor design used by Intel and AMD chips, which currently run most servers."]
+          ],
+          "sources": [{"name": "NVIDIA blog", "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"}]
+        },
+        {
+          "headline": "NVIDIA: the AI memory wall is solved by a hierarchy, not just more memory",
+          "standfirst": "Long conversations and agents need to remember a lot, and GPU memory is running out.",
+          "what_happened": "In a post on November 5, NVIDIA says agent workflows can carry up to 3 million tokens of context across repeated calls, and that GPU memory (HBM) mostly holds the model weights and the KV cache, the model's short-term memory of the conversation. Its answer is a hierarchy: HBM, then CPU memory, then local SSDs, then shared storage. It also uses 4-bit numbers (NVFP4) to shrink weights and KV cache, spreads weights over up to 72 GPUs in an NVL72 rack, and uses its Dynamo software to park idle context in cheaper storage and bring it back before it is needed. NVIDIA claims, on a SemiAnalysis benchmark, up to 30 times more throughput per dollar for Vera Rubin NVL72 than GB300 NVL72, while HBM per GPU grew only about 3%.",
+          "what_it_means": "Think of a chef's counter, a fridge and a warehouse. Only what is being cooked right now needs to be on the counter. NVIDIA wants to keep each conversation's memory on the right level and move it between levels at the right time, so expensive GPU memory is not wasted on conversations that are paused while a tool runs.",
+          "why_it_matters": "Memory is getting scarce and expensive, and it limits how many users one machine can serve. Smarter placement means the same hardware can serve more people. The 30 times figure is NVIDIA's own claim and covers the whole system, not memory alone.",
+          "terms": [
+            ["KV cache", "The notes a model keeps about everything said so far so it doesn't have to re-read the whole conversation for each new word."],
+            ["HBM", "High-bandwidth memory: very fast memory stacked right next to the GPU chip."],
+            ["Token", "A small piece of text, roughly three quarters of a word, that models read and write."],
+            ["NVFP4", "NVIDIA's 4-bit number format, which stores each value in less space than the common 8-bit one."]
+          ],
+          "sources": [{"name": "NVIDIA blog", "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"}]
+        },
+        {
+          "headline": "Anthropic files to go public on Nasdaq under the ticker ANT",
+          "standfirst": "The maker of Claude has filed its IPO paperwork; the date was October 26, so this is a few days old.",
+          "what_happened": "Anthropic announced on October 26 that it filed a Form S-1 registration statement with the US Securities and Exchange Commission for a proposed initial public offering of its Class A common stock. It plans to list on the Nasdaq Global Select Market under the symbol ANT. The share count and price are not yet set, and Goldman Sachs and Morgan Stanley are named as contacts for the preliminary prospectus. The filing has not yet become effective, so shares cannot be bought yet.",
+          "what_it_means": "An IPO is when a private company sells shares to the public for the first time. The S-1 is the detailed document that discloses its finances and risks. Anthropic had earlier submitted a draft confidentially, in June.",
+          "why_it_matters": "It would make one of the leading AI labs a company anyone can invest in, and the public filing should reveal real numbers on revenue and computing costs. It also lands in a week when AI stocks are selling off sharply, which may affect timing.",
+          "terms": [
+            ["IPO", "Initial public offering: a company's first sale of shares to the general public."],
+            ["S-1", "The form a company files with the US SEC before an IPO, describing its business, finances and risks."]
+          ],
+          "sources": [{"name": "Anthropic", "url": "https://www.anthropic.com/news/s1-sec"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "Why not to wait even a few minutes before fleeing a tsunami",
+      "standfirst": "A computer simulation suggests that a short delay can decide whether people reach safety.",
+      "paragraphs": [
+        "This Nature news item is behind a login, so this summary is based only on the description Nature publishes in its feed. It reports on a simulation of people evacuating from a tsunami. The main finding, in Nature's words, is that even brief hesitation can determine whether people reach safety.",
+        "The reason is simple arithmetic: a tsunami arrives at a fixed time, and the distance people must cover to reach high ground does not change, so every minute spent waiting is a minute taken from the time available to walk or run. I could not read the article, so details such as which coast was modeled, how many people were simulated and how large the effect is are not included here."
+      ],
+      "key_points": [
+        "What they found: a few minutes of delay can be the difference between reaching safety and not.",
+        "How they found it: a computer simulation of an evacuation (further details not available in the feed).",
+        "Why it matters: it supports evacuating immediately after a warning or strong shaking rather than waiting to confirm."
+      ],
+      "terms": [
+        ["Simulation", "A computer model that plays out a situation many times to see what happens under different choices."]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03539-5",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Friday track: AI inference",
+      "title": "The KV cache: what it stores and why it grows with every token",
+      "big_idea": "While a model writes its answer one token at a time, it keeps a notebook of what it already worked out about every earlier token, so it never has to redo that work. That notebook is the KV cache, and it gets longer with every token.",
+      "background": [
+        "A language model reads text as tokens, small pieces of words. To produce each new token it uses attention: the new token looks back at all earlier tokens and decides which are relevant. Think of writing a sentence while glancing back over everything you've written.",
+        "Inside attention, every token is turned into three lists of numbers: a query (what am I looking for?), a key (what do I contain, as a label?) and a value (what information do I hand over?). A new token's query is compared with every earlier token's key to get scores, and those scores decide how much of each earlier value gets mixed in."
+      ],
+      "steps": [
+        "Prefill: the model reads your whole prompt at once and, for each token in every layer, computes its key and value.",
+        "It stores those keys and values in GPU memory. That stored collection is the KV cache.",
+        "Decode begins: the model produces the first new token. Its query is compared against all the cached keys.",
+        "For that new token the model computes just one new key and one new value per layer and appends them to the cache.",
+        "Next token: repeat, reusing every earlier key and value from the cache instead of recomputing them.",
+        "The cache gets one entry larger per layer with every token, for the prompt plus the answer, until the answer ends."
+      ],
+      "example": "Imagine a coding agent that has pasted a 50,000-token codebase into the prompt. Without a KV cache, every new word of the answer would force the GPU to redo the keys and values for all 50,000 tokens. With one, it computes them once during prefill and then only adds one new entry per step. The price is memory: those 50,000 tokens sit in GPU memory the whole time, for every user being served at once.",
+      "why_xlio": "When a service is split across machines, the KV cache sometimes has to move over the network, and NVIDIA's Dynamo and NIXL do this over fast RDMA networking. That is the connection to your world of NICs and zero-copy transfers.",
+      "numbers": [
+        ["KV cache size per token", "2 (keys and values) x layers x KV heads x head dimension x bytes per number"],
+        ["Example: a model with 32 layers, 8 KV heads, head size 128, 16-bit numbers", "131,072 bytes, about 128 KiB per token"],
+        ["Same example at 8,000 tokens of context", "about 1 GiB for one user"]
+      ],
+      "pitfall": "People often think the cache stores the text or the model's answers. It doesn't: it stores the intermediate keys and values for each token in each layer, which are numbers, not words. That is why it can be much bigger than the text itself.",
+      "terms": [
+        ["Token", "A small piece of text, roughly three quarters of a word."],
+        ["Attention", "The step where a token looks back at earlier tokens and decides which matter."],
+        ["Prefill", "The first phase, where the model reads the whole prompt at once."],
+        ["Decode", "The second phase, where the model writes the answer one token at a time."],
+        ["HBM", "High-bandwidth memory: the fast memory on the GPU where the cache lives."]
+      ],
+      "question": "Why does the KV cache make each new token cheaper to compute, but make the server run out of memory sooner?",
+      "answer": "It saves the keys and values of earlier tokens, so each step only computes one new entry instead of redoing everything, which saves computation. But those saved entries stay in GPU memory and grow with every token and every user, so memory fills up.",
+      "reading": [
+        {"name": "NVIDIA: More Performance From Every Byte", "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"},
+        {"name": "Attention Is All You Need (original paper)", "url": "https://arxiv.org/abs/1706.03762"}
+      ]
+    }
+  }
+}

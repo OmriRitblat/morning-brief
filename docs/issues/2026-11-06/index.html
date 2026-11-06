@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Friday, 6 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Friday, 6 November 2026</span><span>No. 12</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Eisenkot wins 67 recommendations for prime minister, but a government is far from certain</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Democrats win Congress in the midterms · AI and chip stocks crash: Nasdaq falls 5.5% into a correction</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA says its new Vera CPU runs AI agents faster and with less power</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">Why not to wait even a few minutes before fleeing a tsunami</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">The KV cache: what it stores and why it grows with every token</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Eisenkot wins 67 recommendations for prime minister, but a government is far from certain</h2><p class="stand">Israel&#x27;s president will decide on Sunday who gets the first chance to build a coalition.</p><div class="body"><p>After the October 27 election, President Isaac Herzog met party delegations on Thursday to hear whom each party wants as prime minister. Gadi Eisenkot, leader of the Yashar party, was recommended by 67 of the 120 members of Knesset: Yashar&#x27;s 48-seat four-party bloc plus 19 seats from the two Arab-led parties, the Joint List and Ra&#x27;am. According to the Times of Israel, that is the largest number of recommendations for any candidate since 2015. Benjamin Netanyahu was recommended by 46 members, which Herzog said is his outgoing coalition&#x27;s 53 seats minus the 7 seats of United Torah Judaism, which declined to recommend him.</p><p>A recommendation is not a government. Yashar says it will not sit with Netanyahu and wants to negotiate first with allied opposition parties. Joint List MK Ahmad Tibi said his party would back a minority government from outside but would not give it a safety net. Eisenkot has said coalition partners must call Hamas a terrorist organization, and Ra&#x27;am chairman Mansour Abbas stopped short of saying that explicitly. Likud called for a broad national government of Jewish-led Zionist parties and called Eisenkot&#x27;s bloc the disaster bloc, language Herzog criticized. Herzog said the result was clear but that he would hold more talks before assigning the mandate on Sunday. The new Knesset is sworn in on November 10.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/">Times of Israel</a>, <a href="https://www.ynetnews.com/article/ryuqebc6zg">Ynet</a></p></article><div class="briefs"><div class="brief"><h3>Trump says US military aid to Israel will end by the end of 2026</h3><p>President Trump told Fox News on Tuesday that the US will stop giving Israel about $4 billion a year, saying he and Netanyahu had agreed on it. Israeli Finance Ministry and defense officials said they were surprised, and Eisenkot demanded answers from Netanyahu. The Times of Israel notes that the current 10-year aid agreement runs to September 2028; the Prime Minister&#x27;s Office had not commented. <a href="https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/">Times of Israel</a></p></div><div class="brief"><h3>Election results certified while Likud-led factions question them</h3><p>Election committee chairman, Supreme Court Justice Noam Sohlberg, gave Herzog the certified results and called casting doubt on them a real danger to democracy. Netanyahu&#x27;s Likud and other outgoing coalition factions have questioned the vote without presenting evidence, and Itamar Ben Gvir said the election was stolen. The committee&#x27;s review of 9,069 polling stations found no irregularities; a Shin Bet and Mossad probe into possible foreign funding of the Joint List and a police vote-buying probe continue. <a href="https://www.timesofisrael.com/election-chief-presents-results-to-president-says-casting-doubt-on-them-a-real-danger-to-democracy/">Times of Israel</a></p></div><div class="brief"><h3>UN peacekeepers confirm they will leave south Lebanon after December 31</h3><p>UNIFIL says its mandate ends on December 31, 2026, and it will then begin leaving, even though Beirut asked for an extension. Lebanese officials warn of a security vacuum, while Israel says the force failed to stop Hezbollah building up near the border. The UN Security Council is weighing options for monitoring the border afterwards. <a href="https://www.timesofisrael.com/unifil-confirms-it-will-start-leaving-south-lebanon-when-mandate-ends-on-dec-31/">Times of Israel</a></p></div><div class="brief"><h3>Opposition moves to replace the Knesset speaker on opening day</h3><p>Opposition parties are calling for an early vote to replace Likud&#x27;s Amir Ohana as speaker when the new Knesset convenes on November 10. Ynet reports that Eisenkot also intends to advance a state inquiry into October 7 through the Knesset without government approval. <a href="https://www.ynetnews.com/article/bjunej5agg">Ynet</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Democrats win Congress in the midterms</h2><div class="body"><p>Media outlets project that Democrats won the 2026 midterm elections and will hold majorities in both the House and the Senate. The size of the House majority was still unclear while votes were being counted. The new House is sworn in in the first week of January, ending four years of Republican control.</p><p>Later in November House Democrats will privately choose their speaker candidate; aides say no one is a serious threat to Hakeem Jeffries, who would be the first Black speaker. Jeffries has stressed the cost of living, with possible early bills on the child tax credit, housing and health-insurance subsidies, though President Trump could veto some of them.</p></div><p class="why"><strong>Why it matters:</strong> For the first time in this term the president will face a Congress he doesn&#x27;t control, which can block his priorities, investigate his administration and force negotiations on government funding.</p><p class="source">Sources: <a href="https://www.timesofisrael.com/hakeem-jeffries-poised-to-become-first-black-speaker-of-us-house-of-representatives/">Times of Israel (citing AP)</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>AI and chip stocks crash: Nasdaq falls 5.5% into a correction</h2><div class="body"><p>On Thursday, November 5, the Nasdaq fell 5.52% to 24,315, more than 10% below last month&#x27;s record, which is the usual definition of a correction. The S&amp;P 500 fell 4.36% and the Dow lost 1,833 points (3.44%). A major semiconductor fund fell more than 12%, its worst day since March 2020. CNBC reports Nvidia fell about 9%, Broadcom about 10% and AMD and Micron about 15% each.</p><p>CNBC says investors worried that Democratic control of Congress could slow the building of AI data centers; Senator Bernie Sanders has called for a national data center moratorium. Qualcomm also dropped about 9% after a weak outlook. Analyst Tim Holland of Orion said investors are stepping away until they understand what the midterms mean for AI spending. The October jobs report is due Friday at 8:30 a.m. ET, with economists expecting 59,000 new jobs.</p></div><p class="why"><strong>Why it matters:</strong> A lot of recent market gains rested on the bet that AI spending would keep growing, so any political threat to that spending hits tech, and the wider market with it.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html">CNBC</a>, <a href="https://www.cnbc.com/2026/11/05/treasury-yields-bonds-interest-rates.html">CNBC: Treasury yields</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>NVIDIA says its new Vera CPU runs AI agents faster and with less power</h2><p class="stand">NVIDIA is now selling its own processor for the &#x27;helper&#x27; work around AI models.</p><dl><dt>What happened</dt><dd>On November 5 NVIDIA published results for Vera, its own CPU (the general-purpose processor, as opposed to the GPU). NVIDIA says that in a 100-megawatt data center, Vera runs 1.6 times more agents per watt than the fastest x86 chip, and runs agents 2 times faster than the most energy-efficient x86 chip. Partners reported: Perplexity ran agentic coding tasks 1.5 times faster; DeepInfra saw up to 2.2 times the speed on agent orchestration; and Daytona started 1,000 agent sandboxes in 10.8 seconds versus 88.4 seconds on x86.</dd><dt>What it means, in plain words</dt><dd>An AI agent is a program where a model repeatedly decides what to do, then runs tools such as code, searches or databases. The model runs on GPUs, but all the tool work runs on ordinary CPUs. As agents multiply, those CPUs become a bottleneck. NVIDIA is saying its CPU is built for exactly this job.</dd><dt>Why it matters and how it could be used</dt><dd>If agents become the main way people use AI, the CPU side of a data center matters as much as the GPU side. A company running thousands of coding agents could start each agent&#x27;s isolated workspace almost instantly and pay less for electricity. These are NVIDIA&#x27;s and its partners&#x27; own numbers.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>CPU vs GPU</dt><dd>A CPU is a flexible processor good at many different jobs one after another; a GPU does huge amounts of simple math at the same time.</dd><dt>Sandbox</dt><dd>A sealed, disposable workspace where an agent can run code without being able to harm anything outside it.</dd><dt>x86</dt><dd>The processor design used by Intel and AMD chips, which currently run most servers.</dd></dl></aside><p class="source">Sources: <a href="https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/">NVIDIA blog</a></p></article><article class="lead second story"><h2>NVIDIA: the AI memory wall is solved by a hierarchy, not just more memory</h2><p class="stand">Long conversations and agents need to remember a lot, and GPU memory is running out.</p><dl><dt>What happened</dt><dd>In a post on November 5, NVIDIA says agent workflows can carry up to 3 million tokens of context across repeated calls, and that GPU memory (HBM) mostly holds the model weights and the KV cache, the model&#x27;s short-term memory of the conversation. Its answer is a hierarchy: HBM, then CPU memory, then local SSDs, then shared storage. It also uses 4-bit numbers (NVFP4) to shrink weights and KV cache, spreads weights over up to 72 GPUs in an NVL72 rack, and uses its Dynamo software to park idle context in cheaper storage and bring it back before it is needed. NVIDIA claims, on a SemiAnalysis benchmark, up to 30 times more throughput per dollar for Vera Rubin NVL72 than GB300 NVL72, while HBM per GPU grew only about 3%.</dd><dt>What it means, in plain words</dt><dd>Think of a chef&#x27;s counter, a fridge and a warehouse. Only what is being cooked right now needs to be on the counter. NVIDIA wants to keep each conversation&#x27;s memory on the right level and move it between levels at the right time, so expensive GPU memory is not wasted on conversations that are paused while a tool runs.</dd><dt>Why it matters and how it could be used</dt><dd>Memory is getting scarce and expensive, and it limits how many users one machine can serve. Smarter placement means the same hardware can serve more people. The 30 times figure is NVIDIA&#x27;s own claim and covers the whole system, not memory alone.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>KV cache</dt><dd>The notes a model keeps about everything said so far so it doesn&#x27;t have to re-read the whole conversation for each new word.</dd><dt>HBM</dt><dd>High-bandwidth memory: very fast memory stacked right next to the GPU chip.</dd><dt>Token</dt><dd>A small piece of text, roughly three quarters of a word, that models read and write.</dd><dt>NVFP4</dt><dd>NVIDIA&#x27;s 4-bit number format, which stores each value in less space than the common 8-bit one.</dd></dl></aside><p class="source">Sources: <a href="https://blogs.nvidia.com/blog/memory-full-stack-codesign/">NVIDIA blog</a></p></article><article class="lead second story"><h2>Anthropic files to go public on Nasdaq under the ticker ANT</h2><p class="stand">The maker of Claude has filed its IPO paperwork; the date was October 26, so this is a few days old.</p><dl><dt>What happened</dt><dd>Anthropic announced on October 26 that it filed a Form S-1 registration statement with the US Securities and Exchange Commission for a proposed initial public offering of its Class A common stock. It plans to list on the Nasdaq Global Select Market under the symbol ANT. The share count and price are not yet set, and Goldman Sachs and Morgan Stanley are named as contacts for the preliminary prospectus. The filing has not yet become effective, so shares cannot be bought yet.</dd><dt>What it means, in plain words</dt><dd>An IPO is when a private company sells shares to the public for the first time. The S-1 is the detailed document that discloses its finances and risks. Anthropic had earlier submitted a draft confidentially, in June.</dd><dt>Why it matters and how it could be used</dt><dd>It would make one of the leading AI labs a company anyone can invest in, and the public filing should reveal real numbers on revenue and computing costs. It also lands in a week when AI stocks are selling off sharply, which may affect timing.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>IPO</dt><dd>Initial public offering: a company&#x27;s first sale of shares to the general public.</dd><dt>S-1</dt><dd>The form a company files with the US SEC before an IPO, describing its business, finances and risks.</dd></dl></aside><p class="source">Sources: <a href="https://www.anthropic.com/news/s1-sec">Anthropic</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>Why not to wait even a few minutes before fleeing a tsunami</h2><p class="stand">A computer simulation suggests that a short delay can decide whether people reach safety.</p><div class="body"><p>This Nature news item is behind a login, so this summary is based only on the description Nature publishes in its feed. It reports on a simulation of people evacuating from a tsunami. The main finding, in Nature&#x27;s words, is that even brief hesitation can determine whether people reach safety.</p><p>The reason is simple arithmetic: a tsunami arrives at a fixed time, and the distance people must cover to reach high ground does not change, so every minute spent waiting is a minute taken from the time available to walk or run. I could not read the article, so details such as which coast was modeled, how many people were simulated and how large the effect is are not included here.</p></div><ol class="points"><li>What they found: a few minutes of delay can be the difference between reaching safety and not.</li><li>How they found it: a computer simulation of an evacuation (further details not available in the feed).</li><li>Why it matters: it supports evacuating immediately after a warning or strong shaking rather than waiting to confirm.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Simulation</dt><dd>A computer model that plays out a situation many times to see what happens under different choices.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03539-5">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>The KV cache: what it stores and why it grows with every token</h2><p class="stand">Friday track: AI inference</p><p class="bigidea"><strong>The big idea:</strong> While a model writes its answer one token at a time, it keeps a notebook of what it already worked out about every earlier token, so it never has to redo that work. That notebook is the KV cache, and it gets longer with every token.</p><dl><dt>First, the basics</dt><dd><p>A language model reads text as tokens, small pieces of words. To produce each new token it uses attention: the new token looks back at all earlier tokens and decides which are relevant. Think of writing a sentence while glancing back over everything you&#x27;ve written.</p><p>Inside attention, every token is turned into three lists of numbers: a query (what am I looking for?), a key (what do I contain, as a label?) and a value (what information do I hand over?). A new token&#x27;s query is compared with every earlier token&#x27;s key to get scores, and those scores decide how much of each earlier value gets mixed in.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>Prefill: the model reads your whole prompt at once and, for each token in every layer, computes its key and value.</li><li>It stores those keys and values in GPU memory. That stored collection is the KV cache.</li><li>Decode begins: the model produces the first new token. Its query is compared against all the cached keys.</li><li>For that new token the model computes just one new key and one new value per layer and appends them to the cache.</li><li>Next token: repeat, reusing every earlier key and value from the cache instead of recomputing them.</li><li>The cache gets one entry larger per layer with every token, for the prompt plus the answer, until the answer ends.</li></ol></dd><dt>A practical example</dt><dd>Imagine a coding agent that has pasted a 50,000-token codebase into the prompt. Without a KV cache, every new word of the answer would force the GPU to redo the keys and values for all 50,000 tokens. With one, it computes them once during prefill and then only adds one new entry per step. The price is memory: those 50,000 tokens sit in GPU memory the whole time, for every user being served at once.</dd><dt>Why it matters for XLIO</dt><dd>When a service is split across machines, the KV cache sometimes has to move over the network, and NVIDIA&#x27;s Dynamo and NIXL do this over fast RDMA networking. That is the connection to your world of NICs and zero-copy transfers.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>KV cache size per token</td><td>2 (keys and values) x layers x KV heads x head dimension x bytes per number</td></tr><tr><td>Example: a model with 32 layers, 8 KV heads, head size 128, 16-bit numbers</td><td>131,072 bytes, about 128 KiB per token</td></tr><tr><td>Same example at 8,000 tokens of context</td><td>about 1 GiB for one user</td></tr></table></dd><dt>Common misconception</dt><dd>People often think the cache stores the text or the model&#x27;s answers. It doesn&#x27;t: it stores the intermediate keys and values for each token in each layer, which are numbers, not words. That is why it can be much bigger than the text itself.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Token</dt><dd>A small piece of text, roughly three quarters of a word.</dd><dt>Attention</dt><dd>The step where a token looks back at earlier tokens and decides which matter.</dd><dt>Prefill</dt><dd>The first phase, where the model reads the whole prompt at once.</dd><dt>Decode</dt><dd>The second phase, where the model writes the answer one token at a time.</dd><dt>HBM</dt><dd>High-bandwidth memory: the fast memory on the GPU where the cache lives.</dd></dl></aside><details><summary>Self-test: Why does the KV cache make each new token cheaper to compute, but make the server run out of memory sooner?</summary><p>It saves the keys and values of earlier tokens, so each step only computes one new entry instead of redoing everything, which saves computation. But those saved entries stay in GPU memory and grow with every token and every user, so memory fills up.</p></details><p class="source">Further reading: <a href="https://blogs.nvidia.com/blog/memory-full-stack-codesign/">NVIDIA: More Performance From Every Byte</a>, <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need (original paper)</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
