@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Eisenkot backed by 67 MKs as Herzog prepares to hand out the mandate",
+        "standfirst": "Israel's president will decide on Sunday who gets the first try at forming a government, and the arithmetic is hard.",
+        "paragraphs": [
+          "After consultations with President Isaac Herzog on November 5, Yashar leader Gadi Eisenkot was recommended to form the government by 67 of the 120 Knesset members, according to the Times of Israel. His backers are two groups: a Jewish-led bloc of four parties (Yashar, Yisrael Beytenu, B'Yachad and the Democrats, 48 seats) and an Arab-led bloc of two parties (Ra'am and the Joint List, 19 seats). Factions totaling 46 MKs recommended Prime Minister Benjamin Netanyahu. United Torah Judaism, with 7 seats, did not recommend him. Herzog says he will announce his decision on Sunday.",
+          "A recommendation is not a majority in a coalition. Three of the Jewish-led parties refuse to sit with the Arab parties, and Yashar has ruled out joining Netanyahu. Likud has called for a broad national government of Jewish-led parties and described Eisenkot's bloc as a disaster bloc. Channel 12 reported that Avigdor Liberman is open to sitting with United Torah Judaism, which could create a route without the Arab parties. The new Knesset is sworn in on November 10 and is expected to elect a speaker."
+        ],
+        "sources": [{"name": "Times of Israel", "url": "https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/"}]
+      },
+      "briefs": [
+        {"headline": "Trump says US military aid to Israel will end by the end of 2026", "text": "In a Fox News interview on November 3, Trump said the US will stop its roughly $4 billion a year in military aid, and that he and Netanyahu had agreed on this months ago. The Times of Israel notes the current ten-year agreement provides about $3.8 billion a year and runs to September 2028. Netanyahu's office did not deny the announcement, and Eisenkot demanded answers from Netanyahu.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/"},
+        {"headline": "New limited US strikes on Iran while Qatar keeps mediating", "text": "Trump described new US strikes on an Iranian air defense system as minor, the first since the US midterm elections. Iranian state media reported two explosions on Qeshm Island in the Strait of Hormuz. Qatar says its mediation between Washington and Tehran continues, and Israeli outlets report the IDF is waiting for Washington's next move.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog-november-07-2026/"},
+        {"headline": "Report: planned Israeli operation in Iran was thwarted after a US slip", "text": "Israeli TV reported that the prime minister and the Mossad chief planned an Iran operation on the eve of Israel's election, and that it was stopped after the US accidentally tipped off Israel's adversaries. The report also says other security officials did not back the plan. It rests on a single media report and no official has confirmed the details here.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/report-pm-mossad-chief-planned-iran-op-on-eve-of-israeli-election-which-was-thwarted-after-us-accidentally-tipped-off/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "After losing Congress, Trump names Stephen Miller chief of staff",
+          "paragraphs": [
+            "NBC News reports that Trump has picked Stephen Miller to replace Susie Wiles as White House chief of staff. This comes days after the midterm elections, in which Republicans lost both the House and the Senate, according to CNBC's reporting.",
+            "NBC also reports a wave of changes since the vote: several senior Justice Department officials resigned, and a new intelligence chief is trying to reverse recent staff cuts. Vice President JD Vance said Republicans lost partly because of the Iran war."
+          ],
+          "why_it_matters": "The chief of staff controls who and what reaches the president, so this choice shows how the White House plans to govern with a Congress that is no longer on its side.",
+          "sources": [{"name": "NBC News", "url": "https://www.nbcnews.com/politics/donald-trump/trump-stephen-miller-susie-wiles-white-house-chief-of-staff-rcna607892"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Democratic sweep makes markets rethink interest rates as oil falls under $100",
+          "paragraphs": [
+            "Brent crude, the global oil benchmark, fell 8.7% on Wednesday to close below $100 a barrel for the first time since September, after Democrats won the House and Senate, CNBC reports. Oil rose again on Thursday and was choppy on Friday. Investors think a divided government could make further interest rate hikes less likely, though analysts quoted by CNBC say oil, growth and government spending remain big unknowns.",
+            "The Fed, the Bank of England, the European Central Bank and the Bank of Japan have all raised rates in recent months, and the Bank of England raised by 0.25 points on Thursday. Fed official Mary Daly said a treadmill of high inflation means more hikes are likely, according to CNBC."
+          ],
+          "why_it_matters": "Oil prices feed straight into inflation, and inflation decides how high interest rates go, which affects mortgages, company borrowing and stock prices.",
+          "sources": [{"name": "CNBC", "url": "https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html"}]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA unveils Vera, a CPU built for AI agents",
+          "standfirst": "As AI agents do more work between model calls, the ordinary processor becomes the bottleneck.",
+          "what_happened": "NVIDIA published a post on November 5 about its Vera CPU, claiming that in a 100 megawatt data center it runs 1.6 times more agents per watt than the fastest x86 chip, and 2 times faster than the most energy-efficient x86 chip. Partners report their own results: Perplexity saw agentic coding tasks run 1.5 times faster, and Daytona brought 1,000 agent sandboxes online in 10.8 seconds.",
+          "what_it_means": "An AI agent does not only think. It also searches, queries databases, runs code and tests it, and all of that runs on a CPU, not a GPU. The GPU is the thinker and the CPU is the pair of hands. If the hands are slow, the thinker waits. NVIDIA is saying its own CPU makes the hands faster and cheaper to power.",
+          "why_it_matters": "Data centers are limited by electricity, so doing more agent work per watt directly lowers cost. A company running thousands of coding agents at once, each in its own sandbox, would care most. These are NVIDIA's and its partners' numbers, and the post gives no testing details.",
+          "terms": [["CPU", "The general-purpose processor that runs ordinary programs, as opposed to a GPU, which is specialized for huge amounts of parallel math."], ["x86", "The processor design used by Intel and AMD chips, which is what Vera is being compared against."], ["Sandbox", "A sealed, disposable computer environment where an agent can run code without being able to harm anything outside it."]],
+          "sources": [{"name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"}]
+        },
+        {
+          "headline": "NVIDIA: the answer to the memory squeeze is smarter use, not just more memory",
+          "standfirst": "The company says the next platform gains big throughput while GPU memory grows only a few percent.",
+          "what_happened": "In a November 5 post, NVIDIA says memory supply is tight and prices are rising. It claims that from Blackwell Ultra to Vera Rubin, memory per GPU rises about 3% while agentic throughput per dollar rises up to 30 times on one benchmark. It points to 4-bit number formats (NVFP4), spreading a model across up to 72 GPUs, and Dynamo, which moves unused KV cache to cheaper storage tiers.",
+          "what_it_means": "While a model answers you, it keeps notes about the conversation so far, called the KV cache. Long agent tasks can reach 3 million tokens, so the notes get huge and fill the fastest, most expensive memory (HBM). The fix is like a desk and a filing cabinet: keep only the active notes on the desk, and file the paused ones in cheaper storage you can fetch quickly.",
+          "why_it_matters": "If this works, serving long-running agents does not require ever-bigger memory, which is the scarce part. This is a vendor claim with best-case 'up to' numbers and no full method in the post.",
+          "terms": [["HBM", "High-bandwidth memory: the very fast, very expensive memory stacked right next to the GPU chip."], ["KV cache", "The model's working notes about the conversation so far, kept so it does not have to re-read everything for each new word."], ["NVFP4", "NVIDIA's 4-bit way of storing numbers, which takes much less space than 8-bit formats."]],
+          "sources": [{"name": "NVIDIA Blog", "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"}]
+        },
+        {
+          "headline": "Mistral Large 4: a one-trillion-parameter open-weight model",
+          "standfirst": "A very large model that only uses a small slice of itself for each word.",
+          "what_happened": "Hugging Face announced Mistral Large 4 on October 29. It is a multimodal model (text and images in, text out) with about 1 trillion parameters, of which roughly 49 billion are active at a time, and a 1 million token context window. It uses 128 experts per layer, with 4 chosen per token plus 1 shared. Official FP8 and NVFP4 versions are published, under a license that limits offering it as a paid service.",
+          "what_it_means": "Think of a hospital with 128 specialists: for each patient only a few are called in. The hospital is huge, but each case uses little of it. That is what mixture-of-experts means, and it is why a trillion-parameter model can be run at a reasonable cost per word.",
+          "why_it_matters": "Open weights mean companies can run it on their own machines, for example on 8 NVIDIA H200 GPUs, keeping data private. The benchmark scores in the post are as reported by Mistral and its partners.",
+          "terms": [["Mixture of experts", "A model made of many smaller specialist blocks, where only a few are used for each token."], ["Open weights", "The trained numbers are published so anyone can download and run the model."], ["Context window", "How much text the model can consider at once."]],
+          "sources": [{"name": "Hugging Face blog", "url": "https://huggingface.co/blog/mistral-large4"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "The palaeo cave art that hid in plain sight for 26,000 years",
+      "standfirst": "Hundreds of engravings turned up in a cave that many people had already visited.",
+      "paragraphs": [
+        "According to Nature's summary, researchers found hundreds of ancient engravings in a widely visited cave, art that had gone unnoticed for about 26,000 years. Some of the engravings show signs of animation, meaning they seem to depict movement.",
+        "The full article is behind a login, so this summary only uses Nature's feed description and headline. The details of where the cave is, how the engravings were found and how they were dated are in the article itself."
+      ],
+      "key_points": ["What they found: hundreds of engravings in a well-known cave, some suggesting movement.", "How: the article is not open, so the method is not summarized here.", "Why it matters: even heavily visited places can still hold hidden evidence of early human art."],
+      "terms": [["Palaeo", "Relating to the very distant past, here the Stone Age."], ["Engraving", "A picture scratched or carved into a surface such as a cave wall."]],
+      "url": "https://www.nature.com/articles/d41586-026-03585-z",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Saturday track: AI agents and sandboxes",
+      "title": "Tool calling: how a model uses tools",
+      "big_idea": "A language model can only produce text, so to act in the world it writes a structured request saying which tool to run and with what inputs, your program runs it, and the result goes back to the model as more text.",
+      "background": [
+        "A language model reads text and predicts more text. It cannot browse a website, read a file or check the time on its own. Everything it knows is frozen at training time and everything it does is output text.",
+        "To get around that, the developer gives the model a menu of tools. Each tool has a name, a short description of what it does, and a schema, which is a precise description of the inputs it accepts, for example a city name for a weather tool. The model sees this menu as part of its input."
+      ],
+      "steps": [
+        "Your program sends the user's question plus the list of tool definitions (name, description, input schema) to the model.",
+        "The model decides whether a tool would help. If so, instead of a normal answer it outputs a structured tool call: the tool's name and the arguments, as JSON.",
+        "The model has not run anything. Your program receives the tool call, checks the arguments, and runs the real function itself.",
+        "Your program sends the result back to the model as a new message marked as a tool result, tied to the original call by an id.",
+        "The model reads the result and either calls another tool or writes the final answer. The loop repeats until it answers in plain text.",
+        "The developer decides what happens in step 3, which is where permissions, limits and sandboxing live."
+      ],
+      "example": "A user asks: Is my flight on time? The model sees a tool called get_flight_status with an input flight_number. It emits a call get_flight_status with the flight number from the conversation. Your code queries an airline service and returns the status delayed 40 minutes. The model reads that and answers in plain language.",
+      "why_xlio": "Agents like this run code and tools in sandboxes by the thousands, which is why NVIDIA talks about CPUs for agents. Each tool call is real work on a CPU, and in networking terms many small requests and replies make latency and fast network paths matter.",
+      "numbers": [],
+      "pitfall": "A common misconception is that the model runs the tool. It never does: it only writes a request. Your program decides whether to run it, which is why you can validate, restrict or refuse any call.",
+      "terms": [["Schema", "A precise description of what inputs a tool accepts, such as which fields exist and their types."], ["JSON", "A simple text format for structured data, like a list of named fields."], ["Tool result", "The message your program sends back after running the tool."]],
+      "question": "If the model only writes a request and never runs the tool, where would you put a safety check, and why?",
+      "answer": "In your own program, between receiving the tool call and running it. That is the one point that executes real actions, so checking the arguments, limiting what the tool can touch and asking for approval there stops a bad or mistaken call from doing damage.",
+      "reading": [{"name": "Anthropic: Tool use with Claude", "url": "https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview"}]
+    }
+  }
+}

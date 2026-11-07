@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Saturday, 7 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Saturday, 7 November 2026</span><span>No. 13</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Eisenkot backed by 67 MKs as Herzog prepares to hand out the mandate</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">After losing Congress, Trump names Stephen Miller chief of staff · Democratic sweep makes markets rethink interest rates as oil falls under $100</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA unveils Vera, a CPU built for AI agents</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">The palaeo cave art that hid in plain sight for 26,000 years</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">Tool calling: how a model uses tools</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Eisenkot backed by 67 MKs as Herzog prepares to hand out the mandate</h2><p class="stand">Israel&#x27;s president will decide on Sunday who gets the first try at forming a government, and the arithmetic is hard.</p><div class="body"><p>After consultations with President Isaac Herzog on November 5, Yashar leader Gadi Eisenkot was recommended to form the government by 67 of the 120 Knesset members, according to the Times of Israel. His backers are two groups: a Jewish-led bloc of four parties (Yashar, Yisrael Beytenu, B&#x27;Yachad and the Democrats, 48 seats) and an Arab-led bloc of two parties (Ra&#x27;am and the Joint List, 19 seats). Factions totaling 46 MKs recommended Prime Minister Benjamin Netanyahu. United Torah Judaism, with 7 seats, did not recommend him. Herzog says he will announce his decision on Sunday.</p><p>A recommendation is not a majority in a coalition. Three of the Jewish-led parties refuse to sit with the Arab parties, and Yashar has ruled out joining Netanyahu. Likud has called for a broad national government of Jewish-led parties and described Eisenkot&#x27;s bloc as a disaster bloc. Channel 12 reported that Avigdor Liberman is open to sitting with United Torah Judaism, which could create a route without the Arab parties. The new Knesset is sworn in on November 10 and is expected to elect a speaker.</p></div><p class="source">Sources: <a href="https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/">Times of Israel</a></p></article><div class="briefs"><div class="brief"><h3>Trump says US military aid to Israel will end by the end of 2026</h3><p>In a Fox News interview on November 3, Trump said the US will stop its roughly $4 billion a year in military aid, and that he and Netanyahu had agreed on this months ago. The Times of Israel notes the current ten-year agreement provides about $3.8 billion a year and runs to September 2028. Netanyahu&#x27;s office did not deny the announcement, and Eisenkot demanded answers from Netanyahu. <a href="https://www.timesofisrael.com/trump-says-us-to-end-4-billion-in-annual-military-aid-to-israel-by-end-of-2026/">Times of Israel</a></p></div><div class="brief"><h3>New limited US strikes on Iran while Qatar keeps mediating</h3><p>Trump described new US strikes on an Iranian air defense system as minor, the first since the US midterm elections. Iranian state media reported two explosions on Qeshm Island in the Strait of Hormuz. Qatar says its mediation between Washington and Tehran continues, and Israeli outlets report the IDF is waiting for Washington&#x27;s next move. <a href="https://www.timesofisrael.com/liveblog-november-07-2026/">Times of Israel</a></p></div><div class="brief"><h3>Report: planned Israeli operation in Iran was thwarted after a US slip</h3><p>Israeli TV reported that the prime minister and the Mossad chief planned an Iran operation on the eve of Israel&#x27;s election, and that it was stopped after the US accidentally tipped off Israel&#x27;s adversaries. The report also says other security officials did not back the plan. It rests on a single media report and no official has confirmed the details here. <a href="https://www.timesofisrael.com/report-pm-mossad-chief-planned-iran-op-on-eve-of-israeli-election-which-was-thwarted-after-us-accidentally-tipped-off/">Times of Israel</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>After losing Congress, Trump names Stephen Miller chief of staff</h2><div class="body"><p>NBC News reports that Trump has picked Stephen Miller to replace Susie Wiles as White House chief of staff. This comes days after the midterm elections, in which Republicans lost both the House and the Senate, according to CNBC&#x27;s reporting.</p><p>NBC also reports a wave of changes since the vote: several senior Justice Department officials resigned, and a new intelligence chief is trying to reverse recent staff cuts. Vice President JD Vance said Republicans lost partly because of the Iran war.</p></div><p class="why"><strong>Why it matters:</strong> The chief of staff controls who and what reaches the president, so this choice shows how the White House plans to govern with a Congress that is no longer on its side.</p><p class="source">Sources: <a href="https://www.nbcnews.com/politics/donald-trump/trump-stephen-miller-susie-wiles-white-house-chief-of-staff-rcna607892">NBC News</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>Democratic sweep makes markets rethink interest rates as oil falls under $100</h2><div class="body"><p>Brent crude, the global oil benchmark, fell 8.7% on Wednesday to close below $100 a barrel for the first time since September, after Democrats won the House and Senate, CNBC reports. Oil rose again on Thursday and was choppy on Friday. Investors think a divided government could make further interest rate hikes less likely, though analysts quoted by CNBC say oil, growth and government spending remain big unknowns.</p><p>The Fed, the Bank of England, the European Central Bank and the Bank of Japan have all raised rates in recent months, and the Bank of England raised by 0.25 points on Thursday. Fed official Mary Daly said a treadmill of high inflation means more hikes are likely, according to CNBC.</p></div><p class="why"><strong>Why it matters:</strong> Oil prices feed straight into inflation, and inflation decides how high interest rates go, which affects mortgages, company borrowing and stock prices.</p><p class="source">Sources: <a href="https://www.cnbc.com/2026/11/06/oil-prices-interest-rates-midterms.html">CNBC</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>NVIDIA unveils Vera, a CPU built for AI agents</h2><p class="stand">As AI agents do more work between model calls, the ordinary processor becomes the bottleneck.</p><dl><dt>What happened</dt><dd>NVIDIA published a post on November 5 about its Vera CPU, claiming that in a 100 megawatt data center it runs 1.6 times more agents per watt than the fastest x86 chip, and 2 times faster than the most energy-efficient x86 chip. Partners report their own results: Perplexity saw agentic coding tasks run 1.5 times faster, and Daytona brought 1,000 agent sandboxes online in 10.8 seconds.</dd><dt>What it means, in plain words</dt><dd>An AI agent does not only think. It also searches, queries databases, runs code and tests it, and all of that runs on a CPU, not a GPU. The GPU is the thinker and the CPU is the pair of hands. If the hands are slow, the thinker waits. NVIDIA is saying its own CPU makes the hands faster and cheaper to power.</dd><dt>Why it matters and how it could be used</dt><dd>Data centers are limited by electricity, so doing more agent work per watt directly lowers cost. A company running thousands of coding agents at once, each in its own sandbox, would care most. These are NVIDIA&#x27;s and its partners&#x27; numbers, and the post gives no testing details.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>CPU</dt><dd>The general-purpose processor that runs ordinary programs, as opposed to a GPU, which is specialized for huge amounts of parallel math.</dd><dt>x86</dt><dd>The processor design used by Intel and AMD chips, which is what Vera is being compared against.</dd><dt>Sandbox</dt><dd>A sealed, disposable computer environment where an agent can run code without being able to harm anything outside it.</dd></dl></aside><p class="source">Sources: <a href="https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/">NVIDIA Blog</a></p></article><article class="lead second story"><h2>NVIDIA: the answer to the memory squeeze is smarter use, not just more memory</h2><p class="stand">The company says the next platform gains big throughput while GPU memory grows only a few percent.</p><dl><dt>What happened</dt><dd>In a November 5 post, NVIDIA says memory supply is tight and prices are rising. It claims that from Blackwell Ultra to Vera Rubin, memory per GPU rises about 3% while agentic throughput per dollar rises up to 30 times on one benchmark. It points to 4-bit number formats (NVFP4), spreading a model across up to 72 GPUs, and Dynamo, which moves unused KV cache to cheaper storage tiers.</dd><dt>What it means, in plain words</dt><dd>While a model answers you, it keeps notes about the conversation so far, called the KV cache. Long agent tasks can reach 3 million tokens, so the notes get huge and fill the fastest, most expensive memory (HBM). The fix is like a desk and a filing cabinet: keep only the active notes on the desk, and file the paused ones in cheaper storage you can fetch quickly.</dd><dt>Why it matters and how it could be used</dt><dd>If this works, serving long-running agents does not require ever-bigger memory, which is the scarce part. This is a vendor claim with best-case &#x27;up to&#x27; numbers and no full method in the post.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>HBM</dt><dd>High-bandwidth memory: the very fast, very expensive memory stacked right next to the GPU chip.</dd><dt>KV cache</dt><dd>The model&#x27;s working notes about the conversation so far, kept so it does not have to re-read everything for each new word.</dd><dt>NVFP4</dt><dd>NVIDIA&#x27;s 4-bit way of storing numbers, which takes much less space than 8-bit formats.</dd></dl></aside><p class="source">Sources: <a href="https://blogs.nvidia.com/blog/memory-full-stack-codesign/">NVIDIA Blog</a></p></article><article class="lead second story"><h2>Mistral Large 4: a one-trillion-parameter open-weight model</h2><p class="stand">A very large model that only uses a small slice of itself for each word.</p><dl><dt>What happened</dt><dd>Hugging Face announced Mistral Large 4 on October 29. It is a multimodal model (text and images in, text out) with about 1 trillion parameters, of which roughly 49 billion are active at a time, and a 1 million token context window. It uses 128 experts per layer, with 4 chosen per token plus 1 shared. Official FP8 and NVFP4 versions are published, under a license that limits offering it as a paid service.</dd><dt>What it means, in plain words</dt><dd>Think of a hospital with 128 specialists: for each patient only a few are called in. The hospital is huge, but each case uses little of it. That is what mixture-of-experts means, and it is why a trillion-parameter model can be run at a reasonable cost per word.</dd><dt>Why it matters and how it could be used</dt><dd>Open weights mean companies can run it on their own machines, for example on 8 NVIDIA H200 GPUs, keeping data private. The benchmark scores in the post are as reported by Mistral and its partners.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Mixture of experts</dt><dd>A model made of many smaller specialist blocks, where only a few are used for each token.</dd><dt>Open weights</dt><dd>The trained numbers are published so anyone can download and run the model.</dd><dt>Context window</dt><dd>How much text the model can consider at once.</dd></dl></aside><p class="source">Sources: <a href="https://huggingface.co/blog/mistral-large4">Hugging Face blog</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>The palaeo cave art that hid in plain sight for 26,000 years</h2><p class="stand">Hundreds of engravings turned up in a cave that many people had already visited.</p><div class="body"><p>According to Nature&#x27;s summary, researchers found hundreds of ancient engravings in a widely visited cave, art that had gone unnoticed for about 26,000 years. Some of the engravings show signs of animation, meaning they seem to depict movement.</p><p>The full article is behind a login, so this summary only uses Nature&#x27;s feed description and headline. The details of where the cave is, how the engravings were found and how they were dated are in the article itself.</p></div><ol class="points"><li>What they found: hundreds of engravings in a well-known cave, some suggesting movement.</li><li>How: the article is not open, so the method is not summarized here.</li><li>Why it matters: even heavily visited places can still hold hidden evidence of early human art.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Palaeo</dt><dd>Relating to the very distant past, here the Stone Age.</dd><dt>Engraving</dt><dd>A picture scratched or carved into a surface such as a cave wall.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03585-z">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>Tool calling: how a model uses tools</h2><p class="stand">Saturday track: AI agents and sandboxes</p><p class="bigidea"><strong>The big idea:</strong> A language model can only produce text, so to act in the world it writes a structured request saying which tool to run and with what inputs, your program runs it, and the result goes back to the model as more text.</p><dl><dt>First, the basics</dt><dd><p>A language model reads text and predicts more text. It cannot browse a website, read a file or check the time on its own. Everything it knows is frozen at training time and everything it does is output text.</p><p>To get around that, the developer gives the model a menu of tools. Each tool has a name, a short description of what it does, and a schema, which is a precise description of the inputs it accepts, for example a city name for a weather tool. The model sees this menu as part of its input.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>Your program sends the user&#x27;s question plus the list of tool definitions (name, description, input schema) to the model.</li><li>The model decides whether a tool would help. If so, instead of a normal answer it outputs a structured tool call: the tool&#x27;s name and the arguments, as JSON.</li><li>The model has not run anything. Your program receives the tool call, checks the arguments, and runs the real function itself.</li><li>Your program sends the result back to the model as a new message marked as a tool result, tied to the original call by an id.</li><li>The model reads the result and either calls another tool or writes the final answer. The loop repeats until it answers in plain text.</li><li>The developer decides what happens in step 3, which is where permissions, limits and sandboxing live.</li></ol></dd><dt>A practical example</dt><dd>A user asks: Is my flight on time? The model sees a tool called get_flight_status with an input flight_number. It emits a call get_flight_status with the flight number from the conversation. Your code queries an airline service and returns the status delayed 40 minutes. The model reads that and answers in plain language.</dd><dt>Why it matters for XLIO</dt><dd>Agents like this run code and tools in sandboxes by the thousands, which is why NVIDIA talks about CPUs for agents. Each tool call is real work on a CPU, and in networking terms many small requests and replies make latency and fast network paths matter.</dd><dt>Common misconception</dt><dd>A common misconception is that the model runs the tool. It never does: it only writes a request. Your program decides whether to run it, which is why you can validate, restrict or refuse any call.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Schema</dt><dd>A precise description of what inputs a tool accepts, such as which fields exist and their types.</dd><dt>JSON</dt><dd>A simple text format for structured data, like a list of named fields.</dd><dt>Tool result</dt><dd>The message your program sends back after running the tool.</dd></dl></aside><details><summary>Self-test: If the model only writes a request and never runs the tool, where would you put a safety check, and why?</summary><p>In your own program, between receiving the tool call and running it. That is the one point that executes real actions, so checking the arguments, limiting what the tool can touch and asking for approval there stops a bad or mistaken call from doing damage.</p></details><p class="source">Further reading: <a href="https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview">Anthropic: Tool use with Claude</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
