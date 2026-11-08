@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Sunday, 8 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Sunday, 8 November 2026</span><span>No. 14</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s election leaves neither bloc with a majority, and the president now picks who tries to build a government</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">Democrats win both the House and the Senate in the midterms · AI and chip stocks are in a deep slide over doubts that the spending will pay off</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">NVIDIA pitches its Vera processor as the best chip for running AI agents</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">The cave art that hid in plain sight for 26,000 years</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">Where the time goes in the normal Linux network path</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s election leaves neither bloc with a majority, and the president now picks who tries to build a government</h2><p class="stand">Twelve days after the October 27 vote, nobody can reach the 61 seats needed, so coalition-building has become a negotiation over smaller parties.</p><div class="body"><p>Israel&#x27;s parliament, the Knesset, has 120 seats, and a government needs 61 of them. According to Al Jazeera and the Jerusalem Post, Prime Minister Benjamin Netanyahu&#x27;s bloc won 53 seats, with his Likud party the largest single party at 27. The opposition alliance led by former army chief Gadi Eisenkot won 48, and two Arab-led lists, the Joint List and Ra&#x27;am, hold 19 between them. That 19 is the number everyone is watching, because neither side can get to 61 without either those seats or a deal with the ultra-Orthodox parties.</p><p>President Isaac Herzog finished consultations with the parties on November 5 and, per the Jerusalem Post, is due to hand a mandate to form a government on Sunday. The Jerusalem Post reports Eisenkot is expected to receive it, after the Joint List said it would back him. Netanyahu has said Likud&#x27;s first-place finish gives him a mandate and that he wants a broad government; he has also warned that Eisenkot would depend on Arab parties. The person given the mandate has 28 days to build a coalition, extendable by 14. If that fails, Herzog can turn to someone else, and the country could head to yet another election. The new Knesset is sworn in on November 10.</p></div><p class="source">Sources: <a href="https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance">Al Jazeera</a>, <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post</a></p></article><div class="briefs"><div class="brief"><h3>Fight over the ultra-Orthodox parties and the draft law</h3><p>The Jerusalem Post reports that Avigdor Liberman has dropped his veto on ultra-Orthodox parties joining a coalition, and that the opposition is in talks with United Torah Judaism about a more lenient military conscription law. Shas leader Aryeh Deri said his party remains united. <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post</a></p></div><div class="brief"><h3>Opposition wants a new Knesset speaker at the opening session</h3><p>The opposition wants to replace the Knesset speaker, citing fears of an alleged Likud plot, and Ra&#x27;am wants a vote on a new speaker at the opening session, the Jerusalem Post reports. The speaker controls the agenda, which is why this early vote matters. <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post</a></p></div><div class="brief"><h3>Likud questions the results; police dismiss the claims</h3><p>Al Jazeera reports Likud has floated not recognizing the results, citing alleged irregularities in the Arab vote. Police investigated and discounted those claims, and a Shin Bet probe is ongoing. Turnout was 77.7 percent, up 7.1 points from 2022, per the Jerusalem Post. <a href="https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance">Al Jazeera</a></p></div><div class="brief"><h3>Herzog also has Netanyahu&#x27;s pardon request to weigh</h3><p>Al Jazeera notes that the president must also consider Netanyahu&#x27;s request for a pardon in his ongoing corruption trial, which sits alongside the coalition decision. <a href="https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance">Al Jazeera</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">US news</p><h2>Democrats win both the House and the Senate in the midterms</h2><div class="body"><p>NPR&#x27;s analysis of Associated Press race calls says Democrats won control of both chambers of Congress on November 3. In the Senate they flipped seven Republican-held seats: North Carolina, South Carolina, Ohio, Texas, Kansas, Iowa and Maine. Republicans had started the year with a 53-47 majority. In the House, Democrats flipped seats including several in Pennsylvania and Florida.</p><p>President Trump keeps his veto. He said in a podcast interview, &quot;I&#x27;ll become Mr. Veto,&quot; and added that &quot;at some point we&#x27;ll probably make deals.&quot; The new Congress is sworn in in January. Democrats say they will investigate agencies like the Justice Department and look into the business interests of Trump and his family.</p></div><p class="why"><strong>Why it matters:</strong> Republicans lose their grip on Congress: Senate confirmations of judges will slow, and big laws will need deals with a president who can veto them.</p><p class="source">Sources: <a href="https://www.opb.org/article/2026/11/04/2026-midterms-democrats-win-the-senate/">NPR via OPB</a></p></article><article class="lead second"><p class="label">Stock market</p><h2>AI and chip stocks are in a deep slide over doubts that the spending will pay off</h2><div class="body"><p>According to a market recap of Monday, November 2, the Nasdaq lost about 5.2 percent in October, and AI and semiconductor companies have shed roughly $5 trillion in value since October 6, a figure the recap attributes to Yahoo Finance calculations. On that Monday the S&amp;P 500 fell 0.5 percent and the Nasdaq fell more than 1 percent.</p><p>The worry is simple: companies are spending huge sums on data centers, chips, power and networking, and investors are asking whether the customers and profits will show up. I could not confirm the final market moves for the rest of the week, so this reflects the state of play as of November 2.</p></div><p class="why"><strong>Why it matters:</strong> A lot of ordinary retirement savings sit in index funds heavily weighted toward these companies, and the same spending is what funds the AI hardware industry Omri works near.</p><p class="source">Sources: <a href="https://www.alainguillot.com/stock-market-recap-november-2-2026-tech-stocks-slide-again-as-wall-street-faces-a-critical-week/">Alain Guillot market recap</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>NVIDIA pitches its Vera processor as the best chip for running AI agents</h2><p class="stand">The chip that runs the boring parts of an AI system is becoming the bottleneck, and NVIDIA wants to sell that part too.</p><dl><dt>What happened</dt><dd>NVIDIA published a post titled &quot;Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents&quot;. Vera is NVIDIA&#x27;s own CPU, launched in March 2026 with 88 custom cores. NVIDIA says it has 40 percent lower peak loaded latency than x86 CPUs and more than three times the per-core memory bandwidth at under half the power. NVIDIA also cites customers: Perplexity says agentic coding tasks ran 1.5 times faster, DeepInfra up to 2.2 times faster on agent orchestration, and Modal up to 2 times the sandbox throughput per core. These are NVIDIA&#x27;s claims, relayed through its own post, not independent tests.</dd><dt>What it means, in plain words</dt><dd>An AI agent is a model that does a job in steps: it thinks, runs a tool or some code, reads the result, and thinks again. The model part runs on a GPU, but running the tools, the code and the many small sandboxes runs on an ordinary processor, the CPU. If thousands of agents are running at once, the CPUs can become the slow part while expensive GPUs wait around. Vera is NVIDIA&#x27;s attempt to build a CPU designed for that mix of many small jobs.</dd><dt>Why it matters and how it could be used</dt><dd>If the claims hold up, a company running a coding assistant could finish the same work with fewer servers, or keep GPUs busier. It also shows NVIDIA moving beyond GPUs to sell the whole rack.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>CPU</dt><dd>The general-purpose processor in a computer, good at running many different kinds of small tasks.</dd><dt>Latency</dt><dd>How long a single request takes from start to finish.</dd><dt>Throughput</dt><dd>How much total work gets done per second.</dd><dt>x86</dt><dd>The processor design used by Intel and AMD chips, which dominates servers today.</dd><dt>Sandbox</dt><dd>A locked-down space where code can run without being able to harm the rest of the machine.</dd></dl></aside><p class="source">Sources: <a href="https://blogs.nvidia.com/?p=99689">NVIDIA blog</a>, <a href="https://www.hpcwire.com/off-the-wire/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai/">HPCwire</a></p></article><article class="lead second story"><h2>Anthropic files to go public as AI spending worries hit markets</h2><p class="stand">One of the biggest AI labs is opening its books at the same moment investors are nervous about AI costs.</p><dl><dt>What happened</dt><dd>Anthropic announced on October 26 that it filed an S-1 with the US Securities and Exchange Commission for a proposed initial public offering. A market recap says an amended filing disclosed more third-quarter financial details. I did not read the filing itself, so I am not quoting any numbers from it.</dd><dt>What it means, in plain words</dt><dd>An S-1 is the document a company must file before it first sells shares to the public. It has to lay out finances and risks in detail, so for the first time outsiders get a look at what running a frontier AI lab really costs and earns.</dd><dt>Why it matters and how it could be used</dt><dd>The numbers in filings like this will help answer the question behind the current stock slide: is AI spending turning into revenue? Anyone who builds on these models also learns how stable the company behind them is.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>IPO</dt><dd>Initial public offering: the first time a private company sells shares to the public.</dd><dt>S-1</dt><dd>The registration document a company files with the SEC before an IPO.</dd></dl></aside><p class="source">Sources: <a href="https://www.anthropic.com/news">Anthropic news</a>, <a href="https://www.alainguillot.com/stock-market-recap-november-2-2026-tech-stocks-slide-again-as-wall-street-faces-a-critical-week/">Alain Guillot market recap</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>The cave art that hid in plain sight for 26,000 years</h2><p class="stand">Hundreds of engravings were found in a popular cave, and some seem to show movement.</p><div class="body"><p>According to Nature&#x27;s feed description, researchers have found hundreds of engravings in a cave that many visitors had already walked through, and the art is about 26,000 years old. Some of the engravings show signs of animation, meaning the figures appear designed to look as if they are moving.</p><p>The full article is behind a login, so this summary rests only on the title and the feed description. The point is that discoveries are not always in remote places: art can sit in plain view for generations until someone looks with the right method.</p></div><ol class="points"><li>What they found: hundreds of engravings in a well-visited cave, about 26,000 years old.</li><li>How they found it: the full text was not readable, so the method is not covered here.</li><li>Why it matters: some pieces show signs of animation, suggesting Ice Age people were already experimenting with depicting motion.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Engraving</dt><dd>A picture made by cutting or scratching lines into a surface such as rock.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03585-z">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>Where the time goes in the normal Linux network path</h2><p class="stand">Sunday track: XLIO and kernel bypass</p><p class="bigidea"><strong>The big idea:</strong> Sending a packet through Linux is slow not because the network is slow, but because each message makes your program cross into the kernel, get copied around, and wait on interrupts, and every one of those steps costs a little time that adds up.</p><dl><dt>First, the basics</dt><dd><p>Your program runs in user space, where it is not allowed to touch hardware. The network card is controlled by the kernel, the privileged core of the operating system. To ask the kernel for anything, your program makes a system call: a special instruction that switches the processor into kernel mode, runs kernel code, and switches back.</p><p>Memory is also split. The kernel keeps its own buffers for packets, and your program has its own buffers. Data has to be copied between them. And when a packet arrives, the card cannot just hand it to your program; it raises an interrupt, a signal that makes the CPU drop what it is doing and run a kernel handler.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>Your program calls send(). The CPU switches from user mode to kernel mode: that is the system call cost.</li><li>The kernel copies your data from your buffer into a kernel buffer (an skb), the first copy.</li><li>The kernel runs the TCP and IP code, adds headers, and picks the route and the network card queue.</li><li>The kernel hands the packet to the card&#x27;s driver, and the card reads it by DMA (direct memory access) and transmits it.</li><li>On the other machine the card writes the arriving packet into memory and raises an interrupt.</li><li>The kernel handles the interrupt, runs the TCP receive code, and places the data in the socket&#x27;s buffer. If your program was sleeping in recv(), the kernel wakes it, which can mean a context switch.</li><li>recv() copies the data from the kernel buffer into your buffer, the second copy, and returns to user mode.</li></ol></dd><dt>A practical example</dt><dd>Imagine a trading program that sends a 64-byte order. The data itself takes almost no time to move. But the call, the copy, the TCP processing, and on the other side the interrupt and wake-up each add a bit, and together they can reach several microseconds per message, which is the whole budget when you are racing others. Kernel-bypass libraries like XLIO exist to remove most of these steps.</dd><dt>Why it matters for XLIO</dt><dd>XLIO attacks each cost in this list: it avoids system calls by running the network stack in your process, avoids copies where it can, and polls the card instead of waiting for interrupts.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>A bare system call</td><td>very roughly 100 to a few hundred nanoseconds, more with security mitigations</td></tr><tr><td>A context switch plus wake-up</td><td>very roughly a few microseconds</td></tr><tr><td>Copies in the normal path</td><td>at least 2: user to kernel on send, kernel to user on receive</td></tr></table></dd><dt>Common misconception</dt><dd>Misconception: the kernel network stack is slow because it is badly written. In fact it is highly optimized for being general and safe for every program; the overhead comes from the structure (crossing boundaries, copying, interrupts), which only a different design can remove.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>System call</dt><dd>A request from a program to the kernel, which requires switching into privileged mode.</dd><dt>Interrupt</dt><dd>A hardware signal that makes the CPU pause its work and run a handler.</dd><dt>Context switch</dt><dd>The CPU stopping one thread and starting another, saving and restoring state.</dd><dt>skb</dt><dd>The Linux kernel&#x27;s structure that holds a packet and its metadata.</dd><dt>DMA</dt><dd>Direct memory access: a device reads or writes main memory without the CPU copying each byte.</dd></dl></aside><details><summary>Self-test: A message is only 64 bytes. Why can sending it still take several microseconds?</summary><p>Because the cost is mostly fixed per message, not per byte: a system call, TCP processing, copies, and interrupt and wake-up work are paid whether the message is 64 bytes or 6,400.</p></details><p class="source">Further reading: <a href="https://docs.kernel.org/networking/index.html">Linux kernel networking documentation</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>

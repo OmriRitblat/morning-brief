@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Israel's election leaves neither bloc with a majority, and the president now picks who tries to build a government",
+        "standfirst": "Twelve days after the October 27 vote, nobody can reach the 61 seats needed, so coalition-building has become a negotiation over smaller parties.",
+        "paragraphs": [
+          "Israel's parliament, the Knesset, has 120 seats, and a government needs 61 of them. According to Al Jazeera and the Jerusalem Post, Prime Minister Benjamin Netanyahu's bloc won 53 seats, with his Likud party the largest single party at 27. The opposition alliance led by former army chief Gadi Eisenkot won 48, and two Arab-led lists, the Joint List and Ra'am, hold 19 between them. That 19 is the number everyone is watching, because neither side can get to 61 without either those seats or a deal with the ultra-Orthodox parties.",
+          "President Isaac Herzog finished consultations with the parties on November 5 and, per the Jerusalem Post, is due to hand a mandate to form a government on Sunday. The Jerusalem Post reports Eisenkot is expected to receive it, after the Joint List said it would back him. Netanyahu has said Likud's first-place finish gives him a mandate and that he wants a broad government; he has also warned that Eisenkot would depend on Arab parties. The person given the mandate has 28 days to build a coalition, extendable by 14. If that fails, Herzog can turn to someone else, and the country could head to yet another election. The new Knesset is sworn in on November 10."
+        ],
+        "sources": [
+          {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance"},
+          {"name": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Fight over the ultra-Orthodox parties and the draft law", "text": "The Jerusalem Post reports that Avigdor Liberman has dropped his veto on ultra-Orthodox parties joining a coalition, and that the opposition is in talks with United Torah Judaism about a more lenient military conscription law. Shas leader Aryeh Deri said his party remains united.", "source": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880"},
+        {"headline": "Opposition wants a new Knesset speaker at the opening session", "text": "The opposition wants to replace the Knesset speaker, citing fears of an alleged Likud plot, and Ra'am wants a vote on a new speaker at the opening session, the Jerusalem Post reports. The speaker controls the agenda, which is why this early vote matters.", "source": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880"},
+        {"headline": "Likud questions the results; police dismiss the claims", "text": "Al Jazeera reports Likud has floated not recognizing the results, citing alleged irregularities in the Arab vote. Police investigated and discounted those claims, and a Shin Bet probe is ongoing. Turnout was 77.7 percent, up 7.1 points from 2022, per the Jerusalem Post.", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance"},
+        {"headline": "Herzog also has Netanyahu's pardon request to weigh", "text": "Al Jazeera notes that the president must also consider Netanyahu's request for a pardon in his ongoing corruption trial, which sits alongside the coalition decision.", "source": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Democrats win both the House and the Senate in the midterms",
+          "paragraphs": [
+            "NPR's analysis of Associated Press race calls says Democrats won control of both chambers of Congress on November 3. In the Senate they flipped seven Republican-held seats: North Carolina, South Carolina, Ohio, Texas, Kansas, Iowa and Maine. Republicans had started the year with a 53-47 majority. In the House, Democrats flipped seats including several in Pennsylvania and Florida.",
+            "President Trump keeps his veto. He said in a podcast interview, \"I'll become Mr. Veto,\" and added that \"at some point we'll probably make deals.\" The new Congress is sworn in in January. Democrats say they will investigate agencies like the Justice Department and look into the business interests of Trump and his family."
+          ],
+          "why_it_matters": "Republicans lose their grip on Congress: Senate confirmations of judges will slow, and big laws will need deals with a president who can veto them.",
+          "sources": [{"name": "NPR via OPB", "url": "https://www.opb.org/article/2026/11/04/2026-midterms-democrats-win-the-senate/"}]
+        },
+        {
+          "label": "Stock market",
+          "headline": "AI and chip stocks are in a deep slide over doubts that the spending will pay off",
+          "paragraphs": [
+            "According to a market recap of Monday, November 2, the Nasdaq lost about 5.2 percent in October, and AI and semiconductor companies have shed roughly $5 trillion in value since October 6, a figure the recap attributes to Yahoo Finance calculations. On that Monday the S&P 500 fell 0.5 percent and the Nasdaq fell more than 1 percent.",
+            "The worry is simple: companies are spending huge sums on data centers, chips, power and networking, and investors are asking whether the customers and profits will show up. I could not confirm the final market moves for the rest of the week, so this reflects the state of play as of November 2."
+          ],
+          "why_it_matters": "A lot of ordinary retirement savings sit in index funds heavily weighted toward these companies, and the same spending is what funds the AI hardware industry Omri works near.",
+          "sources": [{"name": "Alain Guillot market recap", "url": "https://www.alainguillot.com/stock-market-recap-november-2-2026-tech-stocks-slide-again-as-wall-street-faces-a-critical-week/"}]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "NVIDIA pitches its Vera processor as the best chip for running AI agents",
+          "standfirst": "The chip that runs the boring parts of an AI system is becoming the bottleneck, and NVIDIA wants to sell that part too.",
+          "what_happened": "NVIDIA published a post titled \"Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents\". Vera is NVIDIA's own CPU, launched in March 2026 with 88 custom cores. NVIDIA says it has 40 percent lower peak loaded latency than x86 CPUs and more than three times the per-core memory bandwidth at under half the power. NVIDIA also cites customers: Perplexity says agentic coding tasks ran 1.5 times faster, DeepInfra up to 2.2 times faster on agent orchestration, and Modal up to 2 times the sandbox throughput per core. These are NVIDIA's claims, relayed through its own post, not independent tests.",
+          "what_it_means": "An AI agent is a model that does a job in steps: it thinks, runs a tool or some code, reads the result, and thinks again. The model part runs on a GPU, but running the tools, the code and the many small sandboxes runs on an ordinary processor, the CPU. If thousands of agents are running at once, the CPUs can become the slow part while expensive GPUs wait around. Vera is NVIDIA's attempt to build a CPU designed for that mix of many small jobs.",
+          "why_it_matters": "If the claims hold up, a company running a coding assistant could finish the same work with fewer servers, or keep GPUs busier. It also shows NVIDIA moving beyond GPUs to sell the whole rack.",
+          "terms": [
+            ["CPU", "The general-purpose processor in a computer, good at running many different kinds of small tasks."],
+            ["Latency", "How long a single request takes from start to finish."],
+            ["Throughput", "How much total work gets done per second."],
+            ["x86", "The processor design used by Intel and AMD chips, which dominates servers today."],
+            ["Sandbox", "A locked-down space where code can run without being able to harm the rest of the machine."]
+          ],
+          "sources": [
+            {"name": "NVIDIA blog", "url": "https://blogs.nvidia.com/?p=99689"},
+            {"name": "HPCwire", "url": "https://www.hpcwire.com/off-the-wire/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai/"}
+          ]
+        },
+        {
+          "headline": "Anthropic files to go public as AI spending worries hit markets",
+          "standfirst": "One of the biggest AI labs is opening its books at the same moment investors are nervous about AI costs.",
+          "what_happened": "Anthropic announced on October 26 that it filed an S-1 with the US Securities and Exchange Commission for a proposed initial public offering. A market recap says an amended filing disclosed more third-quarter financial details. I did not read the filing itself, so I am not quoting any numbers from it.",
+          "what_it_means": "An S-1 is the document a company must file before it first sells shares to the public. It has to lay out finances and risks in detail, so for the first time outsiders get a look at what running a frontier AI lab really costs and earns.",
+          "why_it_matters": "The numbers in filings like this will help answer the question behind the current stock slide: is AI spending turning into revenue? Anyone who builds on these models also learns how stable the company behind them is.",
+          "terms": [
+            ["IPO", "Initial public offering: the first time a private company sells shares to the public."],
+            ["S-1", "The registration document a company files with the SEC before an IPO."]
+          ],
+          "sources": [
+            {"name": "Anthropic news", "url": "https://www.anthropic.com/news"},
+            {"name": "Alain Guillot market recap", "url": "https://www.alainguillot.com/stock-market-recap-november-2-2026-tech-stocks-slide-again-as-wall-street-faces-a-critical-week/"}
+          ]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "The cave art that hid in plain sight for 26,000 years",
+      "standfirst": "Hundreds of engravings were found in a popular cave, and some seem to show movement.",
+      "paragraphs": [
+        "According to Nature's feed description, researchers have found hundreds of engravings in a cave that many visitors had already walked through, and the art is about 26,000 years old. Some of the engravings show signs of animation, meaning the figures appear designed to look as if they are moving.",
+        "The full article is behind a login, so this summary rests only on the title and the feed description. The point is that discoveries are not always in remote places: art can sit in plain view for generations until someone looks with the right method."
+      ],
+      "key_points": [
+        "What they found: hundreds of engravings in a well-visited cave, about 26,000 years old.",
+        "How they found it: the full text was not readable, so the method is not covered here.",
+        "Why it matters: some pieces show signs of animation, suggesting Ice Age people were already experimenting with depicting motion."
+      ],
+      "terms": [["Engraving", "A picture made by cutting or scratching lines into a surface such as rock."]],
+      "url": "https://www.nature.com/articles/d41586-026-03585-z",
+      "source": "nature.com"
+    },
+    "study": {
+      "track": "Sunday track: XLIO and kernel bypass",
+      "title": "Where the time goes in the normal Linux network path",
+      "big_idea": "Sending a packet through Linux is slow not because the network is slow, but because each message makes your program cross into the kernel, get copied around, and wait on interrupts, and every one of those steps costs a little time that adds up.",
+      "background": [
+        "Your program runs in user space, where it is not allowed to touch hardware. The network card is controlled by the kernel, the privileged core of the operating system. To ask the kernel for anything, your program makes a system call: a special instruction that switches the processor into kernel mode, runs kernel code, and switches back.",
+        "Memory is also split. The kernel keeps its own buffers for packets, and your program has its own buffers. Data has to be copied between them. And when a packet arrives, the card cannot just hand it to your program; it raises an interrupt, a signal that makes the CPU drop what it is doing and run a kernel handler."
+      ],
+      "steps": [
+        "Your program calls send(). The CPU switches from user mode to kernel mode: that is the system call cost.",
+        "The kernel copies your data from your buffer into a kernel buffer (an skb), the first copy.",
+        "The kernel runs the TCP and IP code, adds headers, and picks the route and the network card queue.",
+        "The kernel hands the packet to the card's driver, and the card reads it by DMA (direct memory access) and transmits it.",
+        "On the other machine the card writes the arriving packet into memory and raises an interrupt.",
+        "The kernel handles the interrupt, runs the TCP receive code, and places the data in the socket's buffer. If your program was sleeping in recv(), the kernel wakes it, which can mean a context switch.",
+        "recv() copies the data from the kernel buffer into your buffer, the second copy, and returns to user mode."
+      ],
+      "example": "Imagine a trading program that sends a 64-byte order. The data itself takes almost no time to move. But the call, the copy, the TCP processing, and on the other side the interrupt and wake-up each add a bit, and together they can reach several microseconds per message, which is the whole budget when you are racing others. Kernel-bypass libraries like XLIO exist to remove most of these steps.",
+      "why_xlio": "XLIO attacks each cost in this list: it avoids system calls by running the network stack in your process, avoids copies where it can, and polls the card instead of waiting for interrupts.",
+      "numbers": [["A bare system call", "very roughly 100 to a few hundred nanoseconds, more with security mitigations"], ["A context switch plus wake-up", "very roughly a few microseconds"], ["Copies in the normal path", "at least 2: user to kernel on send, kernel to user on receive"]],
+      "pitfall": "Misconception: the kernel network stack is slow because it is badly written. In fact it is highly optimized for being general and safe for every program; the overhead comes from the structure (crossing boundaries, copying, interrupts), which only a different design can remove.",
+      "terms": [
+        ["System call", "A request from a program to the kernel, which requires switching into privileged mode."],
+        ["Interrupt", "A hardware signal that makes the CPU pause its work and run a handler."],
+        ["Context switch", "The CPU stopping one thread and starting another, saving and restoring state."],
+        ["skb", "The Linux kernel's structure that holds a packet and its metadata."],
+        ["DMA", "Direct memory access: a device reads or writes main memory without the CPU copying each byte."]
+      ],
+      "question": "A message is only 64 bytes. Why can sending it still take several microseconds?",
+      "answer": "Because the cost is mostly fixed per message, not per byte: a system call, TCP processing, copies, and interrupt and wake-up work are paid whether the message is 64 bytes or 6,400.",
+      "reading": [{"name": "Linux kernel networking documentation", "url": "https://docs.kernel.org/networking/index.html"}]
+    }
+  }
+}
