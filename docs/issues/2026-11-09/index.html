@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Seven O&#x27;Clock, Monday, 9 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #EFE7D3; --paper-edge: #E4D9BF; --ink: #1A1814;
+    --muted: #5C5446; --rule: #BFB297; --accent: #23406B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1C1A16; --paper-edge: #24211C; --ink: #E9E1CD;
+      --muted: #A99F8B; --rule: #463F33; --accent: #9DB4D8;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--paper); color: var(--ink); }
+  body { font-family: "Newsreader", Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.55; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .book { display: flex; height: 100dvh; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .book::-webkit-scrollbar { display: none; }
+  @media (prefers-reduced-motion: reduce) { .book { scroll-behavior: auto; } }
+  .page { flex: 0 0 100%; scroll-snap-align: start; overflow-y: auto; padding: 20px 20px 110px;
+    background: linear-gradient(90deg, var(--paper-edge) 0, var(--paper) 14px); }
+  .inner { max-width: 720px; margin: 0 auto; }
+
+  .masthead { text-align: center; padding-top: 8px; }
+  .masthead h1 { font-family: "UnifrakturMaguntia", "Old English Text MT", serif; font-weight: 400;
+    font-size: clamp(44px, 12vw, 84px); line-height: 1; margin: 0 0 10px; }
+  .dateline { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+    padding: 6px 2px; font-size: 15px; color: var(--muted); }
+
+  .episode { display: flex; align-items: center; gap: 14px; margin: 24px 0; padding: 14px 0;
+    border-bottom: 1px solid var(--rule); color: var(--ink); text-decoration: none; }
+  .play { flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--ink);
+    display: grid; place-items: center; }
+  .play svg { width: 18px; height: 18px; margin-left: 3px; fill: currentColor; }
+  .episode p { margin: 0; line-height: 1.35; }
+  .episode .t { font-weight: 600; }
+  .episode .s { color: var(--muted); font-size: 15px; }
+
+  .contents h2 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 0 0 6px; }
+  .contents ol { list-style: none; padding: 0; margin: 0; }
+  .contents li { border-bottom: 1px solid var(--rule); }
+  .contents button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 2px; }
+  .contents .sec { font-weight: 600; font-size: 19px; }
+  .contents .pg { color: var(--muted); font-size: 15px; align-self: center; grid-row: span 2; }
+  .contents .hl { color: var(--muted); font-size: 15px; line-height: 1.35; }
+  .archive { display: block; margin-top: 18px; font-size: 15px; }
+
+  .folio { display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--ink); padding-bottom: 6px; margin-bottom: 18px;
+    font-size: 15px; color: var(--muted); }
+  .folio strong { font-family: "UnifrakturMaguntia", serif; font-weight: 400; font-size: 22px; color: var(--ink); }
+
+  .lead h2 { font-size: clamp(30px, 7vw, 44px); line-height: 1.08; font-weight: 700; margin: 0 0 10px; letter-spacing: -0.01em; }
+  .stand { font-style: italic; font-size: 20px; line-height: 1.4; color: var(--muted); margin: 0 0 16px; }
+  .body p { margin: 0 0 12px; text-align: justify; hyphens: auto; }
+  @media (min-width: 760px) { .body { column-count: 2; column-gap: 32px; column-rule: 1px solid var(--rule); } }
+  .source { font-size: 15px; color: var(--muted); margin-top: 6px; }
+  .points { margin: 4px 0 0; padding-left: 20px; }
+  .points li { margin-bottom: 8px; }
+
+  .briefs { margin-top: 26px; border-top: 3px double var(--ink); padding-top: 4px; }
+  .brief { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .brief h3 { font-size: 21px; line-height: 1.2; margin: 0 0 4px; }
+  .brief p { margin: 0; }
+  .readlink { display: inline-block; margin-top: 18px; padding: 10px 18px;
+    border: 1.5px solid var(--accent); font-weight: 600; text-decoration: none; }
+
+  .study dl, .story dl { margin: 0; }
+  .study dt, .story dt { font-weight: 700; font-size: 19px; margin-top: 18px; }
+  .study dd, .story dd { margin: 4px 0 0; }
+  .study dd p { margin: 0 0 10px; }
+  .second { margin-top: 30px; padding-top: 22px; border-top: 3px double var(--ink); }
+  .second h2 { font-size: clamp(26px, 6vw, 34px); }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+  .why { margin: 4px 0 0; }
+  .bigidea { font-size: 20px; line-height: 1.45; border-left: 3px solid var(--accent); padding-left: 14px; margin: 0 0 8px; }
+  .steps { margin: 4px 0 0; padding-left: 22px; }
+  .steps li { margin-bottom: 8px; }
+  .terms { margin-top: 18px; padding: 10px 14px; border: 1px solid var(--rule); font-size: 16px; }
+  .terms-h { margin: 0 0 4px; font-weight: 600; color: var(--muted); }
+  .terms dl { margin: 0; }
+  .terms dt { font-weight: 700; font-size: 16px; margin-top: 8px; }
+  .terms dd { margin: 2px 0 0; }
+  .numbers { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 16px; }
+  .numbers td { border-bottom: 1px solid var(--rule); padding: 6px 0; }
+  .numbers td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  details { margin-top: 10px; border: 1px solid var(--rule); padding: 10px 14px; }
+  summary { cursor: pointer; font-weight: 600; }
+
+  .turner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--paper);
+    border-top: 1px solid var(--ink); padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+  .turner .row { max-width: 720px; margin: 0 auto; display: flex; align-items: center; gap: 10px; }
+  .turner button.arrow { flex: none; width: 46px; height: 46px; border: 1px solid var(--rule);
+    background: transparent; color: var(--ink); font-size: 22px; cursor: pointer; font-family: inherit; }
+  .turner button.arrow:disabled { opacity: .3; cursor: default; }
+  .where { flex: 1; text-align: center; line-height: 1.2; }
+  .where .name { font-weight: 600; }
+  .where .count { font-size: 14px; color: var(--muted); }
+  .ticks { display: flex; gap: 4px; justify-content: center; margin-top: 5px; }
+  .ticks span { width: 16px; height: 2px; background: var(--rule); }
+  .ticks span.on { background: var(--ink); }
+</style>
+</head>
+<body>
+<main class="book" id="book" aria-label="Today's issue">
+<section class="page" data-name="Front page" aria-label="Front page"><div class="inner"><header class="masthead"><h1>The Seven O&#x27;Clock</h1><div class="dateline"><span>Monday, 9 November 2026</span><span>No. 15</span></div></header><a class="episode" href="https://t.me/newsletter_omri_bot"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0 L10 6 L0 12 Z"/></svg></span><div><p class="t">Listen to today's issue</p><p class="s">Two hosts walk through every section, in Telegram</p></div></a><nav class="contents" aria-label="Contents"><h2>In this issue</h2><ol><li><button data-goto="1"><span class="sec">Israel News</span><span class="pg">p. 2</span><span class="hl">Israel&#x27;s new Knesset opens with no bloc holding a majority</span></button></li><li><button data-goto="2"><span class="sec">US News &amp; Stock Market</span><span class="pg">p. 3</span><span class="hl">AI stocks drive Wall Street&#x27;s worst day since April 2025</span></button></li><li><button data-goto="3"><span class="sec">Artificial intelligence</span><span class="pg">p. 4</span><span class="hl">Moonshot releases Kimi K3.1 Pro, a very large open-weight model</span></button></li><li><button data-goto="4"><span class="sec">Nature</span><span class="pg">p. 5</span><span class="hl">A toothbrush that zaps bacteria with electricity made by its own bristles</span></button></li><li><button data-goto="5"><span class="sec">Daily study</span><span class="pg">p. 6</span><span class="hl">Memory registration: why the card needs pinned, registered memory</span></button></li></ol></nav><a class="archive" href="../../">Past issues</a></div></section>
+<section class="page" data-name="Israel News" aria-label="Israel News"><div class="inner"><div class="folio"><strong>Israel News</strong><span>Page 2</span></div><article class="lead"><h2>Israel&#x27;s new Knesset opens with no bloc holding a majority</h2><p class="stand">Nobody won 61 seats, so the next government will be decided by deals between blocs, starting this week.</p><div class="body"><p>Israel&#x27;s new parliament is sworn in on Tuesday, November 10, after the October 27 election. According to Al Jazeera&#x27;s count, Netanyahu&#x27;s bloc (Likud 27, United Torah Judaism 7, Otzma Yehudit 7, Shas 6, Religious Zionism 6) holds 53 of the 120 seats. The Jewish opposition bloc (Yashar 21, B&#x27;Yachad 12, The Democrats 8, Yisrael Beytenu 7) holds 48. The Arab-led Joint List (11) and Ra&#x27;am (8) hold the remaining 19. A government needs 61 votes, so neither main bloc can form one alone. Netanyahu stays as caretaker prime minister until a new government is sworn in.</p><p>President Isaac Herzog decides who gets the first try at building a coalition. The Jerusalem Post reported that he said the mandate would be awarded on Sunday, and Al Jazeera reports the legal deadline is November 11. The chosen candidate then has 28 days, extendable by 14. Gadi Eisenkot of Yashar is widely expected to be asked first. The Joint List said it would back him, and Ra&#x27;am&#x27;s Mansour Abbas signalled openness, although Eisenkot had earlier ruled out partnering with Arab-led parties. Netanyahu has said Eisenkot would depend on Arab parties. Yashar says Netanyahu has no mandate or majority. If no government forms, the Knesset dissolves and elections follow within 90 days.</p></div><p class="source">Sources: <a href="https://aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it">Al Jazeera</a>, <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post live updates</a></p></article><div class="briefs"><div class="brief"><h3>Speaker vote becomes the first test</h3><p>Ra&#x27;am demanded a vote on a new Knesset speaker at Tuesday&#x27;s opening session, according to the Jerusalem Post. The opposition wants to replace the current speaker, citing fears of an alleged Likud plot. Likud has not been quoted in the source on this point. <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post</a></p></div><div class="brief"><h3>Haredi parties and the draft law</h3><p>The Jerusalem Post reported that Avigdor Liberman dropped his veto on ultra-Orthodox parties joining a coalition, and that the opposition is in talks with United Torah Judaism. The bloc is reportedly discussing a more lenient military conscription law. These are reports, not announced agreements. <a href="https://www.jpost.com/israel-election-2026/2026-11-05/live-updates-913880">Jerusalem Post</a></p></div><div class="brief"><h3>Shas says it stays united</h3><p>Shas leader Aryeh Deri said on November 5 that his party remains united despite what he called an unprecedented campaign against it. Netanyahu had issued a statement supporting Deri earlier in the week. <a href="https://www.jpost.com/israel-news/2026-11-02/live-updates-913523">Jerusalem Post</a></p></div><div class="brief"><h3>October 7 families address Eisenkot</h3><p>October 7 survivors and bereaved families, including displaced Gaza-border residents, urged Eisenkot on November 2 to reject a unity government with Netanyahu. Hundreds also rallied outside the President&#x27;s Residence on November 5 demanding the opposite: a Netanyahu-Eisenkot unity government. <a href="https://www.jpost.com/israel-news/2026-11-02/live-updates-913523">Jerusalem Post</a></p></div></div></div></section>
+<section class="page" data-name="US News &amp; Stock Market" aria-label="US News &amp; Stock Market"><div class="inner"><div class="folio"><strong>US News &amp; Stock Market</strong><span>Page 3</span></div><article class="lead"><p class="label">Stock market</p><h2>AI stocks drive Wall Street&#x27;s worst day since April 2025</h2><div class="body"><p>On Thursday, November 5, the S&amp;P 500 fell 4.4% to 7,353.73, its worst day since the April 2025 tariff sell-off, and the Nasdaq fell 5.5%, putting it about 11.9% below its record from last month. The damage was concentrated in companies tied to building AI data centers: Nvidia fell 9.3%, AMD 17.3%, CoreWeave 9.8% and GE Vernova 7.5%.</p><p>AP&#x27;s explanation was a mix of worries: expensive borrowing could slow data-center construction, critics say AI stock prices got too high, and Democratic midterm wins raised the possibility that governments could pause data-center building because voters are wary of AI and power bills. The 10-year Treasury yield fell to 4.84% as some money moved to safer bonds.</p></div><p class="why"><strong>Why it matters:</strong> A lot of recent US growth came from building AI infrastructure, so doubts about that spending hit chips, power and cloud companies at once. This was Thursday&#x27;s move; I could not confirm a Monday market report.</p><p class="source">Sources: <a href="https://www.wlox.com/2026/11/05/brutal-sell-off-ai-stocks-sends-wall-street-reeling-sp-500-sees-worst-day-since-2025-liberation-day-tariffs/">AP via WLOX</a></p></article></div></section>
+<section class="page" data-name="Artificial intelligence" aria-label="Artificial intelligence"><div class="inner"><div class="folio"><strong>Artificial intelligence</strong><span>Page 4</span></div><article class="lead story"><h2>Moonshot releases Kimi K3.1 Pro, a very large open-weight model</h2><p class="stand">A Chinese lab says its model is close to the best closed models on coding tasks, and the weights are public.</p><dl><dt>What happened</dt><dd>Moonshot AI announced Kimi K3.1 Pro, a post-trained upgrade of Kimi K3 that it calls its most capable 3T-class open-weight model, with a one-million-token context window. It says the full weights would be released by November 4. On Terminal-Bench 4.0, a test of agentic work in a command line, Moonshot reports 65.7%, against 58.2% for GPT-6 Astra and 66.4% for Claude Opus 5.5. It also says the rate of made-up claims on a hard hallucination stress test fell from 23.4% to 8.3%. A faster Highspeed variant is said to be 2-3 times quicker.</dd><dt>What it means, in plain words</dt><dd>&#x27;Open-weight&#x27; means the finished model&#x27;s numbers are downloadable, so companies can run it on their own machines instead of renting it. &#x27;3T-class&#x27; means roughly three trillion adjustable numbers inside, though Moonshot gives no exact count. Most of those numbers are not used for every word, which keeps running it affordable. The percentages are Moonshot&#x27;s own tests, so treat them as claims.</dd><dt>Why it matters and how it could be used</dt><dd>If the claims hold, a team that cannot send code to an outside provider could self-host a model near the top closed ones. For an infrastructure engineer, models this big need many GPUs and fast networking just to serve, which is where NVIDIA-style interconnect matters. Moonshot also says it removed cyber-attack data from training, and that this lowered a security-skill test score.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Open-weight</dt><dd>The trained model&#x27;s numbers are published so anyone can download and run it.</dd><dt>Context window</dt><dd>How much text the model can look at at once. One million tokens is roughly several long books.</dd><dt>Hallucination</dt><dd>When a model states something false as if it were true.</dd></dl></aside><p class="source">Sources: <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Moonshot AI blog</a></p></article><article class="lead second story"><h2>Ricursive&#x27;s Ripple-65B: a smaller open model trained for about $32 million</h2><p class="stand">A startup says a dense 65-billion-parameter model beats much larger open models at coding agents.</p><dl><dt>What happened</dt><dd>Ricursive Intelligence released Ripple-65B Preview, a general-purpose open-weight model with 80 layers and up to 1M tokens of context, pretrained from scratch on 12 trillion tokens with extra code in the mix. The company claims 80.52 on TerminalBench 2.1, ahead of the larger open models it compares against, including Reflection Beam 501B (80.1) and NVIDIA Nemotron 3 Ultra 550B (56.4). It says total R&amp;D cost about $32 million, which it estimates is one-tenth of the previous best open model on this task, and that training ran at about 40% hardware efficiency without custom kernels or quantization. The page lists no license. All figures are the company&#x27;s own.</dd><dt>What it means, in plain words</dt><dd>&#x27;Dense&#x27; means every one of the 65 billion numbers is used for every word, unlike mixture-of-experts models that wake up only part of the network. The claim is that careful data and training choices can matter more than raw size. The cost comparison rests on the company&#x27;s own estimate, so it is a claim, not an audit.</dd><dt>Why it matters and how it could be used</dt><dd>A 65B dense model is small enough to run on a modest group of GPUs, so if the benchmark holds up, small teams could run their own coding agent. It would also be evidence that training know-how, not just budget, drives results.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Dense model</dt><dd>A model that uses all of its internal numbers for every token it processes.</dd><dt>Pretraining</dt><dd>The first, huge training stage where the model learns from trillions of words and code.</dd><dt>Terminal-Bench</dt><dd>A test of how well an AI agent completes tasks by typing commands in a terminal.</dd></dl></aside><p class="source">Sources: <a href="https://www.ricursive.com/ripple">Ricursive</a></p></article></div></section>
+<section class="page" data-name="Nature" aria-label="Nature"><div class="inner"><div class="folio"><strong>Nature</strong><span>Page 5</span></div><article class="lead"><h2>A toothbrush that zaps bacteria with electricity made by its own bristles</h2><p class="stand">A new polymer in the bristles generates electricity as they move, and the researchers say it kills plaque bacteria.</p><div class="body"><p>Nature reports on a new kind of toothbrush. A new polymer material, a special plastic that produces a small electric charge when it is squeezed or bent, could radically redesign the ordinary manual toothbrush. As the bristles move against teeth, the movement itself produces electricity, so no battery is needed. Per Nature&#x27;s summary, that electricity zaps bacteria on the teeth.</p><p>Nature&#x27;s full article is behind a login, so this summary relies only on the feed description and Nature&#x27;s daily briefing. I could not read the details such as how well it works or any numbers.</p></div><ol class="points"><li>What they found: bristle motion can make enough electricity to harm plaque bacteria.</li><li>How: a new polymer that generates charge when it moves.</li><li>Why it matters: it could make a cheap manual brush do work that now needs a powered one. Details are unconfirmed.</li></ol><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>Polymer</dt><dd>A plastic-like material made of long repeating chains of molecules.</dd></dl></aside><a class="readlink" href="https://www.nature.com/articles/d41586-026-03586-y">Read the article on nature.com</a></article></div></section>
+<section class="page" data-name="Daily study" aria-label="Daily study"><div class="inner"><div class="folio"><strong>Daily study</strong><span>Page 6</span></div><article class="lead study"><h2>Memory registration: why the card needs pinned, registered memory</h2><p class="stand">Monday track: RDMA and NICs</p><p class="bigidea"><strong>The big idea:</strong> Before a network card can read or write your memory by itself, you must register that memory: lock it in place and give the card a translation map and a permission key for it.</p><dl><dt>First, the basics</dt><dd><p>Your program sees virtual addresses, which are fake, per-process addresses. The operating system maps them to real physical RAM in pages, usually 4 kilobytes each, and may move a page, or swap it to disk, whenever it likes. A normal program never notices because the CPU translates every access.</p><p>A network card doing DMA (direct memory access) reads and writes RAM on its own without the CPU. It cannot use your virtual addresses and does not follow the OS&#x27;s page tables, so it needs real physical addresses. If the OS moved or swapped a page while the card was copying into it, data would land in the wrong place. So two things are needed: the page must not move, and the card needs its own address map.</p></dd><dt>How it works, step by step</dt><dd><ol class="steps"><li>The app allocates a buffer, which has virtual addresses but may not yet be backed by RAM.</li><li>The app calls ibv_reg_mr(), giving the protection domain, the buffer&#x27;s address and length, and the access rights it wants.</li><li>The kernel driver pins the pages, so the OS may no longer swap or move them, and looks up each page&#x27;s physical address.</li><li>The driver writes those addresses into a translation table that the NIC can read, and tells the NIC about it.</li><li>The call returns a memory region object with two keys: an lkey for the local card, and an rkey that a remote peer can use.</li><li>Later, work requests name memory by address plus lkey. The NIC checks the key and bounds, translates, and does the DMA with no kernel involvement.</li></ol></dd><dt>A practical example</dt><dd>XLIO registers its big receive and send buffer pools once at startup. After that, every packet the card receives lands directly in already-registered memory, and the app polls and reads it without any system call. Registering a fresh buffer per packet would cost far more than sending the packet.</dd><dt>Why it matters for XLIO</dt><dd>XLIO keeps its buffer pools registered up front so that the hot path never calls into the kernel. Registration is a slow setup step, so it is done once, not per packet.</dd><dt>Key numbers</dt><dd><table class="numbers"><tr><td>Typical page size</td><td>4 kilobytes (hugepages: 2 megabytes)</td></tr><tr><td>Keys returned per registration</td><td>2 (lkey and rkey)</td></tr></table></dd><dt>Common misconception</dt><dd>Misconception: registration copies your data to the card. It does not. It only pins the pages and gives the card an address map and a key. The data stays in your RAM. Registering also isn&#x27;t free, since pinned memory can&#x27;t be swapped, so over-registering can starve the system.</dd></dl><aside class="terms"><p class="terms-h">Jargon, explained</p><dl><dt>DMA</dt><dd>Direct memory access: a device reads or writes RAM by itself without the CPU copying the data.</dd><dt>Pinning</dt><dd>Telling the OS never to move or swap a page out of RAM.</dd><dt>Memory region (MR)</dt><dd>The object that represents a registered buffer, with its keys and permissions.</dd><dt>lkey / rkey</dt><dd>Local and remote keys that prove a request is allowed to touch a registered region.</dd></dl></aside><details><summary>Self-test: Why is it a bad idea to register and deregister a buffer for every message you send?</summary><p>Registration is a slow kernel operation that pins pages and writes translation tables to the NIC, so doing it per message would cost more than the send itself. Register once, up front, and reuse the buffers.</p></details><p class="source">Further reading: <a href="https://docs.nvidia.com/networking/display/rdmaawareprogrammingv17">RDMA Aware Networks Programming User Manual</a></p></article></div></section>
+</main>
+<nav class="turner" aria-label="Turn pages">
+  <div class="row">
+    <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+    <div class="where">
+      <div class="name" id="name"></div>
+      <div class="count" id="count"></div>
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+    <button class="arrow" id="next" aria-label="Next page">›</button>
+  </div>
+</nav>
+<script>
+  const book = document.getElementById('book');
+  const pages = [...book.querySelectorAll('.page')];
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const nameEl = document.getElementById('name'), countEl = document.getElementById('count');
+  const ticks = document.getElementById('ticks');
+  pages.forEach(() => ticks.appendChild(document.createElement('span')));
+  let current = -1;
+  const goTo = i => book.scrollTo({ left: Math.max(0, Math.min(pages.length - 1, i)) * book.clientWidth });
+  function update() {
+    const i = Math.round(book.scrollLeft / book.clientWidth);
+    if (i === current) return;
+    current = i;
+    nameEl.textContent = pages[i].dataset.name;
+    countEl.textContent = `Page ${i + 1} of ${pages.length}`;
+    [...ticks.children].forEach((t, k) => t.classList.toggle('on', k === i));
+    prev.disabled = i === 0; next.disabled = i === pages.length - 1;
+    history.replaceState(null, '', '#p' + (i + 1));
+  }
+  book.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+  document.querySelectorAll('[data-goto]').forEach(b => b.addEventListener('click', () => goTo(+b.dataset.goto)));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+  window.addEventListener('resize', () => book.scrollTo({ left: current * book.clientWidth, behavior: 'auto' }));
+  const start = parseInt((location.hash.match(/#p(\d+)/) || [])[1], 10);
+  if (start) book.scrollTo({ left: (start - 1) * book.clientWidth, behavior: 'auto' });
+  update();
+</script>
+</body>
+</html>
