@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Eisenkot asks the attorney general to step in, saying Netanyahu is refusing him security briefings amid reports of a push for action on Iran",
+        "standfirst": "The man tasked with forming the next government says he is being kept in the dark during a tense period; Netanyahu's office says he is politicizing national security.",
+        "paragraphs": [
+          "On Wednesday, Gadi Eisenkot, the Yashar party leader whom President Isaac Herzog tasked with forming a government, asked Attorney General Gali Baharav-Miara to make sure he receives regular security briefings, according to the Times of Israel and Ynet. He said his team's requests to Netanyahu's office had failed. In a letter to caretaker Prime Minister Benjamin Netanyahu, he urged him to hold off on dangerous moves that can wait for a new government, and asked that any military action go to the cabinet for approval, as the law requires. He noted that only 46 lawmakers backed Netanyahu staying on as prime minister.",
+          "The letter does not mention Iran, but it follows Channel 12 reports that army chief Lt. Gen. Eyal Zamir again opposed unspecified action against Iran that Netanyahu wants. Netanyahu's office called that report biased fake news, called Eisenkot's letter an irresponsible attempt to politicize security, said all decisions were made with the security establishment, and said it had invited him to a briefing. Eisenkot replied that his request through official channels was refused. Ynet reports the Security Cabinet is due to meet on Sunday."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/eisenkot-says-netanyahu-refusing-to-give-him-security-briefings-asks-ag-to-intervene/"},
+          {"name": "Ynet", "url": "https://www.ynetnews.com/article/hyh3wlz0zl"},
+          {"name": "Times of Israel (Zamir report)", "url": "https://www.timesofisrael.com/zamir-said-to-again-warn-that-netanyahu-advancing-ill-advised-action-against-iran/"}
+        ]
+      },
+      "briefs": [
+        {"headline": "In a stormy first session, the new majority takes control of the Knesset's temporary committees", "text": "The Knesset voted 63 to 50 on Wednesday to approve an Arrangements Committee chaired by Yashar MK Roy Folkman, which then set up temporary finance and defense committees. Yisrael Beytenu's Avigdor Liberman will chair Foreign Affairs and Defense, and Ra'am's Yoav Segalovitz is reportedly set to join it, which would be a first for an Arab-led party. Likud MK Ofir Katz said Likud's rejected seat split was fair, and two MKs were removed from the chaotic session.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/after-fiery-debate-knesset-sets-up-temporary-committees-amid-coalition-building-quagmire/"},
+        {"headline": "Strike hits Nasser Hospital complex in Khan Younis", "text": "An overnight Israeli airstrike hit the Nasser Hospital complex in southern Gaza, according to medics and Hamas's civil defense agency, who said at least six people were killed and 20 wounded. The IDF had not responded to requests for comment at the time of reporting.", "source": "Times of Israel live blog", "url": "https://www.timesofisrael.com/liveblog-november-12-2026/"},
+        {"headline": "A new UTJ lawmaker signals openness on core studies and employment", "text": "New United Torah Judaism MK Eliakim Stark told Channel 13 he supports teaching core subjects, helping Haredi soldiers and mass employment, and said Haredi parties could cooperate with any Knesset faction if it serves their interests. He said he is in talks with the Eisenkot-led bloc, whose path to a majority may depend on Haredi support.", "source": "Times of Israel live blog", "url": "https://www.timesofisrael.com/liveblog-november-12-2026/"},
+        {"headline": "Magnitude 4.5 quake rattles Eilat", "text": "A magnitude 4.5 earthquake centered near Taba in Sinai, about 30 kilometers south of Eilat, shook the area on Wednesday morning, according to the Geological Survey of Israel. No injuries were reported; Ramon Airport briefly closed for checks after several windows shattered, then resumed full operations.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/4-5-magnitude-quake-rattles-eilat-area-flights-briefly-suspended-at-ramon-airport/"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Democrat Scott Colom wins Mississippi's Senate seat, giving Democrats at least 55 seats",
+          "paragraphs": [
+            "More than a week after Election Day, Democrat Scott Colom, a 43-year-old district attorney, was projected the winner over Republican Sen. Cindy Hyde-Smith, according to CBS News and the AP. AP figures put him at 49.2 percent to her 48.7 percent. He will be Mississippi's first Black senator since Reconstruction, the period right after the Civil War. Hyde-Smith conceded in a video message, saying she respects the decision of Mississippi voters.",
+            "It is the eighth Senate seat Democrats flipped this cycle, CBS reports, leaving them with at least 55 seats to Republicans' 44 when the new Congress meets in January, with Alaska still undecided. Mississippi had not elected a Democrat to the Senate since 1982."
+          ],
+          "why_it_matters": "A 55-seat Senate majority lets Democrats control which bills and nominees get a vote, which shapes what President Trump can pass or appoint in the last two years of his term.",
+          "sources": [
+            {"name": "CBS News", "url": "https://www.cbsnews.com/news/mississippi-2026-senate-scott-colom-cindy-hyde-smith/"},
+            {"name": "Mississippi Today", "url": "https://mississippitoday.org/2026/11/11/scott-colom-wins-senate-mississippi-hyde-smith/"}
+          ]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Nvidia shares slide as its board meets on whether to remove CEO Jensen Huang",
+          "paragraphs": [
+            "The Wall Street Journal reported on Wednesday that Nvidia's board is preparing to remove Jensen Huang, who co-founded the company and has run it since 1993, after reports of two extramarital relationships, one of them with a woman US intelligence reportedly suspects of working for China. CNBC and Reuters confirmed the board met late Wednesday; no decision had been announced by early Thursday. Huang has told staff he was unfaithful and said he will cooperate with the board's investigation. Nvidia says it has no reason to believe company secrets or US national security were compromised.",
+            "Nvidia shares fell roughly 8 to 9 percent in after-hours trading on the report, according to Reuters and CNBC. CNBC says the stock had already been on track for a sixth straight weekly decline, amid wider worries about AI spending after the midterm elections."
+          ],
+          "why_it_matters": "Nvidia is worth around 4 trillion dollars and makes the chips most AI runs on, so a leadership shake-up there moves the whole market and the AI industry. Its founder has been the face of its strategy for three decades.",
+          "sources": [
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"},
+            {"name": "Ynet (Reuters)", "url": "https://www.ynetnews.com/business/article/ry00iltz0gl"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "Google's Gemini Decisions API answers yes-or-no and multiple-choice questions in a fraction of a second",
+          "standfirst": "Instead of writing out an answer word by word, a new model scores the possible answers in one go and says how confident it is.",
+          "what_happened": "On November 11, Google launched the Gemini Decisions API, running a new model called Gemini Decision 1. You send one input, which can be text, images, audio, video or PDFs up to 256,000 tokens, plus up to 1,000 questions about it. Each question is yes or no, multiple choice with up to 255 options, or a score on a scale. The model answers all of them in a single pass and returns a probability and a confidence score from 0 to 1 for each. Google says latency is 150 to 250 milliseconds end to end and stays almost flat from 1 to 100 questions. Pricing is 10 cents per million input tokens, with nothing charged for output, and Google says that is nearly five times cheaper than its Gemini 3.5 Flash-Lite model on its test suite.",
+          "what_it_means": "A normal chatbot answers by writing text one token at a time, and each token costs another trip through the model. But many decisions inside software are really multiple-choice questions: which tool should the agent use, does this message break the rules, is this photo a spill or not. Here the model reads the input once and scores each allowed answer directly, like a student who reads the exam passage once and then ticks boxes, instead of writing an essay for each question. The confidence number tells your program when the model is unsure, so it can send that case to a bigger model or a person.",
+          "why_it_matters": "Agents make dozens of small decisions per task, and each one usually costs a full model call. Turning them into one cheap, fast, scored call cuts both waiting time and cost. Google says its Gemini Notebook app uses it to route each question to the right model and saw up to 40 percent lower latency. A developer could use it to check every incoming support ticket against 20 policy rules in one request.",
+          "terms": [
+            ["Token", "A chunk of text, roughly three quarters of a word, that a language model reads and writes."],
+            ["Forward pass", "One trip of the input through the model's layers to produce an output."],
+            ["Routing", "Choosing which model, tool or handler should deal with a request."],
+            ["Calibrated", "When the model says 80 percent sure, it is right about 80 percent of the time."]
+          ],
+          "sources": [{"name": "Google blog", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"}]
+        },
+        {
+          "headline": "DeepMind's AlphaGenome 2 predicts what a DNA change does in one specific kind of cell",
+          "standfirst": "The same spelling mistake in DNA can matter in an immune cell and do nothing in a skin cell; the new model is built to tell the difference.",
+          "what_happened": "On November 11, Google DeepMind released AlphaGenome 2, a model that reads a stretch of DNA one million letters long and predicts how it controls genes, such as how strongly a gene is switched on, in a cell type you choose. The first AlphaGenome predicted many tissues at once; version 2 is conditional: you tell it the cell type or state, and it predicts for that one. It was trained on more than 100 million single-cell profiles across 68 tissues, DeepMind says. On an immune-cell test set covering 28 cell types, DeepMind reports it found 30 percent of likely causal variants, versus 16 percent for comparison models. It is available free for non-commercial research through an API, with commercial access in private preview. DeepMind says it is for research only, not for diagnosis.",
+          "what_it_means": "Every cell in your body carries the same DNA, like every branch of a chain restaurant having the same recipe book. What differs is which recipes each branch actually cooks. Most disease-linked DNA changes are not in the recipes themselves but in the notes that say when to cook them. AlphaGenome 2 tries to predict, for a particular kind of cell, whether a given change to those notes turns a gene up, down or not at all. You can even describe a new cell state from a few dozen measured cells, and it adapts without retraining.",
+          "why_it_matters": "Large genetic studies find thousands of DNA spots linked to diseases but usually can't say which one is the real cause or in which cells it acts. A model that narrows this down tells biologists which experiment to run first. For example, DeepMind shows it pinpointing a variant linked to inflammatory bowel disease that overactivates a gene only in gut immune cells, matching an earlier lab finding.",
+          "terms": [
+            ["Variant", "A spot where one person's DNA spelling differs from another's."],
+            ["Gene expression", "How actively a gene is being used to make its product in a cell."],
+            ["Single-cell data", "Measurements taken from individual cells instead of a ground-up tissue sample."]
+          ],
+          "sources": [{"name": "Google DeepMind", "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"}]
+        },
+        {
+          "headline": "United Airlines bans personal AI agents from booking flights",
+          "standfirst": "The first big airline to shut the door on AI assistants that act for travelers, citing security and federal rules.",
+          "what_happened": "United Airlines said on Wednesday it is banning unauthorized third-party personal AI agents from making reservations for travelers, on its own website and app and through travel agencies and aggregators, and is updating its booking rules, CBS News reports. United said sharing account credentials with AI assistants can expose sensitive information and can lead to unintended purchases, account changes or use of MileagePlus miles. It also said an agent checking in a passenger could break federal rules that require travelers themselves to confirm their bags hold no banned items. Southwest has taken the opposite approach, making its flights viewable to ChatGPT users.",
+          "what_it_means": "An AI agent is a program that doesn't just answer questions but takes actions for you: it logs in, clicks buttons and pays. To do that it often needs your password. United is saying it does not want software it cannot verify acting inside customer accounts. It is a bit like a bank refusing to deal with a stranger who shows up holding your PIN, even if you sent them.",
+          "why_it_matters": "Agents are only useful if the websites they act on let them in. Every company now has to decide whether to welcome, block or charge them, and that choice will shape how useful personal assistants become. Analyst Henry Harteveldt told CBS that United may also want to avoid a new middleman and the cost of a surge in bot searches. It also shows why the industry is working on proper ways to give an agent limited, revocable permission instead of your password.",
+          "terms": [
+            ["AI agent", "A program that uses an AI model to take actions toward a goal, such as browsing, filling in forms or paying, not just chatting."],
+            ["Aggregator", "A site that collects offers from many sellers in one place, like a flight search engine."]
+          ],
+          "sources": [{"name": "CBS News", "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"}]
+        },
+        {
+          "headline": "Huawei releases MACaQ, a tool that shrinks AI models to run on smaller hardware",
+          "standfirst": "An open-source quantizer that makes models smaller and faster while trying to keep their answers almost unchanged.",
+          "what_happened": "Huawei's research lab published MACaQ, an open-source tool under the Apache 2.0 license, with an accompanying paper. It converts models to 2, 3 or 4 bit formats for popular local and server engines such as llama.cpp and vLLM, and works on text, image, video and audio models. Huawei reports it can quantize a 122-billion-parameter model in 64 minutes using 32.5 gigabytes of GPU memory. On a 27-billion-parameter Qwen model running in vLLM, it reports 2.33 times faster prompt processing and 2.58 times faster text generation than the 16-bit original, with only a small rise in error.",
+          "what_it_means": "A model is basically billions of numbers. Normally each is stored with 16 bits. Quantization stores each one with only 4 bits, or even fewer, like rounding prices to the nearest shekel instead of keeping the agorot. The model gets about four times smaller and faster to move through memory, but rounding adds small errors. The trick is choosing the rounding carefully, using a little sample data to see which numbers matter most, so the answers barely change.",
+          "why_it_matters": "When a model generates text, the speed limit is usually how fast its numbers can be pulled from memory, not how fast the chip can do math. Smaller numbers mean less to move, so more speed and lower cost per answer. That is why quantization is one of the main ways companies cut inference bills, and why a large model can fit on a single laptop or a single GPU instead of several.",
+          "terms": [
+            ["Quantization", "Storing a model's numbers with fewer bits so it takes less memory and runs faster, at some cost in accuracy."],
+            ["Inference", "Using a trained model to produce answers, as opposed to training it."],
+            ["Perplexity", "A measure of how surprised a model is by real text; lower is better."]
+          ],
+          "sources": [{"name": "MACaQ on GitHub", "url": "https://github.com/huawei-csl/MACaQ"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "The first-ever picture of a black hole passes an independent check",
+      "standfirst": "A separate team, using a different method that avoids the usual calibration guesswork, got the same glowing ring.",
+      "paragraphs": [
+        "In 2019 the Event Horizon Telescope, a network of radio telescopes spread across the planet that works like one Earth-sized dish, released the first image of a black hole: a bright orange ring around a dark center in the galaxy M87. Making that picture required many judgment calls about how to correct and combine the data, so some scientists wondered whether the ring was partly a product of those choices.",
+        "Now a four-person team at CSIRO, Australia's national science agency, led by Samuel Lai, has reprocessed the original data with its own method, reported in Nature on November 11. Instead of combining measurements from pairs of telescopes, it combines them in groups of three, which cancels out many errors caused by the atmosphere and by each telescope's own quirks. A machine-learning model then rebuilt the image. The result was almost identical in size and shape to the 2019 picture, and the ring appears across several years of data. Lai says the model had no idea what a black hole looked like beforehand, and EHT director Laurent Loinard called it an elegant, entirely independent method."
+      ],
+      "key_points": [
+        "What they found: an independent reanalysis recovers the same ring around M87's black hole, so the ring looks like a real feature, not an artifact of how the image was made.",
+        "How: they combined data from telescopes in groups of three, which cancels each telescope's individual errors, and used machine learning that was not taught what to expect.",
+        "Why it matters: in science a striking result is only trusted after someone else reproduces it another way; this is the first fully independent confirmation of the famous image."
+      ],
+      "terms": [
+        ["Black hole", "A region where gravity is so strong that not even light escapes; we see the hot gas glowing around it, with a dark shadow in the middle."],
+        ["Radio telescope network", "Telescopes far apart that record the same signal at the same time; combining their recordings gives the sharpness of one telescope as wide as the distance between them."],
+        ["Calibration", "Correcting each instrument's own errors and delays before combining the data."]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03642-7",
+      "source": "nature.com"
+    },
+    "spacex": {
+      "lead": {
+        "headline": "Starship Flight 15 aims for its first attempt to catch the ship itself with the launch tower",
+        "standfirst": "The launch window opens at 00:45 Israel time on the night between Friday and Saturday, pending FAA approval.",
+        "paragraphs": [
+          "SpaceX says Flight 15 is targeting launch as early as Friday, November 13, pending regulatory approval, with a 75-minute window opening at 5:45 pm US Eastern time, which is 00:45 on Saturday morning in Israel. According to Engadget and Starlust, the plan is for the Super Heavy booster to be caught by the tower's mechanical arms minutes after launch, as SpaceX has done before, and, for the first time, for the upper stage, called Ship, to be caught by the same arms about a day later, only if it can come down into a set area under the right conditions.",
+          "Ship is planned to circle Earth about 14 times over roughly 22 hours and deploy 26 of SpaceX's new, larger Starlink satellites. Catching both stages is central to SpaceX's plan of reusing the whole rocket quickly, like an airliner, which is how it hopes to cut launch costs sharply. The previous flight reached orbit but was cut short after about two hours instead of the planned ten."
+        ],
+        "sources": [
+          {"name": "Engadget", "url": "https://www.engadget.com/2311878/spacex-first-attempt-to-catch-both-starship-stages-november-13/"},
+          {"name": "Starlust", "url": "https://starlust.org/14-orbits-in-22-hours-how-spacex-has-planned-starships-flight-15-timing-and-streaming-details-here/"}
+        ]
+      }
+    },
+    "study": {
+      "track": "Thursday track: AI compute and interconnect",
+      "title": "How training works at a glance: forward pass, backward pass, gradients",
+      "big_idea": "Training is a loop repeated millions of times: the model makes a guess, a single number measures how wrong it was, the backward pass works out which way to nudge every weight to be a little less wrong, and the optimizer nudges them. Nothing is learned during the guess; all the learning happens in the nudge.",
+      "background": [
+        "A neural network is a stack of layers, and each layer is mostly a matrix multiplication: it multiplies its input by a big table of numbers called weights and passes the result to the next layer. A 7-billion-parameter model simply has 7 billion such weights. At the start they are random, so the model outputs nonsense. Training is the process of finding weights that make the outputs good.",
+        "To improve something you need a way to score it. The loss is one number that says how wrong the model was on some examples. For a language model the task is predicting the next token, and the loss is cross-entropy: minus the logarithm of the probability the model gave to the correct token. If it gave the right word a probability of 1, the loss is 0; if it gave it 0.2, the loss is about 1.6; the less likely it thought the truth was, the bigger the loss.",
+        "A gradient is the slope of the loss with respect to each weight: if I nudge this one weight up a tiny bit, does the loss go up or down, and by how much? Imagine standing on a foggy hillside wanting to reach the valley. You can't see the bottom, but you can feel which way the ground slopes under your feet. The gradient is that slope, measured for billions of weights at once, and you step the opposite way, downhill."
+      ],
+      "steps": [
+        "Load a batch: a group of training examples, for a language model many sequences of tokens, is copied into GPU memory. Using a batch instead of one example gives a less noisy estimate of the right direction and keeps the GPU busy.",
+        "Forward pass: the batch flows through the layers from first to last. Each layer multiplies by its weights and applies a simple function, producing activations. These activations are kept in memory, because the backward pass will need them.",
+        "Compute the loss: the final outputs, probabilities for the next token, are compared with the real next tokens, and the cross-entropy is averaged over the batch into one number.",
+        "Backward pass (backpropagation): starting from the loss and moving from the last layer back to the first, each layer receives the gradient of the loss with respect to its output. Using the chain rule from calculus and its saved activations, it computes two things: the gradient for its own weights, to update them, and the gradient for its input, which it hands back to the layer before. Frameworks like PyTorch do this automatically, which is called autograd.",
+        "Combine gradients: when training on many GPUs, each one processed different examples, so their gradients are averaged across all GPUs before anyone updates. That exchange is all-reduce, next week's topic, and it is pure network traffic.",
+        "Optimizer step: every weight is nudged against its gradient. The simplest rule is new weight = old weight minus learning rate times gradient, where the learning rate is a small number that sets the step size. Most large models use Adam, which also keeps two running averages per weight, a momentum and a typical gradient size, to choose a sensible step for each weight.",
+        "Clear the gradients and repeat with the next batch. One loop is a training step; a full run is often hundreds of thousands of steps."
+      ],
+      "example": "Take the sentence 'The cat sat on the' with the correct next word 'mat'. In the forward pass, the model gives 'mat' a probability of 0.2, so the loss is minus the log of 0.2, about 1.61. The backward pass finds, for each weight, whether raising it would increase or decrease the chance of 'mat'. After the optimizer step, suppose the model now gives 'mat' 0.25; the loss drops to about 1.39. Now scale it up: training a 7-billion-parameter model on 1 trillion tokens takes about 6 x 7 billion x 1 trillion, roughly 4.2 x 10^22 math operations. On GPUs that each actually deliver about 400 trillion operations per second, that is about 29,000 GPU-hours, which is why training is spread across thousands of GPUs at once.",
+      "why_xlio": "Every training step ends with GPUs exchanging their gradients, and while that happens the GPUs can sit idle, so network latency and bandwidth directly set how fast an expensive cluster trains. NVIDIA moves this traffic with NCCL over RDMA, InfiniBand or RoCE, rather than over regular sockets, for exactly the reasons XLIO exists: skipping the kernel, avoiding copies and polling for completions. Around the training itself, loading data, saving checkpoints and control traffic often run over ordinary TCP, where user-space acceleration such as XLIO can help.",
+      "numbers": [
+        ["Training compute per token", "about 6 x number of parameters operations: about 2 forward, about 4 backward (Kaplan et al., 2020)"],
+        ["Backward pass cost", "about twice the forward pass"],
+        ["Memory for weights, gradients and Adam state with mixed precision", "about 16 bytes per parameter (ZeRO paper), so about 112 GB for a 7B model, before activations"],
+        ["Cross-entropy loss when the right token gets probability 0.2", "about 1.61"]
+      ],
+      "pitfall": "It's tempting to think the gradient tells the model what the right weights are. It doesn't. It only says which direction is downhill right here, and how steep, measured on one batch. Take a huge step and you can jump right over the valley and make things worse. That's why the learning rate is small and the loop repeats hundreds of thousands of times.",
+      "terms": [
+        ["Weights (parameters)", "The adjustable numbers inside a model that training changes."],
+        ["Activations", "The intermediate results each layer produces during the forward pass."],
+        ["Loss", "A single number measuring how wrong the model's predictions were."],
+        ["Gradient", "For each weight, which direction and how strongly changing it would change the loss."],
+        ["Backpropagation", "Computing all gradients by working backwards through the layers using the chain rule."],
+        ["Learning rate", "A small number that sets how big each weight update is."],
+        ["Optimizer", "The rule that turns gradients into weight updates, for example SGD or Adam."]
+      ],
+      "question": "Why does the backward pass cost about twice as much computation as the forward pass?",
+      "answer": "In the forward pass each layer does one big matrix multiplication: input times weights. In the backward pass it needs two of the same size: one to get the gradient for its weights, so they can be updated, and one to get the gradient for its input, so it can pass the signal to the layer before. Two multiplications instead of one gives about twice the work, which is where '2 forward plus 4 backward equals 6 per parameter per token' comes from.",
+      "reading": [
+        {"name": "Andrej Karpathy, micrograd: a tiny autograd engine", "url": "https://github.com/karpathy/micrograd"},
+        {"name": "PyTorch: A gentle introduction to torch.autograd", "url": "https://docs.pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html"},
+        {"name": "Kaplan et al., Scaling Laws for Neural Language Models", "url": "https://arxiv.org/abs/2001.08361"},
+        {"name": "Rajbhandari et al., ZeRO: Memory Optimizations Toward Training Trillion Parameter Models", "url": "https://arxiv.org/abs/1910.02054"}
+      ]
+    }
+  }
+}
