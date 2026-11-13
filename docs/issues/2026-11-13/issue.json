@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "Eisenkot's bloc weighs a deal with the Haredi parties as the military draft becomes the price of a majority",
+        "standfirst": "Eisenkot's camp has 48 of the 61 seats it needs, and the 13 seats that could close the gap belong to parties whose main demand is a draft exemption for yeshiva students.",
+        "paragraphs": [
+          "Gadi Eisenkot, the Yashar leader whom President Isaac Herzog tasked with forming a government, leads a bloc of 48 lawmakers, 13 short of a 61-seat majority, according to the Times of Israel and the Jerusalem Post. Netanyahu's bloc holds 53 seats and the Arab parties 19. Eisenkot and Avigdor Liberman reportedly agreed to open talks with the ultra-Orthodox parties United Torah Judaism (7 seats) and Shas (6), possibly with a softer version of an army enlistment law. According to the Times of Israel, UTJ's rabbis now reportedly want all 48 bloc members to sign a pledge to pass a draft-exemption law with an override clause, which would stop the Supreme Court from striking it down. Shas says it still supports Netanyahu and is not talking to anyone else.",
+          "The bloc is split on how far to go. Eisenkot has said he will not give up on \"service for all,\" and Naftali Bennett has signaled opposition to continued exemptions, citing the burden on reservists. Liberman rules out relying on Arab parties and argues for a law that \"survives the High Court test.\" Yashar MK Shaul Meridor told the Jerusalem Post the Haredi parties could join an emergency government if they accept four principles, including universal service. Separately, Eisenkot and Netanyahu held a two-hour security briefing after Eisenkot had complained he was being denied one. Eisenkot has 28 days, extendable by 14, to form a government."
+        ],
+        "sources": [
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/eisenkot-vows-not-to-fold-on-service-for-all-as-potential-utj-allies-insist-on-draft-exemptions/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/eisenkot-liberman-said-to-greenlight-outreach-to-haredim-reach-agreement-on-knesset-speaker/"},
+          {"name": "Jerusalem Post", "url": "https://www.jpost.com/israel-election-2026/2026-11-13/live-updates-914793"}
+        ]
+      },
+      "briefs": [
+        {"headline": "Jensen Huang's exit raises questions about Nvidia's planned northern Israel campus", "text": "Nvidia employs thousands of people in Israel and had planned a campus in Kiryat Tivon for about 10,000 workers, a project Huang personally championed. The Times of Israel reports his resignation casts uncertainty over the plan; no change to it has been announced. It notes that two of the possible replacements for Huang are Israeli.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/jensen-huangs-dramatic-exit-clouds-nvidias-plans-to-expand-its-israel-footprint/"},
+        {"headline": "Israeli strike hits Nasser Hospital in Khan Younis", "text": "An Israeli airstrike hit Nasser Hospital in Khan Younis overnight into Thursday; reports say six people were killed. The IDF said, about seven hours later, that it had targeted a Hamas brigade commander.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog-november-13-2026"},
+        {"headline": "More than 50 countries and groups press Israel on Gaza aid", "text": "A coalition led by the UK, Qatar and Jordan called on Israel to immediately allow shelter, fuel, water, sanitation and health supplies into Gaza. The Prime Minister's Office said winter supplies are entering Gaza and that Hamas must disarm before reconstruction, and Israel says complaints about its aid body distract from Hamas's responsibility.", "source": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog-november-13-2026"},
+        {"headline": "Iran's Revolutionary Guards claim a strike on a US radar in Bahrain", "text": "The IRGC said it targeted a US early-warning radar in Bahrain in retaliation for an attack on a telecom tower in southern Iran; the US and Bahrain had not commented. Hours earlier, President Trump told an interviewer that if Iran's regime is still in power when he leaves office, \"that would be a defeat.\"", "source": "Times of Israel", "url": "https://www.timesofisrael.com/liveblog-november-13-2026"}
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "Trump says the US no longer needs a deal with Iran and takes Vance off the talks",
+          "paragraphs": [
+            "On Thursday, President Trump wrote on Truth Social: \"We don't need a deal with Iran. Those days have long since passed,\" adding, \"We've got their money, Hundreds of Billions of Dollars, and we've got their Strait!\", a reference to the Strait of Hormuz, the narrow sea lane that a large share of the world's oil passes through. He told Vice President JD Vance, who had led recent diplomacy and, according to the Wall Street Journal, was considering face-to-face talks with a top Iranian official, to focus instead on what Trump called corruption and crime in Democratic-run cities and states.",
+            "The war, which the US and Israel began in late February, is in its ninth month; CNBC describes strikes as having largely subsided into a tense stalemate. The Washington Post reports Trump is keeping a naval blockade and economic pressure in place instead of pursuing diplomacy, while Ynet notes he stopped short of formally ending indirect contacts. Oil prices rose and stock futures slipped after the post."
+          ],
+          "why_it_matters": "It shuts the most visible diplomatic channel to end a war that has pushed up global energy prices, and it comes as Trump says he would not hesitate to renew strikes, which matters directly for Israel's security calculations.",
+          "sources": [
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/12/trump-iran-deal-hormuz-strait.html"},
+            {"name": "The Washington Post", "url": "https://www.washingtonpost.com/politics/2026/11/12/trump-shuts-down-vance-iran-negotiating-efforts-says-no-deal-needed/"},
+            {"name": "Ynet", "url": "https://www.ynetnews.com/article/bjhwjsmcgx"}
+          ]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Jensen Huang resigns as Nvidia CEO; CFO Colette Kress steps in as interim chief",
+          "paragraphs": [
+            "Nvidia said Thursday that Jensen Huang, who co-founded the company and ran it for 33 years, resigned as president, CEO and board member, effective immediately. Nvidia gave no reason. The resignation followed days of reports about his personal relationships, including his admission of an affair with a woman US intelligence officials reportedly believe is a Chinese spy; the board had launched an independent investigation and says it has no reason to believe national security was compromised, and Beijing denies the espionage allegations. CNBC, citing a person familiar with the matter, says the board decided to oust him. CFO Colette Kress becomes interim CEO and longtime director Harvey Jones becomes the company's first board chair, leading the search for a permanent CEO.",
+            "Nvidia shares fell as much as 14% during the day before recovering to close down about 4.3%, according to CNBC, leaving the company worth just above $4 trillion. Other AI-cloud stocks such as Nebius and CoreWeave also fell, and the major indexes closed lower. Nvidia reports quarterly earnings on Tuesday, November 17, its first under interim leadership."
+          ],
+          "why_it_matters": "Nvidia is the most valuable chipmaker and the main supplier of AI hardware, so a sudden leadership change unsettles the whole AI trade; it also touches Nvidia's planned $10 billion investment in Anthropic's IPO and its expansion in Israel.",
+          "sources": [
+            {"name": "NVIDIA Newsroom", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"},
+            {"name": "CNBC", "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"},
+            {"name": "TechCrunch", "url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"},
+            {"name": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "Google launches Gemini 4 Hydrogen, a fast model it says matches its frontier model on a key index",
+          "standfirst": "A cheaper, quicker everyday model built for AI agents, now powering Google Search.",
+          "what_happened": "On November 12, Google released Gemini 4 Hydrogen, which it calls its \"daily driver for agentic workflows.\" Google says it scores 51 on the Artificial Analysis Intelligence Index at its default setting, versus 50 for its bigger frontier model Gemini 4 Argon, and 54 at its highest thinking level. Google says it finishes tasks 2.5 times faster than the older Gemini 3.8 Flash and scores 57% on the Terminal-Bench 4.1 coding benchmark versus 18.2%. It costs $1.50 per million input tokens and $7.50 per million output tokens, accepts up to 1 million tokens of input, and has four thinking levels: low, medium, high and xhigh. It is rolling out in the Gemini API, AI Studio, the Gemini app and Google Search.",
+          "what_it_means": "AI companies usually sell a family: a big, slow, expensive model for hard problems and a small, fast, cheap one for everyday work. Google is claiming its fast model has now caught up with its big one on a broad intelligence score. \"Thinking levels\" let you choose how long the model reasons before it answers, like telling a colleague \"quick answer\" or \"take your time.\" An agent is a model that works in a loop, taking many small actions such as running a command or searching a file, so speed per step adds up fast.",
+          "why_it_matters": "For agents, the cost and delay of each step matter more than peak brilliance, because a task can take hundreds of steps. If the claims hold up, developers can run coding or data agents on a cheaper model without losing much quality. These are Google's own benchmarks; independent tests will show whether the gap with bigger models is really closed.",
+          "terms": [
+            ["Token", "A chunk of text, roughly three quarters of a word, that models read and write; prices are quoted per million tokens."],
+            ["Agentic workflow", "A task where the AI takes many steps on its own, like editing files, running code and checking the result, instead of giving one answer."],
+            ["Benchmark", "A standard test used to compare models, like an exam everyone takes."]
+          ],
+          "sources": [{"name": "Google blog", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"}, {"name": "SiliconANGLE", "url": "https://siliconangle.com/2026/11/12/google-releases-gemini-4-hydrogen-a-lower-cost-model-said-to-outscore-argon/"}]
+        },
+        {
+          "headline": "NVIDIA open-sources Snapshot, which restarts AI inference servers in seconds instead of minutes",
+          "standfirst": "Instead of booting a model server from scratch, you save it once fully loaded and copy that saved state onto new GPUs.",
+          "what_happened": "In a November 10 technical blog post, NVIDIA released Snapshot, an open-source checkpoint-and-restore tool for GPU workloads on Kubernetes, first built for its Dynamo inference software. It saves a fully started model server, including both CPU and GPU memory, and starts new copies from that saved state. NVIDIA says restores took 3.6 to 42.7 seconds on B200 GPUs, 8 to 36 times faster than cold starts, which took 6 to 19 minutes for the largest mixture-of-experts models, with checkpoints up to about 1 TB across eight GPUs. It works with vLLM, SGLang and TensorRT-LLM. NVIDIA says design partner Crusoe cut startup for one model from about 8 minutes to 31 seconds.",
+          "what_it_means": "Starting an AI model server is slow: it loads hundreds of gigabytes of weights into GPU memory, compiles code for the GPU and warms up. Snapshot works like hibernating a laptop: you freeze the server once it is fully ready, save everything to storage, and later wake up identical copies on other machines. It uses CRIU, an existing Linux tool that freezes a running program and saves it to disk, plus a step that copies the GPU's memory back.",
+          "why_it_matters": "When traffic spikes, an AI service needs more copies of its model fast. If each copy takes 10 minutes to start, companies keep expensive GPUs idling just in case; if it takes 30 seconds, they can scale up on demand and save money. It also shows where NVIDIA is putting effort: not only faster chips, but software that keeps expensive GPUs busy.",
+          "terms": [
+            ["Inference", "Running a trained model to answer requests, as opposed to training it."],
+            ["Cold start", "Starting a program from nothing, loading and initializing everything, which is slow."],
+            ["Kubernetes", "Software that runs and manages many copies of programs across a cluster of machines."],
+            ["Checkpoint and restore", "Saving the complete state of a running program so it can be resumed later, possibly on another machine."]
+          ],
+          "sources": [{"name": "NVIDIA Technical Blog", "url": "https://developer.nvidia.com/blog/?p=124736"}, {"name": "GitHub: ai-dynamo/snapshot", "url": "https://github.com/ai-dynamo/snapshot"}]
+        },
+        {
+          "headline": "Anthropic's IPO filing lines up $26 billion from chip and cloud companies, led by Nvidia and Google",
+          "standfirst": "The suppliers of AI hardware plan to buy big stakes in one of their biggest customers.",
+          "what_happened": "Anthropic, the maker of Claude, filed an amended IPO registration on November 10. According to reports on the filing, seven companies plan to buy about $26 billion of a special non-voting share class at the IPO price: Nvidia and Google about $10 billion each, AMD about $2.5 billion, Broadcom, Micron and Microsoft about $1 billion each, and TSMC about $500 million. The filing sets a range of $70 to $78 per share for 825 million shares on Nasdaq under the ticker ANT. Reports say pricing is expected around November 18, with trading from November 19. Reported figures from the filing include $33.2 billion in revenue and a $104 billion net loss for the first nine months of 2026.",
+          "what_it_means": "An IPO is when a private company first sells shares to the public. Here, the companies that sell Anthropic its chips and cloud computing are also promising to buy large chunks of its stock. A huge loss alongside fast-growing revenue means Anthropic is spending far more than it earns, mostly on computing power, betting that demand keeps growing.",
+          "why_it_matters": "It shows how tightly the AI industry is woven together: chipmakers fund their customers, who then buy their chips. Critics call that circular; supporters say it locks in long-term partners. Nvidia's leadership upheaval this week adds a question mark over its $10 billion piece. Details here come from news reports on the filing rather than the full filing itself.",
+          "terms": [
+            ["IPO", "Initial public offering: the first time a company sells shares on a stock exchange."],
+            ["Private placement", "Shares sold directly to selected investors rather than to the public market."],
+            ["S-1", "The document a US company files with regulators before going public, describing its business and finances."]
+          ],
+          "sources": [{"name": "SEC EDGAR filing index", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002130357"}, {"name": "Dataconomy", "url": "https://dataconomy.com/2026/11/12/google-and-nvidia-commit-10-billion-each-to-anthropic-ipo/"}]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "Found: a protein that drives ageing in organs without the usual inflammation",
+      "standfirst": "Old mice born without one immune protein, granzyme K, had healthier hearts, livers and kidneys, even though their immune systems aged normally.",
+      "paragraphs": [
+        "As we age, our immune cells make more of a protein called granzyme K. Immune cells use proteins like this as tiny scissors, cutting up other proteins. A team at Monash University in Australia, led by Professor Nicole La Gruta, wanted to know whether this rising protein actually damages our organs or is just a sign of getting older. They compared old mice bred without granzyme K to normal old mice.",
+        "The mice without it had better heart function and less scarring in the heart, and fewer signs of age damage in the liver and kidneys. Surprisingly, their immune systems still aged as usual, which suggests organ ageing and immune ageing can be pulled apart, against a long-held assumption that they go together. In human data, granzyme K levels were high in patients with several inflammatory and scarring diseases, including heart failure and a kidney complication of lupus. The study was published in the journal Immunity; Nature's news team covered it.",
+        "There are big caveats. This was in mice, and the mice lacked the protein their whole lives, so nobody yet knows whether blocking it later in life, as a drug would, would help. The team is now looking for ways to block granzyme K selectively."
+      ],
+      "key_points": [
+        "What they found: old mice without granzyme K had healthier hearts, livers and kidneys, while their immune systems aged normally.",
+        "How: they compared old mice genetically engineered to lack the protein with normal old mice, and checked human patient data for the protein.",
+        "Why it matters: it points to a single, specific target that might one day be blocked to slow organ ageing, without weakening the immune system."
+      ],
+      "terms": [
+        ["Granzyme K", "A protein made by some immune cells that cuts other proteins; its levels rise with age."],
+        ["Fibrosis", "Scarring inside an organ, where stiff tissue replaces working tissue."],
+        ["Knockout mice", "Mice bred so that a particular gene, and so its protein, is missing."]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "source": "nature.com"
+    },
+    "spacex": {
+      "lead": {
+        "headline": "Starship Flight 15, with its first attempt to catch both stages, is set for tonight",
+        "standfirst": "The 75-minute window opens at 00:45 Israel time on Saturday morning; FAA approval was still pending in the latest reports.",
+        "paragraphs": [
+          "SpaceX is targeting launch no earlier than 22:45 UTC on Friday, November 13, from Starbase, Texas, which is 00:45 on Saturday in Israel. As of Thursday, reports said a needed FAA license change, including permission for the ship to return over populated areas, had not yet been granted. Ship 42 rolled out to the pad on Thursday to join Booster 22.",
+          "The plan is for the booster to return and be caught by the tower's arms about six and a half minutes after liftoff. The ship would release 26 Starlink V3 satellites, circle Earth about 14 times over roughly 21 hours, and then try to fly back and be caught by the tower too, a first for the upper stage. Catching both is key to reusing the whole rocket quickly, which SpaceX says will cut launch costs."
+        ],
+        "sources": [
+          {"name": "Wikipedia: Starship flight 15", "url": "https://en.wikipedia.org/wiki/Starship_flight_15"},
+          {"name": "Space.com", "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-launch-epic-double-catch-starship-flight-15-test-mission-on-nov-13"},
+          {"name": "NASASpaceFlight", "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"}
+        ]
+      }
+    },
+    "study": {
+      "track": "Friday track: AI inference",
+      "title": "Batching and continuous batching: serving many users at once",
+      "big_idea": "Generating each new token forces the GPU to read the entire model from memory, and that read costs about the same whether it serves one user or a hundred, so servers process many users' requests together in one batch. Continuous batching goes further: it reshuffles the batch after every single token, so a finished request leaves immediately and a waiting one takes its seat.",
+      "background": [
+        "Recall from earlier Fridays: answering a prompt has two phases. Prefill reads your whole prompt at once and fills the KV cache, the model's notes about every token so far. Decode then produces the answer one token at a time, and every token requires a full pass through the model.",
+        "A GPU has huge compute power but limited memory bandwidth, the speed at which it can pull data out of its memory. During decode with a single user, each token needs every weight of the model to be read once but does only a little math with each weight. For a 7 billion parameter model stored in 16-bit numbers, that is about 14 GB to read per token; an H100 reads roughly 3.35 TB per second, so one user tops out around 240 tokens per second while the math units mostly sit idle.",
+        "Batching fixes this: if 64 users each need their next token, the GPU reads each weight once and uses it 64 times. The memory read is shared, so the batch finishes in not much more time than a single request. The limit becomes memory to hold everyone's KV cache, not the weight reads."
+      ],
+      "steps": [
+        "Requests arrive at different times with different prompt lengths and wildly different answer lengths, and wait in a queue.",
+        "Static batching, the old way: the server groups, say, 8 requests, runs them together, and only starts the next group when all 8 are done. A request that finishes after 20 tokens leaves its seat empty while another runs to 2,000.",
+        "Continuous batching, introduced by the Orca paper in 2022 as iteration-level scheduling: the scheduler decides who is in the batch at every step. Each step, it runs one decode token for every active request.",
+        "When a request emits its end-of-text token or hits its length limit, it leaves the batch and its KV-cache memory is freed right away.",
+        "The scheduler admits waiting requests into the freed space. Their prefill can be split into chunks (chunked prefill) and mixed into the same step as other users' decode tokens, so long prompts don't freeze everyone else.",
+        "Limits keep it safe: in vLLM, max_num_seqs caps how many requests run at once and max_num_batched_tokens caps how many tokens are processed per step. vLLM runs pending decodes first, then fills leftover budget with prefill.",
+        "If KV-cache memory runs out, the server preempts a request: it pauses it, frees its memory, and later recomputes its cache from scratch (vLLM's default) or swaps it out."
+      ],
+      "example": "Imagine an inference server answering 200 chat users. One asks for a one-line yes or no, another asks for a 1,500-word essay. With static batching, the yes-or-no user's seat sits empty for the entire essay. With continuous batching, that seat is handed to the next user in the queue on the very next step. In Anyscale's 2023 benchmark of a 13 billion parameter model on one A100, continuous batching alone gave about 8 times the throughput of naive static batching, and about 23 times when combined with vLLM's memory management.",
+      "why_xlio": "It's the same trick XLIO and NICs use: amortize a fixed per-operation cost over many items. A NIC polls one completion queue for many connections and rings one doorbell for several packets; an inference server reads the weights once for many users. And the network matters here too: with continuous batching, requests stream in and tokens stream out to hundreds of users at once, so the serving front end is a high-rate, many-small-messages network workload, exactly XLIO's territory.",
+      "numbers": [
+        ["Weights read per decode step, 7B model in FP16", "about 14 GB"],
+        ["H100 SXM memory bandwidth", "about 3.35 TB/s, so about 240 tokens/s ceiling for one user on a 7B FP16 model"],
+        ["Orca (OSDI 2022), GPT-3 175B", "36.9x throughput vs FasterTransformer at the same latency"],
+        ["Anyscale 2023, OPT-13B on one A100 40 GB", "about 8x from continuous batching alone; up to 23x with vLLM memory management"],
+        ["KV-cache room in that Anyscale setup", "about 14 GB, roughly 14,000 tokens: about 28 sequences of 512 tokens"]
+      ],
+      "pitfall": "Misconception: bigger batches always mean slower answers for each user. At small and medium batch sizes, decode is limited by reading the weights, so adding users costs each of them very little time per token; throughput rises almost for free. The real tradeoff appears later: once memory or compute fills up, each extra user slows everyone's tokens a bit, and big prefills mixed into the batch can cause stalls. That's why servers cap batch size and token budget per step.",
+      "terms": [
+        ["Batch", "A group of requests processed together in one pass on the GPU."],
+        ["Memory bandwidth", "How fast data can be read from memory, in bytes per second."],
+        ["Throughput", "Total work done per second, here tokens generated per second across all users."],
+        ["Iteration-level scheduling", "Re-deciding which requests are in the batch at every generation step, the core of continuous batching."],
+        ["Chunked prefill", "Splitting a long prompt's prefill into pieces so it can share steps with other users' decoding."],
+        ["Preemption", "Pausing a running request to free memory for others, and resuming it later."]
+      ],
+      "question": "A server uses static batches of 8. Seven requests need 50 tokens each and one needs 1,000. Roughly what fraction of the seat-steps does useful work, and what does continuous batching change?",
+      "answer": "The batch runs 1,000 steps with 8 seats, so 8,000 seat-steps. Useful work is 7 x 50 + 1,000 = 1,350, about 17%. Over 80% of the seats sit empty after step 50. Continuous batching refills each seat as soon as its request ends, so seats stay busy as long as the queue has requests waiting.",
+      "reading": [
+        {"name": "Orca: A Distributed Serving System for Transformer-Based Generative Models (OSDI 2022)", "url": "https://www.usenix.org/conference/osdi22/presentation/yu"},
+        {"name": "Anyscale: How continuous batching enables 23x throughput in LLM inference", "url": "https://anyscale.com/blog/continuous-batching-llm-inference"},
+        {"name": "vLLM docs: optimization and tuning", "url": "https://docs.vllm.ai/en/latest/configuration/optimization.html"}
+      ]
+    }
+  }
+}
