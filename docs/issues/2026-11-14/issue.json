@@ -1,0 +1,211 @@
+{
+  "sections": {
+    "israel": {
+      "lead": {
+        "headline": "UN watchdog says it cannot find Iran's newest enrichment plant, as Israel's leaders reportedly split over striking again",
+        "standfirst": "The inspectors' report lands in the middle of a reported argument in Jerusalem: Netanyahu and most security chiefs are said to favor resuming the war now, while the army chief says it can wait.",
+        "paragraphs": [
+          "The International Atomic Energy Agency (IAEA), the UN's nuclear inspectors, said in a confidential report seen by Reuters on Friday that it is increasingly concerned about a uranium enrichment plant at Isfahan. Iran declared it in June 2025, but inspectors have never visited. The agency wrote that it does not know the plant's exact location or whether it contains nuclear material. It also cannot verify what happened to roughly 440 kg of uranium enriched to 60 percent, a short step from weapons grade, which it last measured before the June 2025 strikes. According to AP, Iran told the agency that inspections cannot resume under what it called persistent public threats from the US president.",
+          "In Israel, Channel 12 reported that army chief Eyal Zamir stands alone against an immediate strike: he reportedly sees the threat as real but not urgent, and worries about acting while no new government has been formed. Caretaker Prime Minister Netanyahu, Mossad chief Roman Gofman and Shin Bet chief David Zini reportedly favor striking now. Axios reported that Gofman is in Washington meeting CIA Director John Ratcliffe. President Trump told interviewer Hugh Hewitt he prefers pressure but would strike if things went the other way. The reports rely on unnamed sources; no strike has been announced."
+        ],
+        "sources": [
+          {"name": "Jerusalem Post (Reuters)", "url": "https://www.jpost.com/middle-east/iran-news/article-914802"},
+          {"name": "Times of Israel liveblog", "url": "https://www.timesofisrael.com/liveblog-november-13-2026/"},
+          {"name": "Times of Israel", "url": "https://www.timesofisrael.com/mossad-chief-in-us-for-talks-on-iran-netanyahu-didnt-update-eisenkot-on-visit-report/"}
+        ]
+      },
+      "briefs": [
+        {
+          "headline": "Eisenkot reportedly shifts toward a coalition with the Haredi parties",
+          "text": "Channel 12 reported that Gadi Eisenkot, who holds the mandate to form a government, now prioritizes bringing in the ultra-Orthodox parties over a minority government that would depend on Arab parties' votes, the approach Avigdor Liberman has pushed. His bloc has 48 of the 61 seats needed. The Jerusalem Post reports that Netanyahu is personally calling rabbis to warn them that Eisenkot's promises will not hold; in an interview, Eisenkot accused Netanyahu of fueling anti-Arab racism and pledged to exhaust all possibilities to form what he calls an emergency government.",
+          "source": "Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-914799"
+        },
+        {
+          "headline": "Tibi shows texts from a Netanyahu confidant asking for the Joint List's help",
+          "text": "Joint List lawmaker Ahmad Tibi showed Channel 12 text messages from Natan Eshel, a longtime Netanyahu associate, seeking the party's help in blocking Eisenkot's moves in the Knesset. Tibi called it hypocrisy, since Netanyahu this week described Arab lawmakers as supporters of terror. Tibi said his party wants to replace Netanyahu, not hold another election.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/liveblog-november-13-2026/"
+        },
+        {
+          "headline": "Police post snipers on rooftops in Rahat",
+          "text": "Police said snipers placed on rooftops in the Bedouin city of Rahat, in the Negev, will fire at anyone who opens fire, in an effort to stop a wave of gun violence. Mayor Talal al-Kernawi said two young people were murdered and that shooting had been nonstop in recent days.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/liveblog-november-13-2026/"
+        },
+        {
+          "headline": "Israel bars French left-wing leader Mélenchon; Paris objects",
+          "text": "Israel's Foreign Ministry barred Jean-Luc Mélenchon and Mathilde Panot, leaders of the France Unbowed party, from entering the country. French Foreign Minister Jean-Noël Barrot called the decision demagogic. Mélenchon said he was banned from a territory he had not asked to enter.",
+          "source": "Times of Israel",
+          "url": "https://www.timesofisrael.com/liveblog-november-13-2026/"
+        }
+      ]
+    },
+    "us": {
+      "items": [
+        {
+          "label": "US news",
+          "headline": "A communications failure grounds every departing flight in the US for about four hours",
+          "paragraphs": [
+            "On Friday afternoon the Federal Aviation Administration (FAA), which runs US air traffic control, ordered a nationwide ground stop: no plane was allowed to take off from any US airport. The order cited extraordinary circumstances and safety. Transportation Secretary Sean Duffy said the cause was a communication problem affecting all of the Air Route Traffic Control Centers, the facilities that guide planes at cruising altitude between airports. He described the system as incredibly old and said it got overloaded.",
+            "The FAA lifted the stop at about 8:15 pm Eastern time, roughly four hours after it began, but warned that delays and cancellations would continue. Flight tracker FlightAware counted nearly 7,000 delayed or cancelled flights early on, and ABC reported more than 700 cancellations at Chicago O'Hare alone. Officials and an aviation expert quoted by CNN pointed to a technical failure, not an attack. Local CBS reporting notes it is only the second nationwide ground stop since September 11, 2001. The FAA is still investigating the cause."
+          ],
+          "why_it_matters": "One failing communication system was enough to freeze the whole country's air travel, which puts the age of US air traffic control technology, and the money needed to replace it, back at the center of the debate. Expect knock-on delays through the weekend.",
+          "sources": [
+            {"name": "CBC News", "url": "https://www.cbc.ca/news/world/us-faa-national-ground-stop-9.7421358"},
+            {"name": "ABC7", "url": "https://abc7ny.com/live-updates/faa-ground-stop-live-updates-what-know-nationwide-flights-are-grounded/20038887/"},
+            {"name": "Flightradar24", "url": "https://www.flightradar24.com/blog/live/nationwide-ground-stop-issued-for-united-states/"}
+          ]
+        },
+        {
+          "label": "Stock market",
+          "headline": "Wholesale prices are up 6.5% in a year, the most since 2022, and investors brace for a rate increase",
+          "paragraphs": [
+            "The Producer Price Index, which tracks the prices businesses receive for their goods and services (think of it as inflation at the factory gate, before it reaches shop shelves), rose 0.3% in October and 6.5% over the past twelve months. The Bureau of Labor Statistics says that is the largest twelve-month rise since November 2022. The monthly figure was a little lower than economists expected, but freight trucking costs jumped 3.9% and goods prices are up 10.2% in a year.",
+            "Investors read the number as keeping pressure on the Federal Reserve to raise interest rates next month. The yield on the 10-year Treasury bond, the interest rate the US government pays to borrow for ten years, touched 5.17% and closed at 5.15%. Higher yields make stocks less attractive, and chip stocks were already falling: Nvidia lost more than 4% on Friday and about 12% over the week after Jensen Huang's resignation, dropping below a $4 trillion market value, and HSBC downgraded it. The S&P 500 fell 0.4% and the Nasdaq 0.9% on the day, though all three main indexes still gained about 2% or more for the week."
+          ],
+          "why_it_matters": "When rates rise, loans and mortgages get more expensive and company profits are worth less in today's money, so a rate increase would be a headwind for the whole market. Nvidia's earnings on Tuesday, the first under interim CEO Colette Kress, are the next big test.",
+          "sources": [
+            {"name": "Bureau of Labor Statistics", "url": "https://www.bls.gov/news.release/ppi.nr0.htm"},
+            {"name": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"}
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "stories": [
+        {
+          "headline": "Anthropic lets companies run its whole agent platform on their own servers",
+          "standfirst": "With self-hosted Claude Managed Agents, the machinery that runs an AI agent, including its passwords and its full activity log, can stay inside a company's own walls.",
+          "what_happened": "Anthropic opened a private beta of self-hosted Claude Managed Agents on November 12. Managed Agents is its service for running AI agents: it provides the harness (the program that runs the agent's loop and calls the model), the sandboxes where the agent runs commands, credential handling and a recorded session history. Until now a customer could host only the sandboxes, while Anthropic ran the rest. In the self-hosted version the customer runs everything: the Managed Agents server, a PostgreSQL database holding session history, and the worker machines where agents run shell and file tools. Only the model requests leave, going to Anthropic, Amazon Bedrock, Google's Agent Platform, Microsoft Foundry or the company's own gateway. Access is by request, and pricing has not been announced.",
+          "what_it_means": "An AI agent is a model working in a loop: it thinks, uses a tool, looks at the result and repeats. To do that for real work it needs three sensitive things: a place to run commands, passwords for the systems it touches, and a record of everything it did. Before, some of those lived on Anthropic's computers. Now a bank or hospital can keep all three in its own data center and send out only the question for the model. The design also keeps passwords away from the agent: a separate proxy outside the sandbox attaches the password to each outgoing request, so the code the agent runs never sees it. It is like a valet who can drive your car but is never handed your house keys.",
+          "why_it_matters": "Many regulated companies cannot let logs and credentials leave their network, which has kept agents out of their most valuable systems. This removes that blocker, at the price of the customer now patching and securing the servers itself. Help Net Security notes one caveat: the password protection covers only MCP tools and supported API calls, so anything else an agent reaches needs its own review. A concrete use: an agent that fixes failing builds, allowed to reach only the company's git server and package registry, with every step exported to the security team's monitoring.",
+          "terms": [
+            ["Agent harness", "The program around the model that runs the loop: it sends the model the task, runs the tools the model asks for and feeds back the results."],
+            ["Sandbox", "A sealed-off environment where the agent's commands run, so a mistake or attack cannot reach the rest of the system."],
+            ["Credentials", "Passwords, keys and tokens that prove who you are to another system."],
+            ["Allowlist", "A list of the only network addresses the agent may contact; everything else is blocked."],
+            ["Self-hosted", "Running the software on your own machines instead of using the vendor's servers."]
+          ],
+          "sources": [
+            {"name": "Anthropic", "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"},
+            {"name": "Help Net Security", "url": "https://www.helpnetsecurity.com/2026/11/12/anthropic-self-hosted-claude-managed-agents/"}
+          ]
+        },
+        {
+          "headline": "SpaceX plans more than $74 billion for two AI supercomputing campuses",
+          "standfirst": "The rocket company is now one of the biggest builders of AI data centers, with one site in Texas that makes its own electricity and a larger one in Arizona that still needs approval.",
+          "what_happened": "SpaceX announced on November 12 that it plans to invest more than $74 billion in two AI computing campuses: up to $24 billion near its Starbase site in Texas and roughly $50 billion in Cochise County, Arizona. The Texas campus is planned to generate its own electricity instead of drawing from the public grid; local reporting describes a gas-fired power plant. The Arizona campus would work with local electric cooperatives and use dry cooling, meaning air instead of water, and needs county approval, with a hearing on December 9. SpaceX did not disclose power capacity, chip suppliers or opening dates. The Next Web reports that SpaceX sells computing power to other AI companies, that Anthropic is its largest customer, and that the AI business recently brought in more revenue than Starlink.",
+          "what_it_means": "Training and running large AI models takes warehouses full of specialized chips, and the hard part is no longer buying the chips but powering them. Connecting a huge new customer to the electric grid can take years, so SpaceX plans to build its own power plant next to the Texas data center, like a factory with its own generator. The Arizona choice of dry cooling answers the other local worry: data centers usually use a lot of water to carry away heat, and this one says it will not pump groundwater in a desert county.",
+          "why_it_matters": "Electricity and local consent are now the bottlenecks for AI. Residents in Arizona have already confronted the company over water, power bills and wildlife, and all the figures are plans, not finished buildings. For people in networking the point is simple: every campus like this is tens of thousands of GPUs that must be wired together with very fast networks, which is where NVIDIA's networking products are sold.",
+          "terms": [
+            ["Dry cooling", "Removing heat with air and closed loops instead of evaporating water."],
+            ["Electric cooperative", "A local, member-owned power company, common in rural parts of the US."],
+            ["Compute", "Shorthand for computing capacity: the chips and machines that do the work."]
+          ],
+          "sources": [
+            {"name": "Converge Digest", "url": "https://convergedigest.com/spacex-74-billion-supercomputing-texas-arizona/"},
+            {"name": "The Next Web", "url": "https://thenextweb.com/news/spacex-74b-ai-computing-centers-arizona-texas"}
+          ]
+        },
+        {
+          "headline": "Nonprofits ask a California court to freeze development of more powerful AI models",
+          "standfirst": "A lawsuit against five AI developers uses the companies' own warnings about risk as its main evidence.",
+          "what_happened": "On November 12, a group of nonprofits including Public Citizen, The Alliance for Secure AI, Heat Initiative and the Irreplaceable Education Fund sued OpenAI, Anthropic, Google, Meta and SpaceX's AI division in San Francisco. According to Just Security, the suit makes a single claim under California's Unfair Competition Law, arguing the companies are creating a public nuisance. It asks for an immediate court order barring them from building or deploying AI systems more capable than their current best models, and from letting AI systems direct AI research on their own. Reuters reports that the complaint cites public statements by Anthropic CEO Dario Amodei and SpaceX CEO Elon Musk about catastrophic risk, and alleges that AI agents escaped test environments and reached outside systems. Meta declined to comment and the others did not immediately respond. No judge has ruled.",
+          "what_it_means": "A public nuisance is the legal idea behind stopping a factory from polluting a river: an activity that harms the public at large can be halted by a court even if no single victim sues. The nonprofits argue that building ever more capable AI while saying yourself that it could be dangerous fits that idea. An injunction is a court order to stop doing something. The allegations in the complaint are claims by the plaintiffs, not findings of fact, and a court would have to be persuaded that existing consumer-protection law stretches this far.",
+          "why_it_matters": "Most legal experts would call this a long shot, but it is a new route: instead of waiting for Congress to regulate AI, opponents are asking judges to do it with laws already on the books, and Florida and eight other states have separate cases against OpenAI. Even an unsuccessful suit can force companies to hand over internal safety documents, which is worth watching for anyone who builds on these models.",
+          "terms": [
+            ["Frontier model", "The most capable AI model a company has at a given moment."],
+            ["Injunction", "A court order telling someone to stop, or start, doing something."],
+            ["Public nuisance", "A legal claim that an activity harms the general public, not only one person."]
+          ],
+          "sources": [
+            {"name": "Reuters (via Yahoo)", "url": "https://www.yahoo.com/news/politics/articles/openai-google-anthropic-hit-lawsuit-182328643.html"},
+            {"name": "Just Security", "url": "https://www.justsecurity.org/164494/nonprofits-lawsuit-freeze-frontier-ai-development/"}
+          ]
+        }
+      ]
+    },
+    "nature": {
+      "headline": "An AI 'mechanic' that opens up other AI systems and tunes them",
+      "standfirst": "Researchers showed that one AI model can read the raw numbers inside another, work out what parts of it do, and edit it to make it better at maths.",
+      "paragraphs": [
+        "A neural network, the kind of program behind chatbots, is at heart a gigantic table of numbers called weights. Training sets those numbers, but nobody writes them by hand, and people looking at them cannot easily tell what any of them do. That is why AI systems are often called black boxes. Normally, if you want a model to behave differently, you train it some more or build a new one.",
+        "A team at MIT tried something else, Nature reports. In a study posted online on November 2 and not yet reviewed by other scientists, they gave an OpenAI model called GPT-6 Astra the raw weights of other neural networks. It could predict what different parts of those networks do, and then edit the numbers directly to improve them, including boosting their mathematical abilities. Co-author Rikiya Takehi says frontier models are showing early sparks of the ability to treat neural networks like files they can read, reason about and change.",
+        "The article is careful about the limits. Being able to fix something is not the same as understanding it: Nature compares the model to a mechanic who can repair an engine without fully grasping its design. Oxford AI-safety researcher Fazl Barez says the work shows some of this inspection can be automated, but that the hope that understanding models will make them safer is largely untested. This summary is based on the part of the article that is free to read, which does not include the study's detailed numbers."
+      ],
+      "key_points": [
+        "What they found: an AI model could read the internal numbers of other neural networks, predict what parts of them do, and edit them to work better, for example at maths.",
+        "How: MIT researchers gave OpenAI's GPT-6 Astra the raw weights of other models and asked it to interpret and change them directly, instead of retraining those models.",
+        "Why it matters: if inspecting and repairing AI can be automated, it could make AI systems easier to check and fix, but experts caution that fixing is not understanding and the safety payoff is unproven."
+      ],
+      "terms": [
+        ["Weights", "The millions or billions of numbers inside an AI model that determine how it responds; training is the process of setting them."],
+        ["Black box", "A system whose inputs and outputs you can see but whose inner workings you cannot easily explain."],
+        ["Preprint", "A scientific paper shared publicly before other scientists have formally checked it."],
+        ["Interpretability", "The research field that tries to explain what is going on inside an AI model."]
+      ],
+      "url": "https://www.nature.com/articles/d41586-026-03679-8",
+      "source": "nature.com"
+    },
+    "spacex": {
+      "lead": {
+        "headline": "Starship Flight 15 reaches orbit, but the booster catch is called off; the first ship catch attempt is tonight",
+        "standfirst": "Half of the planned double catch is gone, but the more historic half, catching the upper stage with the launch tower, is still possible.",
+        "paragraphs": [
+          "Starship lifted off from Starbase, Texas, at 4:47 pm local time on Friday, which was 00:47 Saturday in Israel. The plan was to catch both halves of the rocket with the launch tower's mechanical arms, nicknamed chopsticks. The first half did not happen: SpaceX called off the catch of the Super Heavy booster and sent it toward the Gulf instead, where, according to Starlust, it exploded moments before splashdown. SpaceX has not given a detailed reason; one outlet reports that one of the booster's 33 engines went out.",
+          "The upper stage, called Ship, carried on. It reached orbit and released all 26 Starlink V3 satellites, SpaceX said. It is flying about 14 orbits over roughly 22 hours and, if controllers confirm its systems are healthy, will come back to Starbase for a tower catch about 22 and a half hours after launch, around 11 pm Israel time tonight. If anything looks wrong it will come down in the Pacific instead. No upper stage of an orbital rocket has ever been caught this way; doing it is the step toward reusing the whole vehicle quickly, the way an airliner is turned around."
+        ],
+        "sources": [
+          {"name": "Starlust", "url": "https://starlust.org/spacex-launches-starship-flight-15-booster-catch-called-off-history-still-on-the-cards/"},
+          {"name": "Space.com", "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"}
+        ]
+      }
+    },
+    "study": {
+      "track": "Saturday track: AI agents and sandboxes",
+      "title": "MCP: a standard plug for connecting tools and data to models",
+      "big_idea": "MCP, the Model Context Protocol, is an agreed way for any AI app to ask any outside program two questions: what can you do, and please do this. Because everyone speaks the same language, a tool is written once and works in every AI app, the way one USB device works in every computer.",
+      "background": [
+        "Last Saturday we saw tool calling: the model cannot do anything itself, so it writes a structured request (the tool's name and inputs), your program runs the real function, and the result goes back to the model as text. The model learns which tools exist because your program shows it a menu: each tool's name, a description and a schema, a precise description of its inputs.",
+        "The gap is where that menu comes from. Without a standard, every AI app needs custom glue code for every service. Ten apps and a hundred services means up to a thousand separate integrations, each written and maintained by hand. This is the same problem computers had before USB, when every printer and camera needed its own kind of cable.",
+        "A protocol is simply an agreed set of messages and rules, like HTTP for web pages. MCP's messages use JSON-RPC 2.0, a very simple convention: a request is a small piece of JSON text with a method name, some parameters and an id; the reply carries the same id so the sender can match them up. Anthropic introduced MCP in November 2024, modelled on the way code editors standardized language support, and in December 2025 it moved to a foundation under the Linux Foundation so that no single company owns it."
+      ],
+      "steps": [
+        "Three roles. The host is the AI app the user runs, such as a chat app or a coding assistant. An MCP server is a program that offers something: a GitHub server, a database server, a file server. For each server it connects to, the host creates one MCP client, a small connector that holds that one conversation.",
+        "The connection, called the transport, comes in two kinds. For a server on your own machine the host starts it as a child process and they exchange messages over stdio, the process's standard input and output, with no network involved. For a remote server the client sends each message as an HTTP POST request (Streamable HTTP), and the server can stream replies back.",
+        "Discovery. The client can send server/discover, and the server answers with the protocol versions it supports, its name and its capabilities, meaning which kinds of things it offers. In the current version of the protocol every request also carries the protocol version and the client's capabilities, so each request stands on its own; earlier versions instead began every connection with a handshake.",
+        "Listing. The client sends tools/list and gets back every tool's name, description and input schema. A server can also offer resources, which are data to read such as a file or a database schema, and prompts, which are ready-made templates. The host gathers the tools from all its servers into one menu.",
+        "The model chooses. The host sends the user's question plus the menu to the model, exactly as in ordinary tool calling. The model never sees MCP; it just writes a tool call such as weather_current with location Tel Aviv.",
+        "Calling. The host finds which client owns that tool and sends tools/call with the name and arguments. The server runs the real code and replies with a content list, usually text, which the host hands back to the model as the tool result. The loop continues until the model answers.",
+        "Staying current. A client can open a subscription and be told when a server's tool list changes, then fetch the new list. If a server needs something from the human mid-task, such as a confirmation, it can ask through the client; this is called elicitation."
+      ],
+      "example": "You ask a coding assistant: why did last night's build fail? The assistant is the host, and it is connected to two MCP servers, one for the CI system and one for the git repository. At startup it listed both servers' tools and built one menu. The model picks get_build_log; the host sends tools/call to the CI server and gets the log text back. The model reads it, then picks git_show_commit; the host routes that call to the git server. The model then explains the failure. Neither server knows anything about the model, and the same two servers would work unchanged in a different AI app. This is also what the Anthropic story above relies on: its credential proxy attaches passwords to MCP tool requests outside the sandbox.",
+      "why_xlio": "A remote MCP server is an ordinary network service: every tool call is a small HTTP request and reply over TCP. An agent may make dozens of these calls for one task, one after another, so the delay of each small round trip adds up directly into how long the user waits. That is the many-small-messages, latency-sensitive socket workload XLIO is built to speed up. Because requests in the current protocol are self-contained, any copy of a server behind a load balancer can answer any request, which makes these services easy to scale out across machines.",
+      "numbers": [
+        ["Message format", "JSON-RPC 2.0"],
+        ["Current protocol version (versions are named by date)", "2026-07-28"],
+        ["Transports", "2: stdio for local servers, Streamable HTTP for remote ones"],
+        ["Things a server can offer", "3: tools, resources, prompts"],
+        ["Introduced by Anthropic", "November 2024"],
+        ["Integrations without a standard, 10 apps and 100 services", "up to 1,000; with a standard, 10 clients plus 100 servers"]
+      ],
+      "pitfall": "Misconception: MCP gives the model new abilities, or the model talks to MCP servers itself. Neither is true. The model does exactly what it did last week: it reads a menu and writes a tool call. MCP only standardizes how the host gets the menu and delivers the call. It also does not make tools safe. The specification itself says a tool is arbitrary code and that a tool's description should be treated as untrusted unless the server is trusted, so the host must still ask for consent and limit what tools can do. The tradeoff: every tool description takes up room in the model's context window, so connecting fifty servers with hundreds of tools can crowd out the actual task, and hosts increasingly load tool descriptions only when they are needed.",
+      "terms": [
+        ["Protocol", "An agreed set of messages and rules that lets two programs written by different people talk to each other."],
+        ["Host", "The AI application the user runs, which holds the model conversation and manages connections to servers."],
+        ["MCP client", "The connector inside the host that talks to exactly one MCP server."],
+        ["MCP server", "A program that offers tools, data or templates to AI apps through MCP."],
+        ["JSON-RPC", "A simple convention for asking another program to run a named method, written as JSON text, with an id to match the reply to the request."],
+        ["stdio", "Standard input and output: the basic text channels every program has, which a parent program can use to talk to a child program on the same machine."],
+        ["Stateless", "Each request contains everything needed to handle it, so the server does not have to remember earlier requests."]
+      ],
+      "question": "An AI app is connected to five MCP servers. The model outputs a tool call named search_tickets. Which part of the system knows which server to send it to, and how did it learn that?",
+      "answer": "The host knows. When it connected, it sent tools/list to each of the five servers through that server's own client, and recorded which server offered which tool names while building the combined menu for the model. When the model emits search_tickets, the host looks up the owner and sends tools/call through that client. The model never knows servers exist, and the servers never see the model.",
+      "reading": [
+        {"name": "MCP architecture overview", "url": "https://modelcontextprotocol.io/docs/learn/architecture"},
+        {"name": "MCP specification", "url": "https://modelcontextprotocol.io/specification/latest"}
+      ]
+    }
+  }
+}
